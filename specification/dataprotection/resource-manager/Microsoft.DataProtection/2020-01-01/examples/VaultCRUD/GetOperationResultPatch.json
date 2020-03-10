@@ -27,11 +27,10 @@
           "key1": "val1"
         },
         "properties": {
-          "objectType": "BackupVault",
           "provisioningState": "Succeeded",
           "storageSettings": [
             {
-              "datastoreType": "VaultStore",
+              "dataStoreType": "VaultStore",
               "type": "LocallyRedundant"
             }
           ]

@@ -461,7 +461,7 @@
           }
         },
 		"x-ms-examples":{
-          "Patch BackupVault":{
+          "GetOperationResult Patch":{
             "$ref":"./examples/VaultCRUD/GetOperationResultPatch.json"
           }
         }

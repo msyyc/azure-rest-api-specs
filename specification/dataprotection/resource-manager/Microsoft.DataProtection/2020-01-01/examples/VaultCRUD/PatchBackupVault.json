@@ -4,7 +4,12 @@
 		"resourceGroupName": "SampleResourceGroup",
 		"vaultName": "swaggerExample",
 		"api-version": "2020-01-01-alpha",
-		"operationId": "YWUzNDFkMzQtZmM5OS00MmUyLWEzNDMtZGJkMDIxZjlmZjgzOzdmYzBiMzhmLTc2NmItNDM5NS05OWQ1LTVmOGEzNzg4MWQzNA=="
+		"operationId": "YWUzNDFkMzQtZmM5OS00MmUyLWEzNDMtZGJkMDIxZjlmZjgzOzdmYzBiMzhmLTc2NmItNDM5NS05OWQ1LTVmOGEzNzg4MWQzNA==",
+		"parameters": {
+			"tags": {
+				"newKey": "newVal"
+			}
+		}
 	},
 	"responses": {
 		"202": {
