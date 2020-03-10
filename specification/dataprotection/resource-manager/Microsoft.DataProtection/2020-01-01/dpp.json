@@ -459,6 +459,11 @@
               "$ref":"#/definitions/CloudError"
             }
           }
+        },
+		"x-ms-examples":{
+          "Patch BackupVault":{
+            "$ref":"./examples/VaultCRUD/GetOperationResultPatch.json"
+          }
         }
       }
     },
