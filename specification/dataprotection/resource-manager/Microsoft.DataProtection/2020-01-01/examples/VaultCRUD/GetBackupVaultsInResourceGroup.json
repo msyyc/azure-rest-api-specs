@@ -23,7 +23,7 @@
               "provisioningState": "Succeeded",
               "storageSettings": [
                 {
-                  "dataStoreType": "BackupStorage",
+                  "dataStoreType": "VaultStore",
                   "type": "LocallyRedundant"
                 }
               ]
@@ -46,7 +46,7 @@
               "provisioningState": "Succeeded",
               "storageSettings": [
                 {
-                  "dataStoreType": "BackupStorage",
+                  "dataStoreType": "VaultStore",
                   "type": "LocallyRedundant"
                 }
               ]

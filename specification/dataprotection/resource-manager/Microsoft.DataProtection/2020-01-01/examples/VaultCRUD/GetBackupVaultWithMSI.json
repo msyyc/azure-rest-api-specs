@@ -24,7 +24,7 @@
           "provisioningState": "Succeeded",
           "storageSettings": [
             {
-              "dataStoreType": "BackupStorage",
+              "dataStoreType": "VaultStore",
               "type": "LocallyRedundant"
             }
           ]
