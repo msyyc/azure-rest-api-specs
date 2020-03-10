@@ -7,6 +7,7 @@ ABFS
 Accel
 ACCELCONTAINER
 acceptors
+accesskey
 accesspoint
 accountid
 accountname
@@ -31,6 +32,7 @@ adminmanagement
 ADTO
 adultscore
 affinitized
+agentpool
 aggregatedcost
 AHUB
 AIAPI
@@ -88,6 +90,8 @@ apimusers
 apimversionsets
 apitoken
 APNS
+appconfig
+appid
 appinsights
 applynetworkconfigurationupdates
 appservice
@@ -129,6 +133,7 @@ autopatching
 autopool
 autorest
 autoscale
+autoscaler
 autoscalesettings
 autoscaling
 Avro
@@ -155,6 +160,7 @@ azureml
 azuresql
 azurestack
 azurestorageaccounts
+azuresynapse
 azuretable
 azurewebsites
 backend
@@ -172,6 +178,7 @@ Baidu
 bangla
 baremetal
 BATCHAI
+batchmanaged
 BAYESIANOPTIMIZATION
 BCDR
 BCWG
@@ -196,6 +203,7 @@ bingwebsearch
 Bitbucket
 Bitlocker
 bitness
+bitrates
 bitstream
 biztalk
 blobfuse
@@ -277,6 +285,7 @@ CNAME
 cntk
 CODEGEN
 codegeneration
+codemirror
 cognitiveservices
 colls
 colocation
@@ -422,6 +431,7 @@ devtestlab
 devtestlabs
 dhcp
 diagnosticcontext
+digitaltwins
 DIMM
 disableautoscale
 disablescheduling
@@ -463,6 +473,7 @@ enableautoscale
 enablelog
 enablement
 enablescheduling
+ename
 endpointkeys
 endpointname
 endswith
@@ -481,6 +492,7 @@ Español
 estaba
 Etag
 Ethereum
+evalue
 evaluateautoscale
 eventcategories
 eventgrid
@@ -721,6 +733,7 @@ kafkarest
 Kaliningrad
 Kbps
 KECA
+kernelspec
 keyname
 keyspace
 keyspaces
@@ -744,8 +757,10 @@ kubeconfigs
 kubenet
 kubernetes
 kusto
+kvset
 l'avion
 labaccounts
+labelset
 labservices
 Lajolla
 largefacelists
@@ -782,6 +797,7 @@ listsyncfunctiontriggerstatus
 listsyncstatus
 liveevent
 liveoutput
+livyid
 loadbalancer
 localbusinesses
 localcategories
@@ -917,6 +933,7 @@ n'recognition
 nagios
 namespace's
 nanoserver
+nbformat
 Nccl
 nchar
 ndjson
@@ -950,6 +967,7 @@ nonpaged
 nonreadable
 nonstarted
 Nonsupported
+nopublicipaddresses
 northcentralus
 northeurope
 nostore
@@ -959,6 +977,7 @@ notstarted
 nouploadcache
 nsdname
 nsku
+nsxt
 ntext
 ntlm
 numrecords
@@ -1014,6 +1033,7 @@ pageable
 Parallelise
 paramref
 PARAVIRTUAL
+partnertopic
 Passthrough
 patternanyentities
 patternrule
@@ -1057,6 +1077,7 @@ poolusagemetrics
 portalsettings
 postbackup
 Postgre
+Postgres
 postgresql
 postrestore
 powerbi
@@ -1112,8 +1133,10 @@ qnormal
 querylogs
 querypool
 querystring
+querytriggers
 Queretaro
 queueservices
+QueueStatus
 quickbooks
 quicktest
 quniform
@@ -1277,6 +1300,7 @@ SECP
 secureobject
 securestring
 securityinsight
+seealso
 serialconsole
 servererror
 serverfarm
@@ -1358,7 +1382,9 @@ sparql
 SPDX
 SQLAG
 SQLDB
+SQLDW
 SQLMI
+SQLRDS
 sqlvirtualmachine
 sqlvm
 Sqoop
@@ -1452,9 +1478,11 @@ taskcompletion
 taskcounts
 taskfailure
 tasksuccess
+Taxii
 templated
 templatelink
 templeton
+temporarydisk
 tensorflow
 teradata
 terminatejob
@@ -1480,6 +1508,8 @@ tombstoned
 toolchain
 toolset
 tooltips
+traceback
+traceroute
 trafficmanager
 trafficmanageranalytics
 trafficmanagerprofiles
@@ -1501,6 +1531,7 @@ ukwest
 Ulaanbaatar
 unallocated
 unattend
+unbilled
 Unclaim
 Undelete
 undeleted
@@ -1564,6 +1595,7 @@ userflows
 userid
 userpreference
 usersetting
+usermanaged
 USQL
 VAIDK
 varbinary
@@ -1575,6 +1607,7 @@ vaultusages
 vcenter
 Vcore
 Vcores
+vcsa
 Vertica
 Vfyc
 vhds
@@ -1587,6 +1620,7 @@ virtualmachines
 virtualnetworkgateways
 virtualnetworkrules
 virtualnetworks
+Virtustream
 viruela
 visualsearch
 visualstudio
@@ -1598,10 +1632,12 @@ vmextension
 VMILR
 vmimage
 vmname
+vmotion
 VMQS
 vmsizes
 VMSS
 VMSSVM
+vmuuid
 vmware
 vmwaretools
 VMXNET
@@ -1681,3 +1717,12 @@ MSAZRUSGO
 hypervcollectors
 vmwarecollectors
 updatepolicy
+createbsl
+deletebsl
+getbsl
+getactivesessions
+disconnectactivesessions
+bsls
+sessionids
+Dsms
+cloudManifestFiles
