@@ -90,7 +90,6 @@
             "objectType": "AzureRetentionRule"
           }
         ],
-        "name": "OssDBPolicy",
         "datasourceTypes": [
           "OssDB"
         ],
@@ -190,7 +189,6 @@
               "objectType": "AzureRetentionRule"
             }
           ],
-          "name": "OssDBPolicy",
           "datasourceTypes": [
             "OssDB"
           ],
