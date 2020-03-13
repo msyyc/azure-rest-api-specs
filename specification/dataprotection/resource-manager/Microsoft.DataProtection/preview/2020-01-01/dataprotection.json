@@ -1579,6 +1579,7 @@
       "description":"Azure backup recoveryPoint resource",
       "properties":{
         "properties":{
+		  "x-ms-client-flatten": true,
           "$ref":"#/definitions/AzureBackupRecoveryPoint",
           "description":"AzureBackupRecoveryPointResource properties"
         }
@@ -1752,6 +1753,7 @@
       "description":"BackupInstance Resource",
       "properties":{
         "properties":{
+		  "x-ms-client-flatten": true,
           "$ref":"#/definitions/BackupInstance",
           "description":"BackupInstanceResource properties"
         }
@@ -1872,6 +1874,7 @@
       "description":"Backup Vault Resource",
       "properties":{
         "properties":{
+		  "x-ms-client-flatten": true,
           "$ref":"#/definitions/BackupVault",
           "description":"BackupVaultResource properties"
         }
@@ -1928,6 +1931,7 @@
       "description":"BaseBackupPolicy resource",
       "properties":{
         "properties":{
+		  "x-ms-client-flatten": true,
           "$ref":"#/definitions/BaseBackupPolicy",
           "description":"BaseBackupPolicyResource properties"
         }
@@ -2518,6 +2522,7 @@
           "type":"string"
         },
         "properties":{
+		  "x-ms-client-flatten": true,
           "$ref":"#/definitions/OperationExtendedInfo",
           "description":"End time of the operation"
         },
