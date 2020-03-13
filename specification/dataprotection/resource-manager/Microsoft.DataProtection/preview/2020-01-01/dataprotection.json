@@ -2110,6 +2110,7 @@
           "type":"string"
         },
         "properties":{
+		  "x-ms-client-flatten": true,
           "$ref":"#/definitions/ClientDiscoveryForProperties",
           "description":"Properties for the given operation."
         }
