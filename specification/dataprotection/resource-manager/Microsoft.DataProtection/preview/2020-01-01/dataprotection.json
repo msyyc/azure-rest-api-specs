@@ -1763,6 +1763,27 @@
           "type":"string"
         }
       },
+      "required":[
+        "activityID",
+        "subscriptionId",
+        "dataSourceId",
+        "vaultName",
+        "backupInstanceFriendlyName",
+        "sourceResourceGroup",
+        "dataSourceSetName",
+        "dataSourceName",
+        "progressEnabled",
+        "etag",
+        "sourceSubscriptionID",
+        "dataSourceLocation",
+        "startTime",
+        "dataSourceType",
+        "operationCategory",
+        "operation",
+        "status",
+        "IsUserTriggered",
+        "supportedActions"
+      ],
       "type":"object"
     },
     "AzureBackupJobResource":{
@@ -2835,6 +2856,11 @@
           "type":"string"
         }
       },
+      "required":[
+        "taskId",
+        "taskName",
+        "taskStatus"
+      ],
       "type":"object"
     },
     "OperationExtendedInfo":{
