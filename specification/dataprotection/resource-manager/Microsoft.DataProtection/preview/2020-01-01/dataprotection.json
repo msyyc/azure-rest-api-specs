@@ -1615,12 +1615,10 @@
       "properties":{
         "activityID":{
           "description":"Job Activity Id",
-          "readOnly":true,
           "type":"string"
         },
         "backupInstanceFriendlyName":{
           "description":"Name of the Backup Instance",
-          "readOnly":true,
           "type":"string"
         },
         "backupInstanceId":{
@@ -1630,27 +1628,22 @@
         },
         "dataSourceId":{
           "description":"ARM ID of the DataSource",
-          "readOnly":true,
           "type":"string"
         },
         "dataSourceLocation":{
           "description":"Location of the DataSource",
-          "readOnly":true,
           "type":"string"
         },
         "dataSourceName":{
           "description":"User Friendly Name of the DataSource",
-          "readOnly":true,
           "type":"string"
         },
         "dataSourceSetName":{
           "description":"Data Source Set Name of the DataSource",
-          "readOnly":true,
           "type":"string"
         },
         "dataSourceType":{
           "description":"Type of DataSource",
-          "readOnly":true,
           "type":"string"
         },
         "duration":{
@@ -1675,7 +1668,6 @@
         },
         "etag":{
           "description":"ETag of the job",
-          "readOnly":true,
           "type":"string"
         },
         "extendedInfo":{
@@ -1685,17 +1677,14 @@
         },
         "isUserTriggered":{
           "description":"Indicated that whether the job is adhoc(true) or scheduled(false)",
-          "readOnly":true,
           "type":"boolean"
         },
         "operation":{
           "description":"It indicates the type of Job i.e. Backup:full/log/diff ;Restore:ALR/OLR; Retention:Backup/Archive ; Management:ConfigureProtection/UnConfigure",
-          "readOnly":true,
           "type":"string"
         },
         "operationCategory":{
           "description":"It indicates the type of Job i.e. Backup/Restore/Retention/Management",
-          "readOnly":true,
           "type":"string"
         },
         "policyId":{
@@ -1710,7 +1699,6 @@
         },
         "progressEnabled":{
           "description":"Indicated whether progress is enabled for the job",
-          "readOnly":true,
           "type":"boolean"
         },
         "progressUrl":{
@@ -1725,28 +1713,23 @@
         },
         "sourceResourceGroup":{
           "description":"Name of the Datasource's Resource Group",
-          "readOnly":true,
           "type":"string"
         },
         "sourceSubscriptionID":{
           "description":"SubscriptionId corresponding to the DataSource",
-          "readOnly":true,
           "type":"string"
         },
         "startTime":{
           "description":"StartTime of the job(in UTC)",
           "format":"date-time",
-          "readOnly":true,
           "type":"string"
         },
         "status":{
           "description":"Status of the job like InProgress/Success/Failed/Cancelled/SuccessWithWarning",
-          "readOnly":true,
           "type":"string"
         },
         "subscriptionId":{
           "description":"Subscription Id of the corresponding backup vault",
-          "readOnly":true,
           "type":"string"
         },
         "supportedActions":{
@@ -1754,12 +1737,10 @@
           "items":{
             "type":"string"
           },
-          "readOnly":true,
           "type":"array"
         },
         "vaultName":{
           "description":"Name of the vault",
-          "readOnly":true,
           "type":"string"
         }
       },
@@ -1781,7 +1762,7 @@
         "operationCategory",
         "operation",
         "status",
-        "IsUserTriggered",
+        "isUserTriggered",
         "supportedActions"
       ],
       "type":"object"
@@ -1796,7 +1777,8 @@
       "properties":{
         "properties":{
           "$ref":"#/definitions/AzureBackupJob",
-          "description":"AzureBackupJobResource properties"
+          "description":"AzureBackupJobResource properties",
+          "type":"object"
         }
       },
       "type":"object"
@@ -2837,12 +2819,10 @@
         "taskId":{
           "description":"Task Id of the Sub Task",
           "format":"int32",
-          "readOnly":true,
           "type":"integer"
         },
         "taskName":{
           "description":"Name of the Sub Task",
-          "readOnly":true,
           "type":"string"
         },
         "taskProgress":{
@@ -2852,7 +2832,6 @@
         },
         "taskStatus":{
           "description":"Status of the Sub Task",
-          "readOnly":true,
           "type":"string"
         }
       },
