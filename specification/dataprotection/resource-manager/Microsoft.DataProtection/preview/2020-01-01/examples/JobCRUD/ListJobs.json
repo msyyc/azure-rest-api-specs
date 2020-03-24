@@ -32,7 +32,6 @@
               "isUserTriggered": false,
               "supportedActions": [],
               "duration": "00:00:00",
-              "etag":"W/\"datetime'2020-03-17T03%3A00%3A04.9959463Z'\"",
               "dataSourceLocation":"centraluseuap"
             },
             "id": "/subscriptions/62b829ee-7936-40c9-a1c9-47a93f9f3965/resourceGroups/BugBash1/providers/Microsoft.DataProtection/Backupvaults/BugBashVaultForCCYv11/backupJobs/8989416e-7573-4836-8cf1-0e90954f1002",
@@ -62,7 +61,6 @@
               "isUserTriggered": false,
               "supportedActions": [],
               "duration": "00:00:00",
-              "etag":"W/\"datetime'2020-03-16T18%3A00%3A05.9361363Z'\"",
               "dataSourceLocation":"centraluseuap"
             },
             "id": "/subscriptions/62b829ee-7936-40c9-a1c9-47a93f9f3965/resourceGroups/BugBash1/providers/Microsoft.DataProtection/Backupvaults/BugBashVaultForCCYv11/backupJobs/ad218c05-242a-47c2-b7b7-c16bd0f8870c",
@@ -92,7 +90,6 @@
               "isUserTriggered": false,
               "supportedActions": [],
               "duration": "00:00:00",
-              "etag":"W/\"datetime'2020-03-17T03%3A00%3A04.9959463Z'\"",
               "dataSourceLocation":"centraluseuap"
             },
             "id": "/subscriptions/62b829ee-7936-40c9-a1c9-47a93f9f3965/resourceGroups/BugBash1/providers/Microsoft.DataProtection/Backupvaults/BugBashVaultForCCYv11/backupJobs/3c60cb49-63e8-4b21-b9bd-26277b3fdfae",
@@ -125,7 +122,6 @@
                 ""
               ],
               "duration": "00:02:11.9724387",
-              "etag":"W/\"datetime'2020-03-17T11%3A14%3A05.4446442Z'\"",
               "dataSourceLocation":"centraluseuap"
             },
             "id": "/subscriptions/62b829ee-7936-40c9-a1c9-47a93f9f3965/resourceGroups/BugBash1/providers/Microsoft.DataProtection/Backupvaults/BugBashVaultForCCYv11/backupJobs/43252662-1b43-44fd-a856-0055665cb097",

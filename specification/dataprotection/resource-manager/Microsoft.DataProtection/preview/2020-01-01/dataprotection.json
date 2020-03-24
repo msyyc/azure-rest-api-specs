@@ -1666,10 +1666,6 @@
           "readOnly":true,
           "type":"array"
         },
-        "etag":{
-          "description":"ETag of the job",
-          "type":"string"
-        },
         "extendedInfo":{
           "$ref":"#/definitions/JobExtendedInfo",
           "description":"Extended Information about the job",
@@ -1754,7 +1750,6 @@
         "dataSourceSetName",
         "dataSourceName",
         "progressEnabled",
-        "etag",
         "sourceSubscriptionID",
         "dataSourceLocation",
         "startTime",

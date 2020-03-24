@@ -31,7 +31,6 @@
           "isUserTriggered": false,
           "supportedActions": [],
           "duration": "00:00:00",
-          "etag":"W/\"datetime'2020-03-19T08%3A51%3A57.3879098Z'\"",
           "dataSourceLocation":"centraluseuap",
           "extendedInfo": {
             "subTasks": [
