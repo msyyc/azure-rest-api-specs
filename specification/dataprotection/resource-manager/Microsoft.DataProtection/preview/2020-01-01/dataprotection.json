@@ -2711,31 +2711,6 @@
       },
       "type":"object"
     },
-    "Error":{
-      "description":"Error object",
-      "properties":{
-        "code":{
-          "type":"string"
-        },
-        "details":{
-          "items":{
-            "$ref":"#/definitions/Error"
-          },
-          "type":"array"
-        },
-        "innerError":{
-          "$ref":"#/definitions/InnerError"
-        },
-        "message":{
-          "type":"string"
-        },
-        "target":{
-          "type":"string"
-        }
-      },
-      "title":"Error",
-      "type":"object"
-    },
     "ImmediateCopyOption":{
       "allOf":[
         {
