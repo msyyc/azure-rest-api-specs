@@ -313,7 +313,7 @@
           }
         },
         "x-ms-long-running-operation":true
-		  },
+      },
       "delete":{
         "tags":[
           "BackupVaults"
@@ -396,8 +396,8 @@
               "$ref":"#/definitions/BackupVaultResource"
             }
           },
-          "202": {
-            "description": "Accepted"
+          "202":{
+            "description":"Accepted"
           },
           "default":{
             "description":"Error response describing why the operation failed.",
@@ -414,44 +414,44 @@
         }
       }
     },
-    "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DataProtection/backupVaults/{vaultName}/operationResults/{operationId}": {
-      "get": {
-        "tags": [
+    "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DataProtection/backupVaults/{vaultName}/operationResults/{operationId}":{
+      "get":{
+        "tags":[
           "Resources"
         ],
-        "operationId": "DppGetOperationResultPatch",
-        "produces": [
+        "operationId":"DppGetOperationResultPatch",
+        "produces":[
           "application/json"
         ],
-        "parameters": [
+        "parameters":[
           {
-            "$ref": "#/parameters/ApiVersion"
+            "$ref":"#/parameters/ApiVersion"
           },
           {
-            "$ref": "#/parameters/VaultName"
+            "$ref":"#/parameters/VaultName"
           },
           {
-            "$ref": "#/parameters/ResourceGroupName"
+            "$ref":"#/parameters/ResourceGroupName"
           },
           {
-            "$ref": "#/parameters/SubscriptionId"
+            "$ref":"#/parameters/SubscriptionId"
           },
           {
-            "name": "operationId",
-            "in": "path",
-            "required": true,
-            "type": "string"
+            "name":"operationId",
+            "in":"path",
+            "required":true,
+            "type":"string"
           }
         ],
-        "responses": {
-          "200": {
-            "description": "OK",
-            "schema": {
-              "$ref": "#/definitions/BackupVaultResource"
+        "responses":{
+          "200":{
+            "description":"OK",
+            "schema":{
+              "$ref":"#/definitions/BackupVaultResource"
             }
           },
-          "202": {
-            "description": "Accepted"
+          "202":{
+            "description":"Accepted"
           },
           "default":{
             "description":"Error response describing why the operation failed.",
@@ -460,7 +460,7 @@
             }
           }
         },
-		"x-ms-examples":{
+        "x-ms-examples":{
           "GetOperationResult Patch":{
             "$ref":"./examples/VaultCRUD/GetOperationResultPatch.json"
           }
@@ -1407,6 +1407,100 @@
           }
         }
       }
+    },
+    "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DataProtection/backupVaults/{vaultName}/backupJobs":{
+      "get":{
+        "tags":[
+          "AzureBackupJobs"
+        ],
+        "description":"Returns list of jobs belonging to a backup vault",
+        "operationId":"Jobs_List",
+        "produces":[
+          "application/json"
+        ],
+        "parameters":[
+          {
+            "$ref":"#/parameters/SubscriptionId"
+          },
+          {
+            "$ref":"#/parameters/ResourceGroupName"
+          },
+          {
+            "$ref":"#/parameters/VaultName"
+          }
+        ],
+        "responses":{
+          "200":{
+            "description":"OK",
+            "schema":{
+              "$ref":"#/definitions/AzureBackupJobResourceList"
+            }
+          },
+          "default":{
+            "description":"Error response describing why the operation failed.",
+            "schema":{
+              "$ref":"#/definitions/CloudError"
+            }
+          }
+        },
+        "x-ms-pageable":{
+          "nextLinkName":"nextLink"
+        },
+        "x-ms-examples":{
+          "Get Jobs":{
+            "$ref":"./examples/JobCRUD/ListJobs.json"
+          }
+        }
+      }
+    },
+    "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DataProtection/backupVaults/{vaultName}/backupJobs/{jobId}":{
+      "get":{
+        "tags":[
+          "AzureBackupJob"
+        ],
+        "description":"Gets a job with id in a backup vault",
+        "operationId":"Job_Get",
+        "produces":[
+          "application/json"
+        ],
+        "parameters":[
+          {
+            "$ref":"#/parameters/SubscriptionId"
+          },
+          {
+            "$ref":"#/parameters/ResourceGroupName"
+          },
+          {
+            "$ref":"#/parameters/VaultName"
+          },
+          {
+            "name":"jobId",
+            "description":"The Job ID. This is a GUID-formatted string (e.g. 00000000-0000-0000-0000-000000000000).",
+            "in":"path",
+            "required":true,
+            "type":"string"
+          }
+        ],
+        "responses":{
+          "200":{
+            "description":"OK",
+            "schema":{
+              "$ref":"#/definitions/AzureBackupJobResource"
+            }
+          },
+          "default":{
+            "description":"Error response describing why the operation failed.",
+            "schema":{
+              "$ref":"#/definitions/CloudError"
+            }
+          }
+        },
+        "x-ms-examples":{
+          "Get Job":{
+            "$ref":"./examples/JobCRUD/GetJob.json"
+          }
+        }
+      }
     }
   },
   "definitions":{
@@ -1516,6 +1610,192 @@
       "type":"object",
       "x-ms-discriminator-value":"AzureBackupDiscreteRecoveryPoint"
     },
+    "AzureBackupJob":{
+      "description":"AzureBackup Job Class",
+      "properties":{
+        "activityID":{
+          "description":"Job Activity Id",
+          "type":"string"
+        },
+        "backupInstanceFriendlyName":{
+          "description":"Name of the Backup Instance",
+          "type":"string"
+        },
+        "backupInstanceId":{
+          "description":"ARM ID of the Backup Instance",
+          "readOnly":true,
+          "type":"string"
+        },
+        "dataSourceId":{
+          "description":"ARM ID of the DataSource",
+          "type":"string"
+        },
+        "dataSourceLocation":{
+          "description":"Location of the DataSource",
+          "type":"string"
+        },
+        "dataSourceName":{
+          "description":"User Friendly Name of the DataSource",
+          "type":"string"
+        },
+        "dataSourceSetName":{
+          "description":"Data Source Set Name of the DataSource",
+          "type":"string"
+        },
+        "dataSourceType":{
+          "description":"Type of DataSource",
+          "type":"string"
+        },
+        "duration":{
+          "description":"Total run time of the job.",
+          "format":"duration",
+          "readOnly":true,
+          "type":"string"
+        },
+        "endTime":{
+          "description":"EndTime of the job(in UTC)",
+          "format":"date-time",
+          "readOnly":true,
+          "type":"string"
+        },
+        "errorDetails":{
+          "description":"A List, detatiling the errors related to the job",
+          "items":{
+            "$ref":"#/definitions/UserFacingError"
+          },
+          "readOnly":true,
+          "type":"array"
+        },
+        "extendedInfo":{
+          "$ref":"#/definitions/JobExtendedInfo",
+          "description":"Extended Information about the job",
+          "readOnly":true
+        },
+        "isUserTriggered":{
+          "description":"Indicated that whether the job is adhoc(true) or scheduled(false)",
+          "type":"boolean"
+        },
+        "operation":{
+          "description":"It indicates the type of Job i.e. Backup:full/log/diff ;Restore:ALR/OLR; Retention:Backup/Archive ; Management:ConfigureProtection/UnConfigure",
+          "type":"string"
+        },
+        "operationCategory":{
+          "description":"It indicates the type of Job i.e. Backup/Restore/Retention/Management",
+          "type":"string"
+        },
+        "policyId":{
+          "description":"ARM ID of the policy",
+          "readOnly":true,
+          "type":"string"
+        },
+        "policyName":{
+          "description":"Name of the policy",
+          "readOnly":true,
+          "type":"string"
+        },
+        "progressEnabled":{
+          "description":"Indicated whether progress is enabled for the job",
+          "type":"boolean"
+        },
+        "progressUrl":{
+          "description":"Url which contains job's progress",
+          "readOnly":true,
+          "type":"string"
+        },
+        "restoreType":{
+          "description":"It indicates the sub type of operation i.e. in case of Restore it can be ALR/OLR",
+          "readOnly":true,
+          "type":"string"
+        },
+        "sourceResourceGroup":{
+          "description":"Name of the Datasource's Resource Group",
+          "type":"string"
+        },
+        "sourceSubscriptionID":{
+          "description":"SubscriptionId corresponding to the DataSource",
+          "type":"string"
+        },
+        "startTime":{
+          "description":"StartTime of the job(in UTC)",
+          "format":"date-time",
+          "type":"string"
+        },
+        "status":{
+          "description":"Status of the job like InProgress/Success/Failed/Cancelled/SuccessWithWarning",
+          "type":"string"
+        },
+        "subscriptionId":{
+          "description":"Subscription Id of the corresponding backup vault",
+          "type":"string"
+        },
+        "supportedActions":{
+          "description":"List of supported actions",
+          "items":{
+            "type":"string"
+          },
+          "type":"array"
+        },
+        "vaultName":{
+          "description":"Name of the vault",
+          "type":"string"
+        }
+      },
+      "required":[
+        "activityID",
+        "subscriptionId",
+        "dataSourceId",
+        "vaultName",
+        "backupInstanceFriendlyName",
+        "sourceResourceGroup",
+        "dataSourceSetName",
+        "dataSourceName",
+        "progressEnabled",
+        "sourceSubscriptionID",
+        "dataSourceLocation",
+        "startTime",
+        "dataSourceType",
+        "operationCategory",
+        "operation",
+        "status",
+        "isUserTriggered",
+        "supportedActions"
+      ],
+      "type":"object"
+    },
+    "AzureBackupJobResource":{
+      "allOf":[
+        {
+          "$ref":"#/definitions/DppResource"
+        }
+      ],
+      "description":"AzureBackup Job Resource Class",
+      "properties":{
+        "properties":{
+          "$ref":"#/definitions/AzureBackupJob",
+          "description":"AzureBackupJobResource properties",
+          "type":"object"
+        }
+      },
+      "type":"object"
+    },
+    "AzureBackupJobResourceList":{
+      "allOf":[
+        {
+          "$ref":"#/definitions/DppResourceList"
+        }
+      ],
+      "description":"List of AzureBackup Job resources",
+      "properties":{
+        "value":{
+          "description":"List of resources.",
+          "items":{
+            "$ref":"#/definitions/AzureBackupJobResource"
+          },
+          "type":"array"
+        }
+      },
+      "type":"object"
+    },
     "AzureBackupParameters":{
       "allOf":[
         {
@@ -1579,9 +1859,9 @@
       "description":"Azure backup recoveryPoint resource",
       "properties":{
         "properties":{
-		  "x-ms-client-flatten": true,
           "$ref":"#/definitions/AzureBackupRecoveryPoint",
-          "description":"AzureBackupRecoveryPointResource properties"
+          "description":"AzureBackupRecoveryPointResource properties",
+          "x-ms-client-flatten":true
         }
       },
       "title":"AzureBackupRecoveryPointResource"
@@ -1607,7 +1887,7 @@
     },
     "AzureBackupRestoreRequest":{
       "description":"Azure backup restore request",
-	  "discriminator":"objectType",
+      "discriminator":"objectType",
       "properties":{
         "objectType":{
           "type":"string"
@@ -1631,9 +1911,9 @@
         }
       },
       "required":[
+        "objectType",
         "restoreTargetInfo",
-        "sourceDataStoreType",
-        "objectType"
+        "sourceDataStoreType"
       ],
       "title":"AzureBackupRestoreRequest",
       "type":"object"
@@ -1753,9 +2033,9 @@
       "description":"BackupInstance Resource",
       "properties":{
         "properties":{
-		  "x-ms-client-flatten": true,
           "$ref":"#/definitions/BackupInstance",
-          "description":"BackupInstanceResource properties"
+          "description":"BackupInstanceResource properties",
+          "x-ms-client-flatten":true
         }
       },
       "title":"BackupInstanceResource"
@@ -1874,9 +2154,9 @@
       "description":"Backup Vault Resource",
       "properties":{
         "properties":{
-		  "x-ms-client-flatten": true,
           "$ref":"#/definitions/BackupVault",
-          "description":"BackupVaultResource properties"
+          "description":"BackupVaultResource properties",
+          "x-ms-client-flatten":true
         }
       },
       "title":"BackupVault Resource"
@@ -1931,9 +2211,9 @@
       "description":"BaseBackupPolicy resource",
       "properties":{
         "properties":{
-		  "x-ms-client-flatten": true,
           "$ref":"#/definitions/BaseBackupPolicy",
-          "description":"BaseBackupPolicyResource properties"
+          "description":"BaseBackupPolicyResource properties",
+          "x-ms-client-flatten":true
         }
       },
       "title":"BaseBackupPolicyResource"
@@ -2110,9 +2390,9 @@
           "type":"string"
         },
         "properties":{
-		  "x-ms-client-flatten": true,
           "$ref":"#/definitions/ClientDiscoveryForProperties",
-          "description":"Properties for the given operation."
+          "description":"Properties for the given operation.",
+          "x-ms-client-flatten":true
         }
       },
       "title":"ClientDiscoveryValueForSingleApi",
@@ -2474,6 +2754,89 @@
       "title":"InnerError",
       "type":"object"
     },
+    "JobExtendedInfo":{
+      "description":"Extended Information about the job",
+      "properties":{
+        "additionalDetails":{
+          "additionalProperties":{
+            "readOnly":true,
+            "type":"string"
+          },
+          "description":"Job's Additional Details"
+        },
+        "backupInstanceState":{
+          "description":"State of the Backup Instance",
+          "readOnly":true,
+          "type":"string"
+        },
+        "dataTransferedInBytes":{
+          "description":"Number of bytes transfered",
+          "format":"double",
+          "readOnly":true,
+          "type":"number"
+        },
+        "recoveryDestination":{
+          "description":"Destination where restore is done",
+          "readOnly":true,
+          "type":"string"
+        },
+        "sourceRecoverPoint":{
+          "$ref":"#/definitions/RestoreJobRecoveryPointDetails",
+          "description":"Details of the Source Recovery Point",
+          "readOnly":true
+        },
+        "subTasks":{
+          "description":"List of Sub Tasks of the job",
+          "items":{
+            "$ref":"#/definitions/JobSubTask"
+          },
+          "readOnly":true,
+          "type":"array"
+        },
+        "targetRecoverPoint":{
+          "$ref":"#/definitions/RestoreJobRecoveryPointDetails",
+          "description":"Details of the Target Recovery Point",
+          "readOnly":true
+        }
+      },
+      "type":"object"
+    },
+    "JobSubTask":{
+      "description":"Details of Job's Sub Task",
+      "properties":{
+        "additionalDetails":{
+          "additionalProperties":{
+            "readOnly":true,
+            "type":"string"
+          },
+          "description":"Sub Tasks's additional details"
+        },
+        "taskId":{
+          "description":"Task Id of the Sub Task",
+          "format":"int32",
+          "type":"integer"
+        },
+        "taskName":{
+          "description":"Name of the Sub Task",
+          "type":"string"
+        },
+        "taskProgress":{
+          "description":"Progress of the Sub Task",
+          "readOnly":true,
+          "type":"string"
+        },
+        "taskStatus":{
+          "description":"Status of the Sub Task",
+          "type":"string"
+        }
+      },
+      "required":[
+        "taskId",
+        "taskName",
+        "taskStatus"
+      ],
+      "type":"object"
+    },
     "OperationExtendedInfo":{
       "description":"Operation Extended Info",
       "properties":{
@@ -2523,9 +2886,9 @@
           "type":"string"
         },
         "properties":{
-		  "x-ms-client-flatten": true,
           "$ref":"#/definitions/OperationExtendedInfo",
-          "description":"End time of the operation"
+          "description":"End time of the operation",
+          "x-ms-client-flatten":true
         },
         "startTime":{
           "description":"Start time of the operation",
@@ -2629,6 +2992,18 @@
         }
       },
       "title":"RecoveryPointDataStoreDetails",
+      "type":"object"
+    },
+    "RestoreJobRecoveryPointDetails":{
+      "properties":{
+        "recoveryPointID":{
+          "type":"string"
+        },
+        "recoveryPointTime":{
+          "format":"date-time",
+          "type":"string"
+        }
+      },
       "type":"object"
     },
     "RestoreTargetInfo":{
