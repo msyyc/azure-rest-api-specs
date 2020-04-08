@@ -2402,7 +2402,7 @@
       "description":"An error response from Azure Backuup.",
       "properties":{
         "error":{
-          "$ref":"#/definitions/Error"
+          "$ref":"#/definitions/DppODataError"
         }
       },
       "title":"CloudError",
@@ -2610,6 +2610,24 @@
       "title":"DppIdentityDetails",
       "type":"object"
     },
+    "DppODataError":{
+      "description":"This is the OData v4 error format.\r\nAny service defined error object will be set in InnerError field.",
+      "type":"object",
+      "properties":{
+        "code":{
+          "description":"Unique code for this error.",
+          "type":"string"
+        },
+        "message":{
+          "description":"Localised error message.",
+          "type":"string"
+        },
+        "innerError":{
+          "$ref":"#/definitions/UserFacingError",
+          "description":"Service defined error object."
+        }
+      }
+    },
     "DppResource":{
       "description":"Resource class",
       "properties":{
@@ -2691,31 +2709,6 @@
           "type":"string"
         }
       },
-      "type":"object"
-    },
-    "Error":{
-      "description":"Error object",
-      "properties":{
-        "code":{
-          "type":"string"
-        },
-        "details":{
-          "items":{
-            "$ref":"#/definitions/Error"
-          },
-          "type":"array"
-        },
-        "innerError":{
-          "$ref":"#/definitions/InnerError"
-        },
-        "message":{
-          "type":"string"
-        },
-        "target":{
-          "type":"string"
-        }
-      },
-      "title":"Error",
       "type":"object"
     },
     "ImmediateCopyOption":{
@@ -2874,7 +2867,7 @@
           "type":"string"
         },
         "error":{
-          "$ref":"#/definitions/UserFacingError",
+          "$ref":"#/definitions/DppODataError",
           "description":"Required if status == failed or status == canceled. This is the OData v4 error format, used by the RPC and will go into the v2.2 Azure REST API guidelines.\r\nThe full set of optional properties (e.g. inner errors / details) can be found in the \"Error Response\" section."
         },
         "id":{
