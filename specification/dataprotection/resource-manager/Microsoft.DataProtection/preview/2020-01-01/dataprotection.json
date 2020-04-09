@@ -2694,29 +2694,56 @@
       "type":"object"
     },
     "Error":{
-      "description":"Error object",
-      "properties":{
-        "code":{
-          "type":"string"
+      "properties": {
+        "code": {
+          "readOnly": true,
+          "type": "string",
+          "description": "The error code."
         },
-        "details":{
-          "items":{
-            "$ref":"#/definitions/Error"
+        "message": {
+          "readOnly": true,
+          "type": "string",
+          "description": "The error message."
+        },
+        "target": {
+          "readOnly": true,
+          "type": "string",
+          "description": "The error target."
+        },
+        "details": {
+          "readOnly": true,
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/ErrorResponse"
           },
-          "type":"array"
+          "description": "The error details."
         },
-        "innerError":{
-          "$ref":"#/definitions/InnerError"
-        },
-        "message":{
-          "type":"string"
-        },
-        "target":{
-          "type":"string"
+        "additionalInfo": {
+          "readOnly": true,
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/ErrorAdditionalInfo"
+          },
+          "description": "The error additional info."
         }
       },
-      "title":"Error",
-      "type":"object"
+	  
+      "description": "The resource management error response."
+    },
+	"ErrorAdditionalInfo": {
+      "properties": {
+        "type": {
+          "readOnly": true,
+          "type": "string",
+          "description": "The additional info type."
+        },
+        "info": {
+          "readOnly": true,
+          "type": "object",
+          "description": "The additional info."
+        }
+      },
+      "description": "The resource management error additional info."
     },
     "ImmediateCopyOption":{
       "allOf":[
