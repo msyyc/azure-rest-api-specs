@@ -2712,7 +2712,7 @@
 		"details":{
 		  "description":"The error details.",
 		  "items":{
-			"$ref":"#/definitions/ErrorResponse"
+			"$ref":"#/definitions/Error"
 		  },
 		  "readOnly":true,
 		  "type":"array"
