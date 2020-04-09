@@ -2694,57 +2694,56 @@
       "type":"object"
     },
     "Error":{
-      "properties": {
-        "code": {
-          "readOnly": true,
-          "type": "string",
-          "description": "The error code."
-        },
-        "message": {
-          "readOnly": true,
-          "type": "string",
-          "description": "The error message."
-        },
-        "target": {
-          "readOnly": true,
-          "type": "string",
-          "description": "The error target."
-        },
-        "details": {
-          "readOnly": true,
-          "type": "array",
-          "items": {
-            "$ref": "#/definitions/ErrorResponse"
-          },
-          "description": "The error details."
-        },
-        "additionalInfo": {
-          "readOnly": true,
-          "type": "array",
-          "items": {
-            "$ref": "#/definitions/ErrorAdditionalInfo"
-          },
-          "description": "The error additional info."
-        }
-      },
-	  
-      "description": "The resource management error response."
-    },
+	  "description":"The resource management error response.",
+	  "properties":{
+		"additionalInfo":{
+		  "description":"The error additional info.",
+		  "items":{
+			"$ref":"#/definitions/ErrorAdditionalInfo"
+		  },
+		  "readOnly":true,
+		  "type":"array"
+		},
+		"code":{
+		  "description":"The error code.",
+		  "readOnly":true,
+		  "type":"string"
+		},
+		"details":{
+		  "description":"The error details.",
+		  "items":{
+			"$ref":"#/definitions/ErrorResponse"
+		  },
+		  "readOnly":true,
+		  "type":"array"
+		},
+		"message":{
+		  "description":"The error message.",
+		  "readOnly":true,
+		  "type":"string"
+		},
+		"target":{
+		  "description":"The error target.",
+		  "readOnly":true,
+		  "type":"string"
+		}
+	  }
+	},
 	"ErrorAdditionalInfo": {
-      "properties": {
-        "type": {
-          "readOnly": true,
-          "type": "string",
-          "description": "The additional info type."
-        },
-        "info": {
-          "readOnly": true,
-          "type": "object",
-          "description": "The additional info."
-        }
-      },
-      "description": "The resource management error additional info."
-    },
+	  "description":"The resource management error additional info.",
+	  "properties":{
+		"info":{
+		  "description":"The additional info.",
+		  "readOnly":true,
+		  "type":"object"
+		},
+		"type":{
+		  "description":"The additional info type.",
+		  "readOnly":true,
+		  "type":"string"
+		}
+	  }
+	},
     "ImmediateCopyOption":{
       "allOf":[
         {
