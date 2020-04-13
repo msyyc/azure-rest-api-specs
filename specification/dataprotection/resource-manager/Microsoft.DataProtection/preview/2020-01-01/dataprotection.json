@@ -2900,7 +2900,7 @@
           "type":"string"
         },
         "error":{
-          "$ref":"#/definitions/UserFacingError",
+          "$ref":"#/definitions/Error",
           "description":"Required if status == failed or status == canceled. This is the OData v4 error format, used by the RPC and will go into the v2.2 Azure REST API guidelines.\r\nThe full set of optional properties (e.g. inner errors / details) can be found in the \"Error Response\" section."
         },
         "id":{
