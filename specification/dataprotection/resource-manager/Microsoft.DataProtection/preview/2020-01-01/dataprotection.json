@@ -1254,6 +1254,82 @@
         }
       }
     },
+	"/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DataProtection/backupVaults/{vaultName}/backupInstances/{backupInstanceName}/rehydrate": {
+	  "post": {
+		"description": "rehydrate recovery point for restore for a BackupInstance",
+		"operationId": "BackupInstances_TriggerRehydrate",
+		"parameters": [
+		  {
+			"$ref": "#/parameters/ApiVersion"
+		  },
+		  {
+			"$ref": "#/parameters/ResourceGroupName"
+		  },
+		  {
+			"$ref": "#/parameters/SubscriptionId"
+		  },
+		  {
+			"$ref": "#/parameters/VaultName"
+		  },
+		  {
+			"description": "Request body for operation",
+			"in": "body",
+			"name": "parameters",
+			"required": true,
+			"schema": {
+			  "$ref": "#/definitions/AzureBackupRehydrationRequest"
+			}
+		  },
+		  {
+			"in": "path",
+			"name": "backupInstanceName",
+			"required": true,
+			"type": "string"
+		  }
+		],
+		"produces": [
+		  "application/json"
+		],
+		"responses": {
+		  "202": {
+			"description": "The operation will be completed asynchronously.",
+			"headers": {
+			  "Location": {
+				"description": "The URL of the resource used to check the status of the asynchronous operation.",
+				"type": "string"
+			  },
+			  "Azure-AsyncOperation": {
+				"description": "The URL of the resource used to check the status of the asynchronous operation.",
+				"type": "string"
+			  },
+			  "Retry-After": {
+				"description": "Suggested delay to check the status of the asynchronous operation. The value is an integer that represents the seconds.",
+				"type": "integer",
+				"format": "int32"
+			  }
+			}
+		  },
+          "204":{
+            "description":"NoContent"
+          },
+		  "default": {
+			"description": "Error response describing why the operation failed.",
+			"schema": {
+			  "$ref": "#/definitions/CloudError"
+			}
+		  }
+		},
+		"tags": [
+		  "BackupInstances"
+		],
+		"x-ms-examples": {
+		  "Trigger Rehydrate": {
+			"$ref": "./examples/BackupInstanceOperations/TriggerRehydrate.json"
+		  }
+		},
+		"x-ms-long-running-operation": true
+	  }
+	},
     "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DataProtection/backupVaults/{vaultName}/backupInstances/{backupInstanceName}/restore":{
       "post":{
         "tags":[
@@ -1326,7 +1402,10 @@
         "x-ms-long-running-operation":true,
         "x-ms-examples":{
           "Trigger Restore":{
-            "$ref":"./examples/BackupInstanceOperations/TriggerRestore.json"
+			"$ref":"./examples/BackupInstanceOperations/TriggerRestore.json"
+		  },
+		  "Trigger Restore With Rehydration":{
+			"$ref":"./examples/BackupInstanceOperations/TriggerRestoreWithRehydration.json"
           }
         }
       }
@@ -1710,6 +1789,12 @@
         },
         "recoveryPointType":{
           "type":"string"
+        },
+        "retentionTagName": {
+          "type": "string"
+        },
+        "retentionTagVersion": {
+          "type": "string"
         }
       },
       "required":[
@@ -1994,6 +2079,29 @@
       "title":"AzureBackupRecoveryPointResourceList",
       "type":"object"
     },
+    "AzureBackupRehydrationRequest": {
+      "description": "Azure Backup Rehydrate Request",
+      "properties": {
+        "recoveryPointId": {
+          "description": "Id of the recovery point to be recovered",
+          "type": "string"
+        },
+        "rehydrationPriority": {
+          "description": "Priority to be used for rehydration. Values High or Standard",
+          "$ref": "#/definitions/RehydrationPriority"
+        },
+        "rehydrationRetentionDuration": {
+          "description": "Retention duration in ISO 8601 format i.e P10D .",
+          "type": "string"
+        }
+      },
+      "required": [
+        "recoveryPointId",
+        "rehydrationRetentionDuration"
+      ],
+      "title": "AzureBackupRehydrationRequest",
+      "type": "object"
+    },
     "AzureBackupRestoreRequest":{
       "description":"Azure backup restore request",
       "discriminator":"objectType",
@@ -2027,6 +2135,31 @@
       "title":"AzureBackupRestoreRequest",
       "type":"object"
     },
+	"AzureBackupRestoreWithRehydrationRequest": {
+	"allOf": [
+			{
+				"$ref": "#/definitions/AzureBackupRecoveryPointBasedRestoreRequest"
+			}
+		],
+		"description": "AzureBackup Restore with Rehydration Request",
+		"properties": {
+			"rehydrationPriority": {
+			"description": "Priority to be used for rehydration. Values High or Standard",
+			"$ref":"#/definitions/RehydrationPriority"
+			},
+			"rehydrationRetentionDuration": {
+				"description": "Retention duration in ISO 8601 format i.e P10D .",
+				"type": "string"
+			}
+		},
+		"required": [
+			"rehydrationPriority",
+			"rehydrationRetentionDuration"
+		],
+		"title": "AzureBackupRestoreWithRehydrationRequest",
+		"type": "object",
+		"x-ms-discriminator-value": "AzureBackupRestoreWithRehydrationRequest"
+		},
     "AzureBackupRule":{
       "allOf":[
         {
@@ -2516,6 +2649,20 @@
       },
       "title":"CloudError",
       "x-ms-external":true
+    },
+	"CopyOnExpiryOption":{
+      "allOf":[
+        {
+          "$ref":"#/definitions/CopyOption"
+        }
+      ],
+      "description":"Copy on Expiry Option",
+      "required":[
+        "objectType"
+      ],
+      "title":"CopyOnExpiryOption",
+      "type":"object",
+      "x-ms-discriminator-value":"CopyOnExpiryOption"
     },
     "CopyOption":{
       "description":"Options to copy",
@@ -3151,11 +3298,44 @@
         },
         "visible":{
           "type":"boolean"
+        },
+        "rehydrationExpiryTime": {
+		  "format":"date-time",
+          "type": "string",
+          "readOnly": true
+        },
+        "rehydrationStatus": {
+          "readOnly": true,
+		  "enum":[
+            "CREATE_IN_PROGRESS",
+            "COMPLETED",
+            "DELETE_IN_PROGRESS",
+            "DELETED",
+            "FAILED"
+          ],
+          "type":"string",
+          "x-ms-enum":{
+            "modelAsString":true,
+            "name":"RehydrationStatus"
+          }
         }
       },
       "title":"RecoveryPointDataStoreDetails",
       "type":"object"
     },
+	"RehydrationPriority": {
+	  "description": "Priority to be used for rehydration. Values High or Standard",
+	  "enum":[
+		"Invalid",
+        "High",
+        "Standard"
+		],
+	  "type":"string",
+	  "x-ms-enum":{
+		  "modelAsString":true,
+		  "name":"RehydrationPriority"
+	  }
+	},
     "RestoreJobRecoveryPointDetails":{
       "properties":{
         "recoveryPointID":{

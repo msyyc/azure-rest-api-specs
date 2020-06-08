@@ -6,8 +6,10 @@
     "api-version": "2020-01-01-alpha",
 	"backupInstanceName": "testInstance1",
     "parameters": { 
-	  "objectType": "AzureBackupRecoveryPointBasedRestoreRequest", 
+	  "objectType": "AzureBackupRestoreWithRehydrationRequest", 
 	  "recoveryPointId": "hardcodedRP", 
+	  "rehydrationRetentionDuration": "7D",
+	  "rehydrationPriority": "High",
 	  "sourceDataStoreType":  "VaultStore",
 	  "restoreTargetInfo": {
 		  "objectType": "restoreTargetInfo",
@@ -42,6 +44,6 @@
         "Retry-After": "60"
       }
     },
-    "204": {}
+	"204": {}
   }
 }
