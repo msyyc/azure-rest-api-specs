@@ -3774,7 +3774,7 @@
           "type": "string"
         },
         "recoveryOption": {
-          "description": "RecoveryOption",
+          "description": "Recovery Option",
           "enum": [
             "FailIfExists"
           ],
