@@ -1698,12 +1698,15 @@
           }
         },
         "x-ms-long-running-operation": true,
-        "x-ms-examples": {
-          "Trigger Restore": {
-            "$ref": "./examples/BackupInstanceOperations/TriggerRestore.json"
+        "x-ms-examples":{
+          "Trigger Restore":{
+            "$ref":"./examples/BackupInstanceOperations/TriggerRestore.json"
           },
-          "Trigger Restore With Rehydration": {
-            "$ref": "./examples/BackupInstanceOperations/TriggerRestoreWithRehydration.json"
+          "Trigger Restore As Files":{
+            "$ref":"./examples/BackupInstanceOperations/TriggerRestoreAsFiles.json"
+          },
+          "Trigger Restore With Rehydration":{
+            "$ref":"./examples/BackupInstanceOperations/TriggerRestoreWithRehydration.json"
           }
         }
       }
@@ -2408,7 +2411,7 @@
           "type": "string"
         },
         "restoreTargetInfo": {
-          "$ref": "#/definitions/RestoreTargetInfo",
+          "$ref": "#/definitions/RestoreTargetInfoBase",
           "description": "Gets or sets the restore target information."
         },
         "sourceDataStoreType": {
@@ -3706,6 +3709,26 @@
         }
       }
     },
+    "RestoreFilesTargetInfo": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/RestoreTargetInfoBase"
+        }
+      ],
+      "description": "Class encapsulating restore as files target parameters",
+      "properties": {
+        "targetDetails": {
+          "$ref": "#/definitions/TargetDetails",
+          "description": "Destination of RestoreAsFiles operation, when destination is not a datasource"
+        }
+      },
+      "required": [
+        "recoveryOption",
+        "targetDetails"
+      ],
+      "type": "object",
+      "x-ms-discriminator-value": "RestoreFilesTargetInfo"
+    },
     "RestoreJobRecoveryPointDetails": {
       "properties": {
         "recoveryPointID": {
@@ -3719,22 +3742,39 @@
       "type": "object"
     },
     "RestoreTargetInfo": {
-      "description": "Restore target info",
+      "allOf": [
+        {
+          "$ref": "#/definitions/RestoreTargetInfoBase"
+        }
+      ],
+      "description": "Class encapsulating restore target parameters",
       "properties": {
-        "dataSourceInfo": {
+        "datasourceInfo": {
           "$ref": "#/definitions/Datasource",
           "description": "Information of target DS"
         },
-        "dataSourceSetInfo": {
+        "datasourceSetInfo": {
           "$ref": "#/definitions/DatasourceSet",
           "description": "Information of target DS Set"
-        },
+        }
+      },
+      "required": [
+        "datasourceInfo",
+        "recoveryOption"
+      ],
+      "type": "object",
+      "x-ms-discriminator-value": "RestoreTargetInfo"
+    },
+    "RestoreTargetInfoBase": {
+      "description": "Base class common to RestoreTargetInfo and RestoreFilesTargetInfo",
+      "discriminator": "objectType",
+      "properties": {
         "objectType": {
           "description": "Type of Datasource object, used to initialize the right inherited type",
           "type": "string"
         },
         "recoveryOption": {
-          "description": "Type of Datasource object, used to initialize the right inherited type",
+          "description": "Recovery Option",
           "enum": [
             "FailIfExists"
           ],
@@ -3750,10 +3790,9 @@
         }
       },
       "required": [
-        "dataSourceInfo",
+        "objectType",
         "recoveryOption"
       ],
-      "title": "RestoreTargetInfo",
       "type": "object"
     },
     "RetentionTag": {
@@ -4023,6 +4062,38 @@
         "dataStore"
       ],
       "title": "TargetCopySetting",
+      "type": "object"
+    },
+    "TargetDetails": {
+      "description": "Class encapsulating target details, used where the destination is not a datasource",
+      "properties": {
+        "filePrefix": {
+          "description": "Restore operation may create multiple files inside location pointed by Url\r\nBelow will be the common prefix for all of them",
+          "type": "string"
+        },
+        "restoreTargetLocationType": {
+          "description": "Denotes the target location where the data will be restored,\r\nstring value for the enum {Microsoft.Internal.AzureBackup.DataProtection.Common.Interface.RestoreTargetLocationType}",
+          "enum": [
+            "Invalid",
+            "AzureBlobs",
+            "AzureFiles"
+          ],
+          "type": "string",
+          "x-ms-enum": {
+            "name": "RestoreTargetLocationType",
+            "modelAsString": true
+          }
+        },
+        "url": {
+          "description": "Url denoting the restore destination. It can point to container / file share etc",
+          "type": "string"
+        }
+      },
+      "required": [
+        "filePrefix",
+        "restoreTargetLocationType",
+        "url"
+      ],
       "type": "object"
     },
     "TriggerBackupRequest": {

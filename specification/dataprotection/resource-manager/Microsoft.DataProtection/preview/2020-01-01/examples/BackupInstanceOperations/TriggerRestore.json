@@ -4,34 +4,34 @@
     "resourceGroupName": "000pikumar",
     "vaultName": "PratikPrivatePreviewVault1",
     "api-version": "2020-01-01-alpha",
-	"backupInstanceName": "testInstance1",
+    "backupInstanceName": "testInstance1",
     "parameters": { 
-	  "objectType": "AzureBackupRecoveryPointBasedRestoreRequest", 
-	  "recoveryPointId": "hardcodedRP", 
-	  "sourceDataStoreType":  "VaultStore",
-	  "restoreTargetInfo": {
-		  "objectType": "restoreTargetInfo",
-		  "recoveryOption": "FailIfExists",
-		  "dataSourceSetInfo": {
-			"objectType": "DatasourceSet",
-			"resourceID": "/subscriptions/f75d8d8b-6735-4697-82e1-1a7a3ff0d5d4/resourceGroups/viveksipgtest/providers/Microsoft.DBforPostgreSQL/servers/viveksipgtest",
-			"resourceName": "viveksipgtest",
-			"resourceType": "Microsoft.DBforPostgreSQL/servers",
-			"resourceUri": "",
-			"resourceLocation": "",
-			"datasourceType": "OssDB"
-		  },
-		  "dataSourceInfo": {
-			"objectType": "Datasource",
-			"resourceID": "/subscriptions/f75d8d8b-6735-4697-82e1-1a7a3ff0d5d4/resourceGroups/viveksipgtest/providers/Microsoft.DBforPostgreSQL/servers/viveksipgtest/databases/testdb",
-			"resourceName": "testdb",
-			"resourceType": "Microsoft.DBforPostgreSQL/servers/databases",
-			"resourceUri": "",
-			"resourceLocation": "",
-			"datasourceType": "OssDB"
-		  },
-		  "restoreLocation": "southeastasia"
-	  }
+      "objectType": "AzureBackupRecoveryPointBasedRestoreRequest", 
+      "recoveryPointId": "hardcodedRP", 
+      "sourceDataStoreType":  "VaultStore",
+      "restoreTargetInfo": {
+          "objectType": "RestoreTargetInfo",
+          "recoveryOption": "FailIfExists",
+          "datasourceSetInfo": {
+            "objectType": "DatasourceSet",
+            "resourceID": "/subscriptions/f75d8d8b-6735-4697-82e1-1a7a3ff0d5d4/resourceGroups/viveksipgtest/providers/Microsoft.DBforPostgreSQL/servers/viveksipgtest",
+            "resourceName": "viveksipgtest",
+            "resourceType": "Microsoft.DBforPostgreSQL/servers",
+            "resourceUri": "",
+            "resourceLocation": "",
+            "datasourceType": "OssDB"
+          },
+          "datasourceInfo": {
+            "objectType": "Datasource",
+            "resourceID": "/subscriptions/f75d8d8b-6735-4697-82e1-1a7a3ff0d5d4/resourceGroups/viveksipgtest/providers/Microsoft.DBforPostgreSQL/servers/viveksipgtest/databases/testdb",
+            "resourceName": "testdb",
+            "resourceType": "Microsoft.DBforPostgreSQL/servers/databases",
+            "resourceUri": "",
+            "resourceLocation": "",
+            "datasourceType": "OssDB"
+          },
+          "restoreLocation": "southeastasia"
+      }
     }
   },
   "responses": {
