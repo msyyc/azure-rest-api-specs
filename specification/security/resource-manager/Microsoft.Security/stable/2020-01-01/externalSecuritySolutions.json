@@ -253,22 +253,7 @@
             "CEF",
             "ATA",
             "AAD"
-          ],
-          "x-ms-enum": {
-            "name": "ExternalSecuritySolutionKind",
-            "modelAsString": true,
-            "values": [
-              {
-                "value": "CEF"
-              },
-              {
-                "value": "ATA"
-              },
-              {
-                "value": "AAD"
-              }
-            ]
-          }
+          ]
         }
       }
     },
@@ -309,22 +294,7 @@
             "Discovered",
             "NotLicensed",
             "Connected"
-          ],
-          "x-ms-enum": {
-            "name": "AadConnectivityState",
-            "modelAsString": true,
-            "values": [
-              {
-                "value": "Discovered"
-              },
-              {
-                "value": "NotLicensed"
-              },
-              {
-                "value": "Connected"
-              }
-            ]
-          }
+          ]
         }
       }
     },
