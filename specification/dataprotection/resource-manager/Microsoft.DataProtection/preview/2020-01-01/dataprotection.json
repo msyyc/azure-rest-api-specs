@@ -1445,7 +1445,7 @@
           "RecoveryPoint"
         ],
         "description": "Returns a list of Recovery Points for a DataSource in a vault.",
-        "operationId": "List_RecoveryPoints",
+        "operationId": "RecoveryPoints_GetList",
         "produces": [
           "application/json"
         ],
@@ -1500,7 +1500,7 @@
           "RecoveryPoint"
         ],
         "description": "Gets a Recovery Point using recoveryPointId for a Datasource.",
-        "operationId": "Get_RecoveryPoint",
+        "operationId": "RecoveryPoint_Get",
         "produces": [
           "application/json"
         ],
