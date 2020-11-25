@@ -108,7 +108,7 @@
           "GetOperationResult"
         ],
         "description": "Gets the operation result for a resource",
-        "operationId": "GetOperationResult",
+        "operationId": "OperationResult_Get",
         "produces": [
           "application/json"
         ],
@@ -151,7 +151,7 @@
     "/subscriptions/{subscriptionId}/providers/Microsoft.DataProtection/locations/{location}/operationStatus/{operationId}": {
       "get": {
         "tags": [
-          "DppOperationStatus"
+          "OperationStatus"
         ],
         "summary": "Gets the operation status for a resource.",
         "operationId": "GetOperationStatus",
@@ -461,7 +461,7 @@
         "tags": [
           "Resources"
         ],
-        "operationId": "DppGetOperationResultPatch",
+        "operationId": "GetOperationResultPatch",
         "produces": [
           "application/json"
         ],
@@ -1894,7 +1894,7 @@
           "AzureBackupJob"
         ],
         "description": "Triggers export of jobs and returns an OperationID to track.",
-        "operationId": "AzureBackupJob_ExportJobs",
+        "operationId": "ExportJobs_Trigger",
         "produces": [
           "application/json"
         ],
@@ -1951,7 +1951,7 @@
           "AzureBackupJob"
         ],
         "description": "Gets the operation result of operation triggered by Export Jobs API. If the operation is successful, then it also contains URL of a Blob and a SAS key to access the same. The blob contains exported jobs in JSON serialized format.",
-        "operationId": "GetExportJobsOperationResult",
+        "operationId": "ExportJobsOperationResult_Get",
         "produces": [
           "application/json"
         ],
