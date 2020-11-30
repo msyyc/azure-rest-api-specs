@@ -2297,7 +2297,7 @@
       },
       "type": "object"
     },
-    "AzureBackupParameters": {
+    "AzureBackupParams": {
       "allOf": [
         {
           "$ref": "#/definitions/BackupParameters"
@@ -2314,9 +2314,9 @@
         "backupType",
         "objectType"
       ],
-      "title": "AzureBackupParameters",
+      "title": "AzureBackupParams",
       "type": "object",
-      "x-ms-discriminator-value": "AzureBackupParameters"
+      "x-ms-discriminator-value": "AzureBackupParams"
     },
     "AzureBackupRecoveryPoint": {
       "description": "Azure backup recoveryPoint",
