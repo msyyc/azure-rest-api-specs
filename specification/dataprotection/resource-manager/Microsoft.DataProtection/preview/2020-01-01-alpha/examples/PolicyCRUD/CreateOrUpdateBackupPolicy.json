@@ -11,7 +11,7 @@
           {
             "backupParameters": {
               "backupType": "Full",
-              "objectType": "AzureBackupParameters"
+              "objectType": "AzureBackupParams"
             },
             "trigger": {
               "schedule": {
@@ -108,7 +108,7 @@
             {
               "backupParameters": {
                 "backupType": "Full",
-                "objectType": "AzureBackupParameters"
+                "objectType": "AzureBackupParams"
               },
               "trigger": {
                 "schedule": {

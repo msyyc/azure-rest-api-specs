@@ -1,7 +1,7 @@
 {
   "swagger": "2.0",
   "info": {
-    "version": "2020-01-01",
+    "version": "2020-01-01-alpha",
     "title": "DataProtectionBackupClient",
     "x-ms-code-generation-settings": {
       "internalConstructors": false
@@ -108,7 +108,7 @@
           "GetOperationResult"
         ],
         "description": "Gets the operation result for a resource",
-        "operationId": "GetOperationResult",
+        "operationId": "OperationResult_Get",
         "produces": [
           "application/json"
         ],
@@ -151,7 +151,7 @@
     "/subscriptions/{subscriptionId}/providers/Microsoft.DataProtection/locations/{location}/operationStatus/{operationId}": {
       "get": {
         "tags": [
-          "DppOperationStatus"
+          "OperationStatus"
         ],
         "summary": "Gets the operation status for a resource.",
         "operationId": "GetOperationStatus",
@@ -461,7 +461,7 @@
         "tags": [
           "Resources"
         ],
-        "operationId": "DppGetOperationResultPatch",
+        "operationId": "GetOperationResultPatch",
         "produces": [
           "application/json"
         ],
@@ -1445,7 +1445,7 @@
           "RecoveryPoint"
         ],
         "description": "Returns a list of Recovery Points for a DataSource in a vault.",
-        "operationId": "RecoveryPoint_GetAzureBackupRecoveryPointsInVault",
+        "operationId": "RecoveryPoints_GetList",
         "produces": [
           "application/json"
         ],
@@ -1800,6 +1800,9 @@
         ],
         "parameters": [
           {
+            "$ref": "#/parameters/ApiVersion"
+          },
+          {
             "$ref": "#/parameters/SubscriptionId"
           },
           {
@@ -1845,6 +1848,9 @@
         ],
         "parameters": [
           {
+            "$ref": "#/parameters/ApiVersion"
+          },
+          {
             "$ref": "#/parameters/SubscriptionId"
           },
           {
@@ -1888,7 +1894,7 @@
           "AzureBackupJob"
         ],
         "description": "Triggers export of jobs and returns an OperationID to track.",
-        "operationId": "AzureBackupJob_ExportJobs",
+        "operationId": "ExportJobs_Trigger",
         "produces": [
           "application/json"
         ],
@@ -1945,7 +1951,7 @@
           "AzureBackupJob"
         ],
         "description": "Gets the operation result of operation triggered by Export Jobs API. If the operation is successful, then it also contains URL of a Blob and a SAS key to access the same. The blob contains exported jobs in JSON serialized format.",
-        "operationId": "AzureBackupJob_GetExportJobsOperationResult",
+        "operationId": "ExportJobsOperationResult_Get",
         "produces": [
           "application/json"
         ],
@@ -2291,7 +2297,7 @@
       },
       "type": "object"
     },
-    "AzureBackupParameters": {
+    "AzureBackupParams": {
       "allOf": [
         {
           "$ref": "#/definitions/BackupParameters"
@@ -2308,9 +2314,9 @@
         "backupType",
         "objectType"
       ],
-      "title": "AzureBackupParameters",
+      "title": "AzureBackupParams",
       "type": "object",
-      "x-ms-discriminator-value": "AzureBackupParameters"
+      "x-ms-discriminator-value": "AzureBackupParams"
     },
     "AzureBackupRecoveryPoint": {
       "description": "Azure backup recoveryPoint",
