@@ -18,1984 +18,303 @@
     "application/json"
   ],
   "paths": {
-    "/subscriptions/{subscriptionId}/providers/Microsoft.DataProtection/backupVaults": {
-      "get": {
-        "tags": [
-          "BackupVaults"
-        ],
-        "description": "Returns resource collection belonging to a subscription.",
-        "operationId": "BackupVaults_GetResourcesInSubscription",
-        "produces": [
-          "application/json"
-        ],
-        "parameters": [
-          {
-            "$ref": "#/parameters/ApiVersion"
-          },
-          {
-            "$ref": "#/parameters/SubscriptionId"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK",
-            "schema": {
-              "$ref": "#/definitions/BackupVaultResourceList"
-            }
-          },
-          "default": {
-            "description": "Error response describing why the operation failed.",
-            "schema": {
-              "$ref": "#/definitions/CloudError"
-            }
-          }
-        },
-        "x-ms-pageable": {
-          "nextLinkName": "nextLink"
-        },
-        "x-ms-examples": {
-          "Get BackupVaults in Subscription": {
-            "$ref": "./examples/VaultCRUD/GetBackupVaultsInSubscription.json"
-          }
-        }
-      }
+    "/subscriptions/{subscriptionId}/providers/Microsoft.DataProtection/resourceOperationGateKeepers": {	
+      "get": {	
+        "tags": [	
+          "ResourceOperationGatekeepers"	
+        ],	
+        "summary": "Returns ResourceOperationGateKeepers collection belonging to a subscription.",	
+        "operationId": "ResourceOperationGatekeepers_GetResourcesInSubscription",	
+        "produces": [	
+          "application/json"	
+        ],	
+        "parameters": [	
+          {	
+            "$ref": "#/parameters/ApiVersion"	
+          },	
+          {	
+            "$ref": "#/parameters/SubscriptionId"	
+          }	
+        ],	
+        "responses": {	
+          "200": {	
+            "description": "OK",	
+            "schema": {	
+              "$ref": "#/definitions/ResourceOperationGateKeeperResourceList"	
+            }	
+          },	
+		  "default": {	
+            "description": "Error response describing why the operation failed.",	
+            "schema": {	
+              "$ref": "#/definitions/CloudError"	
+            }	
+          }	
+        },	
+        "x-ms-pageable": {	
+          "nextLinkName": "nextLink"	
+        },	
+        "x-ms-examples": {	
+          "Get ResourceOperationGatekeepers in Subscription": {	
+            "$ref": "./examples/ResourceOperationGatekeeperCRUD/GetResourceOperationGatekeepersInSubscription.json"	
+          }	
+        }	
+      }	
     },
-    "/subscriptions/{subscriptionId}/providers/Microsoft.DataProtection/resourceOperationGateKeepers": {
-      "get": {
-        "tags": [
-          "ResourceOperationGatekeepers"
-        ],
-        "summary": "Returns ResourceOperationGateKeepers collection belonging to a subscription.",
-        "operationId": "ResourceOperationGatekeepers_GetResourcesInSubscription",
-        "produces": [
-          "application/json"
-        ],
-        "parameters": [
-          {
-            "$ref": "#/parameters/ApiVersion"
-          },
-          {
-            "$ref": "#/parameters/SubscriptionId"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK",
-            "schema": {
-              "$ref": "#/definitions/ResourceOperationGateKeeperResourceList"
-            }
-          },
-		  "default": {
-            "description": "Error response describing why the operation failed.",
-            "schema": {
-              "$ref": "#/definitions/CloudError"
-            }
-          }
-        },
-        "x-ms-pageable": {
-          "nextLinkName": "nextLink"
-        },
-        "x-ms-examples": {
-          "Get ResourceOperationGatekeepers in Subscription": {
-            "$ref": "./examples/ResourceOperationGatekeeperCRUD/GetResourceOperationGatekeepersInSubscription.json"
-          }
-        }
-      }
+    "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DataProtection/resourceOperationGateKeepers": {	
+      "get": {	
+        "tags": [	
+          "ResourceOperationGatekeepers"	
+        ],	
+        "summary": "Returns ResourceOperationGateKeepers collection belonging to a ResourceGroup",	
+        "operationId": "ResourceOperationGatekeepers_GetResourcesInResourceGroup",	
+        "produces": [	
+          "application/json"	
+        ],	
+        "parameters": [	
+          {	
+            "$ref": "#/parameters/ApiVersion"	
+          },	
+          {	
+            "$ref": "#/parameters/ResourceGroupName"	
+          },	
+          {	
+            "$ref": "#/parameters/SubscriptionId"	
+          }	
+        ],	
+        "responses": {	
+          "200": {	
+            "description": "OK",	
+            "schema": {	
+              "$ref": "#/definitions/ResourceOperationGateKeeperResourceList"	
+            }	
+          },	
+		  "default": {	
+            "description": "Error response describing why the operation failed.",	
+            "schema": {	
+              "$ref": "#/definitions/CloudError"	
+            }	
+          }	
+        },	
+        "x-ms-pageable": {	
+          "nextLinkName": "nextLink"	
+        },	
+        "x-ms-examples": {	
+          "Get ResourceOperationGatekeepers in ResourceGroup": {	
+            "$ref": "./examples/ResourceOperationGatekeeperCRUD/GetResourceOperationGatekeepersInResourceGroup.json"	
+          }	
+        }	
+      }	
     },
-    "/subscriptions/{subscriptionId}/providers/Microsoft.DataProtection/locations/{location}/operationResults/{operationId}": {
-      "get": {
-        "tags": [
-          "GetOperationResult"
-        ],
-        "description": "Gets the operation result for a resource",
-        "operationId": "OperationResult_Get",
-        "produces": [
-          "application/json"
-        ],
-        "parameters": [
-          {
-            "$ref": "#/parameters/ApiVersion"
-          },
-          {
-            "$ref": "#/parameters/SubscriptionId"
-          },
-          {
-            "name": "operationId",
-            "in": "path",
-            "required": true,
-            "type": "string"
-          },
-          {
-            "name": "location",
-            "in": "path",
-            "required": true,
-            "type": "string"
-          }
-        ],
-        "responses": {
-          "202": {
-            "description": "Accepted"
-          },
-          "204": {
-            "description": "NoContent"
-          }
-        },
-        "summary": "Gets the operation status for a resource.",
-        "x-ms-examples": {
-          "Get OperationStatus": {
-            "$ref": "./examples/GetOperationResult.json"
-          }
-        }
-      }
-    },
-    "/subscriptions/{subscriptionId}/providers/Microsoft.DataProtection/locations/{location}/operationStatus/{operationId}": {
-      "get": {
-        "tags": [
-          "OperationStatus"
-        ],
-        "summary": "Gets the operation status for a resource.",
-        "operationId": "GetOperationStatus",
-        "produces": [
-          "application/json"
-        ],
-        "parameters": [
-          {
-            "$ref": "#/parameters/ApiVersion"
-          },
-          {
-            "$ref": "#/parameters/SubscriptionId"
-          },
-          {
-            "name": "location",
-            "in": "path",
-            "required": true,
-            "type": "string"
-          },
-          {
-            "name": "operationId",
-            "in": "path",
-            "required": true,
-            "type": "string"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK",
-            "schema": {
-              "$ref": "#/definitions/OperationResource"
-            }
-          },
-          "default": {
-            "description": "Error response describing why the operation failed.",
-            "schema": {
-              "$ref": "#/definitions/CloudError"
-            }
-          }
-        },
-        "x-ms-examples": {
-          "Get OperationStatus": {
-            "$ref": "./examples/GetOperationStatus.json"
-          }
-        }
-      }
-    },
-    "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DataProtection/backupVaults": {
-      "get": {
-        "tags": [
-          "BackupVaults"
-        ],
-        "description": "Returns resource collection belonging to a resource group.",
-        "operationId": "BackupVaults_GetResourcesInResourceGroup",
-        "produces": [
-          "application/json"
-        ],
-        "parameters": [
-          {
-            "$ref": "#/parameters/ApiVersion"
-          },
-          {
-            "$ref": "#/parameters/ResourceGroupName"
-          },
-          {
-            "$ref": "#/parameters/SubscriptionId"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK",
-            "schema": {
-              "$ref": "#/definitions/BackupVaultResourceList"
-            }
-          },
-          "default": {
-            "description": "Error response describing why the operation failed.",
-            "schema": {
-              "$ref": "#/definitions/CloudError"
-            }
-          }
-        },
-        "x-ms-pageable": {
-          "nextLinkName": "nextLink"
-        },
-        "x-ms-examples": {
-          "Get BackupVaults in ResourceGroup": {
-            "$ref": "./examples/VaultCRUD/GetBackupVaultsInResourceGroup.json"
-          }
-        }
-      }
-    },
-    "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DataProtection/backupVaults/{vaultName}": {
-      "get": {
-        "tags": [
-          "BackupVaults"
-        ],
-        "description": "Returns a resource belonging to a resource group.",
-        "operationId": "BackupVaults_Get",
-        "produces": [
-          "application/json"
-        ],
-        "parameters": [
-          {
-            "$ref": "#/parameters/ApiVersion"
-          },
-          {
-            "$ref": "#/parameters/VaultName"
-          },
-          {
-            "$ref": "#/parameters/ResourceGroupName"
-          },
-          {
-            "$ref": "#/parameters/SubscriptionId"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK",
-            "schema": {
-              "$ref": "#/definitions/BackupVaultResource"
-            }
-          },
-          "default": {
-            "description": "Error response describing why the operation failed.",
-            "schema": {
-              "$ref": "#/definitions/CloudError"
-            }
-          }
-        },
-        "x-ms-examples": {
-          "Get BackupVault": {
-            "$ref": "./examples/VaultCRUD/GetBackupVault.json"
-          },
-          "Get BackupVault With MSI": {
-            "$ref": "./examples/VaultCRUD/GetBackupVaultWithMSI.json"
-          }
-        }
-      },
-      "put": {
-        "tags": [
-          "BackupVaults"
-        ],
-        "description": "Creates or updates a BackupVault resource belonging to a resource group.",
-        "operationId": "BackupVaults_Put",
-        "consumes": [
-          "application/json"
-        ],
-        "produces": [
-          "application/json"
-        ],
-        "parameters": [
-          {
-            "$ref": "#/parameters/ApiVersion"
-          },
-          {
-            "$ref": "#/parameters/VaultName"
-          },
-          {
-            "$ref": "#/parameters/ResourceGroupName"
-          },
-          {
-            "$ref": "#/parameters/SubscriptionId"
-          },
-          {
-            "name": "parameters",
-            "in": "body",
-            "description": "Request body for operation",
-            "required": true,
-            "schema": {
-              "$ref": "#/definitions/BackupVaultResource"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK",
-            "schema": {
-              "$ref": "#/definitions/BackupVaultResource"
-            }
-          },
-          "201": {
-            "description": "Created",
-            "schema": {
-              "$ref": "#/definitions/BackupVaultResource"
-            }
-          },
-          "default": {
-            "description": "Error response describing why the operation failed.",
-            "schema": {
-              "$ref": "#/definitions/CloudError"
-            }
-          }
-        },
-        "x-ms-examples": {
-          "Create BackupVault": {
-            "$ref": "./examples/VaultCRUD/PutBackupVault.json"
-          },
-          "Create BackupVault With MSI": {
-            "$ref": "./examples/VaultCRUD/PutBackupVaultWithMSI.json"
-          }
-        },
-        "x-ms-long-running-operation": true
-      },
-      "delete": {
-        "tags": [
-          "BackupVaults"
-        ],
-        "description": "Deletes a BackupVault resource from the resource group.",
-        "operationId": "BackupVaults_Delete",
-        "produces": [
-          "application/json"
-        ],
-        "parameters": [
-          {
-            "$ref": "#/parameters/ApiVersion"
-          },
-          {
-            "$ref": "#/parameters/VaultName"
-          },
-          {
-            "$ref": "#/parameters/ResourceGroupName"
-          },
-          {
-            "$ref": "#/parameters/SubscriptionId"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK"
-          },
-          "204": {
-            "description": "NoContent"
-          },
-          "default": {
-            "description": "Error response describing why the operation failed.",
-            "schema": {
-              "$ref": "#/definitions/CloudError"
-            }
-          }
-        },
-        "x-ms-examples": {
-          "Delete BackupVault": {
-            "$ref": "./examples/VaultCRUD/DeleteBackupVault.json"
-          }
-        }
-      },
-      "patch": {
-        "tags": [
-          "BackupVaults"
-        ],
-        "description": "Updates a BackupVault resource belonging to a resource group. For example, updating tags for a resource.",
-        "operationId": "BackupVaults_Patch",
-        "produces": [
-          "application/json"
-        ],
-        "parameters": [
-          {
-            "$ref": "#/parameters/ApiVersion"
-          },
-          {
-            "$ref": "#/parameters/VaultName"
-          },
-          {
-            "$ref": "#/parameters/ResourceGroupName"
-          },
-          {
-            "$ref": "#/parameters/SubscriptionId"
-          },
-          {
-            "name": "parameters",
-            "in": "body",
-            "description": "Request body for operation",
-            "required": true,
-            "schema": {
-              "$ref": "#/definitions/PatchResourceRequestInput"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK",
-            "schema": {
-              "$ref": "#/definitions/BackupVaultResource"
-            }
-          },
-          "202": {
-            "description": "Accepted"
-          },
-          "default": {
-            "description": "Error response describing why the operation failed.",
-            "schema": {
-              "$ref": "#/definitions/CloudError"
-            }
-          }
-        },
-        "x-ms-long-running-operation": true,
-        "x-ms-examples": {
-          "Patch BackupVault": {
-            "$ref": "./examples/VaultCRUD/PatchBackupVault.json"
-          }
-        }
-      }
-    },
-    "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DataProtection/backupVaults/{vaultName}/operationResults/{operationId}": {
-      "get": {
-        "tags": [
-          "Resources"
-        ],
-        "operationId": "GetOperationResultPatch",
-        "produces": [
-          "application/json"
-        ],
-        "parameters": [
-          {
-            "$ref": "#/parameters/ApiVersion"
-          },
-          {
-            "$ref": "#/parameters/VaultName"
-          },
-          {
-            "$ref": "#/parameters/ResourceGroupName"
-          },
-          {
-            "$ref": "#/parameters/SubscriptionId"
-          },
-          {
-            "name": "operationId",
-            "in": "path",
-            "required": true,
-            "type": "string"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK",
-            "schema": {
-              "$ref": "#/definitions/BackupVaultResource"
-            }
-          },
-          "202": {
-            "description": "Accepted"
-          },
-          "default": {
-            "description": "Error response describing why the operation failed.",
-            "schema": {
-              "$ref": "#/definitions/CloudError"
-            }
-          }
-        },
-        "x-ms-examples": {
-          "GetOperationResult Patch": {
-            "$ref": "./examples/VaultCRUD/GetOperationResultPatch.json"
-          }
-        }
-      }
-    },
-    "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DataProtection/resourceOperationGateKeepers": {
-      "get": {
-        "tags": [
-          "ResourceOperationGatekeepers"
-        ],
-        "summary": "Returns ResourceOperationGateKeepers collection belonging to a ResourceGroup",
-        "operationId": "ResourceOperationGatekeepers_GetResourcesInResourceGroup",
-        "produces": [
-          "application/json"
-        ],
-        "parameters": [
-          {
-            "$ref": "#/parameters/ApiVersion"
-          },
-          {
-            "$ref": "#/parameters/ResourceGroupName"
-          },
-          {
-            "$ref": "#/parameters/SubscriptionId"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK",
-            "schema": {
-              "$ref": "#/definitions/ResourceOperationGateKeeperResourceList"
-            }
-          },
-		  "default": {
-            "description": "Error response describing why the operation failed.",
-            "schema": {
-              "$ref": "#/definitions/CloudError"
-            }
-          }
-        },
-        "x-ms-pageable": {
-          "nextLinkName": "nextLink"
-        },
-        "x-ms-examples": {
-          "Get ResourceOperationGatekeepers in ResourceGroup": {
-            "$ref": "./examples/ResourceOperationGatekeeperCRUD/GetResourceOperationGatekeepersInResourceGroup.json"
-          }
-        }
-      }
-    },
-    "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DataProtection/resourceOperationGateKeepers/{resourceOperationGateKeepersName}": {
-      "get": {
-        "tags": [
-          "ResourceOperationGatekeepers"
-        ],
-        "summary": "Returns a ResourceOperationGateKeeper belonging to a resource group.",
-        "operationId": "ResourceOperationGatekeepers_Get",
-        "produces": [
-          "application/json"
-        ],
-        "parameters": [
-          {
-            "$ref": "#/parameters/ApiVersion"
-          },
-          {
-            "$ref": "#/parameters/ResourceGroupName"
-          },
-          {
-            "$ref": "#/parameters/SubscriptionId"
-          },
-          {
-            "name": "resourceOperationGateKeepersName",
-            "in": "path",
-            "description": "The name of the ResourceOperationGateKeeper",
-            "required": true,
-            "type": "string"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK",
-            "schema": {
-              "$ref": "#/definitions/ResourceOperationGateKeeperResource"
-            }
-          },
-		  "default": {
-            "description": "Error response describing why the operation failed.",
-            "schema": {
-              "$ref": "#/definitions/CloudError"
-            }
-          }
-        },
-        "x-ms-examples": {
-          "Get ResourceOperationGatekeeper": {
-            "$ref": "./examples/ResourceOperationGatekeeperCRUD/GetResourceOperationGatekeeper.json"
-          }
-        }
-      },
-      "put": {
-        "tags": [
-          "ResourceOperationGatekeepers"
-        ],
-        "summary": "Creates or updates a ResourceOperationGatekeeper resource belonging to a resource group.",
-        "operationId": "ResourceOperationGatekeepers_Put",
-        "consumes": [
-          "application/json"
-        ],
-        "produces": [
-          "application/json"
-        ],
-        "parameters": [
-          {
-            "$ref": "#/parameters/ApiVersion"
-          },
-          {
-            "$ref": "#/parameters/ResourceGroupName"
-          },
-          {
-            "$ref": "#/parameters/SubscriptionId"
-          },
-          {
-            "name": "resourceOperationGateKeepersName",
-            "in": "path",
-            "description": "The name of ResourceOperationGatekeeper",
-            "required": true,
-            "type": "string"
-          },
-          {
-            "name": "parameters",
-            "in": "body",
-            "description": "Request body for operation",
-            "required": true,
-            "schema": {
-              "$ref": "#/definitions/ResourceOperationGateKeeperResource"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK",
-            "schema": {
-              "$ref": "#/definitions/ResourceOperationGateKeeperResource"
-            }
-          },
-		  "default": {
-            "description": "Error response describing why the operation failed.",
-            "schema": {
-              "$ref": "#/definitions/CloudError"
-            }
-          }
-        },
-        "x-ms-examples": {
-          "Create ResourceOperationGatekeeper": {
-            "$ref": "./examples/ResourceOperationGatekeeperCRUD/PutResourceOperationGatekeeper.json"
-          }
-        }
-      },
-      "delete": {
-        "tags": [
-          "ResourceOperationGatekeepers"
-        ],
-        "summary": "Deletes a ResourceOperationGateKeeper resource from the resource group.",
-        "operationId": "ResourceOperationGatekeepers_Delete",
-        "produces": [
-          "application/json"
-        ],
-        "parameters": [
-          {
-            "$ref": "#/parameters/ApiVersion"
-          },
-          {
-            "$ref": "#/parameters/ResourceGroupName"
-          },
-          {
-            "$ref": "#/parameters/SubscriptionId"
-          },
-          {
-            "name": "resourceOperationGateKeepersName",
-            "in": "path",
-            "description": "The name of ResourceOperationGatekeeper",
-            "required": true,
-            "type": "string"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK"
-          },
-          "204": {
-            "description": "NoContent"
-          },
-		  "default": {
-            "description": "Error response describing why the operation failed.",
-            "schema": {
-              "$ref": "#/definitions/CloudError"
-            }
-          }
-        },
-        "x-ms-examples": {
-          "Delete ResourceOperationGatekeeper": {
-            "$ref": "./examples/ResourceOperationGatekeeperCRUD/DeleteResourceOperationGatekeeper.json"
-          }
-        }
-      },
-      "patch": {
-        "tags": [
-          "ResourceOperationGatekeepers"
-        ],
-        "summary": "Updates a ResourceOperationGatekeeper resource belonging to a resource group. For example, updating tags for a resource.",
-        "operationId": "ResourceOperationGatekeepers_Patch",
-        "produces": [
-          "application/json"
-        ],
-        "parameters": [
-          {
-            "$ref": "#/parameters/ApiVersion"
-          },
-          {
-            "$ref": "#/parameters/ResourceGroupName"
-          },
-          {
-            "$ref": "#/parameters/SubscriptionId"
-          },
-          {
-            "name": "resourceOperationGateKeepersName",
-            "in": "path",
-            "description": "The name of ResourceOperationGatekeeper",
-            "required": true,
-            "type": "string"
-          },
-          {
-            "name": "parameters",
-            "in": "body",
-            "description": "Request body for operation",
-            "required": true,
-            "schema": {
-              "$ref": "#/definitions/PatchResourceRequestInput"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK",
-            "schema": {
-              "$ref": "#/definitions/ResourceOperationGateKeeperResource"
-            }
-          },
-          "default": {
-            "description": "Error response describing why the operation failed.",
-            "schema": {
-              "$ref": "#/definitions/CloudError"
-            }
-          }
-        },
-        "x-ms-examples": {
-          "Patch ResourceOperationGatekeeper": {
-            "$ref": "./examples/ResourceOperationGatekeeperCRUD/PatchResourceOperationGatekeeper.json"
-          }
-        }
-      }
-    },
-    "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DataProtection/locations/{location}/checkNameAvailability": {
-      "post": {
-        "tags": [
-          "BackupVaults"
-        ],
-        "summary": "API to check for resource name availability",
-        "operationId": "BackupVaults_CheckNameAvailability",
-        "produces": [
-          "application/json"
-        ],
-        "parameters": [
-          {
-            "$ref": "#/parameters/ApiVersion"
-          },
-          {
-            "$ref": "#/parameters/ResourceGroupName"
-          },
-          {
-            "$ref": "#/parameters/SubscriptionId"
-          },
-          {
-            "name": "location",
-            "in": "path",
-            "description": "The location in which uniqueness will be verified.",
-            "required": true,
-            "type": "string"
-          },
-          {
-            "name": "parameters",
-            "in": "body",
-            "description": "Check name availability request",
-            "required": true,
-            "schema": {
-              "$ref": "#/definitions/CheckNameAvailabilityRequest"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK",
-            "schema": {
-              "$ref": "#/definitions/CheckNameAvailabilityResult"
-            }
-          },
-          "default": {
-            "description": "Error response describing why the operation failed.",
-            "schema": {
-              "$ref": "#/definitions/CloudError"
-            }
-          }
-        },
-        "x-ms-examples": {
-          "Check BackupVaults name availability": {
-            "$ref": "./examples/VaultCRUD/CheckBackupVaultsNameAvailability.json"
-          }
-        }
-      }
-    },
-    "/providers/Microsoft.DataProtection/operations": {
-      "get": {
-        "tags": [
-          "Operations"
-        ],
-        "description": "Returns the list of available operations.",
-        "operationId": "Operations_List",
-        "parameters": [
-          {
-            "$ref": "#/parameters/ApiVersion"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK",
-            "schema": {
-              "$ref": "#/definitions/ClientDiscoveryResponse"
-            }
-          },
-          "default": {
-            "description": "Error response describing why the operation failed.",
-            "schema": {
-              "$ref": "#/definitions/CloudError"
-            }
-          }
-        },
-        "x-ms-pageable": {
-          "nextLinkName": "nextLink",
-          "itemName": "value"
-        }
-      }
-    },
-    "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DataProtection/backupVaults/{vaultName}/backupPolicies": {
-      "get": {
-        "tags": [
-          "BackupPolicies"
-        ],
-        "description": "Returns list of backup policies belonging to a backup vault",
-        "operationId": "BackupPolicies_List",
-        "produces": [
-          "application/json"
-        ],
-        "parameters": [
-          {
-            "$ref": "#/parameters/ApiVersion"
-          },
-          {
-            "$ref": "#/parameters/VaultName"
-          },
-          {
-            "$ref": "#/parameters/ResourceGroupName"
-          },
-          {
-            "$ref": "#/parameters/SubscriptionId"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK",
-            "schema": {
-              "$ref": "#/definitions/BaseBackupPolicyResourceList"
-            }
-          },
-          "default": {
-            "description": "Error response describing why the operation failed.",
-            "schema": {
-              "$ref": "#/definitions/CloudError"
-            }
-          }
-        },
-        "x-ms-pageable": {
-          "nextLinkName": "nextLink"
-        },
-        "x-ms-examples": {
-          "List BackupPolicy": {
-            "$ref": "./examples/PolicyCRUD/ListBackupPolicy.json"
-          }
-        }
-      }
-    },
-    "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DataProtection/backupVaults/{vaultName}/backupPolicies/{backupPolicyName}": {
-      "get": {
-        "tags": [
-          "BackupPolicies"
-        ],
-        "operationId": "BackupPolicies_Get",
-        "description": "Gets a backup policy belonging to a backup vault",
-        "produces": [
-          "application/json"
-        ],
-        "parameters": [
-          {
-            "$ref": "#/parameters/ApiVersion"
-          },
-          {
-            "$ref": "#/parameters/VaultName"
-          },
-          {
-            "$ref": "#/parameters/ResourceGroupName"
-          },
-          {
-            "$ref": "#/parameters/SubscriptionId"
-          },
-          {
-            "name": "backupPolicyName",
-            "in": "path",
-            "required": true,
-            "type": "string"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK",
-            "schema": {
-              "$ref": "#/definitions/BaseBackupPolicyResource"
-            }
-          },
-          "default": {
-            "description": "Error response describing why the operation failed.",
-            "schema": {
-              "$ref": "#/definitions/CloudError"
-            }
-          }
-        },
-        "summary": "Gets a backup policy belonging to a backup vault",
-        "x-ms-examples": {
-          "Get BackupPolicy": {
-            "$ref": "./examples/PolicyCRUD/GetBackupPolicy.json"
-          }
-        }
-      },
-      "put": {
-        "tags": [
-          "BackupPolicies"
-        ],
-        "operationId": "BackupPolicies_Put",
-        "summary": "Creates or Updates a backup policy belonging to a backup vault",
-        "produces": [
-          "application/json"
-        ],
-        "parameters": [
-          {
-            "$ref": "#/parameters/ApiVersion"
-          },
-          {
-            "$ref": "#/parameters/VaultName"
-          },
-          {
-            "$ref": "#/parameters/ResourceGroupName"
-          },
-          {
-            "$ref": "#/parameters/SubscriptionId"
-          },
-          {
-            "name": "backupPolicyName",
-            "in": "path",
-            "required": true,
-            "type": "string"
-          },
-          {
-            "name": "parameters",
-            "in": "body",
-            "description": "Request body for operation",
-            "required": true,
-            "schema": {
-              "$ref": "#/definitions/BaseBackupPolicyResource"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK",
-            "schema": {
-              "$ref": "#/definitions/BaseBackupPolicyResource"
-            }
-          },
-          "default": {
-            "description": "Error response describing why the operation failed.",
-            "schema": {
-              "$ref": "#/definitions/CloudError"
-            }
-          }
-        },
-        "x-ms-examples": {
-          "CreateOrUpdate BackupPolicy": {
-            "$ref": "./examples/PolicyCRUD/CreateOrUpdateBackupPolicy.json"
-          }
-        }
-      },
-      "delete": {
-        "tags": [
-          "BackupPolicies"
-        ],
-        "operationId": "BackupPolicies_Delete",
-        "summary": "Deletes a backup policy belonging to a backup vault",
-        "produces": [
-          "application/json"
-        ],
-        "parameters": [
-          {
-            "$ref": "#/parameters/ApiVersion"
-          },
-          {
-            "$ref": "#/parameters/VaultName"
-          },
-          {
-            "$ref": "#/parameters/ResourceGroupName"
-          },
-          {
-            "$ref": "#/parameters/SubscriptionId"
-          },
-          {
-            "name": "backupPolicyName",
-            "in": "path",
-            "required": true,
-            "type": "string"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK"
-          },
-          "204": {
-            "description": "NoContent"
-          },
-          "default": {
-            "description": "Error response describing why the operation failed.",
-            "schema": {
-              "$ref": "#/definitions/CloudError"
-            }
-          }
-        },
-        "x-ms-examples": {
-          "Delete BackupPolicy": {
-            "$ref": "./examples/PolicyCRUD/DeleteBackupPolicy.json"
-          }
-        }
-      }
-    },
-    "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DataProtection/backupVaults/{vaultName}/backupInstances": {
-      "get": {
-        "tags": [
-          "BackupInstances"
-        ],
-        "description": "Gets a backup instances belonging to a backup vault",
-        "operationId": "BackupInstances_GetBackupInstancesInVault",
-        "produces": [
-          "application/json"
-        ],
-        "parameters": [
-          {
-            "$ref": "#/parameters/ApiVersion"
-          },
-          {
-            "$ref": "#/parameters/VaultName"
-          },
-          {
-            "$ref": "#/parameters/ResourceGroupName"
-          },
-          {
-            "$ref": "#/parameters/SubscriptionId"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK",
-            "schema": {
-              "$ref": "#/definitions/BackupInstanceResourceList"
-            }
-          },
-          "default": {
-            "description": "Error response describing why the operation failed.",
-            "schema": {
-              "$ref": "#/definitions/CloudError"
-            }
-          }
-        },
-        "x-ms-pageable": {
-          "nextLinkName": "nextLink"
-        },
-        "x-ms-examples": {
-          "List BackupInstances in a Vault": {
-            "$ref": "./examples/BackupInstanceOperations/ListBackupInstances.json"
-          }
-        }
-      }
-    },
-    "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DataProtection/backupVaults/{vaultName}/backupInstances/{backupInstanceName}": {
-      "get": {
-        "tags": [
-          "BackupInstances"
-        ],
-        "description": "Gets a backup instance with name in a backup vault",
-        "operationId": "BackupInstances_Get",
-        "produces": [
-          "application/json"
-        ],
-        "parameters": [
-          {
-            "$ref": "#/parameters/ApiVersion"
-          },
-          {
-            "$ref": "#/parameters/VaultName"
-          },
-          {
-            "$ref": "#/parameters/ResourceGroupName"
-          },
-          {
-            "$ref": "#/parameters/SubscriptionId"
-          },
-          {
-            "name": "backupInstanceName",
-            "description": "The name of the backup instance",
-            "in": "path",
-            "required": true,
-            "type": "string"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK",
-            "schema": {
-              "$ref": "#/definitions/BackupInstanceResource"
-            }
-          },
-          "default": {
-            "description": "Error response describing why the operation failed.",
-            "schema": {
-              "$ref": "#/definitions/CloudError"
-            }
-          }
-        },
-        "x-ms-examples": {
-          "Get BackupInstance": {
-            "$ref": "./examples/BackupInstanceOperations/GetBackupInstance.json"
-          }
-        }
-      },
-      "put": {
-        "tags": [
-          "BackupInstances"
-        ],
-        "operationId": "BackupInstances_Put",
-        "produces": [
-          "application/json"
-        ],
-        "parameters": [
-          {
-            "$ref": "#/parameters/ApiVersion"
-          },
-          {
-            "$ref": "#/parameters/VaultName"
-          },
-          {
-            "$ref": "#/parameters/ResourceGroupName"
-          },
-          {
-            "$ref": "#/parameters/SubscriptionId"
-          },
-          {
-            "name": "backupInstanceName",
-            "description": "The name of the backup instance",
-            "in": "path",
-            "required": true,
-            "type": "string"
-          },
-          {
-            "name": "parameters",
-            "in": "body",
-            "description": "Request body for operation",
-            "required": true,
-            "schema": {
-              "$ref": "#/definitions/BackupInstanceResource"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK",
-            "schema": {
-              "$ref": "#/definitions/BackupInstanceResource"
-            }
-          },
-          "201": {
-            "description": "Created",
-            "schema": {
-              "$ref": "#/definitions/BackupInstanceResource"
-            }
-          },
-          "default": {
-            "description": "Error response describing why the operation failed.",
-            "schema": {
-              "$ref": "#/definitions/CloudError"
-            }
-          }
-        },
-        "x-ms-examples": {
-          "Create BackupInstance": {
-            "$ref": "./examples/BackupInstanceOperations/PutBackupInstance.json"
-          }
-        },
-        "x-ms-long-running-operation": true
-      },
-      "delete": {
-        "tags": [
-          "BackupInstances"
-        ],
-        "operationId": "BackupInstances_Delete",
-        "produces": [
-          "application/json"
-        ],
-        "parameters": [
-          {
-            "$ref": "#/parameters/ApiVersion"
-          },
-          {
-            "$ref": "#/parameters/VaultName"
-          },
-          {
-            "$ref": "#/parameters/ResourceGroupName"
-          },
-          {
-            "$ref": "#/parameters/SubscriptionId"
-          },
-          {
-            "name": "backupInstanceName",
-            "description": "The name of the backup instance",
-            "in": "path",
-            "required": true,
-            "type": "string"
-          }
-        ],
-        "responses": {
-          "202": {
-            "description": "The operation will be completed asynchronously.",
-            "headers": {
-              "Location": {
-                "description": "The URL of the resource used to check the status of the asynchronous operation.",
-                "type": "string"
-              },
-              "Azure-AsyncOperation": {
-                "description": "The URL of the resource used to check the status of the asynchronous operation.",
-                "type": "string"
-              },
-              "Retry-After": {
-                "description": "Suggested delay to check the status of the asynchronous operation. The value is an integer that represents the seconds.",
-                "type": "integer",
-                "format": "int32"
-              }
-            }
-          },
-          "204": {
-            "description": "NoContent"
-          },
-          "default": {
-            "description": "Error response describing why the operation failed.",
-            "schema": {
-              "$ref": "#/definitions/CloudError"
-            }
-          }
-        },
-        "x-ms-examples": {
-          "Delete BackupInstance": {
-            "$ref": "./examples/BackupInstanceOperations/DeleteBackupInstance.json"
-          }
-        },
-        "x-ms-long-running-operation": true
-      }
-    },
-    "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DataProtection/backupVaults/{vaultName}/backupInstances/{backupInstanceName}/backup": {
-      "post": {
-        "tags": [
-          "BackupInstances"
-        ],
-        "description": "Trigger adhoc backup ",
-        "operationId": "BackupInstances_AdhocBackup",
-        "produces": [
-          "application/json"
-        ],
-        "parameters": [
-          {
-            "$ref": "#/parameters/ApiVersion"
-          },
-          {
-            "$ref": "#/parameters/VaultName"
-          },
-          {
-            "$ref": "#/parameters/ResourceGroupName"
-          },
-          {
-            "$ref": "#/parameters/SubscriptionId"
-          },
-          {
-            "name": "backupInstanceName",
-            "description": "The name of the backup instance",
-            "in": "path",
-            "required": true,
-            "type": "string"
-          },
-          {
-            "name": "parameters",
-            "in": "body",
-            "description": "Request body for operation",
-            "required": true,
-            "schema": {
-              "$ref": "#/definitions/TriggerBackupRequest"
-            }
-          }
-        ],
-        "responses": {
-          "204": {
-            "description": "NoContent"
-          },
-          "202": {
-            "description": "The operation will be completed asynchronously.",
-            "headers": {
-              "Location": {
-                "description": "The URL of the resource used to check the status of the asynchronous operation.",
-                "type": "string"
-              },
-              "Azure-AsyncOperation": {
-                "description": "The URL of the resource used to check the status of the asynchronous operation.",
-                "type": "string"
-              },
-              "Retry-After": {
-                "description": "Suggested delay to check the status of the asynchronous operation. The value is an integer that represents the seconds.",
-                "type": "integer",
-                "format": "int32"
-              }
-            }
-          },
-          "default": {
-            "description": "Error response describing why the operation failed.",
-            "schema": {
-              "$ref": "#/definitions/CloudError"
-            }
-          }
-        },
-        "x-ms-examples": {
-          "Trigger Adhoc Backup": {
-            "$ref": "./examples/BackupInstanceOperations/TriggerBackup.json"
-          }
-        },
-        "x-ms-long-running-operation": true
-      }
-    },
-    "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DataProtection/backupVaults/{vaultName}/validateForBackup": {
-      "post": {
-        "tags": [
-          "BackupInstances"
-        ],
-        "description": "Validate whether adhoc backup will be successful or not",
-        "operationId": "BackupInstances_ValidateForBackup",
-        "produces": [
-          "application/json"
-        ],
-        "parameters": [
-          {
-            "$ref": "#/parameters/ApiVersion"
-          },
-          {
-            "$ref": "#/parameters/VaultName"
-          },
-          {
-            "$ref": "#/parameters/ResourceGroupName"
-          },
-          {
-            "$ref": "#/parameters/SubscriptionId"
-          },
-          {
-            "name": "parameters",
-            "in": "body",
-            "description": "Request body for operation",
-            "required": true,
-            "schema": {
-              "$ref": "#/definitions/ValidateForBackupRequest"
-            }
-          }
-        ],
-        "responses": {
-          "202": {
-            "description": "The operation will be completed asynchronously.",
-            "headers": {
-              "Location": {
-                "description": "The URL of the resource used to check the status of the asynchronous operation.",
-                "type": "string"
-              },
-              "Azure-AsyncOperation": {
-                "description": "The URL of the resource used to check the status of the asynchronous operation.",
-                "type": "string"
-              },
-              "Retry-After": {
-                "description": "Suggested delay to check the status of the asynchronous operation. The value is an integer that represents the seconds.",
-                "type": "integer",
-                "format": "int32"
-              }
-            }
-          },
-          "204": {
-            "description": "NoContent"
-          },
-          "default": {
-            "description": "Error response describing why the operation failed.",
-            "schema": {
-              "$ref": "#/definitions/CloudError"
-            }
-          }
-        },
-        "x-ms-examples": {
-          "Validate For Backup": {
-            "$ref": "./examples/BackupInstanceOperations/ValidateForBackup.json"
-          }
-        },
-        "x-ms-long-running-operation": true
-      }
-    },
-    "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DataProtection/backupVaults/{vaultName}/backupInstances/{backupInstanceName}/recoveryPoints": {
-      "get": {
-        "tags": [
-          "RecoveryPoint"
-        ],
-        "description": "Returns a list of Recovery Points for a DataSource in a vault.",
-        "operationId": "RecoveryPoints_GetList",
-        "produces": [
-          "application/json"
-        ],
-        "parameters": [
-          {
-            "$ref": "#/parameters/ApiVersion"
-          },
-          {
-            "$ref": "#/parameters/VaultName"
-          },
-          {
-            "$ref": "#/parameters/ResourceGroupName"
-          },
-          {
-            "$ref": "#/parameters/SubscriptionId"
-          },
-          {
-            "name": "backupInstanceName",
-            "description": "The name of the backup instance",
-            "in": "path",
-            "required": true,
-            "type": "string"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK",
-            "schema": {
-              "$ref": "#/definitions/AzureBackupRecoveryPointResourceList"
-            }
-          },
-          "default": {
-            "description": "Error response describing why the operation failed.",
-            "schema": {
-              "$ref": "#/definitions/CloudError"
-            }
-          }
-        },
-        "x-ms-pageable": {
-          "nextLinkName": "nextLink"
-        },
-        "x-ms-examples": {
-          "List Recovery Points in a Vault": {
-            "$ref": "./examples/BackupInstanceOperations/ListRecoveryPoints.json"
-          }
-        }
-      }
-    },
-    "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DataProtection/backupVaults/{vaultName}/backupInstances/{backupInstanceName}/recoveryPoints/{recoveryPointId}": {
-      "get": {
-        "tags": [
-          "RecoveryPoint"
-        ],
-        "description": "Gets a Recovery Point using recoveryPointId for a Datasource.",
-        "operationId": "RecoveryPoint_Get",
-        "produces": [
-          "application/json"
-        ],
-        "parameters": [
-          {
-            "$ref": "#/parameters/ApiVersion"
-          },
-          {
-            "$ref": "#/parameters/VaultName"
-          },
-          {
-            "$ref": "#/parameters/ResourceGroupName"
-          },
-          {
-            "$ref": "#/parameters/SubscriptionId"
-          },
-          {
-            "name": "backupInstanceName",
-            "description": "The name of the backup instance",
-            "in": "path",
-            "required": true,
-            "type": "string"
-          },
-          {
-            "name": "recoveryPointId",
-            "in": "path",
-            "required": true,
-            "type": "string"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK",
-            "schema": {
-              "$ref": "#/definitions/AzureBackupRecoveryPointResource"
-            }
-          },
-          "default": {
-            "description": "Error response describing why the operation failed.",
-            "schema": {
-              "$ref": "#/definitions/CloudError"
-            }
-          }
-        },
-        "x-ms-examples": {
-          "Get Recovery Point": {
-            "$ref": "./examples/BackupInstanceOperations/GetRecoveryPoint.json"
-          }
-        }
-      }
-    },
-    "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DataProtection/backupVaults/{vaultName}/backupInstances/{backupInstanceName}/rehydrate": {
-      "post": {
-        "description": "rehydrate recovery point for restore for a BackupInstance",
-        "operationId": "BackupInstances_TriggerRehydrate",
-        "parameters": [
-          {
-            "$ref": "#/parameters/ApiVersion"
-          },
-          {
-            "$ref": "#/parameters/ResourceGroupName"
-          },
-          {
-            "$ref": "#/parameters/SubscriptionId"
-          },
-          {
-            "$ref": "#/parameters/VaultName"
-          },
-          {
-            "description": "Request body for operation",
-            "in": "body",
-            "name": "parameters",
-            "required": true,
-            "schema": {
-              "$ref": "#/definitions/AzureBackupRehydrationRequest"
-            }
-          },
-          {
-            "in": "path",
-            "name": "backupInstanceName",
-            "required": true,
-            "type": "string"
-          }
-        ],
-        "produces": [
-          "application/json"
-        ],
-        "responses": {
-          "202": {
-            "description": "The operation will be completed asynchronously.",
-            "headers": {
-              "Location": {
-                "description": "The URL of the resource used to check the status of the asynchronous operation.",
-                "type": "string"
-              },
-              "Azure-AsyncOperation": {
-                "description": "The URL of the resource used to check the status of the asynchronous operation.",
-                "type": "string"
-              },
-              "Retry-After": {
-                "description": "Suggested delay to check the status of the asynchronous operation. The value is an integer that represents the seconds.",
-                "type": "integer",
-                "format": "int32"
-              }
-            }
-          },
-          "204": {
-            "description": "NoContent"
-          },
-          "default": {
-            "description": "Error response describing why the operation failed.",
-            "schema": {
-              "$ref": "#/definitions/CloudError"
-            }
-          }
-        },
-        "tags": [
-          "BackupInstances"
-        ],
-        "x-ms-examples": {
-          "Trigger Rehydrate": {
-            "$ref": "./examples/BackupInstanceOperations/TriggerRehydrate.json"
-          }
-        },
-        "x-ms-long-running-operation": true
-      }
-    },
-    "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DataProtection/backupVaults/{vaultName}/backupInstances/{backupInstanceName}/restore": {
-      "post": {
-        "tags": [
-          "BackupInstances"
-        ],
-        "description": "Triggers restore for a BackupInstance",
-        "operationId": "BackupInstances_TriggerRestore",
-        "produces": [
-          "application/json"
-        ],
-        "parameters": [
-          {
-            "$ref": "#/parameters/ApiVersion"
-          },
-          {
-            "$ref": "#/parameters/VaultName"
-          },
-          {
-            "$ref": "#/parameters/ResourceGroupName"
-          },
-          {
-            "$ref": "#/parameters/SubscriptionId"
-          },
-          {
-            "name": "backupInstanceName",
-            "description": "The name of the backup instance",
-            "in": "path",
-            "required": true,
-            "type": "string"
-          },
-          {
-            "name": "parameters",
-            "in": "body",
-            "description": "Request body for operation",
-            "required": true,
-            "schema": {
-              "$ref": "#/definitions/AzureBackupRestoreRequest"
-            }
-          }
-        ],
-        "responses": {
-          "202": {
-            "description": "The operation will be completed asynchronously.",
-            "headers": {
-              "Location": {
-                "description": "The URL of the resource used to check the status of the asynchronous operation.",
-                "type": "string"
-              },
-              "Azure-AsyncOperation": {
-                "description": "The URL of the resource used to check the status of the asynchronous operation.",
-                "type": "string"
-              },
-              "Retry-After": {
-                "description": "Suggested delay to check the status of the asynchronous operation. The value is an integer that represents the seconds.",
-                "type": "integer",
-                "format": "int32"
-              }
-            }
-          },
-          "204": {
-            "description": "NoContent"
-          },
-          "default": {
-            "description": "Error response describing why the operation failed.",
-            "schema": {
-              "$ref": "#/definitions/CloudError"
-            }
-          }
-        },
-        "x-ms-long-running-operation": true,
-        "x-ms-examples":{
-          "Trigger Restore":{
-            "$ref":"./examples/BackupInstanceOperations/TriggerRestore.json"
-          },
-          "Trigger Restore As Files":{
-            "$ref":"./examples/BackupInstanceOperations/TriggerRestoreAsFiles.json"
-          },
-          "Trigger Restore With Rehydration":{
-            "$ref":"./examples/BackupInstanceOperations/TriggerRestoreWithRehydration.json"
-          }
-        }
-      }
-    },
-    "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DataProtection/backupVaults/{vaultName}/backupInstances/{backupInstanceName}/validateRestore": {
-      "post": {
-        "tags": [
-          "BackupInstances"
-        ],
-        "description": "Validates if Restore can be triggered for a DataSource",
-        "operationId": "BackupInstances_ValidateRestore",
-        "produces": [
-          "application/json"
-        ],
-        "parameters": [
-          {
-            "$ref": "#/parameters/ApiVersion"
-          },
-          {
-            "$ref": "#/parameters/VaultName"
-          },
-          {
-            "$ref": "#/parameters/ResourceGroupName"
-          },
-          {
-            "$ref": "#/parameters/SubscriptionId"
-          },
-          {
-            "name": "backupInstanceName",
-            "description": "The name of the backup instance",
-            "in": "path",
-            "required": true,
-            "type": "string"
-          },
-          {
-            "name": "parameters",
-            "in": "body",
-            "description": "Request body for operation",
-            "required": true,
-            "schema": {
-              "$ref": "#/definitions/ValidateRestoreRequestObject"
-            }
-          }
-        ],
-        "responses": {
-          "202": {
-            "description": "The operation will be completed asynchronously.",
-            "headers": {
-              "Location": {
-                "description": "The URL of the resource used to check the status of the asynchronous operation.",
-                "type": "string"
-              },
-              "Azure-AsyncOperation": {
-                "description": "The URL of the resource used to check the status of the asynchronous operation.",
-                "type": "string"
-              },
-              "Retry-After": {
-                "description": "Suggested delay to check the status of the asynchronous operation. The value is an integer that represents the seconds.",
-                "type": "integer",
-                "format": "int32"
-              }
-            }
-          },
-          "204": {
-            "description": "NoContent"
-          },
-          "default": {
-            "description": "Error response describing why the operation failed.",
-            "schema": {
-              "$ref": "#/definitions/CloudError"
-            }
-          }
-        },
-        "x-ms-long-running-operation": true,
-        "x-ms-examples": {
-          "Validate Restore": {
-            "$ref": "./examples/BackupInstanceOperations/ValidateRestore.json"
-          }
-        }
-      }
-    },
-    "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DataProtection/backupVaults/{vaultName}/backupJobs": {
-      "get": {
-        "tags": [
-          "AzureBackupJobs"
-        ],
-        "description": "Returns list of jobs belonging to a backup vault",
-        "operationId": "Jobs_List",
-        "produces": [
-          "application/json"
-        ],
-        "parameters": [
-          {
-            "$ref": "#/parameters/ApiVersion"
-          },
-          {
-            "$ref": "#/parameters/SubscriptionId"
-          },
-          {
-            "$ref": "#/parameters/ResourceGroupName"
-          },
-          {
-            "$ref": "#/parameters/VaultName"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK",
-            "schema": {
-              "$ref": "#/definitions/AzureBackupJobResourceList"
-            }
-          },
-          "default": {
-            "description": "Error response describing why the operation failed.",
-            "schema": {
-              "$ref": "#/definitions/CloudError"
-            }
-          }
-        },
-        "x-ms-pageable": {
-          "nextLinkName": "nextLink"
-        },
-        "x-ms-examples": {
-          "Get Jobs": {
-            "$ref": "./examples/JobCRUD/ListJobs.json"
-          }
-        }
-      }
-    },
-    "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DataProtection/backupVaults/{vaultName}/backupJobs/{jobId}": {
-      "get": {
-        "tags": [
-          "AzureBackupJob"
-        ],
-        "description": "Gets a job with id in a backup vault",
-        "operationId": "Job_Get",
-        "produces": [
-          "application/json"
-        ],
-        "parameters": [
-          {
-            "$ref": "#/parameters/ApiVersion"
-          },
-          {
-            "$ref": "#/parameters/SubscriptionId"
-          },
-          {
-            "$ref": "#/parameters/ResourceGroupName"
-          },
-          {
-            "$ref": "#/parameters/VaultName"
-          },
-          {
-            "name": "jobId",
-            "description": "The Job ID. This is a GUID-formatted string (e.g. 00000000-0000-0000-0000-000000000000).",
-            "in": "path",
-            "required": true,
-            "type": "string"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK",
-            "schema": {
-              "$ref": "#/definitions/AzureBackupJobResource"
-            }
-          },
-          "default": {
-            "description": "Error response describing why the operation failed.",
-            "schema": {
-              "$ref": "#/definitions/CloudError"
-            }
-          }
-        },
-        "x-ms-examples": {
-          "Get Job": {
-            "$ref": "./examples/JobCRUD/GetJob.json"
-          }
-        }
-      }
-    },
-    "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DataProtection/backupVaults/{vaultName}/backupJobsExport": {
-      "post": {
-        "tags": [
-          "AzureBackupJob"
-        ],
-        "description": "Triggers export of jobs and returns an OperationID to track.",
-        "operationId": "ExportJobs_Trigger",
-        "produces": [
-          "application/json"
-        ],
-        "parameters": [
-          {
-            "$ref": "#/parameters/SubscriptionId"
-          },
-          {
-            "$ref": "#/parameters/ResourceGroupName"
-          },
-          {
-            "$ref": "#/parameters/VaultName"
-          }
-        ],
-        "responses": {
-          "202": {
-            "description": "Accepted",
-            "headers": {
-              "Location": {
-                "description": "The URL of the resource used to check the status of the asynchronous operation.",
-                "type": "string"
-              },
-              "Retry-After": {
-                "description": "Suggested delay to check the status of the asynchronous operation. The value is an integer that represents the seconds.",
-                "type": "integer",
-                "format": "int32"
-              }
-            }
-          },
-          "204": {
-            "description": "NoContent"
-          },
-          "default": {
-            "description": "Error response describing why the operation failed.",
-            "schema": {
-              "$ref": "#/definitions/CloudError"
-            }
-          }
-        },
-        "x-ms-long-running-operation": true,
-        "x-ms-long-running-operation-options": {
-          "final-state-via": "location"
-        },
-        "x-ms-examples": {
-          "Trigger Export Jobs": {
-            "$ref": "./examples/JobCRUD/TriggerExportJobs.json"
-          }
-        }
-      }
-    },
-    "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DataProtection/backupVaults/{vaultName}/backupJobs/operations/{operationId}": {
-      "get": {
-        "tags": [
-          "AzureBackupJob"
-        ],
-        "description": "Gets the operation result of operation triggered by Export Jobs API. If the operation is successful, then it also contains URL of a Blob and a SAS key to access the same. The blob contains exported jobs in JSON serialized format.",
-        "operationId": "ExportJobsOperationResult_Get",
-        "produces": [
-          "application/json"
-        ],
-        "parameters": [
-          {
-            "$ref": "#/parameters/SubscriptionId"
-          },
-          {
-            "$ref": "#/parameters/ResourceGroupName"
-          },
-          {
-            "$ref": "#/parameters/VaultName"
-          },
-          {
-            "name": "operationId",
-            "description": "OperationID which represents the export job.",
-            "in": "path",
-            "required": true,
-            "type": "string"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK",
-            "schema": {
-              "$ref": "#/definitions/ExportJobsResult"
-            }
-          },
-          "202": {
-            "description": "Accepted"
-          },
-          "default": {
-            "description": "Error response describing why the operation failed.",
-            "schema": {
-              "$ref": "#/definitions/CloudError"
-            }
-          }
-        },
-        "x-ms-examples": {
-          "Get Export Jobs Operation Result": {
-            "$ref": "./examples/JobCRUD/GetExportJobsOperationResult.json"
-          }
-        }
-      }
+    "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DataProtection/resourceOperationGateKeepers/{resourceOperationGateKeepersName}": {	
+      "get": {	
+        "tags": [	
+          "ResourceOperationGatekeepers"	
+        ],	
+        "summary": "Returns a ResourceOperationGateKeeper belonging to a resource group.",	
+        "operationId": "ResourceOperationGatekeepers_Get",	
+        "produces": [	
+          "application/json"	
+        ],	
+        "parameters": [	
+          {	
+            "$ref": "#/parameters/ApiVersion"	
+          },	
+          {	
+            "$ref": "#/parameters/ResourceGroupName"	
+          },	
+          {	
+            "$ref": "#/parameters/SubscriptionId"	
+          },	
+          {	
+            "name": "resourceOperationGateKeepersName",	
+            "in": "path",	
+            "description": "The name of the ResourceOperationGateKeeper",	
+            "required": true,	
+            "type": "string"	
+          }	
+        ],	
+        "responses": {	
+          "200": {	
+            "description": "OK",	
+            "schema": {	
+              "$ref": "#/definitions/ResourceOperationGateKeeperResource"	
+            }	
+          },	
+		  "default": {	
+            "description": "Error response describing why the operation failed.",	
+            "schema": {	
+              "$ref": "#/definitions/CloudError"	
+            }	
+          }	
+        },	
+        "x-ms-examples": {	
+          "Get ResourceOperationGatekeeper": {	
+            "$ref": "./examples/ResourceOperationGatekeeperCRUD/GetResourceOperationGatekeeper.json"	
+          }	
+        }	
+      },	
+      "put": {	
+        "tags": [	
+          "ResourceOperationGatekeepers"	
+        ],	
+        "summary": "Creates or updates a ResourceOperationGatekeeper resource belonging to a resource group.",	
+        "operationId": "ResourceOperationGatekeepers_Put",	
+        "consumes": [	
+          "application/json"	
+        ],	
+        "produces": [	
+          "application/json"	
+        ],	
+        "parameters": [	
+          {	
+            "$ref": "#/parameters/ApiVersion"	
+          },	
+          {	
+            "$ref": "#/parameters/ResourceGroupName"	
+          },	
+          {	
+            "$ref": "#/parameters/SubscriptionId"	
+          },	
+          {	
+            "name": "resourceOperationGateKeepersName",	
+            "in": "path",	
+            "description": "The name of ResourceOperationGatekeeper",	
+            "required": true,	
+            "type": "string"	
+          },	
+          {	
+            "name": "parameters",	
+            "in": "body",	
+            "description": "Request body for operation",	
+            "required": true,	
+            "schema": {	
+              "$ref": "#/definitions/ResourceOperationGateKeeperResource"	
+            }	
+          }	
+        ],	
+        "responses": {	
+          "200": {	
+            "description": "OK",	
+            "schema": {	
+              "$ref": "#/definitions/ResourceOperationGateKeeperResource"	
+            }	
+          },	
+		  "default": {	
+            "description": "Error response describing why the operation failed.",	
+            "schema": {	
+              "$ref": "#/definitions/CloudError"	
+            }	
+          }	
+        },	
+        "x-ms-examples": {	
+          "Create ResourceOperationGatekeeper": {	
+            "$ref": "./examples/ResourceOperationGatekeeperCRUD/PutResourceOperationGatekeeper.json"	
+          }	
+        }	
+      },	
+      "delete": {	
+        "tags": [	
+          "ResourceOperationGatekeepers"	
+        ],	
+        "summary": "Deletes a ResourceOperationGateKeeper resource from the resource group.",	
+        "operationId": "ResourceOperationGatekeepers_Delete",	
+        "produces": [	
+          "application/json"	
+        ],	
+        "parameters": [	
+          {	
+            "$ref": "#/parameters/ApiVersion"	
+          },	
+          {	
+            "$ref": "#/parameters/ResourceGroupName"	
+          },	
+          {	
+            "$ref": "#/parameters/SubscriptionId"	
+          },	
+          {	
+            "name": "resourceOperationGateKeepersName",	
+            "in": "path",	
+            "description": "The name of ResourceOperationGatekeeper",	
+            "required": true,	
+            "type": "string"	
+          }	
+        ],	
+        "responses": {	
+          "200": {	
+            "description": "OK"	
+          },	
+          "204": {	
+            "description": "NoContent"	
+          },	
+		  "default": {	
+            "description": "Error response describing why the operation failed.",	
+            "schema": {	
+              "$ref": "#/definitions/CloudError"	
+            }	
+          }	
+        },	
+        "x-ms-examples": {	
+          "Delete ResourceOperationGatekeeper": {	
+            "$ref": "./examples/ResourceOperationGatekeeperCRUD/DeleteResourceOperationGatekeeper.json"	
+          }	
+        }	
+      },	
+      "patch": {	
+        "tags": [	
+          "ResourceOperationGatekeepers"	
+        ],	
+        "summary": "Updates a ResourceOperationGatekeeper resource belonging to a resource group. For example, updating tags for a resource.",	
+        "operationId": "ResourceOperationGatekeepers_Patch",	
+        "produces": [	
+          "application/json"	
+        ],	
+        "parameters": [	
+          {	
+            "$ref": "#/parameters/ApiVersion"	
+          },	
+          {	
+            "$ref": "#/parameters/ResourceGroupName"	
+          },	
+          {	
+            "$ref": "#/parameters/SubscriptionId"	
+          },	
+          {	
+            "name": "resourceOperationGateKeepersName",	
+            "in": "path",	
+            "description": "The name of ResourceOperationGatekeeper",	
+            "required": true,	
+            "type": "string"	
+          },	
+          {	
+            "name": "parameters",	
+            "in": "body",	
+            "description": "Request body for operation",	
+            "required": true,	
+            "schema": {	
+              "$ref": "#/definitions/PatchResourceRequestInput"	
+            }	
+          }	
+        ],	
+        "responses": {	
+          "200": {	
+            "description": "OK",	
+            "schema": {	
+              "$ref": "#/definitions/ResourceOperationGateKeeperResource"	
+            }	
+          },	
+          "default": {	
+            "description": "Error response describing why the operation failed.",	
+            "schema": {	
+              "$ref": "#/definitions/CloudError"	
+            }	
+          }	
+        },	
+        "x-ms-examples": {	
+          "Patch ResourceOperationGatekeeper": {	
+            "$ref": "./examples/ResourceOperationGatekeeperCRUD/PatchResourceOperationGatekeeper.json"	
+          }	
+        }	
+      }	
     }
   },
   "definitions": {
