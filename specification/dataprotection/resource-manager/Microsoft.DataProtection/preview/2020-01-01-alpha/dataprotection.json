@@ -3625,6 +3625,8 @@
         "dataStoreType": {
           "description": "Gets or sets the type of the datastore.",
           "enum": [
+            "ArchiveStore",
+            "SnapshotStore",
             "VaultStore"
           ],
           "type": "string",
