@@ -525,6 +525,24 @@
       },
       "title": "DppIdentityDetails",
       "type": "object"
+    },
+    "PatchResourceRequestInput": {
+      "description": "Patch Request content for Microsoft.DataProtection resources",
+      "properties": {
+        "identity": {
+          "$ref": "#/definitions/DppIdentityDetails",
+          "description": "Input Managed Identity Details"
+        },
+        "tags": {
+          "additionalProperties": {
+            "type": "string"
+          },
+          "description": "Resource tags.",
+          "type": "object"
+        }
+      },
+      "title": "PatchResourceRequestInput",
+      "type": "object"
     }
   },
   "parameters": {
