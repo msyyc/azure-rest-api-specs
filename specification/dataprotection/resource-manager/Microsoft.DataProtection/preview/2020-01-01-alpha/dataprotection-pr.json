@@ -60,6 +60,48 @@
         }
       }
     },
+    "/subscriptions/{subscriptionId}/providers/Microsoft.DataProtection/resourceOperationGateKeepers": {
+      "get": {
+        "tags": [
+          "ResourceOperationGatekeepers"
+        ],
+        "summary": "Returns ResourceOperationGateKeepers collection belonging to a subscription.",
+        "operationId": "ResourceOperationGatekeepers_GetResourcesInSubscription",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/parameters/ApiVersion"
+          },
+          {
+            "$ref": "#/parameters/SubscriptionId"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/ResourceOperationGateKeeperResourceList"
+            }
+          },
+		  "default": {
+            "description": "Error response describing why the operation failed.",
+            "schema": {
+              "$ref": "#/definitions/CloudError"
+            }
+          }
+        },
+        "x-ms-pageable": {
+          "nextLinkName": "nextLink"
+        },
+        "x-ms-examples": {
+          "Get ResourceOperationGatekeepers in Subscription": {
+            "$ref": "./examples/ResourceOperationGatekeeperCRUD/GetResourceOperationGatekeepersInSubscription.json"
+          }
+        }
+      }
+    },
     "/subscriptions/{subscriptionId}/providers/Microsoft.DataProtection/locations/{location}/operationResults/{operationId}": {
       "get": {
         "tags": [
@@ -463,6 +505,262 @@
         "x-ms-examples": {
           "GetOperationResult Patch": {
             "$ref": "./examples/VaultCRUD/GetOperationResultPatch.json"
+          }
+        }
+      }
+    },
+    "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DataProtection/resourceOperationGateKeepers": {
+      "get": {
+        "tags": [
+          "ResourceOperationGatekeepers"
+        ],
+        "summary": "Returns ResourceOperationGateKeepers collection belonging to a ResourceGroup",
+        "operationId": "ResourceOperationGatekeepers_GetResourcesInResourceGroup",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/parameters/ApiVersion"
+          },
+          {
+            "$ref": "#/parameters/ResourceGroupName"
+          },
+          {
+            "$ref": "#/parameters/SubscriptionId"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/ResourceOperationGateKeeperResourceList"
+            }
+          },
+		  "default": {
+            "description": "Error response describing why the operation failed.",
+            "schema": {
+              "$ref": "#/definitions/CloudError"
+            }
+          }
+        },
+        "x-ms-pageable": {
+          "nextLinkName": "nextLink"
+        },
+        "x-ms-examples": {
+          "Get ResourceOperationGatekeepers in ResourceGroup": {
+            "$ref": "./examples/ResourceOperationGatekeeperCRUD/GetResourceOperationGatekeepersInResourceGroup.json"
+          }
+        }
+      }
+    },
+    "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DataProtection/resourceOperationGateKeepers/{resourceOperationGateKeepersName}": {
+      "get": {
+        "tags": [
+          "ResourceOperationGatekeepers"
+        ],
+        "summary": "Returns a ResourceOperationGateKeeper belonging to a resource group.",
+        "operationId": "ResourceOperationGatekeepers_Get",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/parameters/ApiVersion"
+          },
+          {
+            "$ref": "#/parameters/ResourceGroupName"
+          },
+          {
+            "$ref": "#/parameters/SubscriptionId"
+          },
+          {
+            "name": "resourceOperationGateKeepersName",
+            "in": "path",
+            "description": "The name of the ResourceOperationGateKeeper",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/ResourceOperationGateKeeperResource"
+            }
+          },
+		  "default": {
+            "description": "Error response describing why the operation failed.",
+            "schema": {
+              "$ref": "#/definitions/CloudError"
+            }
+          }
+        },
+        "x-ms-examples": {
+          "Get ResourceOperationGatekeeper": {
+            "$ref": "./examples/ResourceOperationGatekeeperCRUD/GetResourceOperationGatekeeper.json"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "ResourceOperationGatekeepers"
+        ],
+        "summary": "Creates or updates a ResourceOperationGatekeeper resource belonging to a resource group.",
+        "operationId": "ResourceOperationGatekeepers_Put",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/parameters/ApiVersion"
+          },
+          {
+            "$ref": "#/parameters/ResourceGroupName"
+          },
+          {
+            "$ref": "#/parameters/SubscriptionId"
+          },
+          {
+            "name": "resourceOperationGateKeepersName",
+            "in": "path",
+            "description": "The name of ResourceOperationGatekeeper",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "parameters",
+            "in": "body",
+            "description": "Request body for operation",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/ResourceOperationGateKeeperResource"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/ResourceOperationGateKeeperResource"
+            }
+          },
+		  "default": {
+            "description": "Error response describing why the operation failed.",
+            "schema": {
+              "$ref": "#/definitions/CloudError"
+            }
+          }
+        },
+        "x-ms-examples": {
+          "Create ResourceOperationGatekeeper": {
+            "$ref": "./examples/ResourceOperationGatekeeperCRUD/PutResourceOperationGatekeeper.json"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "ResourceOperationGatekeepers"
+        ],
+        "summary": "Deletes a ResourceOperationGateKeeper resource from the resource group.",
+        "operationId": "ResourceOperationGatekeepers_Delete",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/parameters/ApiVersion"
+          },
+          {
+            "$ref": "#/parameters/ResourceGroupName"
+          },
+          {
+            "$ref": "#/parameters/SubscriptionId"
+          },
+          {
+            "name": "resourceOperationGateKeepersName",
+            "in": "path",
+            "description": "The name of ResourceOperationGatekeeper",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "204": {
+            "description": "NoContent"
+          },
+		  "default": {
+            "description": "Error response describing why the operation failed.",
+            "schema": {
+              "$ref": "#/definitions/CloudError"
+            }
+          }
+        },
+        "x-ms-examples": {
+          "Delete ResourceOperationGatekeeper": {
+            "$ref": "./examples/ResourceOperationGatekeeperCRUD/DeleteResourceOperationGatekeeper.json"
+          }
+        }
+      },
+      "patch": {
+        "tags": [
+          "ResourceOperationGatekeepers"
+        ],
+        "summary": "Updates a ResourceOperationGatekeeper resource belonging to a resource group. For example, updating tags for a resource.",
+        "operationId": "ResourceOperationGatekeepers_Patch",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/parameters/ApiVersion"
+          },
+          {
+            "$ref": "#/parameters/ResourceGroupName"
+          },
+          {
+            "$ref": "#/parameters/SubscriptionId"
+          },
+          {
+            "name": "resourceOperationGateKeepersName",
+            "in": "path",
+            "description": "The name of ResourceOperationGatekeeper",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "parameters",
+            "in": "body",
+            "description": "Request body for operation",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/PatchResourceRequestInput"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/ResourceOperationGateKeeperResource"
+            }
+          },
+          "default": {
+            "description": "Error response describing why the operation failed.",
+            "schema": {
+              "$ref": "#/definitions/CloudError"
+            }
+          }
+        },
+        "x-ms-examples": {
+          "Patch ResourceOperationGatekeeper": {
+            "$ref": "./examples/ResourceOperationGatekeeperCRUD/PatchResourceOperationGatekeeper.json"
           }
         }
       }
@@ -3379,6 +3677,41 @@
           "description": "LastTime ResourceOperationGateKeeper is updated",
           "type": "string",
           "readOnly": true
+        }
+      }
+    },
+    "ResourceOperationGateKeeperResource": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/DppTrackedResource"
+        }
+      ],
+      "description": "ResourceOperationGateKeeper Resource",
+      "title": "ResourceOperationGateKeeperResource",
+      "properties": {
+        "properties": {
+          "$ref": "#/definitions/ResourceOperationGateKeeper",
+          "description": "ResourceOperationGateKeeperResource properties",
+          "x-ms-client-flatten": true
+        }
+      }
+    },
+    "ResourceOperationGateKeeperResourceList": {
+      "description": "List of ResourceOperationGateKeeper resources",
+      "type": "object",
+      "title": "ResourceOperationGateKeeperResourceList",
+      "allOf": [
+        {
+          "$ref": "#/definitions/DppResourceList"
+        }
+      ],
+      "properties": {
+        "value": {
+          "description": "List of resources.",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/ResourceOperationGateKeeperResource"
+          }
         }
       }
     },
