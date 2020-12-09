@@ -3345,43 +3345,6 @@
         "name": "RehydrationPriority"
       }
     },
-    "ResourceOperationGateKeeper": {
-      "type": "object",
-      "description": "GateKeeper for resource operations",
-      "title": "GateKeeper for resource operations",
-      "properties": {
-        "provisioningState": {
-          "description": "Provisioning state of the resource",
-          "enum": [
-            "Failed",
-            "Provisioning",
-            "Updating",
-            "Succeeded",
-            "Unknown"
-          ],
-          "type": "string",
-          "readOnly": true,
-          "x-ms-enum": {
-            "name": "ProvisioningState",
-            "modelAsString": true
-          }
-        },
-        "operations": {
-          "description": "{readonly} List of operations that can be protected by the ResourceOperationGateKeeper",
-          "type": "array",
-          "items": {
-            "type": "string"
-          },
-          "readOnly": true
-        },
-        "lastLockUpdateTime": {
-          "format": "date-time",
-          "description": "LastTime ResourceOperationGateKeeper is updated",
-          "type": "string",
-          "readOnly": true
-        }
-      }
-    },
     "RestoreFilesTargetInfo": {
       "allOf": [
         {
