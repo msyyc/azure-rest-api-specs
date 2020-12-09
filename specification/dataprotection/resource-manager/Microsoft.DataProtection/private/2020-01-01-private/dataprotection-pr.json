@@ -1,7 +1,7 @@
 {
   "swagger": "2.0",
   "info": {
-    "version": "2020-01-01-alpha",
+    "version": "2020-01-01-private",
     "title": "DataProtectionBackupClient",
     "x-ms-code-generation-settings": {
       "internalConstructors": false
