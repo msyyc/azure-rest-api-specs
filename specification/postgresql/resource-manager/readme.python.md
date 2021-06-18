@@ -22,9 +22,27 @@ clear-output-folder: true
 batch:
   - tag: package-flexibleserver-2021-06
   - tag: package-flexibleserver-2021-06-preview
-  - tag: package-2020-01-01
-  - tag: package-2020-11-05-preview
-  - tag: package-2021-03-31-privatepreview
+  - tag: package-flexibleservers-2020-11-05-preview
+  - tag: package-flexibleservers-2021-03-31-privatepreview
+  - multiapiscript-flexibleservers: true
+  - tag: package-postgresql-2020-01-01
+  - multiapiscript-postgresql: true
+```
+
+```yaml $(multiapiscript-flexibleservers)
+package-name: azure-mgmt-rdbms#postgresql_flexibleservers
+multiapiscript: true
+output-folder: $(python-sdks-folder)/rdbms/azure-mgmt-rdbms/azure/mgmt/rdbms/postgresql_flexibleservers
+clear-output-folder: false
+perform-load: false
+```
+
+```yaml $(multiapiscript-postgresql)
+package-name: azure-mgmt-rdbms#postgresql
+multiapiscript: true
+output-folder: $(python-sdks-folder)/rdbms/azure-mgmt-rdbms/azure/mgmt/rdbms/postgresql
+clear-output-folder: false
+perform-load: false
 ```
 
 ### Tag: package-flexibleserver-2021-06 and python
@@ -33,8 +51,8 @@ These settings apply only when `--tag=package-flexibleserver-2021-06 --python` i
 Please also specify `--python-sdks-folder=<path to the root directory of your azure-sdk-for-python clone>`.
 
 ``` yaml $(tag) == 'package-flexibleserver-2021-06' && $(python)
-namespace: azure.mgmt.rdbms.postgresql_flexibleservers
-output-folder: $(python-sdks-folder)/rdbms/azure-mgmt-rdbms/azure/mgmt/rdbms/postgresql_flexibleservers
+namespace: azure.mgmt.rdbms.postgresql_flexibleservers.v2021_06_01
+output-folder: $(python-sdks-folder)/rdbms/azure-mgmt-rdbms/azure/mgmt/rdbms/postgresql_flexibleservers/v2021_06_01
 ```
 
 ### Tag: package-flexibleserver-2021-06-preview and python
@@ -47,32 +65,32 @@ namespace: azure.mgmt.rdbms.postgresql_flexibleservers
 output-folder: $(python-sdks-folder)/rdbms/azure-mgmt-rdbms/azure/mgmt/rdbms/postgresql_flexibleservers
 ```
 
-### Tag: package-2021-03-31-privatepreview and python
+### Tag: package-flexibleservers-2021-03-31-privatepreview and python
 
-These settings apply only when `--tag=package-2021-03-31-privatepreview --python` is specified on the command line.
+These settings apply only when `--tag=package-flexibleservers-2021-03-31-privatepreview --python` is specified on the command line.
 Please also specify `--python-sdks-folder=<path to the root directory of your azure-sdk-for-python clone>`.
 
-``` yaml $(tag) == 'package-2021-03-31-privatepreview' && $(python)
+``` yaml $(tag) == 'package-flexibleservers-2021-03-31-privatepreview' && $(python)
 namespace: azure.mgmt.rdbms.postgresql_flexibleservers
 output-folder: $(python-sdks-folder)/rdbms/azure-mgmt-rdbms/azure/mgmt/rdbms/postgresql_flexibleservers
 ```
 
-### Tag: package-2020-01-01 and python
+### Tag: package-postgresql-2020-01-01 and python
 
-These settings apply only when `--tag=package-2020-01-01 --python` is specified on the command line.
+These settings apply only when `--tag=package-postgresql-2020-01-01 --python` is specified on the command line.
 Please also specify `--python-sdks-folder=<path to the root directory of your azure-sdk-for-python clone>`.
 
-``` yaml $(tag) == 'package-2020-01-01' && $(python)
+``` yaml $(tag) == 'package-postgresql-2020-01-01' && $(python)
 namespace: azure.mgmt.rdbms.postgresql
 output-folder: $(python-sdks-folder)/rdbms/azure-mgmt-rdbms/azure/mgmt/rdbms/postgresql
 ```
 
-### Tag: package-2020-11-05-preview and python
+### Tag: package-flexibleservers-2020-11-05-preview and python
 
-These settings apply only when `--tag=package-2020-11-05-preview --python` is specified on the command line.
+These settings apply only when `--tag=package-flexibleservers-2020-11-05-preview --python` is specified on the command line.
 Please also specify `--python-sdks-folder=<path to the root directory of your azure-sdk-for-python clone>`.
 
-``` yaml $(tag) == 'package-2020-11-05-preview' && $(python)
+``` yaml $(tag) == 'package-flexibleservers-2020-11-05-preview' && $(python)
 namespace: azure.mgmt.rdbms.postgresql_flexibleservers
 output-folder: $(python-sdks-folder)/rdbms/azure-mgmt-rdbms/azure/mgmt/rdbms/postgresql_flexibleservers
 ```
