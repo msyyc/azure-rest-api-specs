@@ -40,10 +40,9 @@ directive:
     transform: delete $["/{nextLink}"]
 
   - from: policyStates.json
-    where: $
+    where: $.x-ms-paths
     transform: >
-      $["x-ms-paths"] = {
-        "{nextLink}?Next paging op for policy states": {
+      $["{nextLink}?Next paging op for policy states"] = {
           "post": {
             "operationId": "PolicyStates_NextLink",
             "description": "Subsequent post calls to the next link",
@@ -84,12 +83,11 @@ directive:
             }
           }
         }
-      }
+
   - from: policyEvents.json
-    where: $
+    where: $.x-ms-paths
     transform: >
-      $["x-ms-paths"] =  {
-        "{nextLink}?Next paging op for policy events": {
+      $["{nextLink}?Next paging op for policy events"] =  {
           "post": {
             "operationId": "PolicyEvents_NextLink",
             "description": "Subsequent post calls to the next link",
@@ -130,5 +128,4 @@ directive:
             }
           }
         }
-      }
 ```
