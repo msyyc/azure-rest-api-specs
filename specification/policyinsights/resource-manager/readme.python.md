@@ -34,4 +34,55 @@ directive:
   - from: policyStates.json
     where: $.parameters.fromParameter
     transform: $['x-ms-client-name'] = 'FromProperty'
+
+  - from: policyStates.json
+    where: $.paths
+    transform: delete $["/{nextLink}"]
+
+  - from: policyEvents.json
+    where: $
+    transform: >
+      $["x-ms-paths"] = {
+                            "{nextLink}?Next paging op for policy events": {
+                              "post": {
+                                "operationId": "PolicyEvents_NextLink",
+                                "description": "Subsequent post calls to the next link",
+                                "parameters": [
+                                  {
+                                    "$ref": "#/parameters/apiVersionParameter"
+                                  },
+                                  {
+                                    "$ref": "#/parameters/skipTokenParameter"
+                                  },
+                                  {
+                                    "name": "nextLink",
+                                    "in": "path",
+                                    "required": true,
+                                    "type": "string",
+                                    "description": "Next link for list operation.",
+                                    "x-ms-skip-url-encoding": true
+                                  }
+                                ],
+                                "responses": {
+                                  "200": {
+                                    "description": "Query results.",
+                                    "schema": {
+                                      "$ref": "#/definitions/PolicyEventsQueryResults"
+                                    }
+                                  },
+                                  "default": {
+                                    "description": "Error response describing why the operation failed.",
+                                    "schema": {
+                                      "$ref": "#/definitions/QueryFailure"
+                                    }
+                                  }
+                                },
+                                "x-ms-examples": {
+                                  "Query latest at resource group level policy assignment scope with next link": {
+                                    "$ref": "./examples/PolicyEvents_QueryManagementGroupScopeNextLinkSkipToken.json"
+                                  }
+                                }
+                              }
+                            }
+                        };
 ```
