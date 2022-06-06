@@ -1139,7 +1139,7 @@
           },
           "400": {
             "description": "If the provided fileType is not supported",
-            "x-ms-error-response": true
+            "x-ms-error-response": false
           }
         }
       }
