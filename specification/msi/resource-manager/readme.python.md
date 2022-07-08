@@ -28,7 +28,7 @@ batch:
 ```
 
 ``` yaml $(multiapiscript)
-output-folder: $(python-sdks-folder)/resources/azure-mgmt-msi/azure/mgmt/msi/
+output-folder: $(python-sdks-folder)/multiapi/azure-mgmt-msi/azure/mgmt/msi/
 perform-load: false
 ```
 
@@ -39,7 +39,7 @@ Please also specify `--python-sdks-folder=<path to the root directory of your az
 
 ``` yaml $(tag) == 'package-preview-2022-01'
 namespace: azure.mgmt.msi.v2022_01_31_preview
-output-folder: $(python-sdks-folder)/resources/azure-mgmt-msi/azure/mgmt/msi/v2022_01_31_preview
+output-folder: $(python-sdks-folder)/multiapi/azure-mgmt-msi/azure/mgmt/msi/v2022_01_31_preview
 ```
 
 ### Tag: package-preview-2021-09-30 and python
@@ -49,7 +49,7 @@ Please also specify `--python-sdks-folder=<path to the root directory of your az
 
 ``` yaml $(tag) == 'package-preview-2021-09-30'
 namespace: azure.mgmt.msi.v2021_09_30_preview
-output-folder: $(python-sdks-folder)/resources/azure-mgmt-msi/azure/mgmt/msi/v2021_09_30_preview
+output-folder: $(python-sdks-folder)/multiapi/azure-mgmt-msi/azure/mgmt/msi/v2021_09_30_preview
 ```
 
 ### Tag: package-2018-11-30 and python
@@ -59,5 +59,5 @@ Please also specify `--python-sdks-folder=<path to the root directory of your az
 
 ``` yaml $(tag) == 'package-2018-11-30'
 namespace: azure.mgmt.msi.v2018_11_30
-output-folder: $(python-sdks-folder)/resources/azure-mgmt-msi/azure/mgmt/msi/v2018_11_30
+output-folder: $(python-sdks-folder)/multiapi/azure-mgmt-msi/azure/mgmt/msi/v2018_11_30
 ```
