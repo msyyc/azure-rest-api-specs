@@ -63,8 +63,8 @@
           "mainRepository": "openapi-env-test/azure-sdk-for-net"
         },
         "azure-sdk-for-python": {
-          "mainRepository": "openapi-env-test/azure-sdk-for-python",
-          "mainBranch": "main"
+          "mainRepository": "test-repo-billy/azure-sdk-for-python",
+          "mainBranch": "pipeline-adopt-tsp-client"
         },
         "azure-sdk-for-js": {
           "mainRepository": "openapi-env-test/azure-sdk-for-js",
