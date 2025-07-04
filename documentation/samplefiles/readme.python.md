@@ -7,7 +7,7 @@ Please also specify `--python-sdks-folder=<path to the root directory of your az
 title: {{ClientName}}
 azure-arm: true
 license-header: MICROSOFT_MIT_NO_VERSION
-package-name: azure-mgmt-HPackageName}}
+package-name: azure-mgmt-{{PackageName}}
 namespace: azure.mgmt.{{PackageName}}
 package-version: 1.0.0b1
 clear-output-folder: true
