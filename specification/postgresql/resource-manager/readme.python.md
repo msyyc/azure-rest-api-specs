@@ -8,6 +8,7 @@ azure-arm: true
 license-header: MICROSOFT_MIT_NO_VERSION
 no-namespace-folders: true
 clear-output-folder: true
+package-version: 1.0.0b1
 ```
 
 ### Tag: package-flexibleserver-2025-01-01-preview and python
