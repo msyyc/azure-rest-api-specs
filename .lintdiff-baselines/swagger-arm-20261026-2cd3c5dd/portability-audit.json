@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 1,
+  "archiveSha256": "0904cbd17e24ce076e7969837b85b1f5b3682e5ae25b8805b048fb506e77c1d0",
+  "checkedFiles": 93498,
+  "checks": ["machine-path", "github-token", "aws-access-key", "private-key"],
+  "reviewedPublicExamplePathMatches": 278,
+  "publicExamplePolicy": "Preserve reviewed canonical fixture paths for contosoUser and named example /home users; these are not producer machine paths.",
+  "issues": [],
+  "scope": "Portability and common credential markers; not an exhaustive secret detector.",
+  "swaggerGeneration": "not-run"
+}

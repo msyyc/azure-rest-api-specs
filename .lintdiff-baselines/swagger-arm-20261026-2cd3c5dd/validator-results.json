@@ -1,0 +1,855 @@
+{
+  "schemaVersion": 4,
+  "specsCommit": "2cd3c5dd6d00a5f53214fe594afd2aef3f44d3f9",
+  "generatedAt": "2026-10-26T07:05:10.288Z",
+  "totalViolations": 222905,
+  "rules": {
+    "AllProxyResourcesShouldHaveDelete": {
+      "count": 185,
+      "levels": {
+        "warning": 185
+      },
+      "resultsFile": "results/by-rule/AllProxyResourcesShouldHaveDelete.json"
+    },
+    "AllResourcesMustHaveGetOperation": {
+      "count": 22,
+      "levels": {
+        "warning": 22
+      },
+      "resultsFile": "results/by-rule/AllResourcesMustHaveGetOperation.json"
+    },
+    "AllTrackedResourcesMustHaveDelete": {
+      "count": 113,
+      "levels": {
+        "error": 113
+      },
+      "resultsFile": "results/by-rule/AllTrackedResourcesMustHaveDelete.json"
+    },
+    "APIVersionPattern": {
+      "count": 3,
+      "levels": {
+        "error": 3
+      },
+      "resultsFile": "results/by-rule/APIVersionPattern.json"
+    },
+    "ArmResourcePropertiesBag": {
+      "count": 206,
+      "levels": {
+        "error": 206
+      },
+      "resultsFile": "results/by-rule/ArmResourcePropertiesBag.json"
+    },
+    "AvoidAdditionalProperties": {
+      "count": 1505,
+      "levels": {
+        "error": 1505
+      },
+      "resultsFile": "results/by-rule/AvoidAdditionalProperties.json"
+    },
+    "AvoidAnonymousParameter": {
+      "count": 4,
+      "levels": {
+        "error": 4
+      },
+      "resultsFile": "results/by-rule/AvoidAnonymousParameter.json"
+    },
+    "AvoidAnonymousTypes": {
+      "count": 32,
+      "levels": {
+        "error": 32
+      },
+      "resultsFile": "results/by-rule/AvoidAnonymousTypes.json"
+    },
+    "AvoidEmptyResponseSchema": {
+      "count": 63,
+      "levels": {
+        "error": 63
+      },
+      "resultsFile": "results/by-rule/AvoidEmptyResponseSchema.json"
+    },
+    "AvoidMsdnReferences": {
+      "count": 314,
+      "levels": {
+        "warning": 314
+      },
+      "resultsFile": "results/by-rule/AvoidMsdnReferences.json"
+    },
+    "AvoidNestedProperties": {
+      "count": 38,
+      "levels": {
+        "warning": 38
+      },
+      "resultsFile": "results/by-rule/AvoidNestedProperties.json"
+    },
+    "BodyTopLevelProperties": {
+      "count": 623,
+      "levels": {
+        "error": 623
+      },
+      "resultsFile": "results/by-rule/BodyTopLevelProperties.json"
+    },
+    "CollectionObjectPropertiesNaming": {
+      "count": 3,
+      "levels": {
+        "error": 3
+      },
+      "resultsFile": "results/by-rule/CollectionObjectPropertiesNaming.json"
+    },
+    "ConsistentPatchProperties": {
+      "count": 150,
+      "levels": {
+        "error": 150
+      },
+      "resultsFile": "results/by-rule/ConsistentPatchProperties.json"
+    },
+    "DefaultErrorResponseSchema": {
+      "count": 762,
+      "levels": {
+        "error": 762
+      },
+      "resultsFile": "results/by-rule/DefaultErrorResponseSchema.json"
+    },
+    "DefinitionsPropertiesNamesCamelCase": {
+      "count": 607,
+      "levels": {
+        "error": 607
+      },
+      "resultsFile": "results/by-rule/DefinitionsPropertiesNamesCamelCase.json"
+    },
+    "DeleteInOperationName": {
+      "count": 41,
+      "levels": {
+        "warning": 41
+      },
+      "resultsFile": "results/by-rule/DeleteInOperationName.json"
+    },
+    "DeleteOperationResponses": {
+      "count": 83,
+      "levels": {
+        "error": 83
+      },
+      "resultsFile": "results/by-rule/DeleteOperationResponses.json"
+    },
+    "DeleteResponseBodyEmpty": {
+      "count": 45,
+      "levels": {
+        "error": 45
+      },
+      "resultsFile": "results/by-rule/DeleteResponseBodyEmpty.json"
+    },
+    "DeleteResponseCodes": {
+      "count": 1427,
+      "levels": {
+        "error": 1427
+      },
+      "resultsFile": "results/by-rule/DeleteResponseCodes.json"
+    },
+    "DescriptionMustNotBeNodeName": {
+      "count": 88546,
+      "levels": {
+        "error": 88546
+      },
+      "resultsFile": "results/by-rule/DescriptionMustNotBeNodeName.json"
+    },
+    "EnumInsteadOfBoolean": {
+      "count": 8338,
+      "levels": {
+        "warning": 8338
+      },
+      "resultsFile": "results/by-rule/EnumInsteadOfBoolean.json"
+    },
+    "EvenSegmentedPathForPutOperation": {
+      "count": 91,
+      "levels": {
+        "error": 91
+      },
+      "resultsFile": "results/by-rule/EvenSegmentedPathForPutOperation.json"
+    },
+    "GetCollectionOnlyHasValueAndNextLink": {
+      "count": 432,
+      "levels": {
+        "error": 432
+      },
+      "resultsFile": "results/by-rule/GetCollectionOnlyHasValueAndNextLink.json"
+    },
+    "GetCollectionResponseSchema": {
+      "count": 37,
+      "levels": {
+        "error": 37
+      },
+      "resultsFile": "results/by-rule/GetCollectionResponseSchema.json"
+    },
+    "GetInOperationName": {
+      "count": 158,
+      "levels": {
+        "warning": 158
+      },
+      "resultsFile": "results/by-rule/GetInOperationName.json"
+    },
+    "GetOperationMustNotBeLongRunning": {
+      "count": 4,
+      "levels": {
+        "error": 4
+      },
+      "resultsFile": "results/by-rule/GetOperationMustNotBeLongRunning.json"
+    },
+    "GetResponseCodes": {
+      "count": 96,
+      "levels": {
+        "error": 96
+      },
+      "resultsFile": "results/by-rule/GetResponseCodes.json"
+    },
+    "GuidUsage": {
+      "count": 284,
+      "levels": {
+        "error": 284
+      },
+      "resultsFile": "results/by-rule/GuidUsage.json"
+    },
+    "IgnoredPropertyNextToRef": {
+      "count": 136,
+      "levels": {
+        "warning": 136
+      },
+      "resultsFile": "results/by-rule/IgnoredPropertyNextToRef.json"
+    },
+    "ImplementPrivateEndpointAPIs": {
+      "count": 19,
+      "levels": {
+        "warning": 19
+      },
+      "resultsFile": "results/by-rule/ImplementPrivateEndpointAPIs.json"
+    },
+    "IntegerTypeMustHaveFormat": {
+      "count": 5,
+      "levels": {
+        "error": 5
+      },
+      "resultsFile": "results/by-rule/IntegerTypeMustHaveFormat.json"
+    },
+    "InvalidSkuModel": {
+      "count": 7,
+      "levels": {
+        "warning": 7
+      },
+      "resultsFile": "results/by-rule/InvalidSkuModel.json"
+    },
+    "LatestVersionOfCommonTypesMustBeUsed": {
+      "count": 65786,
+      "levels": {
+        "warning": 65786
+      },
+      "resultsFile": "results/by-rule/LatestVersionOfCommonTypesMustBeUsed.json"
+    },
+    "ListInOperationName": {
+      "count": 382,
+      "levels": {
+        "warning": 382
+      },
+      "resultsFile": "results/by-rule/ListInOperationName.json"
+    },
+    "LocationMustHaveXmsMutability": {
+      "count": 687,
+      "levels": {
+        "warning": 687
+      },
+      "resultsFile": "results/by-rule/LocationMustHaveXmsMutability.json"
+    },
+    "LroErrorContent": {
+      "count": 4188,
+      "levels": {
+        "error": 4188
+      },
+      "resultsFile": "results/by-rule/LroErrorContent.json"
+    },
+    "LroExtension": {
+      "count": 39,
+      "levels": {
+        "error": 39
+      },
+      "resultsFile": "results/by-rule/LroExtension.json"
+    },
+    "LroLocationHeader": {
+      "count": 236,
+      "levels": {
+        "error": 236
+      },
+      "resultsFile": "results/by-rule/LroLocationHeader.json"
+    },
+    "LroPatch202": {
+      "count": 62,
+      "levels": {
+        "error": 62
+      },
+      "resultsFile": "results/by-rule/LroPatch202.json"
+    },
+    "LroPostMustNotUseOriginalUriAsFinalState": {
+      "count": 1,
+      "levels": {
+        "error": 1
+      },
+      "resultsFile": "results/by-rule/LroPostMustNotUseOriginalUriAsFinalState.json"
+    },
+    "LroStatusCodesReturnTypeSchema": {
+      "count": 20,
+      "levels": {
+        "error": 20
+      },
+      "resultsFile": "results/by-rule/LroStatusCodesReturnTypeSchema.json"
+    },
+    "MissingSegmentsInNestedResourceListOperation": {
+      "count": 528,
+      "levels": {
+        "warning": 528
+      },
+      "resultsFile": "results/by-rule/MissingSegmentsInNestedResourceListOperation.json"
+    },
+    "MissingXmsErrorResponse": {
+      "count": 20,
+      "levels": {
+        "error": 20
+      },
+      "resultsFile": "results/by-rule/MissingXmsErrorResponse.json"
+    },
+    "NestedResourcesMustHaveListOperation": {
+      "count": 71,
+      "levels": {
+        "error": 71
+      },
+      "resultsFile": "results/by-rule/NestedResourcesMustHaveListOperation.json"
+    },
+    "NoDuplicatePathsForScopeParameter": {
+      "count": 41,
+      "levels": {
+        "error": 41
+      },
+      "resultsFile": "results/by-rule/NoDuplicatePathsForScopeParameter.json"
+    },
+    "NoErrorCodeResponses": {
+      "count": 155,
+      "levels": {
+        "error": 155
+      },
+      "resultsFile": "results/by-rule/NoErrorCodeResponses.json"
+    },
+    "NonApplicationJsonType": {
+      "count": 21,
+      "levels": {
+        "warning": 21
+      },
+      "resultsFile": "results/by-rule/NonApplicationJsonType.json"
+    },
+    "OperationIdNounConflictingModelNames": {
+      "count": 634,
+      "levels": {
+        "warning": 634
+      },
+      "resultsFile": "results/by-rule/OperationIdNounConflictingModelNames.json"
+    },
+    "OperationIdNounVerb": {
+      "count": 265,
+      "levels": {
+        "error": 265
+      },
+      "resultsFile": "results/by-rule/OperationIdNounVerb.json"
+    },
+    "OperationsAPIImplementation": {
+      "count": 403,
+      "levels": {
+        "error": 403
+      },
+      "resultsFile": "results/by-rule/OperationsAPIImplementation.json"
+    },
+    "OperationsApiResponseSchema": {
+      "count": 38,
+      "levels": {
+        "error": 38
+      },
+      "resultsFile": "results/by-rule/OperationsApiResponseSchema.json"
+    },
+    "OperationsApiSchemaUsesCommonTypes": {
+      "count": 88,
+      "levels": {
+        "error": 88
+      },
+      "resultsFile": "results/by-rule/OperationsApiSchemaUsesCommonTypes.json"
+    },
+    "OperationsApiTenantLevelOnly": {
+      "count": 2,
+      "levels": {
+        "error": 2
+      },
+      "resultsFile": "results/by-rule/OperationsApiTenantLevelOnly.json"
+    },
+    "OperationSummaryOrDescription": {
+      "count": 1,
+      "levels": {
+        "warning": 1
+      },
+      "resultsFile": "results/by-rule/OperationSummaryOrDescription.json"
+    },
+    "PageableOperation": {
+      "count": 315,
+      "levels": {
+        "warning": 315
+      },
+      "resultsFile": "results/by-rule/PageableOperation.json"
+    },
+    "ParameterDescription": {
+      "count": 644,
+      "levels": {
+        "warning": 644
+      },
+      "resultsFile": "results/by-rule/ParameterDescription.json"
+    },
+    "ParameterNotDefinedInGlobalParameters": {
+      "count": 25,
+      "levels": {
+        "warning": 25
+      },
+      "resultsFile": "results/by-rule/ParameterNotDefinedInGlobalParameters.json"
+    },
+    "ParameterNotUsingCommonTypes": {
+      "count": 532,
+      "levels": {
+        "warning": 532
+      },
+      "resultsFile": "results/by-rule/ParameterNotUsingCommonTypes.json"
+    },
+    "ParametersInPointGet": {
+      "count": 551,
+      "levels": {
+        "error": 551
+      },
+      "resultsFile": "results/by-rule/ParametersInPointGet.json"
+    },
+    "ParametersInPost": {
+      "count": 726,
+      "levels": {
+        "error": 726
+      },
+      "resultsFile": "results/by-rule/ParametersInPost.json"
+    },
+    "ParametersOrder": {
+      "count": 54,
+      "levels": {
+        "error": 54
+      },
+      "resultsFile": "results/by-rule/ParametersOrder.json"
+    },
+    "ParametersSchemaAsTypeObject": {
+      "count": 14,
+      "levels": {
+        "error": 14
+      },
+      "resultsFile": "results/by-rule/ParametersSchemaAsTypeObject.json"
+    },
+    "PatchBodyParametersSchema": {
+      "count": 715,
+      "levels": {
+        "error": 715
+      },
+      "resultsFile": "results/by-rule/PatchBodyParametersSchema.json"
+    },
+    "PatchIdentityProperty": {
+      "count": 90,
+      "levels": {
+        "error": 90
+      },
+      "resultsFile": "results/by-rule/PatchIdentityProperty.json"
+    },
+    "PatchInOperationName": {
+      "count": 32,
+      "levels": {
+        "warning": 32
+      },
+      "resultsFile": "results/by-rule/PatchInOperationName.json"
+    },
+    "PatchResponseCodes": {
+      "count": 185,
+      "levels": {
+        "error": 185
+      },
+      "resultsFile": "results/by-rule/PatchResponseCodes.json"
+    },
+    "PatchSkuProperty": {
+      "count": 133,
+      "levels": {
+        "warning": 133
+      },
+      "resultsFile": "results/by-rule/PatchSkuProperty.json"
+    },
+    "PathContainsResourceGroup": {
+      "count": 43,
+      "levels": {
+        "error": 43
+      },
+      "resultsFile": "results/by-rule/PathContainsResourceGroup.json"
+    },
+    "PathContainsResourceType": {
+      "count": 34,
+      "levels": {
+        "error": 34
+      },
+      "resultsFile": "results/by-rule/PathContainsResourceType.json"
+    },
+    "PathForNestedResource": {
+      "count": 105,
+      "levels": {
+        "error": 105
+      },
+      "resultsFile": "results/by-rule/PathForNestedResource.json"
+    },
+    "PathForResourceAction": {
+      "count": 157,
+      "levels": {
+        "error": 157
+      },
+      "resultsFile": "results/by-rule/PathForResourceAction.json"
+    },
+    "PathForTrackedResourceTypes": {
+      "count": 89,
+      "levels": {
+        "error": 89
+      },
+      "resultsFile": "results/by-rule/PathForTrackedResourceTypes.json"
+    },
+    "PathResourceProviderMatchNamespace": {
+      "count": 120,
+      "levels": {
+        "error": 120
+      },
+      "resultsFile": "results/by-rule/PathResourceProviderMatchNamespace.json"
+    },
+    "PathResourceProviderNamePascalCase": {
+      "count": 534,
+      "levels": {
+        "error": 534
+      },
+      "resultsFile": "results/by-rule/PathResourceProviderNamePascalCase.json"
+    },
+    "PathResourceTypeNameCamelCase": {
+      "count": 217,
+      "levels": {
+        "error": 217
+      },
+      "resultsFile": "results/by-rule/PathResourceTypeNameCamelCase.json"
+    },
+    "PostOperationIdContainsUrlVerb": {
+      "count": 776,
+      "levels": {
+        "warning": 776
+      },
+      "resultsFile": "results/by-rule/PostOperationIdContainsUrlVerb.json"
+    },
+    "PostResponseCodes": {
+      "count": 1183,
+      "levels": {
+        "error": 1183
+      },
+      "resultsFile": "results/by-rule/PostResponseCodes.json"
+    },
+    "PreviewVersionOverOneYear": {
+      "count": 110,
+      "levels": {
+        "warning": 110
+      },
+      "resultsFile": "results/by-rule/PreviewVersionOverOneYear.json"
+    },
+    "PrivateEndpointResourceSchemaValidation": {
+      "count": 4,
+      "levels": {
+        "error": 4
+      },
+      "resultsFile": "results/by-rule/PrivateEndpointResourceSchemaValidation.json"
+    },
+    "ProvisioningStateMustBeReadOnly": {
+      "count": 5222,
+      "levels": {
+        "error": 5222
+      },
+      "resultsFile": "results/by-rule/ProvisioningStateMustBeReadOnly.json"
+    },
+    "ProvisioningStateSpecifiedForLROPatch": {
+      "count": 40,
+      "levels": {
+        "error": 40
+      },
+      "resultsFile": "results/by-rule/ProvisioningStateSpecifiedForLROPatch.json"
+    },
+    "ProvisioningStateSpecifiedForLROPut": {
+      "count": 758,
+      "levels": {
+        "error": 758
+      },
+      "resultsFile": "results/by-rule/ProvisioningStateSpecifiedForLROPut.json"
+    },
+    "ProvisioningStateValidation": {
+      "count": 18,
+      "levels": {
+        "error": 18
+      },
+      "resultsFile": "results/by-rule/ProvisioningStateValidation.json"
+    },
+    "PutGetPatchResponseSchema": {
+      "count": 50,
+      "levels": {
+        "error": 50
+      },
+      "resultsFile": "results/by-rule/PutGetPatchResponseSchema.json"
+    },
+    "PutInOperationName": {
+      "count": 196,
+      "levels": {
+        "warning": 196
+      },
+      "resultsFile": "results/by-rule/PutInOperationName.json"
+    },
+    "PutRequestResponseSchemeArm": {
+      "count": 212,
+      "levels": {
+        "error": 212
+      },
+      "resultsFile": "results/by-rule/PutRequestResponseSchemeArm.json"
+    },
+    "PutResponseCodes": {
+      "count": 667,
+      "levels": {
+        "error": 667
+      },
+      "resultsFile": "results/by-rule/PutResponseCodes.json"
+    },
+    "RepeatedPathInfo": {
+      "count": 60,
+      "levels": {
+        "error": 60
+      },
+      "resultsFile": "results/by-rule/RepeatedPathInfo.json"
+    },
+    "RequestSchemaForTrackedResourcesMustHaveTags": {
+      "count": 76,
+      "levels": {
+        "error": 76
+      },
+      "resultsFile": "results/by-rule/RequestSchemaForTrackedResourcesMustHaveTags.json"
+    },
+    "RequiredDefaultResponse": {
+      "count": 178,
+      "levels": {
+        "error": 178
+      },
+      "resultsFile": "results/by-rule/RequiredDefaultResponse.json"
+    },
+    "RequiredPropertiesMissingInResourceModel": {
+      "count": 2984,
+      "levels": {
+        "error": 2984
+      },
+      "resultsFile": "results/by-rule/RequiredPropertiesMissingInResourceModel.json"
+    },
+    "RequiredReadOnlySystemData": {
+      "count": 2662,
+      "levels": {
+        "warning": 2662
+      },
+      "resultsFile": "results/by-rule/RequiredReadOnlySystemData.json"
+    },
+    "ReservedResourceNamesModelAsEnum": {
+      "count": 8,
+      "levels": {
+        "warning": 8
+      },
+      "resultsFile": "results/by-rule/ReservedResourceNamesModelAsEnum.json"
+    },
+    "ResourceHasXMsResourceEnabled": {
+      "count": 3,
+      "levels": {
+        "error": 3
+      },
+      "resultsFile": "results/by-rule/ResourceHasXMsResourceEnabled.json"
+    },
+    "ResourceNameRestriction": {
+      "count": 8069,
+      "levels": {
+        "error": 8069
+      },
+      "resultsFile": "results/by-rule/ResourceNameRestriction.json"
+    },
+    "ResponseSchemaSpecifiedForSuccessStatusCode": {
+      "count": 23,
+      "levels": {
+        "error": 23
+      },
+      "resultsFile": "results/by-rule/ResponseSchemaSpecifiedForSuccessStatusCode.json"
+    },
+    "SchemaDescriptionOrTitle": {
+      "count": 7246,
+      "levels": {
+        "warning": 7246
+      },
+      "resultsFile": "results/by-rule/SchemaDescriptionOrTitle.json"
+    },
+    "SubscriptionIdParameterInOperations": {
+      "count": 14,
+      "levels": {
+        "error": 14
+      },
+      "resultsFile": "results/by-rule/SubscriptionIdParameterInOperations.json"
+    },
+    "SubscriptionsAndResourceGroupCasing": {
+      "count": 34,
+      "levels": {
+        "error": 34
+      },
+      "resultsFile": "results/by-rule/SubscriptionsAndResourceGroupCasing.json"
+    },
+    "SummaryAndDescriptionMustNotBeSame": {
+      "count": 978,
+      "levels": {
+        "warning": 978
+      },
+      "resultsFile": "results/by-rule/SummaryAndDescriptionMustNotBeSame.json"
+    },
+    "SystemDataDefinitionsCommonTypes": {
+      "count": 3,
+      "levels": {
+        "error": 3
+      },
+      "resultsFile": "results/by-rule/SystemDataDefinitionsCommonTypes.json"
+    },
+    "TenantLevelAPIsNotAllowed": {
+      "count": 30,
+      "levels": {
+        "warning": 30
+      },
+      "resultsFile": "results/by-rule/TenantLevelAPIsNotAllowed.json"
+    },
+    "TopLevelResourcesListByResourceGroup": {
+      "count": 3,
+      "levels": {
+        "error": 3
+      },
+      "resultsFile": "results/by-rule/TopLevelResourcesListByResourceGroup.json"
+    },
+    "TopLevelResourcesListBySubscription": {
+      "count": 21,
+      "levels": {
+        "error": 21
+      },
+      "resultsFile": "results/by-rule/TopLevelResourcesListBySubscription.json"
+    },
+    "TrackedExtensionResourcesAreNotAllowed": {
+      "count": 37,
+      "levels": {
+        "error": 37
+      },
+      "resultsFile": "results/by-rule/TrackedExtensionResourcesAreNotAllowed.json"
+    },
+    "TrackedResourceBeyondsThirdLevel": {
+      "count": 37,
+      "levels": {
+        "error": 37
+      },
+      "resultsFile": "results/by-rule/TrackedResourceBeyondsThirdLevel.json"
+    },
+    "TrackedResourcePatchOperation": {
+      "count": 253,
+      "levels": {
+        "error": 253
+      },
+      "resultsFile": "results/by-rule/TrackedResourcePatchOperation.json"
+    },
+    "TrackedResourcesMustHavePut": {
+      "count": 83,
+      "levels": {
+        "error": 83
+      },
+      "resultsFile": "results/by-rule/TrackedResourcesMustHavePut.json"
+    },
+    "UniqueXmsExample": {
+      "count": 813,
+      "levels": {
+        "warning": 813
+      },
+      "resultsFile": "results/by-rule/UniqueXmsExample.json"
+    },
+    "UnSupportedPatchProperties": {
+      "count": 110,
+      "levels": {
+        "error": 110
+      },
+      "resultsFile": "results/by-rule/UnSupportedPatchProperties.json"
+    },
+    "ValidFormats": {
+      "count": 123,
+      "levels": {
+        "error": 123
+      },
+      "resultsFile": "results/by-rule/ValidFormats.json"
+    },
+    "XmsEnumValidation": {
+      "count": 1,
+      "levels": {
+        "error": 1
+      },
+      "resultsFile": "results/by-rule/XmsEnumValidation.json"
+    },
+    "XmsExamplesRequired": {
+      "count": 483,
+      "levels": {
+        "warning": 483
+      },
+      "resultsFile": "results/by-rule/XmsExamplesRequired.json"
+    },
+    "XmsIdentifierValidation": {
+      "count": 3847,
+      "levels": {
+        "warning": 3847
+      },
+      "resultsFile": "results/by-rule/XmsIdentifierValidation.json"
+    },
+    "XMSLongRunningOperationProperty": {
+      "count": 6,
+      "levels": {
+        "error": 6
+      },
+      "resultsFile": "results/by-rule/XMSLongRunningOperationProperty.json"
+    },
+    "XmsPageableForListCalls": {
+      "count": 461,
+      "levels": {
+        "error": 461
+      },
+      "resultsFile": "results/by-rule/XmsPageableForListCalls.json"
+    },
+    "XmsParameterLocation": {
+      "count": 6,
+      "levels": {
+        "error": 6
+      },
+      "resultsFile": "results/by-rule/XmsParameterLocation.json"
+    },
+    "XmsPathsMustOverloadPaths": {
+      "count": 1,
+      "levels": {
+        "error": 1
+      },
+      "resultsFile": "results/by-rule/XmsPathsMustOverloadPaths.json"
+    },
+    "XmsResourceInPutResponse": {
+      "count": 155,
+      "levels": {
+        "error": 155
+      },
+      "resultsFile": "results/by-rule/XmsResourceInPutResponse.json"
+    },
+    "XMSSecretInResponse": {
+      "count": 1499,
+      "levels": {
+        "error": 1499
+      },
+      "resultsFile": "results/by-rule/XMSSecretInResponse.json"
+    }
+  }
+}

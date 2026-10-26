@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "sourceCommit": "2cd3c5dd6d00a5f53214fe594afd2aef3f44d3f9",
+  "observedAt": "2026-10-26T07:05:10.288Z",
+  "audience": "production ARM/OAS2",
+  "readmeSuppressionsApplied": false,
+  "summary": {
+    "discoveredProjects": 487,
+    "compiledProjects": 487,
+    "failedProjects": 0,
+    "emittedSwaggerFiles": 649,
+    "validatedProjects": 487,
+    "validationFailures": 0,
+    "violations": 222905,
+    "distinctRules": 121
+  },
+  "ruleSelection": "All-rule producer; index contains only rules with findings. Missing IDs require registration, audience and activation checks before interpreting as zero.",
+  "nativeAssessment": "not-run"
+}

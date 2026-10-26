@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "baselineIdentity": "aceebb4ebf1ae78205105a94337046d18e583472bd1ebf782effca1e24a75995",
+  "sourceCommit": "2cd3c5dd6d00a5f53214fe594afd2aef3f44d3f9",
+  "populationProjects": 487,
+  "swaggerFiles": 649,
+  "allRuleObservations": 222905,
+  "members": [
+    {
+      "validatorRule": "EnumInsteadOfBoolean",
+      "rawObservations": 8338,
+      "observedProjects": 313,
+      "shardSha256": "6d18f4423537e823ec15423f813c92e52a6a1b441fee31cb584ecfd6bba5506e"
+    },
+    {
+      "validatorRule": "DeleteResponseCodes",
+      "rawObservations": 1427,
+      "observedProjects": 110,
+      "shardSha256": "48a6b63fbe5f62b80af2af160ec2903c901e5ccd3aa700899d7534d417cfd23a"
+    }
+  ],
+  "verification": "Actual GitHub draft download, compressed size/SHA, safe extraction, all 93496 dataset hashes, full source/project/reference/index/shard checks, and selected saved-observation reanalysis passed.",
+  "swaggerGeneration": "not-run",
+  "validatorExecution": "not-run",
+  "nativeAssessment": "not-run",
+  "equivalence": "not-determined"
+}

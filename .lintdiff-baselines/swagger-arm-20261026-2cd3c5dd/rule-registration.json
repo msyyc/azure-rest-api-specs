@@ -1,0 +1,3756 @@
+{
+  "schemaVersion": 1,
+  "specsCommit": "2cd3c5dd6d00a5f53214fe594afd2aef3f44d3f9",
+  "rulesetsVersion": "2.2.6",
+  "assessment": "registration snapshot, not proof every selector matched",
+  "profile": "production ARM/OAS2; readme suppressions disabled",
+  "spectralRulesets": {
+    "azARM": {
+      "extends": [
+        {
+          "extends": [],
+          "rules": {
+            "docLinkLocale": {
+              "description": "This rule is to ensure the documentation link in the description does not contains any locale.",
+              "message": "The documentation link in the description contains locale info, please change it to the link without locale.",
+              "severity": "error",
+              "resolved": false,
+              "formats": ["[function:oas2]"],
+              "given": ["$..[?(@property === 'description')]^"],
+              "then": {
+                "function": "[function:pattern]",
+                "functionOptions": {
+                  "match": "https://docs.microsoft.com/\\w+\\-\\w+/azure/.*"
+                }
+              }
+            },
+            "OperationSummaryOrDescription": {
+              "description": "Operation should have a summary or description.",
+              "message": "Operation should have a summary or description.",
+              "severity": "warn",
+              "disableForTypeSpecDataPlane": true,
+              "disableForTypeSpecDataPlaneReason": "Covered by TSP's '@azure-tools/typespec-azure-core/documentation-required' rule.",
+              "given": [
+                "$.paths[*][?( @property === 'get' && !@.summary && !@.description )]",
+                "$.paths[*][?( @property === 'put' && !@.summary && !@.description )]",
+                "$.paths[*][?( @property === 'post' && !@.summary && !@.description )]",
+                "$.paths[*][?( @property === 'patch' && !@.summary && !@.description )]",
+                "$.paths[*][?( @property === 'delete' && !@.summary && !@.description )]",
+                "$.paths[*][?( @property === 'options' && !@.summary && !@.description )]",
+                "$.paths[*][?( @property === 'head' && !@.summary && !@.description )]",
+                "$.paths[*][?( @property === 'trace' && !@.summary && !@.description )]"
+              ],
+              "then": {
+                "function": "[function:falsy]"
+              }
+            },
+            "SchemaDescriptionOrTitle": {
+              "description": "All schemas should have a description or title.",
+              "message": "Schema should have a description or title.",
+              "severity": "warn",
+              "disableForTypeSpecDataPlane": true,
+              "disableForTypeSpecDataPlaneReason": "Covered by TSP's '@azure-tools/typespec-azure-core/documentation-required' rule.",
+              "formats": ["[function:oas2]", "[function:isOas3]"],
+              "given": [
+                "$.definitions[?(!@.description && !@.title)]",
+                "$.components.schemas[?(!@.description && !@.title)]"
+              ],
+              "then": {
+                "function": "[function:falsy]"
+              }
+            },
+            "ParameterDescription": {
+              "description": "All parameters should have a description.",
+              "message": "Parameter should have a description.",
+              "severity": "warn",
+              "disableForTypeSpecDataPlane": true,
+              "disableForTypeSpecDataPlaneReason": "Covered by TSP's '@azure-tools/typespec-azure-core/documentation-required' rule.",
+              "given": [
+                "$.paths[*].parameters.*",
+                "$.paths.*[get,put,post,patch,delete,options,head].parameters.*"
+              ],
+              "then": {
+                "field": "description",
+                "function": "[function:truthy]"
+              }
+            },
+            "InvalidVerbUsed": {
+              "description": "Each operation definition must have a HTTP verb and it must be DELETE/GET/PUT/PATCH/HEAD/OPTIONS/POST/TRACE.",
+              "message": "Permissible values for HTTP Verb are DELETE, GET, PUT, PATCH, HEAD, OPTIONS, POST, TRACE.",
+              "severity": "error",
+              "resolved": false,
+              "given": "$[paths,'x-ms-paths'].*[?(!@property.match(/^(DELETE|GET|PUT|PATCH|HEAD|OPTIONS|POST|TRACE|PARAMETERS)$/i))]",
+              "then": {
+                "function": "[function:falsy]"
+              }
+            },
+            "LroExtension": {
+              "description": "Operations with a 202 response must specify `x-ms-long-running-operation: true`. GET operation is excluded from the validation as GET will have 202 only if it is a polling action & hence x-ms-long-running-operation wouldn't be defined",
+              "message": "Operations with a 202 response must specify `x-ms-long-running-operation: true`.  GET operation is excluded from the validation as GET will have 202 only if it is a polling action & hence x-ms-long-running-operation wouldn't be defined",
+              "severity": "error",
+              "formats": ["[function:oas2]"],
+              "given": "$.paths[*][put,patch,post,delete].responses[?(@property == '202')]^^",
+              "then": {
+                "field": "x-ms-long-running-operation",
+                "function": "[function:truthy]"
+              }
+            },
+            "LroStatusCodesReturnTypeSchema": {
+              "description": "The '200'/'201' responses of the long running operation must have a schema definition.",
+              "message": "{{error}}",
+              "severity": "error",
+              "resolved": true,
+              "formats": ["[function:oas2]"],
+              "given": [
+                "$[paths,'x-ms-paths'].*[put][?(@property === 'x-ms-long-running-operation' && @ === true)]^"
+              ],
+              "then": {
+                "function": "[function:lroStatusCodesReturnTypeSchema]"
+              }
+            },
+            "NamePropertyDefinitionInParameter": {
+              "description": "A parameter must have a `name` property for the SDK to be properly generated.",
+              "message": "{{error}}",
+              "severity": "error",
+              "resolved": true,
+              "formats": ["[function:oas2]"],
+              "given": [
+                "$.parameters",
+                "$.paths.*.parameters",
+                "$.paths.*.*.parameters"
+              ],
+              "then": {
+                "function": "[function:namePropertyDefinitionInParameter]"
+              }
+            },
+            "OperationIdNounConflictingModelNames": {
+              "description": "The first part of an operation Id separated by an underscore i.e., `Noun` in a `Noun_Verb` should not conflict with names of the models defined in the definitions section. If this happens, AutoRest appends `Model` to the name of the model to resolve the conflict (`NounModel` in given example) with the name of the client itself (which will be named as `Noun` in given example). This can result in an inconsistent user experience.",
+              "message": "{{error}}",
+              "severity": "warn",
+              "resolved": true,
+              "formats": ["[function:oas2]"],
+              "given": [
+                "$[paths,'x-ms-paths'].*.*[?(@property === 'operationId')]"
+              ],
+              "then": {
+                "function": "[function:operationIdNounConflictingModelNames]"
+              }
+            },
+            "OperationIdNounVerb": {
+              "description": "OperationId should be of the form `Noun_Verb`.",
+              "message": "{{error}}",
+              "severity": "error",
+              "resolved": true,
+              "formats": ["[function:oas2]"],
+              "given": [
+                "$[paths,'x-ms-paths'].*.*[?(@property === 'operationId')]"
+              ],
+              "then": {
+                "function": "[function:operationIdNounVerb]"
+              }
+            },
+            "OperationIdSingleUnderscore": {
+              "description": "An operationId can have exactly one underscore, not adhering to it can cause errors in code generation.",
+              "message": "{{error}}",
+              "severity": "error",
+              "resolved": true,
+              "formats": ["[function:oas2]"],
+              "given": [
+                "$[paths,'x-ms-paths'].*.*[?(@property === 'operationId')]"
+              ],
+              "then": {
+                "function": "[function:operationIdSingleUnderscore]"
+              }
+            },
+            "GetInOperationName": {
+              "description": "Verifies whether value for `operationId` is named as per ARM guidelines.",
+              "message": "{{error}}",
+              "severity": "warn",
+              "resolved": true,
+              "formats": ["[function:oas2]"],
+              "given": [
+                "$[paths,'x-ms-paths'].*[get][?(@property === 'operationId')]"
+              ],
+              "then": {
+                "function": "[function:getInOperationName]"
+              }
+            },
+            "PutInOperationName": {
+              "description": "Verifies whether value for `operationId` is named as per ARM guidelines.",
+              "message": "{{error}}",
+              "severity": "warn",
+              "resolved": true,
+              "formats": ["[function:oas2]"],
+              "given": [
+                "$[paths,'x-ms-paths'].*[put][?(@property === 'operationId')]"
+              ],
+              "then": {
+                "function": "[function:putInOperationName]"
+              }
+            },
+            "PatchInOperationName": {
+              "description": "Verifies whether value for `operationId` is named as per ARM guidelines.",
+              "message": "{{error}}",
+              "severity": "warn",
+              "resolved": true,
+              "formats": ["[function:oas2]"],
+              "given": [
+                "$[paths,'x-ms-paths'].*[patch][?(@property === 'operationId')]"
+              ],
+              "then": {
+                "function": "[function:patchInOperationName]"
+              }
+            },
+            "DeleteInOperationName": {
+              "description": "Verifies whether value for `operationId` is named as per ARM guidelines.",
+              "message": "{{error}}",
+              "severity": "warn",
+              "resolved": true,
+              "formats": ["[function:oas2]"],
+              "given": [
+                "$[paths,'x-ms-paths'].*[delete][?(@property === 'operationId')]"
+              ],
+              "then": {
+                "function": "[function:deleteInOperationName]"
+              }
+            },
+            "SummaryAndDescriptionMustNotBeSame": {
+              "description": "Each operation has a summary and description values. They must not be same.",
+              "message": "The summary and description values should not be same.",
+              "severity": "warn",
+              "resolved": false,
+              "given": "$[paths,'x-ms-paths'].*.*",
+              "then": {
+                "function": "[function:checkSummaryAndDescription]"
+              }
+            },
+            "ValidFormats": {
+              "description": "Only valid types are allowed for properties.",
+              "message": "'{{error}}' is not a known format.",
+              "severity": "error",
+              "resolved": false,
+              "given": "$..[?(@property === 'format')]^",
+              "then": {
+                "function": "[function:checkSchemaFormat]"
+              }
+            },
+            "XmsParameterLocation": {
+              "description": "SDKs generated by AutoRest have two types of operation parameters: method arguments and client fields. The 'x-ms-parameter-location' extension gives the Swagger author control of how an operation-parameter will be interpreted by AutoRest, and as such is one of few things in a Swagger document that has semantic value only relevant to the shape of the generated SDKs.\n    Some parameters, such as API Version and Subscription ID will make sense as part of nearly every request. For these, having developers specify them for each method call would be burdensome; attaching them to the client and automatically including them in each request makes way more sense. Other parameters will be very operation specific and should be provided each time the method is called.",
+              "message": "The parameter '{{property}}' is defined in global parameters section without 'x-ms-parameter-location' extension. This would add the parameter as the client property. Please ensure that this is exactly you want. If so, apply the extension \"x-ms-parameter-location\": \"client\". Else, apply the extension \"x-ms-parameter-location\": \"method\".",
+              "severity": "error",
+              "resolved": false,
+              "given": "$.parameters.*[?(@property === 'name' && @.match(/^(subscriptionid|subscription-id|api-version|apiversion)$/i))]^",
+              "then": {
+                "function": "[function:paramLocation]"
+              }
+            },
+            "LongRunningOperationsOptionsValidator": {
+              "description": "A LRO Post operation with return schema should have \"x-ms-long-running-operation-options\" extension enabled.",
+              "message": "{{error}}",
+              "severity": "warn",
+              "resolved": true,
+              "formats": ["[function:oas2]"],
+              "given": [
+                "$[paths,'x-ms-paths'].*[post][?(@property === 'x-ms-long-running-operation' && @ === true)]^"
+              ],
+              "then": {
+                "function": "[function:longRunningOperationsOptionsValidator]"
+              }
+            },
+            "MutabilityWithReadOnly": {
+              "description": "Verifies whether a model property which has a readOnly property set has the appropriate `x-ms-mutability` options. If `readonly: true`, `x-ms-mutability` must be `[\"read\"]`. If `readonly: false`, `x-ms-mutability` can be any of the `x-ms-mutability` options.",
+              "message": "{{error}}",
+              "severity": "error",
+              "resolved": true,
+              "formats": ["[function:oas2]"],
+              "given": [
+                "$[paths,'x-ms-paths']..*[?(@ != null && @.readOnly !== undefined && @['x-ms-mutability'] !== undefined)]"
+              ],
+              "then": {
+                "function": "[function:mutabilityWithReadOnly]"
+              }
+            },
+            "NextLinkPropertyMustExist": {
+              "description": "Per definition of AutoRest x-ms-pageable extension, the property specified by nextLinkName must exist in the 200 response schema.",
+              "message": "{{error}}",
+              "severity": "error",
+              "resolved": true,
+              "formats": ["[function:oas2]"],
+              "given": [
+                "$[paths,'x-ms-paths'].*.*[?(@property === 'x-ms-pageable')]^"
+              ],
+              "then": {
+                "function": "[function:nextLinkPropertyMustExist]"
+              }
+            },
+            "NonEmptyClientName": {
+              "description": "The 'x-ms-client-name' extension is used to change the name of a parameter or property in the generated code.",
+              "message": "Empty x-ms-client-name property.",
+              "severity": "error",
+              "resolved": true,
+              "formats": ["[function:oas2]"],
+              "given": [
+                "$[paths,'x-ms-paths']..?(@property === 'x-ms-client-name')"
+              ],
+              "then": {
+                "function": "[function:truthy]"
+              }
+            },
+            "PageableRequires200Response": {
+              "description": "Per definition of AutoRest x-ms-pageable extension, the response schema must contain a 200 response schema.",
+              "message": "A response for the 200 HTTP status code must be defined to use x-ms-pageable.",
+              "severity": "error",
+              "resolved": true,
+              "formats": ["[function:oas2]"],
+              "given": [
+                "$[paths,'x-ms-paths'].*.*[?(@property === 'x-ms-pageable')]^"
+              ],
+              "then": {
+                "field": "[responses][200]",
+                "function": "[function:truthy]"
+              }
+            },
+            "ResourceHasXMsResourceEnabled": {
+              "description": "A 'Resource' definition must have x-ms-azure-resource extension enabled and set to true. This will indicate that the model is an Azure resource.",
+              "message": "A 'Resource' definition must have x-ms-azure-resource extension enabled and set to true.",
+              "severity": "error",
+              "resolved": true,
+              "formats": ["[function:oas2]"],
+              "given": ["$.definitions[?(@property === 'Resource')]"],
+              "then": {
+                "field": "[x-ms-azure-resource]",
+                "function": "[function:truthy]"
+              }
+            },
+            "XmsClientName": {
+              "description": "The 'x-ms-client-name' extension is used to change the name of a parameter or property in the generated code. By using the 'x-ms-client-name' extension, a name can be defined for use specifically in code generation, separately from the name on the wire. It can be used for query parameters and header parameters, as well as properties of schemas. This name is case sensitive.",
+              "message": "{{error}}",
+              "severity": "error",
+              "resolved": true,
+              "formats": ["[function:oas2]"],
+              "given": [
+                "$[paths,'x-ms-paths']..*[?(@ != null && @['x-ms-client-name'] !== undefined)]"
+              ],
+              "then": {
+                "function": "[function:xmsClientName]"
+              }
+            },
+            "XmsPathsMustOverloadPaths": {
+              "description": "The `x-ms-paths` extension allows us to overload an existing path based on path parameters. We cannot specify an `x-ms-paths` without a path that already exists in the `paths` section.",
+              "message": "{{error}}",
+              "severity": "error",
+              "resolved": true,
+              "formats": ["[function:oas2]"],
+              "given": ["$['x-ms-paths']"],
+              "then": {
+                "function": "[function:xmsPathsMustOverloadPaths]"
+              }
+            },
+            "XmsExamplesRequired": {
+              "description": "Verifies whether `x-ms-examples` are provided for each operation or not.",
+              "message": "Please provide x-ms-examples describing minimum/maximum property set for response/request payloads for operations.",
+              "severity": "warn",
+              "resolved": false,
+              "formats": ["[function:oas2]"],
+              "given": [
+                "$[paths,'x-ms-paths'].*[get,put,post,patch,delete,options,head]"
+              ],
+              "then": {
+                "function": "[function:xmsExamplesRequired]"
+              }
+            },
+            "XmsClientNameParameter": {
+              "description": "The `x-ms-client-name` extension is used to change the name of a parameter or property in the generated code. By using the `x-ms-client-name` extension, a name can be defined for use specifically in code generation, separately from the name on the wire. It can be used for query parameters and header parameters, as well as properties of schemas. This name is case sensitive.",
+              "message": "Value of `x-ms-client-name` cannot be the same as Property/Model.",
+              "severity": "warn",
+              "resolved": false,
+              "formats": ["[function:oas2]"],
+              "given": [
+                "$.paths.*[get,put,post,patch,delete,options,head].parameters[?(@.name && @['x-ms-client-name'])]",
+                "$.paths.*.parameters[?(@.name && @['x-ms-client-name'])]",
+                "$.parameters[?(@.name && @['x-ms-client-name'])]"
+              ],
+              "then": {
+                "function": "[function:xmsClientNameParameter]"
+              }
+            },
+            "XmsClientNameProperty": {
+              "description": "The `x-ms-client-name` extension is used to change the name of a parameter or property in the generated code.By using the `x-ms-client-name` extension, a name can be defined for use specifically in code generation, separately from the name on the wire.It can be used for query parameters and header parameters, as well as properties of schemas. This name is case sensitive.",
+              "message": "Value of `x-ms-client-name` cannot be the same as Property/Model.",
+              "severity": "warn",
+              "resolved": false,
+              "formats": ["[function:oas2]"],
+              "given": ["$.definitions[*].properties.*['x-ms-client-name']"],
+              "then": {
+                "function": "[function:xmsClientNameProperty]"
+              }
+            },
+            "ListInOperationName": {
+              "description": "Verifies whether value for `operationId` is named as per ARM guidelines when response contains array of items.",
+              "message": "Since operation response has model definition in array type, it should be of the form \"_list\".",
+              "severity": "warn",
+              "resolved": true,
+              "formats": ["[function:oas2]"],
+              "given": ["$.paths.*[get,post]"],
+              "then": {
+                "function": "[function:listInOperationName]"
+              }
+            },
+            "DescriptiveDescriptionRequired": {
+              "description": "The value of the 'description' property must be descriptive. It cannot be spaces or empty description.",
+              "message": "The value provided for description is not descriptive enough. Accurate and descriptive description is essential for maintaining reference documentation.",
+              "severity": "error",
+              "resolved": false,
+              "formats": ["[function:oas2]"],
+              "given": ["$..[?(@object() && @.description)].description"],
+              "then": {
+                "function": "[function:descriptiveDescriptionRequired]"
+              }
+            },
+            "ParameterDescriptionRequired": {
+              "description": "The value of the 'description' property must be descriptive. It cannot be spaces or empty description.",
+              "message": "'{{property}}' parameter lacks 'description' property. Consider adding a 'description' element. Accurate description is essential for maintaining reference documentation.",
+              "severity": "error",
+              "disableForTypeSpecDataPlane": true,
+              "disableForTypeSpecDataPlaneReason": "Covered by TSP's '@azure-tools/typespec-azure-core/documentation-required' rule.",
+              "resolved": false,
+              "formats": ["[function:oas2]"],
+              "given": ["$.parameters.*"],
+              "then": {
+                "function": "[function:descriptiveDescriptionRequired]"
+              }
+            },
+            "DefaultInEnum": {
+              "description": "This rule applies when the value specified by the default property does not appear in the enum constraint for a schema.",
+              "message": "Default value should appear in the enum constraint for a schema",
+              "severity": "error",
+              "resolved": false,
+              "formats": ["[function:oas2]"],
+              "given": "$..[?(@object() && @.enum)]",
+              "then": {
+                "function": "[function:defaultInEnum]"
+              }
+            },
+            "EnumInsteadOfBoolean": {
+              "description": "Booleans properties are not descriptive in all cases and can make them to use, evaluate whether is makes sense to keep the property as boolean or turn it into an enum.",
+              "message": "Booleans properties are not descriptive in all cases and can make them to use, evaluate whether is makes sense to keep the property as boolean or turn it into an enum.",
+              "severity": "warn",
+              "resolved": false,
+              "formats": ["[function:oas2]"],
+              "given": "$..[?(@object() && @.type === 'boolean')]",
+              "then": {
+                "function": "[function:enumInsteadOfBoolean]"
+              }
+            },
+            "AvoidAnonymousParameter": {
+              "description": "Inline/anonymous models must not be used, instead define a schema with a model name in the \"definitions\" section and refer to it. This allows operations to share the models.",
+              "message": "Inline/anonymous models must not be used, instead define a schema with a model name in the \"definitions\" section and refer to it. This allows operations to share the models.",
+              "severity": "error",
+              "resolved": false,
+              "formats": ["[function:oas2]"],
+              "given": [
+                "$.paths[*].parameters.*.schema",
+                "$.paths.*[get,put,post,patch,delete,options,head].parameters.*.schema"
+              ],
+              "then": {
+                "function": "[function:avoidAnonymousSchema]"
+              }
+            },
+            "AvoidAnonymousTypes": {
+              "description": "This rule appears when you define a model type inline, rather than in the definitions section. If the model represents the same type as another parameter in a different operation, then it becomes impossible to reuse that same class for both operations.",
+              "message": "Inline/anonymous models must not be used, instead define a schema with a model name in the \"definitions\" section and refer to it. This allows operations to share the models.",
+              "severity": "error",
+              "resolved": false,
+              "formats": ["[function:oas2]"],
+              "given": [
+                "$.paths[*].*.responses.*.schema",
+                "$.definitions..additionalProperties[?(@property === 'type' && @ === 'object')]^",
+                "$.definitions..allOf[?(@property === 'type' && @ === 'object')]^"
+              ],
+              "then": {
+                "function": "[function:avoidAnonymousSchema]"
+              }
+            },
+            "AvoidNestedProperties": {
+              "description": "Nested properties can result into bad user experience especially when creating request objects. `x-ms-client-flatten` flattens the model properties so that the users can analyze and set the properties much more easily.",
+              "message": "Consider using x-ms-client-flatten to provide a better end user experience",
+              "severity": "warn",
+              "resolved": false,
+              "formats": ["[function:oas2]"],
+              "given": [
+                "$..[?(@object() && @.properties)].properties[?(@object() && @.properties)].properties^"
+              ],
+              "then": {
+                "field": "x-ms-client-flatten",
+                "function": "[function:truthy]"
+              }
+            },
+            "AvoidMsdnReferences": {
+              "description": "The documentation is being generated from the OpenAPI(swagger) and published at \"learn.microsoft.com\". From that perspective, documentation team would like to avoid having links to the \"msdn.microsoft.com\" or \"docs.microsoft.com\" in the OpenAPI(swagger) and SDK documentations.",
+              "message": "For better generated code quality, remove all references to \"msdn.microsoft.com\" and \"docs.microsoft.com\".",
+              "severity": "warn",
+              "resolved": false,
+              "formats": ["[function:oas2]"],
+              "given": [
+                "$..[?(@property === 'externalDocs')].",
+                "$.info.description"
+              ],
+              "then": {
+                "function": "[function:avoidMsdnReferences]"
+              }
+            }
+          }
+        }
+      ],
+      "rules": {
+        "ApiHost": {
+          "description": "The host is required for management plane specs.",
+          "message": "{{description}}",
+          "severity": "error",
+          "resolved": false,
+          "formats": ["[function:oas2]"],
+          "given": ["$.host"],
+          "then": {
+            "function": "[function:truthy]"
+          }
+        },
+        "SubscriptionsAndResourceGroupCasing": {
+          "description": "The subscriptions and resourceGroup in resource uri should follow lower camel case.",
+          "message": "{{error}}",
+          "severity": "error",
+          "resolved": false,
+          "formats": ["[function:oas2]"],
+          "given": ["$.paths", "$.x-ms-paths"],
+          "then": {
+            "function": "[function:pathSegmentCasing]",
+            "functionOptions": {
+              "segments": ["resourceGroups", "subscriptions"]
+            }
+          }
+        },
+        "PutResponseCodes": {
+          "rpcGuidelineCode": "RPC-Async-V1-01, RPC-Put-V1-11",
+          "description": "LRO and Synchronous PUT must have 200 & 201 return codes.",
+          "severity": "error",
+          "disableForTypeSpecDataPlane": true,
+          "disableForTypeSpecDataPlaneReason": "Covered by TSP's '@azure-tools/typespec-azure-resource-manager/arm-put-operation-response-codes' rule.",
+          "message": "{{error}}",
+          "resolved": true,
+          "formats": ["[function:oas2]"],
+          "given": ["$[paths,'x-ms-paths'].*[put]"],
+          "then": {
+            "function": "[function:PutResponseCodes]"
+          }
+        },
+        "ProvisioningStateSpecifiedForLROPut": {
+          "rpcGuidelineCode": "RPC-Async-V1-02",
+          "description": "A LRO PUT operation's response schema must have \"ProvisioningState\" property specified for the 200 and 201 status codes.",
+          "message": "{{error}}",
+          "severity": "error",
+          "resolved": true,
+          "formats": ["[function:oas2]"],
+          "given": [
+            "$[paths,'x-ms-paths'].*[put][?(@property === 'x-ms-long-running-operation' && @ === true)]^"
+          ],
+          "then": {
+            "function": "[function:provisioningStateSpecifiedForLROPut]"
+          }
+        },
+        "ProvisioningStateSpecifiedForLROPatch": {
+          "rpcGuidelineCode": "RPC-Async-V1-02",
+          "description": "A long running Patch operation's response schema must have \"ProvisioningState\" property specified for the 200 status code.",
+          "message": "{{error}}",
+          "severity": "error",
+          "resolved": true,
+          "formats": ["[function:oas2]"],
+          "given": [
+            "$[paths,'x-ms-paths'].*[patch][?(@property === 'x-ms-long-running-operation' && @ === true)]^.responses[?(@property == '200')]"
+          ],
+          "then": {
+            "function": "[function:provisioningStateSpecifiedForLROPatch]"
+          }
+        },
+        "ProvisioningStateValidation": {
+          "rpcGuidelineCode": "RPC-Async-V1-03",
+          "description": "ProvisioningState must have terminal states: Succeeded, Failed and Canceled.",
+          "message": "{{error}}",
+          "severity": "error",
+          "disableForTypeSpecDataPlane": true,
+          "disableForTypeSpecDataPlaneReason": "Covered by TSP's '@azure-tools/typespec-azure-resource-manager/arm-resource-provisioning-state' rule.",
+          "resolved": false,
+          "formats": ["[function:oas2]"],
+          "given": [
+            "$.definitions..provisioningState[?(@property === 'enum')]^",
+            "$.definitions..ProvisioningState[?(@property === 'enum')]^"
+          ],
+          "then": {
+            "function": "[function:provisioningState]"
+          }
+        },
+        "LroLocationHeader": {
+          "rpcGuidelineCode": "RPC-Async-V1-07",
+          "description": "Location header must be supported for all async operations that return 202.",
+          "message": "A 202 response should include an Location response header.",
+          "severity": "error",
+          "disableForTypeSpecDataPlane": true,
+          "disableForTypeSpecDataPlaneReason": "Covered by TSP's '@azure-tools/typespec-azure-resource-manager/arm-location-header' rule.",
+          "formats": ["[function:oas2]"],
+          "given": "$.paths[*][*].responses[?(@property == '202')]",
+          "then": {
+            "function": "[function:hasHeader]",
+            "functionOptions": {
+              "name": "Location"
+            }
+          }
+        },
+        "PostResponseCodes": {
+          "rpcGuidelineCode": "RPC-Async-V1-11, RPC-Async-V1-14, RPC-POST-V1-02, RPC-POST-V1-03",
+          "description": "Synchronous POST must return 200 when a response body is required or 204 when no body is needed; LRO POST must initially return 202, with the final response returning 200 if a body is expected or 204 if not.",
+          "severity": "error",
+          "disableForTypeSpecDataPlane": true,
+          "disableForTypeSpecDataPlaneReason": "Covered by TSP's '@azure-tools/typespec-azure-resource-manager/arm-post-operation-response-codes' rule.",
+          "message": "{{error}}",
+          "resolved": true,
+          "formats": ["[function:oas2]"],
+          "given": ["$[paths,'x-ms-paths'].*[post]"],
+          "then": {
+            "function": "[function:PostResponseCodes]"
+          }
+        },
+        "XMSLongRunningOperationProperty": {
+          "rpcGuidelineCode": "RPC-Async-V1-15",
+          "description": "If an operation's (PUT/POST/PATCH/DELETE) responses have `Location` or `Azure-AsyncOperation` headers then it MUST have the property `x-ms-long-running-operation` set to `true`",
+          "message": "If an operation's (PUT/POST/PATCH/DELETE) responses have `Location` or `Azure-AsyncOperation` headers then it MUST have the property `x-ms-long-running-operation` set to `true`",
+          "severity": "error",
+          "formats": ["[function:oas2]"],
+          "resolved": true,
+          "given": "$[paths,'x-ms-paths'].*[put,patch,post,delete]",
+          "then": {
+            "function": "[function:verifyXMSLongRunningOperationProperty]"
+          }
+        },
+        "ProvisioningStateMustBeReadOnly": {
+          "rpcGuidelineCode": "RPC-Async-V1-16",
+          "description": "This is a rule introduced to validate if provisioningState property is set to readOnly or not.",
+          "message": "{{error}}",
+          "severity": "error",
+          "disableForTypeSpecDataPlane": true,
+          "disableForTypeSpecDataPlaneReason": "Covered by TSP's '@azure-tools/typespec-azure-resource-manager/arm-resource-provisioning-state' rule.",
+          "resolved": true,
+          "formats": ["[function:oas2]"],
+          "given": ["$[paths,'x-ms-paths'].*.*.responses.*.schema"],
+          "then": {
+            "function": "[function:provisioningStateMustBeReadOnly]"
+          }
+        },
+        "LroErrorContent": {
+          "rpcGuidelineCode": "RPC-Common-V1-05",
+          "description": "Error response content of long running operations must follow the error schema provided in the common types v2 and above.",
+          "message": "{{description}}",
+          "severity": "error",
+          "resolved": false,
+          "formats": ["[function:oas2]"],
+          "given": "$[paths,'x-ms-paths'].*.*[?(@property === 'x-ms-long-running-operation' && @ === true)]^.responses[?(@property === 'default' || @property.startsWith('5') || @property.startsWith('4'))].schema.$ref",
+          "then": {
+            "function": "[function:pattern]",
+            "functionOptions": {
+              "match": ".*/common-types/resource-management/v(([1-9]\\d+)|[2-9])/types.json#/definitions/ErrorResponse"
+            }
+          }
+        },
+        "DeleteResponseCodes": {
+          "rpcGuidelineCode": "RPC-Delete-V1-01, RPC-Async-V1-09",
+          "description": "Synchronous DELETE must have 200 & 204 return codes and LRO DELETE must have 202 & 204 return codes.",
+          "severity": "error",
+          "message": "{{error}}",
+          "disableForTypeSpecDataPlane": true,
+          "disableForTypeSpecDataPlaneReason": "Covered by TSP's '@azure-tools/typespec-azure-resource-manager/arm-delete-operation-response-codes' rule.",
+          "resolved": true,
+          "formats": ["[function:oas2]"],
+          "given": ["$[paths,'x-ms-paths'].*[delete]"],
+          "then": {
+            "function": "[function:DeleteResponseCodes]"
+          }
+        },
+        "DeleteMustNotHaveRequestBody": {
+          "rpcGuidelineCode": "RPC-Delete-V1-02",
+          "description": "The delete operation must not have a request body.",
+          "severity": "error",
+          "message": "{{description}}",
+          "resolved": true,
+          "formats": ["[function:oas2]"],
+          "given": "$.paths.*.delete.parameters[?(@.in === 'body')]",
+          "then": {
+            "function": "[function:falsy]"
+          }
+        },
+        "DeleteResponseBodyEmpty": {
+          "rpcGuidelineCode": "RPC-Delete-V1-04",
+          "description": "The delete response body must be empty.",
+          "message": "{{description}}",
+          "severity": "error",
+          "resolved": true,
+          "formats": ["[function:oas2]"],
+          "given": [
+            "$[paths,'x-ms-paths'].*[delete].responses['200','204'].schema"
+          ],
+          "then": {
+            "function": "[function:falsy]"
+          }
+        },
+        "AvoidAdditionalProperties": {
+          "rpcGuidelineCode": "RPC-Policy-V1-05, RPC-Put-V1-23",
+          "description": "Definitions must not have properties named additionalProperties except for user defined tags or predefined references.",
+          "severity": "error",
+          "message": "{{description}}",
+          "disableForTypeSpecDataPlane": true,
+          "disableForTypeSpecDataPlaneReason": "Covered by TSP's '@azure-tools/typespec-azure-resource-manager/no-record' rule.",
+          "resolved": false,
+          "formats": ["[function:oas2]"],
+          "given": "$.definitions..[?(@property !== 'tags' && @property !== 'delegatedResources' && @property !== 'userAssignedIdentities' && @ && @.additionalProperties)]",
+          "then": {
+            "function": "[function:falsy]"
+          }
+        },
+        "PropertiesTypeObjectNoDefinition": {
+          "rpcGuidelineCode": "RPC-Policy-V1-03",
+          "description": "Properties with type:object that don't reference a model definition are not allowed. ARM doesn't allow generic type definitions as this leads to bad customer experience.",
+          "severity": "error",
+          "stagingOnly": true,
+          "message": "{{error}}",
+          "resolved": true,
+          "formats": ["[function:oas2]"],
+          "given": [
+            "$.definitions..[?(@property === 'type' && @ ==='object')]^",
+            "$.definitions..[?(@property === 'type' && @ === '')]^",
+            "$.definitions..[?(@property === 'undefined')]^"
+          ],
+          "then": {
+            "function": "[function:propertiesTypeObjectNoDefinition]"
+          }
+        },
+        "GetResponseCodes": {
+          "rpcGuidelineCode": "RPC-Get-V1-01",
+          "description": "The GET operation should only return 200. In addition, it can return 202 only if it has \"Location\" header defined",
+          "message": "{{error}}",
+          "severity": "error",
+          "resolved": true,
+          "formats": ["[function:oas2]"],
+          "given": ["$[paths,'x-ms-paths'].*[get]"],
+          "then": {
+            "function": "[function:getResponseCodes]"
+          }
+        },
+        "GetMustNotHaveRequestBody": {
+          "rpcGuidelineCode": "RPC-Get-V1-02",
+          "description": "The Get operation must not have a request body.",
+          "severity": "error",
+          "message": "{{description}}",
+          "resolved": true,
+          "formats": ["[function:oas2]"],
+          "given": "$[paths,'x-ms-paths'].*.get.parameters[?(@.in === 'body')]",
+          "then": {
+            "function": "[function:falsy]"
+          }
+        },
+        "GetCollectionOnlyHasValueAndNextLink": {
+          "rpcGuidelineCode": "RPC-Get-V1-09, RPC-Arg-V1-01, RPC-Get-V1-06",
+          "description": "Get endpoints for collections of resources must only have the `value` and `nextLink` properties in their model.",
+          "message": "{{description}}",
+          "severity": "error",
+          "resolved": true,
+          "formats": ["[function:oas2]"],
+          "given": "$[paths,'x-ms-paths'][?(!@property.endsWith('}') && !@property.endsWith('operations') && !@property.endsWith('default'))][get].responses.200.schema.properties",
+          "then": {
+            "function": "[function:getCollectionOnlyHasValueAndNextLink]"
+          }
+        },
+        "ParametersInPointGet": {
+          "rpcGuidelineCode": "RPC-Get-V1-08",
+          "description": "Point Get's MUST not have query parameters other than api version.",
+          "severity": "error",
+          "message": "{{error}}",
+          "resolved": true,
+          "formats": ["[function:oas2]"],
+          "given": "$[paths,'x-ms-paths']",
+          "then": {
+            "function": "[function:parametersInPointGet]"
+          }
+        },
+        "MissingSegmentsInNestedResourceListOperation": {
+          "rpcGuidelineCode": "RPC-Get-V1-11",
+          "description": "A nested resource type's List operation must include all the parent segments in its api path.",
+          "severity": "warn",
+          "message": "{{error}}",
+          "resolved": true,
+          "formats": ["[function:oas2]"],
+          "given": "$[paths,'x-ms-paths'].*[get]^~",
+          "then": {
+            "function": "[function:missingSegmentsInNestedResourceListOperation]"
+          }
+        },
+        "XmsPageableForListCalls": {
+          "rpcGuidelineCode": "RPC-Get-V1-11",
+          "description": "`x-ms-pageable` extension must be specified for LIST APIs.",
+          "severity": "error",
+          "message": "{{error}}",
+          "resolved": true,
+          "formats": ["[function:oas2]"],
+          "given": "$[paths,'x-ms-paths'][?(!@property.endsWith('}') && !@property.endsWith('/default'))].get",
+          "then": {
+            "function": "[function:xmsPageableForListCalls]"
+          }
+        },
+        "GetOperationMustNotBeLongRunning": {
+          "rpcGuidelineCode": "RPC-Get-V1-14",
+          "description": "The GET operation cannot be long running. It must not have the `x-ms-long-running-operation` and `x-ms-long-running-operation-options` properties defined.",
+          "severity": "error",
+          "message": "{{description}}",
+          "resolved": true,
+          "formats": ["[function:oas2]"],
+          "given": [
+            "$[paths,'x-ms-paths'].*[get].x-ms-long-running-operation-options",
+            "$[paths,'x-ms-paths'].*[get][?(@property === 'x-ms-long-running-operation' && @ === true)]"
+          ],
+          "then": {
+            "function": "[function:falsy]"
+          }
+        },
+        "QueryParametersInCollectionGet": {
+          "rpcGuidelineCode": "RPC-Get-V1-15",
+          "description": "Collection Get's/List operations MUST not have query parameters other than api-version & OData filter.",
+          "severity": "error",
+          "message": "{{error}}",
+          "stagingOnly": true,
+          "resolved": true,
+          "formats": ["[function:oas2]"],
+          "given": "$[paths,'x-ms-paths']",
+          "then": {
+            "function": "[function:queryParametersInCollectionGet]"
+          }
+        },
+        "PatchPropertiesCorrespondToPutProperties": {
+          "rpcGuidelineCode": "RPC-Patch-V1-01",
+          "description": "PATCH request body must only contain properties present in the corresponding PUT request body, and must contain at least one property.",
+          "message": "{{error}}",
+          "severity": "error",
+          "stagingOnly": true,
+          "resolved": true,
+          "formats": ["[function:oas2]"],
+          "given": ["$[paths,'x-ms-paths'].*"],
+          "then": {
+            "function": "[function:patchPropertiesCorrespondToPutProperties]"
+          }
+        },
+        "ConsistentPatchProperties": {
+          "rpcGuidelineCode": "RPC-Patch-V1-01",
+          "description": "The properties in the patch body must be present in the resource model and follow json merge patch.",
+          "message": "{{error}}",
+          "severity": "error",
+          "resolved": true,
+          "formats": ["[function:oas2]"],
+          "given": ["$.paths.*.patch"],
+          "then": {
+            "function": "[function:consistentPatchProperties]"
+          }
+        },
+        "UnSupportedPatchProperties": {
+          "rpcGuidelineCode": "RPC-Patch-V1-02",
+          "description": "Patch may not change the name, location, or type of the resource.",
+          "message": "{{error}}",
+          "severity": "error",
+          "resolved": true,
+          "formats": ["[function:oas2]"],
+          "given": ["$[paths,'x-ms-paths'].*.patch"],
+          "then": {
+            "function": "[function:]",
+            "functionOptions": {
+              "shouldNot": ["id", "name", "type", "location"],
+              "propertiesThatMustNotBeInPropertiesBagAsWritable": [
+                "provisioningState"
+              ]
+            }
+          }
+        },
+        "PatchResponseCodes": {
+          "rpcGuidelineCode": "RPC-Patch-V1-06",
+          "description": "Synchronous PATCH must have 200 return code and LRO PATCH must have 200 and 202 return codes.",
+          "message": "{{error}}",
+          "severity": "error",
+          "resolved": true,
+          "formats": ["[function:oas2]"],
+          "given": ["$[paths,'x-ms-paths'].*[patch]"],
+          "then": {
+            "function": "[function:patchResponseCodes]"
+          }
+        },
+        "LroPatch202": {
+          "rpcGuidelineCode": "RPC-Patch-V1-06, RPC-Async-V1-08",
+          "description": "Async PATCH should return 202.",
+          "message": "{{error}}",
+          "severity": "error",
+          "resolved": true,
+          "formats": ["[function:oas2]"],
+          "given": [
+            "$[paths,'x-ms-paths'].*[patch][?(@property === 'x-ms-long-running-operation' && @ === true)]^"
+          ],
+          "then": {
+            "function": "[function:lroPatch202]"
+          }
+        },
+        "PatchSkuProperty": {
+          "rpcGuidelineCode": "RPC-Patch-V1-09",
+          "description": "RP should consider implementing Patch for the 'SKU' envelope property if it's defined in the resource model and the service supports its updation.",
+          "message": "{{error}}",
+          "severity": "warn",
+          "resolved": true,
+          "formats": ["[function:oas2]"],
+          "given": ["$[paths,'x-ms-paths'].*.patch"],
+          "then": {
+            "function": "[function:]",
+            "functionOptions": {
+              "should": ["sku"]
+            }
+          }
+        },
+        "PatchBodyParametersSchema": {
+          "rpcGuidelineCode": "RPC-Patch-V1-10",
+          "description": "A request parameter of the Patch Operation must not have a required/default/'x-ms-mutability: [\"create\"]' value.",
+          "message": "{{error}}",
+          "severity": "error",
+          "resolved": true,
+          "formats": ["[function:oas2]"],
+          "given": ["$.paths.*.patch.parameters[?(@.in === 'body')]"],
+          "then": {
+            "function": "[function:patchBodyParameters]"
+          }
+        },
+        "PatchIdentityProperty": {
+          "rpcGuidelineCode": "RPC-Patch-V1-11",
+          "description": "RP must implement PATCH for the 'identity' envelope property If it's defined in the resource model.",
+          "message": "{{error}}",
+          "severity": "error",
+          "resolved": true,
+          "formats": ["[function:oas2]"],
+          "given": ["$[paths,'x-ms-paths'].*.patch"],
+          "then": {
+            "function": "[function:]",
+            "functionOptions": {
+              "should": ["identity"]
+            }
+          }
+        },
+        "PathForTrackedResourceTypes": {
+          "rpcGuidelineCode": "RPC-Put-V1-01, RPC-Get-V1-11",
+          "description": "The path must be under a subscription and resource group for tracked resource types.",
+          "message": "{{description}}",
+          "severity": "error",
+          "resolved": true,
+          "formats": ["[function:oas2]"],
+          "given": ["$[paths,'x-ms-paths'].*[get,put]^"],
+          "then": {
+            "function": "[function:pathForTrackedResourceTypes]"
+          }
+        },
+        "EvenSegmentedPathForPutOperation": {
+          "rpcGuidelineCode": "RPC-Put-V1-02",
+          "description": "API path with PUT operation defined MUST have even number of segments (i.e. end in {resourceType}/{resourceName} segments).",
+          "message": "{{description}}",
+          "severity": "error",
+          "resolved": true,
+          "formats": ["[function:oas2]"],
+          "given": "$[paths,'x-ms-paths'].*.put^~",
+          "then": {
+            "function": "[function:pattern]",
+            "functionOptions": {
+              "match": ".*/providers/\\w+.\\w+(/\\w+/(default|{\\w+}))+$"
+            }
+          }
+        },
+        "RepeatedPathInfo": {
+          "rpcGuidelineCode": "RPC-Put-V1-05",
+          "description": "Information in the Path should not be repeated in the request body (i.e. subscription ID, resource group name, resource name).",
+          "message": "The '{{error}}' already appears in the path, please don't repeat it in the request body.",
+          "severity": "error",
+          "resolved": true,
+          "formats": ["[function:oas2]"],
+          "given": "$[paths,'x-ms-paths'].*.put^",
+          "then": {
+            "function": "[function:bodyParamRepeatedInfo]"
+          }
+        },
+        "RequestSchemaForTrackedResourcesMustHaveTags": {
+          "rpcGuidelineCode": "RPC-Put-V1-07",
+          "description": "A tracked resource MUST always have tags as a top level optional property",
+          "message": "{{description}}. {{error}}",
+          "severity": "error",
+          "resolved": true,
+          "formats": ["[function:oas2]"],
+          "given": "$[paths,'x-ms-paths'].*.put^",
+          "then": {
+            "function": "[function:trackedResourceTagsPropertyInRequest]"
+          }
+        },
+        "PutGetPatchResponseSchema": {
+          "rpcGuidelineCode": "RPC-Put-V1-12",
+          "description": "For a given path with PUT, GET and PATCH operations, the schema of the response must be the same.",
+          "message": "{{property}} has different responses for PUT/GET/PATCH operations. The PUT/GET/PATCH operations must have same schema response.",
+          "severity": "error",
+          "resolved": false,
+          "given": ["$[paths,'x-ms-paths'].*.put^"],
+          "then": {
+            "function": "[function:putGetPatchSchema]"
+          }
+        },
+        "XmsResourceInPutResponse": {
+          "rpcGuidelineCode": "RPC-Put-V1-12",
+          "description": "The 200 response model for an ARM PUT operation must have x-ms-azure-resource extension set to true in its hierarchy.",
+          "message": "{{error}}",
+          "severity": "error",
+          "resolved": true,
+          "given": ["$[paths,'x-ms-paths'].*.put"],
+          "then": {
+            "function": "[function:withXmsResource]"
+          }
+        },
+        "XMSSecretInResponse": {
+          "rpcGuidelineCode": "RPC-Put-V1-13",
+          "description": "When defining the response model for an ARM PUT/GET/POST operation, any property that contains sensitive information (such as passwords, keys, tokens, credentials, or other secrets) must include the \"x-ms-secret\": true annotation. This ensures that secrets are properly identified and handled according to ARM security guidelines.",
+          "message": "{{error}}",
+          "severity": "error",
+          "resolved": true,
+          "given": ["$.definitions.*.properties"],
+          "then": {
+            "function": "[function:XMSSecretInResponse]"
+          }
+        },
+        "LocationMustHaveXmsMutability": {
+          "rpcGuidelineCode": "RPC-Put-V1-14",
+          "description": "A tracked resource's location property must have the x-ms-mutability properties set as read, create.",
+          "message": "Property `location` must have `\"x-ms-mutability\":[\"read\", \"create\"]` extension defined.",
+          "severity": "warn",
+          "resolved": false,
+          "formats": ["[function:oas2]"],
+          "given": ["$.definitions[*].properties.location"],
+          "then": {
+            "function": "[function:locationMustHaveXmsMutability]"
+          }
+        },
+        "ResponseSchemaSpecifiedForSuccessStatusCode": {
+          "rpcGuidelineCode": "RPC-Put-V1-24",
+          "description": "The 200 and 201 success status codes for an ARM PUT operation must have a response schema specified.",
+          "message": "{{error}}",
+          "severity": "error",
+          "resolved": false,
+          "formats": ["[function:oas2]"],
+          "given": ["$[paths,'x-ms-paths'].*.put"],
+          "then": {
+            "function": "[function:responseSchemaSpecifiedForSuccessStatusCode]"
+          }
+        },
+        "PutRequestResponseSchemeArm": {
+          "rpcGuidelineCode": "RPC-Put-V1-25",
+          "description": "The request & response('200') schema of the PUT operation must be same.",
+          "message": "{{error}}",
+          "severity": "error",
+          "resolved": true,
+          "formats": ["[function:oas2]"],
+          "given": [
+            "$[paths,'x-ms-paths'].*[put][responses][?(@property === '200' || @property === '201')]^^"
+          ],
+          "then": {
+            "function": "[function:putRequestResponseScheme]"
+          }
+        },
+        "RequestBodyMustExistForPutPatch": {
+          "rpcGuidelineCode": "RPC-Put-V1-28, RPC-Patch-V1-12",
+          "description": "Every Put and Patch operation must have a request body",
+          "message": "{{error}}",
+          "severity": "error",
+          "stagingOnly": true,
+          "resolved": true,
+          "formats": ["[function:oas2]"],
+          "given": "$[paths,'x-ms-paths'].*[put,patch].parameters",
+          "then": {
+            "function": "[function:requestBodyMustExistForPutPatch]"
+          }
+        },
+        "ConsistentResponseSchemaForPut": {
+          "rpcGuidelineCode": "RPC-Put-V1-29",
+          "description": "A Put operation must return the same schema for 200 and 201 response codes",
+          "message": "{{error}}",
+          "severity": "error",
+          "stagingOnly": true,
+          "resolved": true,
+          "formats": ["[function:oas2]"],
+          "given": "$.paths.*",
+          "then": {
+            "function": "[function:consistentResponseSchemaForPut]"
+          }
+        },
+        "TagsAreNotAllowedForProxyResources": {
+          "rpcGuidelineCode": "RPC-Put-V1-31",
+          "description": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+          "severity": "error",
+          "stagingOnly": true,
+          "message": "{{error}}",
+          "resolved": true,
+          "formats": ["[function:oas2]"],
+          "given": ["$.definitions.*.properties^"],
+          "then": {
+            "function": "[function:tagsAreNotAllowedForProxyResources]"
+          }
+        },
+        "ParametersInPost": {
+          "rpcGuidelineCode": "RPC-POST-V1-05",
+          "description": "For a POST action parameters MUST be in the payload and not in the URI.",
+          "message": "{{error}}",
+          "severity": "error",
+          "resolved": true,
+          "formats": ["[function:oas2]"],
+          "given": "$[paths,'x-ms-paths'].*[post][parameters]",
+          "then": {
+            "function": "[function:parametersInPost]"
+          }
+        },
+        "ParametersSchemaAsTypeObject": {
+          "rpcGuidelineCode": "RPC-POST-V1-05",
+          "description": "The schema for body parameters must specify type:object and include a definition for its reference model.",
+          "message": "{{description}}",
+          "severity": "error",
+          "resolved": true,
+          "formats": ["[function:oas2]"],
+          "given": "$[paths,'x-ms-paths'].*.*.parameters.*.schema[?(@property === 'type' && @ !=='object')]",
+          "then": {
+            "function": "[function:falsy]"
+          }
+        },
+        "PathContainsSubscriptionId": {
+          "rpcGuidelineCode": "RPC-Uri-V1-01",
+          "description": "Path for resource group scoped CRUD methods MUST contain a subscriptionId parameter.",
+          "message": "{{error}}",
+          "severity": "error",
+          "resolved": false,
+          "formats": ["[function:oas2]"],
+          "given": "$[paths,'x-ms-paths'].*[get,patch,put,delete]^~",
+          "then": {
+            "function": "[function:]",
+            "functionOptions": {
+              "segmentToCheck": "subscriptionIdParam"
+            }
+          }
+        },
+        "PathContainsResourceGroup": {
+          "rpcGuidelineCode": "RPC-Uri-V1-02",
+          "description": "Path for resource group scoped CRUD methods MUST contain a resourceGroupName parameter.",
+          "message": "{{error}}",
+          "severity": "error",
+          "resolved": false,
+          "formats": ["[function:oas2]"],
+          "given": ["$[paths,'x-ms-paths'].*[get,patch,put,delete]^~"],
+          "then": {
+            "function": "[function:]",
+            "functionOptions": {
+              "segmentToCheck": "resourceGroupParam"
+            }
+          }
+        },
+        "PathContainsResourceType": {
+          "rpcGuidelineCode": "RPC-Uri-V1-04",
+          "description": "Path for resource CRUD methods MUST contain a resource type.",
+          "message": "{{error}}",
+          "severity": "error",
+          "resolved": false,
+          "formats": ["[function:oas2]"],
+          "given": "$[paths,'x-ms-paths'].*[get,patch,put,delete]^~",
+          "then": {
+            "function": "[function:]",
+            "functionOptions": {
+              "segmentToCheck": "resourceType"
+            }
+          }
+        },
+        "ResourceNameRestriction": {
+          "rpcGuidelineCode": "RPC-Uri-V1-05",
+          "description": "This rule ensures that the authors explicitly define these restrictions as a regex on the resource name.",
+          "message": "{{error}}",
+          "severity": "error",
+          "disableForTypeSpecDataPlane": true,
+          "disableForTypeSpecDataPlaneReason": "Covered by TSP's '@azure-tools/typespec-azure-resource-manager/arm-resource-name-pattern' rule.",
+          "resolved": true,
+          "formats": ["[function:oas2]"],
+          "given": "$[paths,'x-ms-paths'].*.^",
+          "then": {
+            "function": "[function:resourceNameRestriction]"
+          }
+        },
+        "PathForNestedResource": {
+          "rpcGuidelineCode": "RPC-Uri-V1-06",
+          "description": "Path for CRUD methods on a nested resource type MUST follow valid resource naming.",
+          "message": "{{error}}",
+          "severity": "error",
+          "resolved": false,
+          "formats": ["[function:oas2]"],
+          "given": "$[paths,'x-ms-paths'].*[get,patch,delete,put]^~",
+          "then": {
+            "function": "[function:]",
+            "functionOptions": {
+              "segmentToCheck": "nestedResourceType"
+            }
+          }
+        },
+        "PathForResourceAction": {
+          "rpcGuidelineCode": "RPC-Uri-V1-07, RPC-POST-V1-01, RPC-POST-V1-07",
+          "description": "Path for 'post' method on a resource type MUST follow valid resource naming.",
+          "message": "{{description}}",
+          "severity": "error",
+          "resolved": false,
+          "formats": ["[function:oas2]"],
+          "given": "$[paths,'x-ms-paths'].*.post^~",
+          "then": {
+            "function": "[function:pattern]",
+            "functionOptions": {
+              "match": ".*/providers/[\\w\\.]+(?:/\\w+/(default|{\\w+}))*/\\w+$"
+            }
+          }
+        },
+        "ApiVersionParameterRequired": {
+          "rpcGuidelineCode": "RPC-Uri-V1-08",
+          "description": "All operations should have api-version query parameter.",
+          "message": "{{error}}",
+          "severity": "error",
+          "resolved": true,
+          "formats": ["[function:oas2]"],
+          "given": ["$.paths.*", "$.x-ms-paths.*"],
+          "then": {
+            "function": "[function:hasApiVersionParameter]",
+            "functionOptions": {
+              "methods": [
+                "get",
+                "put",
+                "patch",
+                "post",
+                "delete",
+                "options",
+                "head",
+                "trace"
+              ]
+            }
+          }
+        },
+        "NoDuplicatePathsForScopeParameter": {
+          "rpcGuidelineCode": "RPC-Uri-V1-10",
+          "description": "Paths with explicitly defined scope should not be present if there is an equivalent path with the \"scope\" parameter.",
+          "message": "{{error}}",
+          "severity": "error",
+          "resolved": true,
+          "formats": ["[function:oas2]"],
+          "given": [
+            "$.paths[?(@property.match(/.*{scope}.*/))]~))",
+            "$.x-ms-paths[?(@property.match(/.*{scope}.*/))]~))"
+          ],
+          "then": {
+            "function": "[function:noDuplicatePathsForScopeParameter]"
+          }
+        },
+        "TenantLevelAPIsNotAllowed": {
+          "rpcGuidelineCode": "RPC-Uri-V1-11",
+          "description": "Tenant level APIs require a review from the security RBAC team during manifest check-in. For details, refer to the Manifest security review process: https://eng.ms/docs/microsoft-security/identity/auth-authz/access-control-managed-identityacmi/policy-administration-service/pas-wiki/livesite/security/manifest",
+          "message": "{{error}}",
+          "severity": "warn",
+          "resolved": true,
+          "formats": ["[function:oas2]"],
+          "given": "$[paths,'x-ms-paths']",
+          "then": {
+            "function": "[function:tenantLevelAPIsNotAllowed]"
+          }
+        },
+        "TrackedExtensionResourcesAreNotAllowed": {
+          "rpcGuidelineCode": "RPC-Uri-V1-12",
+          "description": "Extension resources are always considered to be proxy and must not be of the type tracked.",
+          "message": "{{error}}",
+          "severity": "error",
+          "resolved": true,
+          "formats": ["[function:oas2]"],
+          "given": "$[paths,'x-ms-paths'].*~",
+          "then": {
+            "function": "[function:trackedExtensionResourcesAreNotAllowed]"
+          }
+        },
+        "ValidQueryParametersForPointOperations": {
+          "rpcGuidelineCode": "RPC-Uri-V1-13",
+          "description": "Point operations (GET, PUT, PATCH, DELETE) must not include any query parameters other than api-version.",
+          "message": "{{error}}",
+          "stagingOnly": true,
+          "severity": "error",
+          "resolved": true,
+          "formats": ["[function:oas2]"],
+          "given": "$[paths,'x-ms-paths']",
+          "then": {
+            "function": "[function:validQueryParametersForPointOperations]"
+          }
+        },
+        "SystemDataDefinitionsCommonTypes": {
+          "rpcGuidelineCode": "RPC-SystemData-V1-01, RPC-SystemData-V1-02",
+          "description": "System data references must utilize common types.",
+          "message": "{{description}}",
+          "severity": "error",
+          "resolved": false,
+          "formats": ["[function:oas2]"],
+          "given": "$.definitions.*.properties.[systemData,SystemData].$ref",
+          "then": {
+            "function": "[function:pattern]",
+            "functionOptions": {
+              "match": ".*/common-types/resource-management/v\\d+/types.json#/definitions/systemData"
+            }
+          }
+        },
+        "SystemDataInPropertiesBag": {
+          "rpcGuidelineCode": "RPC-SystemData-V1-01, RPC-SystemData-V1-02",
+          "description": "System data must be defined as a top-level property, not in the properties bag.",
+          "message": "{{description}}",
+          "severity": "error",
+          "resolved": true,
+          "formats": ["[function:oas2]"],
+          "given": [
+            "$.definitions.*.properties[?(@property === 'properties')]^"
+          ],
+          "then": {
+            "function": "[function:systemDataInPropertiesBag]"
+          }
+        },
+        "ReservedResourceNamesModelAsEnum": {
+          "rpcGuidelineCode": "RPC-ConstrainedCollections-V1-04",
+          "description": "Service-defined (reserved) resource names should be represented as an enum type with modelAsString set to true, not as a static string in the path.",
+          "message": "{{error}}",
+          "severity": "warn",
+          "resolved": true,
+          "formats": ["[function:oas2]"],
+          "given": ["$[paths,'x-ms-paths']"],
+          "then": {
+            "function": "[function:reservedResourceNamesModelAsEnum]"
+          }
+        },
+        "OperationsApiSchemaUsesCommonTypes": {
+          "rpcGuidelineCode": "RPC-Operations-V1-01",
+          "description": "Operations API path must follow the schema provided in the common types.",
+          "message": "{{description}}",
+          "severity": "error",
+          "resolved": false,
+          "formats": ["[function:oas2]"],
+          "given": "$[paths,'x-ms-paths'][?(@property.match(/\\/providers\\/\\w+\\.\\w+\\/operations$/i))].get.responses.200.schema.$ref",
+          "then": {
+            "function": "[function:pattern]",
+            "functionOptions": {
+              "match": ".*/common-types/resource-management/v\\d+/types.json#/definitions/OperationListResult"
+            }
+          }
+        },
+        "OperationsApiTenantLevelOnly": {
+          "rpcGuidelineCode": "RPC-Operations-V1-02",
+          "description": "The get operations endpoint must only be at the tenant level.",
+          "message": "{{error}}",
+          "severity": "error",
+          "resolved": true,
+          "formats": ["[function:oas2]"],
+          "given": "$.[paths,'x-ms-paths']",
+          "then": {
+            "function": "[function:operationsApiTenantLevelOnly]"
+          }
+        },
+        "LatestVersionOfCommonTypesMustBeUsed": {
+          "description": "This rule checks for references that aren't using latest version of common-types.",
+          "message": "{{error}}",
+          "severity": "warn",
+          "resolved": false,
+          "formats": ["[function:oas2]"],
+          "given": "$..['$ref']",
+          "then": {
+            "function": "[function:latestVersionOfCommonTypesMustBeUsed]"
+          }
+        },
+        "ArrayMustHaveType": {
+          "description": "Array type must have a type except for any type.",
+          "message": "{{error}}",
+          "severity": "error",
+          "resolved": false,
+          "formats": ["[function:oas2]"],
+          "given": ["$.definitions..items[?(@object())]^"],
+          "then": {
+            "function": "[function:truthy]",
+            "field": "type"
+          }
+        },
+        "NoErrorCodeResponses": {
+          "description": "Invalid status code specified. Please refer to the documentation for the allowed set.",
+          "message": "{{description}}",
+          "severity": "error",
+          "resolved": false,
+          "formats": ["[function:oas2]"],
+          "given": ["$.paths.*.*.responses.*~"],
+          "then": {
+            "function": "[function:noErrorCodeResponses]"
+          }
+        },
+        "LroWithOriginalUriAsFinalState": {
+          "description": "The long running operation with final-state-via:original-uri should have a sibling 'get' operation.",
+          "message": "{{description}}",
+          "severity": "error",
+          "resolved": true,
+          "formats": ["[function:oas2]"],
+          "given": [
+            "$[paths,'x-ms-paths'].*[put,patch,delete].x-ms-long-running-operation-options[?(@property === 'final-state-via' && @ === 'original-uri')]^"
+          ],
+          "then": {
+            "function": "[function:validateOriginalUri]"
+          }
+        },
+        "LroPostMustNotUseOriginalUriAsFinalState": {
+          "description": "The long running post operation must not use final-stat-via:original-uri.",
+          "message": "{{description}}",
+          "severity": "error",
+          "resolved": true,
+          "formats": ["[function:oas2]"],
+          "given": [
+            "$[paths,'x-ms-paths'].*.post.x-ms-long-running-operation-options[?(@property === 'final-state-via' && @ === 'original-uri')]^"
+          ],
+          "then": {
+            "function": "[function:falsy]"
+          }
+        },
+        "APIVersionPattern": {
+          "description": "The API Version parameter MUST be in the Year-Month-Date format (i.e. 2016-07-04.)  NOTE that this is the en-US ordering of month and date.",
+          "severity": "error",
+          "message": "{{description}}",
+          "resolved": true,
+          "formats": ["[function:oas2]"],
+          "given": "$.info.version",
+          "then": {
+            "function": "[function:pattern]",
+            "functionOptions": {
+              "match": "^(20\\d{2})-(0[1-9]|1[0-2])-((0[1-9])|[12][0-9]|3[01])(-(preview))?$"
+            }
+          }
+        },
+        "ParameterNotDefinedInGlobalParameters": {
+          "description": "Per ARM guidelines, if `subscriptionId` is used anywhere as a path parameter, it must always be defined as global parameter. `api-version` is almost always an input parameter in any ARM spec and must also be defined as a global parameter.",
+          "message": "{{error}}",
+          "severity": "warn",
+          "resolved": false,
+          "formats": ["[function:oas2]"],
+          "given": ["$[paths,'x-ms-paths'].*.*[?(@property === 'parameters')]"],
+          "then": {
+            "function": "[function:parameterNotDefinedInGlobalParameters]"
+          }
+        },
+        "ParameterNotUsingCommonTypes": {
+          "description": "This rule checks for parameters defined in common-types that are not using the common-types definition.",
+          "message": "{{error}}",
+          "severity": "warn",
+          "resolved": false,
+          "formats": ["[function:oas2]"],
+          "given": [
+            "$[paths,'x-ms-paths'].*.*.parameters.*.name",
+            "$[parameters].*.name"
+          ],
+          "then": {
+            "function": "[function:parameterNotUsingCommonTypes]"
+          }
+        },
+        "CollectionObjectPropertiesNaming": {
+          "description": "Per ARM guidelines, a model returned by an `x-ms-pageable` operation must have a property named `value`. This property indicates what type of array the object is.",
+          "severity": "error",
+          "message": "{{error}}",
+          "resolved": true,
+          "formats": ["[function:oas2]"],
+          "given": "$.paths.*[get,post]",
+          "then": {
+            "function": "[function:collectionObjectPropertiesNaming]"
+          }
+        },
+        "DefinitionsPropertiesNamesCamelCase": {
+          "description": "Property names should be camel case.",
+          "message": "Property name should be camel case.",
+          "severity": "error",
+          "resolved": false,
+          "given": "$.definitions..[?(@property === 'type' && @ === 'object')]^.properties[?(@property.match(/^[^@].+$/))]~",
+          "then": {
+            "function": "[function:camelCase]"
+          }
+        },
+        "GuidUsage": {
+          "description": "Verifies whether format is specified as \"uuid\" or not.",
+          "message": "Usage of Guid is not recommended. If GUIDs are absolutely required in your service, please get sign off from the Azure API review board.",
+          "severity": "error",
+          "resolved": false,
+          "given": "$..[?(@property === 'format' && @ === 'uuid')]",
+          "then": {
+            "function": "[function:falsy]"
+          }
+        },
+        "InvalidSkuModel": {
+          "description": "A Sku model must have 'name' property. It can also have 'tier', 'size', 'family', 'capacity' as optional properties.",
+          "message": "{{error}}",
+          "severity": "warn",
+          "resolved": true,
+          "given": "$.definitions[?(@property.match(/^sku$/i))]",
+          "then": {
+            "function": "[function:skuValidation]"
+          }
+        },
+        "NonApplicationJsonType": {
+          "description": "Verifies whether operation supports \"application/json\" as consumes or produces section.",
+          "message": "Only content-type 'application/json' is supported by ARM",
+          "severity": "warn",
+          "resolved": true,
+          "given": [
+            "$[produces,consumes].*",
+            "$[paths,'x-ms-paths'].*.*[produces,consumes].*"
+          ],
+          "then": {
+            "function": "[function:pattern]",
+            "functionOptions": {
+              "match": "application/json"
+            }
+          }
+        },
+        "SecurityDefinitionsStructure": {
+          "description": "Each OpenAPI json document must contain a security definitions section and the section must adhere to a certain format.",
+          "message": "{{error}}",
+          "severity": "error",
+          "resolved": true,
+          "given": ["$"],
+          "then": {
+            "function": "[function:securityDefinitionsStructure]"
+          }
+        },
+        "SubscriptionIdParameterInOperations": {
+          "description": "'subscriptionId' must not be an operation parameter and must be declared in the global parameters section.",
+          "message": "Parameter 'subscriptionId' is not allowed in the operations section, define it in the global parameters section instead/Parameter '{{path}}' is referenced but not defined in the global parameters section of Service Definition",
+          "severity": "error",
+          "resolved": false,
+          "given": [
+            "$[paths,'x-ms-paths'].*.*.parameters.*[?(@property === 'name' && @.match(/^subscriptionid$/i))]^",
+            "$[paths,'x-ms-paths'].*.parameters.*[?(@property === 'name' && @.match(/^subscriptionid$/i))]^"
+          ],
+          "then": {
+            "function": "[function:falsy]"
+          }
+        },
+        "OperationsApiResponseSchema": {
+          "severity": "error",
+          "message": "The response schema of operations API '{{error}}' does not match the ARM specification. Please standardize the schema.",
+          "resolved": true,
+          "given": "$.paths[?(@property.match(/\\/providers\\/\\w+\\.\\w+\\/operations$/i))].get.responses.200.schema",
+          "then": {
+            "function": "[function:operationsApiSchema]"
+          }
+        },
+        "HttpsSupportedScheme": {
+          "description": "Verifies whether specification supports HTTPS scheme or not.",
+          "message": "Azure Resource Management only supports HTTPS scheme.",
+          "severity": "warn",
+          "resolved": false,
+          "formats": ["[function:oas2]"],
+          "given": ["$.schemes"],
+          "then": {
+            "function": "[function:httpsSupportedScheme]"
+          }
+        },
+        "MissingDefaultResponse": {
+          "description": "All operations should have a default (error) response.",
+          "message": "Operation is missing a default response.",
+          "severity": "error",
+          "given": "$.paths.*.*.responses.*~",
+          "then": {
+            "field": "default",
+            "function": "[function:truthy]"
+          }
+        }
+      }
+    },
+    "azCommon": {
+      "extends": [],
+      "rules": {
+        "docLinkLocale": {
+          "description": "This rule is to ensure the documentation link in the description does not contains any locale.",
+          "message": "The documentation link in the description contains locale info, please change it to the link without locale.",
+          "severity": "error",
+          "resolved": false,
+          "formats": ["[function:oas2]"],
+          "given": ["$..[?(@property === 'description')]^"],
+          "then": {
+            "function": "[function:pattern]",
+            "functionOptions": {
+              "match": "https://docs.microsoft.com/\\w+\\-\\w+/azure/.*"
+            }
+          }
+        },
+        "OperationSummaryOrDescription": {
+          "description": "Operation should have a summary or description.",
+          "message": "Operation should have a summary or description.",
+          "severity": "warn",
+          "disableForTypeSpecDataPlane": true,
+          "disableForTypeSpecDataPlaneReason": "Covered by TSP's '@azure-tools/typespec-azure-core/documentation-required' rule.",
+          "given": [
+            "$.paths[*][?( @property === 'get' && !@.summary && !@.description )]",
+            "$.paths[*][?( @property === 'put' && !@.summary && !@.description )]",
+            "$.paths[*][?( @property === 'post' && !@.summary && !@.description )]",
+            "$.paths[*][?( @property === 'patch' && !@.summary && !@.description )]",
+            "$.paths[*][?( @property === 'delete' && !@.summary && !@.description )]",
+            "$.paths[*][?( @property === 'options' && !@.summary && !@.description )]",
+            "$.paths[*][?( @property === 'head' && !@.summary && !@.description )]",
+            "$.paths[*][?( @property === 'trace' && !@.summary && !@.description )]"
+          ],
+          "then": {
+            "function": "[function:falsy]"
+          }
+        },
+        "SchemaDescriptionOrTitle": {
+          "description": "All schemas should have a description or title.",
+          "message": "Schema should have a description or title.",
+          "severity": "warn",
+          "disableForTypeSpecDataPlane": true,
+          "disableForTypeSpecDataPlaneReason": "Covered by TSP's '@azure-tools/typespec-azure-core/documentation-required' rule.",
+          "formats": ["[function:oas2]", "[function:isOas3]"],
+          "given": [
+            "$.definitions[?(!@.description && !@.title)]",
+            "$.components.schemas[?(!@.description && !@.title)]"
+          ],
+          "then": {
+            "function": "[function:falsy]"
+          }
+        },
+        "ParameterDescription": {
+          "description": "All parameters should have a description.",
+          "message": "Parameter should have a description.",
+          "severity": "warn",
+          "disableForTypeSpecDataPlane": true,
+          "disableForTypeSpecDataPlaneReason": "Covered by TSP's '@azure-tools/typespec-azure-core/documentation-required' rule.",
+          "given": [
+            "$.paths[*].parameters.*",
+            "$.paths.*[get,put,post,patch,delete,options,head].parameters.*"
+          ],
+          "then": {
+            "field": "description",
+            "function": "[function:truthy]"
+          }
+        },
+        "InvalidVerbUsed": {
+          "description": "Each operation definition must have a HTTP verb and it must be DELETE/GET/PUT/PATCH/HEAD/OPTIONS/POST/TRACE.",
+          "message": "Permissible values for HTTP Verb are DELETE, GET, PUT, PATCH, HEAD, OPTIONS, POST, TRACE.",
+          "severity": "error",
+          "resolved": false,
+          "given": "$[paths,'x-ms-paths'].*[?(!@property.match(/^(DELETE|GET|PUT|PATCH|HEAD|OPTIONS|POST|TRACE|PARAMETERS)$/i))]",
+          "then": {
+            "function": "[function:falsy]"
+          }
+        },
+        "LroExtension": {
+          "description": "Operations with a 202 response must specify `x-ms-long-running-operation: true`. GET operation is excluded from the validation as GET will have 202 only if it is a polling action & hence x-ms-long-running-operation wouldn't be defined",
+          "message": "Operations with a 202 response must specify `x-ms-long-running-operation: true`.  GET operation is excluded from the validation as GET will have 202 only if it is a polling action & hence x-ms-long-running-operation wouldn't be defined",
+          "severity": "error",
+          "formats": ["[function:oas2]"],
+          "given": "$.paths[*][put,patch,post,delete].responses[?(@property == '202')]^^",
+          "then": {
+            "field": "x-ms-long-running-operation",
+            "function": "[function:truthy]"
+          }
+        },
+        "LroStatusCodesReturnTypeSchema": {
+          "description": "The '200'/'201' responses of the long running operation must have a schema definition.",
+          "message": "{{error}}",
+          "severity": "error",
+          "resolved": true,
+          "formats": ["[function:oas2]"],
+          "given": [
+            "$[paths,'x-ms-paths'].*[put][?(@property === 'x-ms-long-running-operation' && @ === true)]^"
+          ],
+          "then": {
+            "function": "[function:lroStatusCodesReturnTypeSchema]"
+          }
+        },
+        "NamePropertyDefinitionInParameter": {
+          "description": "A parameter must have a `name` property for the SDK to be properly generated.",
+          "message": "{{error}}",
+          "severity": "error",
+          "resolved": true,
+          "formats": ["[function:oas2]"],
+          "given": [
+            "$.parameters",
+            "$.paths.*.parameters",
+            "$.paths.*.*.parameters"
+          ],
+          "then": {
+            "function": "[function:namePropertyDefinitionInParameter]"
+          }
+        },
+        "OperationIdNounConflictingModelNames": {
+          "description": "The first part of an operation Id separated by an underscore i.e., `Noun` in a `Noun_Verb` should not conflict with names of the models defined in the definitions section. If this happens, AutoRest appends `Model` to the name of the model to resolve the conflict (`NounModel` in given example) with the name of the client itself (which will be named as `Noun` in given example). This can result in an inconsistent user experience.",
+          "message": "{{error}}",
+          "severity": "warn",
+          "resolved": true,
+          "formats": ["[function:oas2]"],
+          "given": [
+            "$[paths,'x-ms-paths'].*.*[?(@property === 'operationId')]"
+          ],
+          "then": {
+            "function": "[function:operationIdNounConflictingModelNames]"
+          }
+        },
+        "OperationIdNounVerb": {
+          "description": "OperationId should be of the form `Noun_Verb`.",
+          "message": "{{error}}",
+          "severity": "error",
+          "resolved": true,
+          "formats": ["[function:oas2]"],
+          "given": [
+            "$[paths,'x-ms-paths'].*.*[?(@property === 'operationId')]"
+          ],
+          "then": {
+            "function": "[function:operationIdNounVerb]"
+          }
+        },
+        "OperationIdSingleUnderscore": {
+          "description": "An operationId can have exactly one underscore, not adhering to it can cause errors in code generation.",
+          "message": "{{error}}",
+          "severity": "error",
+          "resolved": true,
+          "formats": ["[function:oas2]"],
+          "given": [
+            "$[paths,'x-ms-paths'].*.*[?(@property === 'operationId')]"
+          ],
+          "then": {
+            "function": "[function:operationIdSingleUnderscore]"
+          }
+        },
+        "GetInOperationName": {
+          "description": "Verifies whether value for `operationId` is named as per ARM guidelines.",
+          "message": "{{error}}",
+          "severity": "warn",
+          "resolved": true,
+          "formats": ["[function:oas2]"],
+          "given": [
+            "$[paths,'x-ms-paths'].*[get][?(@property === 'operationId')]"
+          ],
+          "then": {
+            "function": "[function:getInOperationName]"
+          }
+        },
+        "PutInOperationName": {
+          "description": "Verifies whether value for `operationId` is named as per ARM guidelines.",
+          "message": "{{error}}",
+          "severity": "warn",
+          "resolved": true,
+          "formats": ["[function:oas2]"],
+          "given": [
+            "$[paths,'x-ms-paths'].*[put][?(@property === 'operationId')]"
+          ],
+          "then": {
+            "function": "[function:putInOperationName]"
+          }
+        },
+        "PatchInOperationName": {
+          "description": "Verifies whether value for `operationId` is named as per ARM guidelines.",
+          "message": "{{error}}",
+          "severity": "warn",
+          "resolved": true,
+          "formats": ["[function:oas2]"],
+          "given": [
+            "$[paths,'x-ms-paths'].*[patch][?(@property === 'operationId')]"
+          ],
+          "then": {
+            "function": "[function:patchInOperationName]"
+          }
+        },
+        "DeleteInOperationName": {
+          "description": "Verifies whether value for `operationId` is named as per ARM guidelines.",
+          "message": "{{error}}",
+          "severity": "warn",
+          "resolved": true,
+          "formats": ["[function:oas2]"],
+          "given": [
+            "$[paths,'x-ms-paths'].*[delete][?(@property === 'operationId')]"
+          ],
+          "then": {
+            "function": "[function:deleteInOperationName]"
+          }
+        },
+        "SummaryAndDescriptionMustNotBeSame": {
+          "description": "Each operation has a summary and description values. They must not be same.",
+          "message": "The summary and description values should not be same.",
+          "severity": "warn",
+          "resolved": false,
+          "given": "$[paths,'x-ms-paths'].*.*",
+          "then": {
+            "function": "[function:checkSummaryAndDescription]"
+          }
+        },
+        "ValidFormats": {
+          "description": "Only valid types are allowed for properties.",
+          "message": "'{{error}}' is not a known format.",
+          "severity": "error",
+          "resolved": false,
+          "given": "$..[?(@property === 'format')]^",
+          "then": {
+            "function": "[function:checkSchemaFormat]"
+          }
+        },
+        "XmsParameterLocation": {
+          "description": "SDKs generated by AutoRest have two types of operation parameters: method arguments and client fields. The 'x-ms-parameter-location' extension gives the Swagger author control of how an operation-parameter will be interpreted by AutoRest, and as such is one of few things in a Swagger document that has semantic value only relevant to the shape of the generated SDKs.\n    Some parameters, such as API Version and Subscription ID will make sense as part of nearly every request. For these, having developers specify them for each method call would be burdensome; attaching them to the client and automatically including them in each request makes way more sense. Other parameters will be very operation specific and should be provided each time the method is called.",
+          "message": "The parameter '{{property}}' is defined in global parameters section without 'x-ms-parameter-location' extension. This would add the parameter as the client property. Please ensure that this is exactly you want. If so, apply the extension \"x-ms-parameter-location\": \"client\". Else, apply the extension \"x-ms-parameter-location\": \"method\".",
+          "severity": "error",
+          "resolved": false,
+          "given": "$.parameters.*[?(@property === 'name' && @.match(/^(subscriptionid|subscription-id|api-version|apiversion)$/i))]^",
+          "then": {
+            "function": "[function:paramLocation]"
+          }
+        },
+        "LongRunningOperationsOptionsValidator": {
+          "description": "A LRO Post operation with return schema should have \"x-ms-long-running-operation-options\" extension enabled.",
+          "message": "{{error}}",
+          "severity": "warn",
+          "resolved": true,
+          "formats": ["[function:oas2]"],
+          "given": [
+            "$[paths,'x-ms-paths'].*[post][?(@property === 'x-ms-long-running-operation' && @ === true)]^"
+          ],
+          "then": {
+            "function": "[function:longRunningOperationsOptionsValidator]"
+          }
+        },
+        "MutabilityWithReadOnly": {
+          "description": "Verifies whether a model property which has a readOnly property set has the appropriate `x-ms-mutability` options. If `readonly: true`, `x-ms-mutability` must be `[\"read\"]`. If `readonly: false`, `x-ms-mutability` can be any of the `x-ms-mutability` options.",
+          "message": "{{error}}",
+          "severity": "error",
+          "resolved": true,
+          "formats": ["[function:oas2]"],
+          "given": [
+            "$[paths,'x-ms-paths']..*[?(@ != null && @.readOnly !== undefined && @['x-ms-mutability'] !== undefined)]"
+          ],
+          "then": {
+            "function": "[function:mutabilityWithReadOnly]"
+          }
+        },
+        "NextLinkPropertyMustExist": {
+          "description": "Per definition of AutoRest x-ms-pageable extension, the property specified by nextLinkName must exist in the 200 response schema.",
+          "message": "{{error}}",
+          "severity": "error",
+          "resolved": true,
+          "formats": ["[function:oas2]"],
+          "given": [
+            "$[paths,'x-ms-paths'].*.*[?(@property === 'x-ms-pageable')]^"
+          ],
+          "then": {
+            "function": "[function:nextLinkPropertyMustExist]"
+          }
+        },
+        "NonEmptyClientName": {
+          "description": "The 'x-ms-client-name' extension is used to change the name of a parameter or property in the generated code.",
+          "message": "Empty x-ms-client-name property.",
+          "severity": "error",
+          "resolved": true,
+          "formats": ["[function:oas2]"],
+          "given": [
+            "$[paths,'x-ms-paths']..?(@property === 'x-ms-client-name')"
+          ],
+          "then": {
+            "function": "[function:truthy]"
+          }
+        },
+        "PageableRequires200Response": {
+          "description": "Per definition of AutoRest x-ms-pageable extension, the response schema must contain a 200 response schema.",
+          "message": "A response for the 200 HTTP status code must be defined to use x-ms-pageable.",
+          "severity": "error",
+          "resolved": true,
+          "formats": ["[function:oas2]"],
+          "given": [
+            "$[paths,'x-ms-paths'].*.*[?(@property === 'x-ms-pageable')]^"
+          ],
+          "then": {
+            "field": "[responses][200]",
+            "function": "[function:truthy]"
+          }
+        },
+        "ResourceHasXMsResourceEnabled": {
+          "description": "A 'Resource' definition must have x-ms-azure-resource extension enabled and set to true. This will indicate that the model is an Azure resource.",
+          "message": "A 'Resource' definition must have x-ms-azure-resource extension enabled and set to true.",
+          "severity": "error",
+          "resolved": true,
+          "formats": ["[function:oas2]"],
+          "given": ["$.definitions[?(@property === 'Resource')]"],
+          "then": {
+            "field": "[x-ms-azure-resource]",
+            "function": "[function:truthy]"
+          }
+        },
+        "XmsClientName": {
+          "description": "The 'x-ms-client-name' extension is used to change the name of a parameter or property in the generated code. By using the 'x-ms-client-name' extension, a name can be defined for use specifically in code generation, separately from the name on the wire. It can be used for query parameters and header parameters, as well as properties of schemas. This name is case sensitive.",
+          "message": "{{error}}",
+          "severity": "error",
+          "resolved": true,
+          "formats": ["[function:oas2]"],
+          "given": [
+            "$[paths,'x-ms-paths']..*[?(@ != null && @['x-ms-client-name'] !== undefined)]"
+          ],
+          "then": {
+            "function": "[function:xmsClientName]"
+          }
+        },
+        "XmsPathsMustOverloadPaths": {
+          "description": "The `x-ms-paths` extension allows us to overload an existing path based on path parameters. We cannot specify an `x-ms-paths` without a path that already exists in the `paths` section.",
+          "message": "{{error}}",
+          "severity": "error",
+          "resolved": true,
+          "formats": ["[function:oas2]"],
+          "given": ["$['x-ms-paths']"],
+          "then": {
+            "function": "[function:xmsPathsMustOverloadPaths]"
+          }
+        },
+        "XmsExamplesRequired": {
+          "description": "Verifies whether `x-ms-examples` are provided for each operation or not.",
+          "message": "Please provide x-ms-examples describing minimum/maximum property set for response/request payloads for operations.",
+          "severity": "warn",
+          "resolved": false,
+          "formats": ["[function:oas2]"],
+          "given": [
+            "$[paths,'x-ms-paths'].*[get,put,post,patch,delete,options,head]"
+          ],
+          "then": {
+            "function": "[function:xmsExamplesRequired]"
+          }
+        },
+        "XmsClientNameParameter": {
+          "description": "The `x-ms-client-name` extension is used to change the name of a parameter or property in the generated code. By using the `x-ms-client-name` extension, a name can be defined for use specifically in code generation, separately from the name on the wire. It can be used for query parameters and header parameters, as well as properties of schemas. This name is case sensitive.",
+          "message": "Value of `x-ms-client-name` cannot be the same as Property/Model.",
+          "severity": "warn",
+          "resolved": false,
+          "formats": ["[function:oas2]"],
+          "given": [
+            "$.paths.*[get,put,post,patch,delete,options,head].parameters[?(@.name && @['x-ms-client-name'])]",
+            "$.paths.*.parameters[?(@.name && @['x-ms-client-name'])]",
+            "$.parameters[?(@.name && @['x-ms-client-name'])]"
+          ],
+          "then": {
+            "function": "[function:xmsClientNameParameter]"
+          }
+        },
+        "XmsClientNameProperty": {
+          "description": "The `x-ms-client-name` extension is used to change the name of a parameter or property in the generated code.By using the `x-ms-client-name` extension, a name can be defined for use specifically in code generation, separately from the name on the wire.It can be used for query parameters and header parameters, as well as properties of schemas. This name is case sensitive.",
+          "message": "Value of `x-ms-client-name` cannot be the same as Property/Model.",
+          "severity": "warn",
+          "resolved": false,
+          "formats": ["[function:oas2]"],
+          "given": ["$.definitions[*].properties.*['x-ms-client-name']"],
+          "then": {
+            "function": "[function:xmsClientNameProperty]"
+          }
+        },
+        "ListInOperationName": {
+          "description": "Verifies whether value for `operationId` is named as per ARM guidelines when response contains array of items.",
+          "message": "Since operation response has model definition in array type, it should be of the form \"_list\".",
+          "severity": "warn",
+          "resolved": true,
+          "formats": ["[function:oas2]"],
+          "given": ["$.paths.*[get,post]"],
+          "then": {
+            "function": "[function:listInOperationName]"
+          }
+        },
+        "DescriptiveDescriptionRequired": {
+          "description": "The value of the 'description' property must be descriptive. It cannot be spaces or empty description.",
+          "message": "The value provided for description is not descriptive enough. Accurate and descriptive description is essential for maintaining reference documentation.",
+          "severity": "error",
+          "resolved": false,
+          "formats": ["[function:oas2]"],
+          "given": ["$..[?(@object() && @.description)].description"],
+          "then": {
+            "function": "[function:descriptiveDescriptionRequired]"
+          }
+        },
+        "ParameterDescriptionRequired": {
+          "description": "The value of the 'description' property must be descriptive. It cannot be spaces or empty description.",
+          "message": "'{{property}}' parameter lacks 'description' property. Consider adding a 'description' element. Accurate description is essential for maintaining reference documentation.",
+          "severity": "error",
+          "disableForTypeSpecDataPlane": true,
+          "disableForTypeSpecDataPlaneReason": "Covered by TSP's '@azure-tools/typespec-azure-core/documentation-required' rule.",
+          "resolved": false,
+          "formats": ["[function:oas2]"],
+          "given": ["$.parameters.*"],
+          "then": {
+            "function": "[function:descriptiveDescriptionRequired]"
+          }
+        },
+        "DefaultInEnum": {
+          "description": "This rule applies when the value specified by the default property does not appear in the enum constraint for a schema.",
+          "message": "Default value should appear in the enum constraint for a schema",
+          "severity": "error",
+          "resolved": false,
+          "formats": ["[function:oas2]"],
+          "given": "$..[?(@object() && @.enum)]",
+          "then": {
+            "function": "[function:defaultInEnum]"
+          }
+        },
+        "EnumInsteadOfBoolean": {
+          "description": "Booleans properties are not descriptive in all cases and can make them to use, evaluate whether is makes sense to keep the property as boolean or turn it into an enum.",
+          "message": "Booleans properties are not descriptive in all cases and can make them to use, evaluate whether is makes sense to keep the property as boolean or turn it into an enum.",
+          "severity": "warn",
+          "resolved": false,
+          "formats": ["[function:oas2]"],
+          "given": "$..[?(@object() && @.type === 'boolean')]",
+          "then": {
+            "function": "[function:enumInsteadOfBoolean]"
+          }
+        },
+        "AvoidAnonymousParameter": {
+          "description": "Inline/anonymous models must not be used, instead define a schema with a model name in the \"definitions\" section and refer to it. This allows operations to share the models.",
+          "message": "Inline/anonymous models must not be used, instead define a schema with a model name in the \"definitions\" section and refer to it. This allows operations to share the models.",
+          "severity": "error",
+          "resolved": false,
+          "formats": ["[function:oas2]"],
+          "given": [
+            "$.paths[*].parameters.*.schema",
+            "$.paths.*[get,put,post,patch,delete,options,head].parameters.*.schema"
+          ],
+          "then": {
+            "function": "[function:avoidAnonymousSchema]"
+          }
+        },
+        "AvoidAnonymousTypes": {
+          "description": "This rule appears when you define a model type inline, rather than in the definitions section. If the model represents the same type as another parameter in a different operation, then it becomes impossible to reuse that same class for both operations.",
+          "message": "Inline/anonymous models must not be used, instead define a schema with a model name in the \"definitions\" section and refer to it. This allows operations to share the models.",
+          "severity": "error",
+          "resolved": false,
+          "formats": ["[function:oas2]"],
+          "given": [
+            "$.paths[*].*.responses.*.schema",
+            "$.definitions..additionalProperties[?(@property === 'type' && @ === 'object')]^",
+            "$.definitions..allOf[?(@property === 'type' && @ === 'object')]^"
+          ],
+          "then": {
+            "function": "[function:avoidAnonymousSchema]"
+          }
+        },
+        "AvoidNestedProperties": {
+          "description": "Nested properties can result into bad user experience especially when creating request objects. `x-ms-client-flatten` flattens the model properties so that the users can analyze and set the properties much more easily.",
+          "message": "Consider using x-ms-client-flatten to provide a better end user experience",
+          "severity": "warn",
+          "resolved": false,
+          "formats": ["[function:oas2]"],
+          "given": [
+            "$..[?(@object() && @.properties)].properties[?(@object() && @.properties)].properties^"
+          ],
+          "then": {
+            "field": "x-ms-client-flatten",
+            "function": "[function:truthy]"
+          }
+        },
+        "AvoidMsdnReferences": {
+          "description": "The documentation is being generated from the OpenAPI(swagger) and published at \"learn.microsoft.com\". From that perspective, documentation team would like to avoid having links to the \"msdn.microsoft.com\" or \"docs.microsoft.com\" in the OpenAPI(swagger) and SDK documentations.",
+          "message": "For better generated code quality, remove all references to \"msdn.microsoft.com\" and \"docs.microsoft.com\".",
+          "severity": "warn",
+          "resolved": false,
+          "formats": ["[function:oas2]"],
+          "given": [
+            "$..[?(@property === 'externalDocs')].",
+            "$.info.description"
+          ],
+          "then": {
+            "function": "[function:avoidMsdnReferences]"
+          }
+        }
+      }
+    },
+    "azDataplane": {
+      "extends": [
+        {
+          "extends": [],
+          "rules": {
+            "docLinkLocale": {
+              "description": "This rule is to ensure the documentation link in the description does not contains any locale.",
+              "message": "The documentation link in the description contains locale info, please change it to the link without locale.",
+              "severity": "error",
+              "resolved": false,
+              "formats": ["[function:oas2]"],
+              "given": ["$..[?(@property === 'description')]^"],
+              "then": {
+                "function": "[function:pattern]",
+                "functionOptions": {
+                  "match": "https://docs.microsoft.com/\\w+\\-\\w+/azure/.*"
+                }
+              }
+            },
+            "OperationSummaryOrDescription": {
+              "description": "Operation should have a summary or description.",
+              "message": "Operation should have a summary or description.",
+              "severity": "warn",
+              "disableForTypeSpecDataPlane": true,
+              "disableForTypeSpecDataPlaneReason": "Covered by TSP's '@azure-tools/typespec-azure-core/documentation-required' rule.",
+              "given": [
+                "$.paths[*][?( @property === 'get' && !@.summary && !@.description )]",
+                "$.paths[*][?( @property === 'put' && !@.summary && !@.description )]",
+                "$.paths[*][?( @property === 'post' && !@.summary && !@.description )]",
+                "$.paths[*][?( @property === 'patch' && !@.summary && !@.description )]",
+                "$.paths[*][?( @property === 'delete' && !@.summary && !@.description )]",
+                "$.paths[*][?( @property === 'options' && !@.summary && !@.description )]",
+                "$.paths[*][?( @property === 'head' && !@.summary && !@.description )]",
+                "$.paths[*][?( @property === 'trace' && !@.summary && !@.description )]"
+              ],
+              "then": {
+                "function": "[function:falsy]"
+              }
+            },
+            "SchemaDescriptionOrTitle": {
+              "description": "All schemas should have a description or title.",
+              "message": "Schema should have a description or title.",
+              "severity": "warn",
+              "disableForTypeSpecDataPlane": true,
+              "disableForTypeSpecDataPlaneReason": "Covered by TSP's '@azure-tools/typespec-azure-core/documentation-required' rule.",
+              "formats": ["[function:oas2]", "[function:isOas3]"],
+              "given": [
+                "$.definitions[?(!@.description && !@.title)]",
+                "$.components.schemas[?(!@.description && !@.title)]"
+              ],
+              "then": {
+                "function": "[function:falsy]"
+              }
+            },
+            "ParameterDescription": {
+              "description": "All parameters should have a description.",
+              "message": "Parameter should have a description.",
+              "severity": "warn",
+              "disableForTypeSpecDataPlane": true,
+              "disableForTypeSpecDataPlaneReason": "Covered by TSP's '@azure-tools/typespec-azure-core/documentation-required' rule.",
+              "given": [
+                "$.paths[*].parameters.*",
+                "$.paths.*[get,put,post,patch,delete,options,head].parameters.*"
+              ],
+              "then": {
+                "field": "description",
+                "function": "[function:truthy]"
+              }
+            },
+            "InvalidVerbUsed": {
+              "description": "Each operation definition must have a HTTP verb and it must be DELETE/GET/PUT/PATCH/HEAD/OPTIONS/POST/TRACE.",
+              "message": "Permissible values for HTTP Verb are DELETE, GET, PUT, PATCH, HEAD, OPTIONS, POST, TRACE.",
+              "severity": "error",
+              "resolved": false,
+              "given": "$[paths,'x-ms-paths'].*[?(!@property.match(/^(DELETE|GET|PUT|PATCH|HEAD|OPTIONS|POST|TRACE|PARAMETERS)$/i))]",
+              "then": {
+                "function": "[function:falsy]"
+              }
+            },
+            "LroExtension": {
+              "description": "Operations with a 202 response must specify `x-ms-long-running-operation: true`. GET operation is excluded from the validation as GET will have 202 only if it is a polling action & hence x-ms-long-running-operation wouldn't be defined",
+              "message": "Operations with a 202 response must specify `x-ms-long-running-operation: true`.  GET operation is excluded from the validation as GET will have 202 only if it is a polling action & hence x-ms-long-running-operation wouldn't be defined",
+              "severity": "error",
+              "formats": ["[function:oas2]"],
+              "given": "$.paths[*][put,patch,post,delete].responses[?(@property == '202')]^^",
+              "then": {
+                "field": "x-ms-long-running-operation",
+                "function": "[function:truthy]"
+              }
+            },
+            "LroStatusCodesReturnTypeSchema": {
+              "description": "The '200'/'201' responses of the long running operation must have a schema definition.",
+              "message": "{{error}}",
+              "severity": "error",
+              "resolved": true,
+              "formats": ["[function:oas2]"],
+              "given": [
+                "$[paths,'x-ms-paths'].*[put][?(@property === 'x-ms-long-running-operation' && @ === true)]^"
+              ],
+              "then": {
+                "function": "[function:lroStatusCodesReturnTypeSchema]"
+              }
+            },
+            "NamePropertyDefinitionInParameter": {
+              "description": "A parameter must have a `name` property for the SDK to be properly generated.",
+              "message": "{{error}}",
+              "severity": "error",
+              "resolved": true,
+              "formats": ["[function:oas2]"],
+              "given": [
+                "$.parameters",
+                "$.paths.*.parameters",
+                "$.paths.*.*.parameters"
+              ],
+              "then": {
+                "function": "[function:namePropertyDefinitionInParameter]"
+              }
+            },
+            "OperationIdNounConflictingModelNames": {
+              "description": "The first part of an operation Id separated by an underscore i.e., `Noun` in a `Noun_Verb` should not conflict with names of the models defined in the definitions section. If this happens, AutoRest appends `Model` to the name of the model to resolve the conflict (`NounModel` in given example) with the name of the client itself (which will be named as `Noun` in given example). This can result in an inconsistent user experience.",
+              "message": "{{error}}",
+              "severity": "warn",
+              "resolved": true,
+              "formats": ["[function:oas2]"],
+              "given": [
+                "$[paths,'x-ms-paths'].*.*[?(@property === 'operationId')]"
+              ],
+              "then": {
+                "function": "[function:operationIdNounConflictingModelNames]"
+              }
+            },
+            "OperationIdNounVerb": {
+              "description": "OperationId should be of the form `Noun_Verb`.",
+              "message": "{{error}}",
+              "severity": "error",
+              "resolved": true,
+              "formats": ["[function:oas2]"],
+              "given": [
+                "$[paths,'x-ms-paths'].*.*[?(@property === 'operationId')]"
+              ],
+              "then": {
+                "function": "[function:operationIdNounVerb]"
+              }
+            },
+            "OperationIdSingleUnderscore": {
+              "description": "An operationId can have exactly one underscore, not adhering to it can cause errors in code generation.",
+              "message": "{{error}}",
+              "severity": "error",
+              "resolved": true,
+              "formats": ["[function:oas2]"],
+              "given": [
+                "$[paths,'x-ms-paths'].*.*[?(@property === 'operationId')]"
+              ],
+              "then": {
+                "function": "[function:operationIdSingleUnderscore]"
+              }
+            },
+            "GetInOperationName": {
+              "description": "Verifies whether value for `operationId` is named as per ARM guidelines.",
+              "message": "{{error}}",
+              "severity": "warn",
+              "resolved": true,
+              "formats": ["[function:oas2]"],
+              "given": [
+                "$[paths,'x-ms-paths'].*[get][?(@property === 'operationId')]"
+              ],
+              "then": {
+                "function": "[function:getInOperationName]"
+              }
+            },
+            "PutInOperationName": {
+              "description": "Verifies whether value for `operationId` is named as per ARM guidelines.",
+              "message": "{{error}}",
+              "severity": "warn",
+              "resolved": true,
+              "formats": ["[function:oas2]"],
+              "given": [
+                "$[paths,'x-ms-paths'].*[put][?(@property === 'operationId')]"
+              ],
+              "then": {
+                "function": "[function:putInOperationName]"
+              }
+            },
+            "PatchInOperationName": {
+              "description": "Verifies whether value for `operationId` is named as per ARM guidelines.",
+              "message": "{{error}}",
+              "severity": "warn",
+              "resolved": true,
+              "formats": ["[function:oas2]"],
+              "given": [
+                "$[paths,'x-ms-paths'].*[patch][?(@property === 'operationId')]"
+              ],
+              "then": {
+                "function": "[function:patchInOperationName]"
+              }
+            },
+            "DeleteInOperationName": {
+              "description": "Verifies whether value for `operationId` is named as per ARM guidelines.",
+              "message": "{{error}}",
+              "severity": "warn",
+              "resolved": true,
+              "formats": ["[function:oas2]"],
+              "given": [
+                "$[paths,'x-ms-paths'].*[delete][?(@property === 'operationId')]"
+              ],
+              "then": {
+                "function": "[function:deleteInOperationName]"
+              }
+            },
+            "SummaryAndDescriptionMustNotBeSame": {
+              "description": "Each operation has a summary and description values. They must not be same.",
+              "message": "The summary and description values should not be same.",
+              "severity": "warn",
+              "resolved": false,
+              "given": "$[paths,'x-ms-paths'].*.*",
+              "then": {
+                "function": "[function:checkSummaryAndDescription]"
+              }
+            },
+            "ValidFormats": {
+              "description": "Only valid types are allowed for properties.",
+              "message": "'{{error}}' is not a known format.",
+              "severity": "error",
+              "resolved": false,
+              "given": "$..[?(@property === 'format')]^",
+              "then": {
+                "function": "[function:checkSchemaFormat]"
+              }
+            },
+            "XmsParameterLocation": {
+              "description": "SDKs generated by AutoRest have two types of operation parameters: method arguments and client fields. The 'x-ms-parameter-location' extension gives the Swagger author control of how an operation-parameter will be interpreted by AutoRest, and as such is one of few things in a Swagger document that has semantic value only relevant to the shape of the generated SDKs.\n    Some parameters, such as API Version and Subscription ID will make sense as part of nearly every request. For these, having developers specify them for each method call would be burdensome; attaching them to the client and automatically including them in each request makes way more sense. Other parameters will be very operation specific and should be provided each time the method is called.",
+              "message": "The parameter '{{property}}' is defined in global parameters section without 'x-ms-parameter-location' extension. This would add the parameter as the client property. Please ensure that this is exactly you want. If so, apply the extension \"x-ms-parameter-location\": \"client\". Else, apply the extension \"x-ms-parameter-location\": \"method\".",
+              "severity": "error",
+              "resolved": false,
+              "given": "$.parameters.*[?(@property === 'name' && @.match(/^(subscriptionid|subscription-id|api-version|apiversion)$/i))]^",
+              "then": {
+                "function": "[function:paramLocation]"
+              }
+            },
+            "LongRunningOperationsOptionsValidator": {
+              "description": "A LRO Post operation with return schema should have \"x-ms-long-running-operation-options\" extension enabled.",
+              "message": "{{error}}",
+              "severity": "warn",
+              "resolved": true,
+              "formats": ["[function:oas2]"],
+              "given": [
+                "$[paths,'x-ms-paths'].*[post][?(@property === 'x-ms-long-running-operation' && @ === true)]^"
+              ],
+              "then": {
+                "function": "[function:longRunningOperationsOptionsValidator]"
+              }
+            },
+            "MutabilityWithReadOnly": {
+              "description": "Verifies whether a model property which has a readOnly property set has the appropriate `x-ms-mutability` options. If `readonly: true`, `x-ms-mutability` must be `[\"read\"]`. If `readonly: false`, `x-ms-mutability` can be any of the `x-ms-mutability` options.",
+              "message": "{{error}}",
+              "severity": "error",
+              "resolved": true,
+              "formats": ["[function:oas2]"],
+              "given": [
+                "$[paths,'x-ms-paths']..*[?(@ != null && @.readOnly !== undefined && @['x-ms-mutability'] !== undefined)]"
+              ],
+              "then": {
+                "function": "[function:mutabilityWithReadOnly]"
+              }
+            },
+            "NextLinkPropertyMustExist": {
+              "description": "Per definition of AutoRest x-ms-pageable extension, the property specified by nextLinkName must exist in the 200 response schema.",
+              "message": "{{error}}",
+              "severity": "error",
+              "resolved": true,
+              "formats": ["[function:oas2]"],
+              "given": [
+                "$[paths,'x-ms-paths'].*.*[?(@property === 'x-ms-pageable')]^"
+              ],
+              "then": {
+                "function": "[function:nextLinkPropertyMustExist]"
+              }
+            },
+            "NonEmptyClientName": {
+              "description": "The 'x-ms-client-name' extension is used to change the name of a parameter or property in the generated code.",
+              "message": "Empty x-ms-client-name property.",
+              "severity": "error",
+              "resolved": true,
+              "formats": ["[function:oas2]"],
+              "given": [
+                "$[paths,'x-ms-paths']..?(@property === 'x-ms-client-name')"
+              ],
+              "then": {
+                "function": "[function:truthy]"
+              }
+            },
+            "PageableRequires200Response": {
+              "description": "Per definition of AutoRest x-ms-pageable extension, the response schema must contain a 200 response schema.",
+              "message": "A response for the 200 HTTP status code must be defined to use x-ms-pageable.",
+              "severity": "error",
+              "resolved": true,
+              "formats": ["[function:oas2]"],
+              "given": [
+                "$[paths,'x-ms-paths'].*.*[?(@property === 'x-ms-pageable')]^"
+              ],
+              "then": {
+                "field": "[responses][200]",
+                "function": "[function:truthy]"
+              }
+            },
+            "ResourceHasXMsResourceEnabled": {
+              "description": "A 'Resource' definition must have x-ms-azure-resource extension enabled and set to true. This will indicate that the model is an Azure resource.",
+              "message": "A 'Resource' definition must have x-ms-azure-resource extension enabled and set to true.",
+              "severity": "error",
+              "resolved": true,
+              "formats": ["[function:oas2]"],
+              "given": ["$.definitions[?(@property === 'Resource')]"],
+              "then": {
+                "field": "[x-ms-azure-resource]",
+                "function": "[function:truthy]"
+              }
+            },
+            "XmsClientName": {
+              "description": "The 'x-ms-client-name' extension is used to change the name of a parameter or property in the generated code. By using the 'x-ms-client-name' extension, a name can be defined for use specifically in code generation, separately from the name on the wire. It can be used for query parameters and header parameters, as well as properties of schemas. This name is case sensitive.",
+              "message": "{{error}}",
+              "severity": "error",
+              "resolved": true,
+              "formats": ["[function:oas2]"],
+              "given": [
+                "$[paths,'x-ms-paths']..*[?(@ != null && @['x-ms-client-name'] !== undefined)]"
+              ],
+              "then": {
+                "function": "[function:xmsClientName]"
+              }
+            },
+            "XmsPathsMustOverloadPaths": {
+              "description": "The `x-ms-paths` extension allows us to overload an existing path based on path parameters. We cannot specify an `x-ms-paths` without a path that already exists in the `paths` section.",
+              "message": "{{error}}",
+              "severity": "error",
+              "resolved": true,
+              "formats": ["[function:oas2]"],
+              "given": ["$['x-ms-paths']"],
+              "then": {
+                "function": "[function:xmsPathsMustOverloadPaths]"
+              }
+            },
+            "XmsExamplesRequired": {
+              "description": "Verifies whether `x-ms-examples` are provided for each operation or not.",
+              "message": "Please provide x-ms-examples describing minimum/maximum property set for response/request payloads for operations.",
+              "severity": "warn",
+              "resolved": false,
+              "formats": ["[function:oas2]"],
+              "given": [
+                "$[paths,'x-ms-paths'].*[get,put,post,patch,delete,options,head]"
+              ],
+              "then": {
+                "function": "[function:xmsExamplesRequired]"
+              }
+            },
+            "XmsClientNameParameter": {
+              "description": "The `x-ms-client-name` extension is used to change the name of a parameter or property in the generated code. By using the `x-ms-client-name` extension, a name can be defined for use specifically in code generation, separately from the name on the wire. It can be used for query parameters and header parameters, as well as properties of schemas. This name is case sensitive.",
+              "message": "Value of `x-ms-client-name` cannot be the same as Property/Model.",
+              "severity": "warn",
+              "resolved": false,
+              "formats": ["[function:oas2]"],
+              "given": [
+                "$.paths.*[get,put,post,patch,delete,options,head].parameters[?(@.name && @['x-ms-client-name'])]",
+                "$.paths.*.parameters[?(@.name && @['x-ms-client-name'])]",
+                "$.parameters[?(@.name && @['x-ms-client-name'])]"
+              ],
+              "then": {
+                "function": "[function:xmsClientNameParameter]"
+              }
+            },
+            "XmsClientNameProperty": {
+              "description": "The `x-ms-client-name` extension is used to change the name of a parameter or property in the generated code.By using the `x-ms-client-name` extension, a name can be defined for use specifically in code generation, separately from the name on the wire.It can be used for query parameters and header parameters, as well as properties of schemas. This name is case sensitive.",
+              "message": "Value of `x-ms-client-name` cannot be the same as Property/Model.",
+              "severity": "warn",
+              "resolved": false,
+              "formats": ["[function:oas2]"],
+              "given": ["$.definitions[*].properties.*['x-ms-client-name']"],
+              "then": {
+                "function": "[function:xmsClientNameProperty]"
+              }
+            },
+            "ListInOperationName": {
+              "description": "Verifies whether value for `operationId` is named as per ARM guidelines when response contains array of items.",
+              "message": "Since operation response has model definition in array type, it should be of the form \"_list\".",
+              "severity": "warn",
+              "resolved": true,
+              "formats": ["[function:oas2]"],
+              "given": ["$.paths.*[get,post]"],
+              "then": {
+                "function": "[function:listInOperationName]"
+              }
+            },
+            "DescriptiveDescriptionRequired": {
+              "description": "The value of the 'description' property must be descriptive. It cannot be spaces or empty description.",
+              "message": "The value provided for description is not descriptive enough. Accurate and descriptive description is essential for maintaining reference documentation.",
+              "severity": "error",
+              "resolved": false,
+              "formats": ["[function:oas2]"],
+              "given": ["$..[?(@object() && @.description)].description"],
+              "then": {
+                "function": "[function:descriptiveDescriptionRequired]"
+              }
+            },
+            "ParameterDescriptionRequired": {
+              "description": "The value of the 'description' property must be descriptive. It cannot be spaces or empty description.",
+              "message": "'{{property}}' parameter lacks 'description' property. Consider adding a 'description' element. Accurate description is essential for maintaining reference documentation.",
+              "severity": "error",
+              "disableForTypeSpecDataPlane": true,
+              "disableForTypeSpecDataPlaneReason": "Covered by TSP's '@azure-tools/typespec-azure-core/documentation-required' rule.",
+              "resolved": false,
+              "formats": ["[function:oas2]"],
+              "given": ["$.parameters.*"],
+              "then": {
+                "function": "[function:descriptiveDescriptionRequired]"
+              }
+            },
+            "DefaultInEnum": {
+              "description": "This rule applies when the value specified by the default property does not appear in the enum constraint for a schema.",
+              "message": "Default value should appear in the enum constraint for a schema",
+              "severity": "error",
+              "resolved": false,
+              "formats": ["[function:oas2]"],
+              "given": "$..[?(@object() && @.enum)]",
+              "then": {
+                "function": "[function:defaultInEnum]"
+              }
+            },
+            "EnumInsteadOfBoolean": {
+              "description": "Booleans properties are not descriptive in all cases and can make them to use, evaluate whether is makes sense to keep the property as boolean or turn it into an enum.",
+              "message": "Booleans properties are not descriptive in all cases and can make them to use, evaluate whether is makes sense to keep the property as boolean or turn it into an enum.",
+              "severity": "warn",
+              "resolved": false,
+              "formats": ["[function:oas2]"],
+              "given": "$..[?(@object() && @.type === 'boolean')]",
+              "then": {
+                "function": "[function:enumInsteadOfBoolean]"
+              }
+            },
+            "AvoidAnonymousParameter": {
+              "description": "Inline/anonymous models must not be used, instead define a schema with a model name in the \"definitions\" section and refer to it. This allows operations to share the models.",
+              "message": "Inline/anonymous models must not be used, instead define a schema with a model name in the \"definitions\" section and refer to it. This allows operations to share the models.",
+              "severity": "error",
+              "resolved": false,
+              "formats": ["[function:oas2]"],
+              "given": [
+                "$.paths[*].parameters.*.schema",
+                "$.paths.*[get,put,post,patch,delete,options,head].parameters.*.schema"
+              ],
+              "then": {
+                "function": "[function:avoidAnonymousSchema]"
+              }
+            },
+            "AvoidAnonymousTypes": {
+              "description": "This rule appears when you define a model type inline, rather than in the definitions section. If the model represents the same type as another parameter in a different operation, then it becomes impossible to reuse that same class for both operations.",
+              "message": "Inline/anonymous models must not be used, instead define a schema with a model name in the \"definitions\" section and refer to it. This allows operations to share the models.",
+              "severity": "error",
+              "resolved": false,
+              "formats": ["[function:oas2]"],
+              "given": [
+                "$.paths[*].*.responses.*.schema",
+                "$.definitions..additionalProperties[?(@property === 'type' && @ === 'object')]^",
+                "$.definitions..allOf[?(@property === 'type' && @ === 'object')]^"
+              ],
+              "then": {
+                "function": "[function:avoidAnonymousSchema]"
+              }
+            },
+            "AvoidNestedProperties": {
+              "description": "Nested properties can result into bad user experience especially when creating request objects. `x-ms-client-flatten` flattens the model properties so that the users can analyze and set the properties much more easily.",
+              "message": "Consider using x-ms-client-flatten to provide a better end user experience",
+              "severity": "warn",
+              "resolved": false,
+              "formats": ["[function:oas2]"],
+              "given": [
+                "$..[?(@object() && @.properties)].properties[?(@object() && @.properties)].properties^"
+              ],
+              "then": {
+                "field": "x-ms-client-flatten",
+                "function": "[function:truthy]"
+              }
+            },
+            "AvoidMsdnReferences": {
+              "description": "The documentation is being generated from the OpenAPI(swagger) and published at \"learn.microsoft.com\". From that perspective, documentation team would like to avoid having links to the \"msdn.microsoft.com\" or \"docs.microsoft.com\" in the OpenAPI(swagger) and SDK documentations.",
+              "message": "For better generated code quality, remove all references to \"msdn.microsoft.com\" and \"docs.microsoft.com\".",
+              "severity": "warn",
+              "resolved": false,
+              "formats": ["[function:oas2]"],
+              "given": [
+                "$..[?(@property === 'externalDocs')].",
+                "$.info.description"
+              ],
+              "then": {
+                "function": "[function:avoidMsdnReferences]"
+              }
+            }
+          }
+        }
+      ],
+      "rules": {
+        "AdditionalPropertiesAndProperties": {
+          "description": "Don't specify additionalProperties as a sibling of properties.",
+          "disableForTypeSpecDataPlane": true,
+          "disableForTypeSpecDataPlaneReason": "Covered by TSP's '@azure-tools/typespec-azure-core/bad-record-type' rule.",
+          "severity": "warn",
+          "formats": ["[function:oas2]", "[function:isOas3]"],
+          "given": "$..[?(@object() && @.type === 'object' && @.properties)]",
+          "then": {
+            "field": "additionalProperties",
+            "function": "[function:falsy]"
+          }
+        },
+        "AdditionalPropertiesObject": {
+          "description": "additionalProperties with type object is a common error.",
+          "severity": "warn",
+          "formats": ["[function:oas2]", "[function:isOas3]"],
+          "resolved": false,
+          "given": "$..[?(@property == 'additionalProperties' && @.type == 'object' && @.properties == undefined)]",
+          "then": {
+            "function": "[function:falsy]"
+          }
+        },
+        "ApiVersionEnum": {
+          "description": "The api-version parameter should not be an enum.",
+          "severity": "warn",
+          "formats": ["[function:oas2]", "[function:isOas3]"],
+          "given": [
+            "$.paths[*].parameters[?(@.name == 'ApiVersion')]",
+            "$.paths.*[get,put,post,patch,delete,options,head].parameters[?(@.name == 'api-version')]"
+          ],
+          "then": {
+            "field": "enum",
+            "function": "[function:falsy]"
+          }
+        },
+        "ConsistentResponseBody": {
+          "description": "Ensure the get, put, and patch response body schemas are consistent.",
+          "message": "{{error}}",
+          "severity": "warn",
+          "formats": ["[function:oas2]"],
+          "given": "$.paths.*",
+          "then": {
+            "function": "[function:consistentresponsebody]"
+          }
+        },
+        "DefaultResponse": {
+          "description": "All operations should have a default (error) response.",
+          "message": "Operation is missing a default response.",
+          "severity": "warn",
+          "given": "$.paths.*.*.responses",
+          "then": {
+            "field": "default",
+            "function": "[function:truthy]"
+          }
+        },
+        "Delete204Response": {
+          "description": "A delete operation should have a 204 response.",
+          "message": "A delete operation should have a `204` response.",
+          "severity": "warn",
+          "formats": ["[function:oas2]", "[function:isOas3]"],
+          "given": "$.paths[*].delete.responses",
+          "then": {
+            "function": "[function:delete204Response]"
+          }
+        },
+        "ErrorResponse": {
+          "description": "Error response body should conform to Microsoft Azure API Guidelines.",
+          "message": "{{error}}",
+          "severity": "warn",
+          "formats": ["[function:oas2]"],
+          "given": "$.paths[*][*].responses",
+          "then": {
+            "function": "[function:errorResponse]"
+          }
+        },
+        "Formdata": {
+          "description": "Check for appropriate use of formData parameters.",
+          "severity": "warn",
+          "formats": ["[function:oas2]"],
+          "given": "$.paths.*[get,put,post,patch,delete,options,head].parameters[?(@.in == \"formData\")]",
+          "then": {
+            "function": "[function:falsy]"
+          }
+        },
+        "HeaderDisallowed": {
+          "description": "Authorization, Content-type, and Accept headers should not be defined explicitly.",
+          "message": "Header parameter \"{{value}}\" should not be defined explicitly.",
+          "severity": "warn",
+          "formats": ["[function:oas2]", "[function:isOas3]"],
+          "given": [
+            "$.paths[*].parameters[?(@.in == 'header')]",
+            "$.paths.*[get,put,post,patch,delete,options,head].parameters[?(@.in == 'header')]"
+          ],
+          "then": {
+            "function": "[function:pattern]",
+            "field": "name",
+            "functionOptions": {
+              "notMatch": "/^(authorization|content-type|accept)$/i"
+            }
+          }
+        },
+        "LroHeaders": {
+          "description": "A 202 response should include an Operation-Location response header.",
+          "message": "A 202 response should include an Operation-Location response header.",
+          "severity": "warn",
+          "formats": ["[function:oas2]"],
+          "given": "$.paths[*][*].responses[?(@property == '202')]",
+          "then": {
+            "function": "[function:hasHeader]",
+            "functionOptions": {
+              "name": "Operation-location"
+            }
+          }
+        },
+        "MsPaths": {
+          "description": "Don't use x-ms-paths except where necessary to support legacy APIs.",
+          "severity": "warn",
+          "formats": ["[function:oas2]", "[function:isOas3]"],
+          "given": "$.x-ms-paths",
+          "then": {
+            "function": "[function:falsy]"
+          }
+        },
+        "Nullable": {
+          "description": "Avoid the use of x-nullable.",
+          "severity": "warn",
+          "disableForTypeSpecDataPlane": true,
+          "disableForTypeSpecDataPlaneReason": "Covered by Azure Core '@azure-tools/typespec-azure-core/no-nullable' rule",
+          "formats": ["[function:oas2]", "[function:isOas3]"],
+          "resolved": false,
+          "given": "$..x-nullable",
+          "then": {
+            "function": "[function:undefined]"
+          }
+        },
+        "OperationId": {
+          "description": "OperationId should conform to Azure API Guidelines",
+          "message": "{{error}}",
+          "severity": "warn",
+          "given": ["$.paths.*[get,put,post,patch,delete,options,head]"],
+          "then": {
+            "function": "[function:operationId]"
+          }
+        },
+        "PaginationResponse": {
+          "description": "An operation that returns a list that is potentially large should support pagination.",
+          "message": "{{error}}",
+          "severity": "warn",
+          "formats": ["[function:oas2]"],
+          "given": ["$.paths.*[get,post]"],
+          "then": {
+            "function": "[function:paginationResponse]"
+          }
+        },
+        "ParameterDefaultNotAllowed": {
+          "description": "A required parameter should not specify a default value.",
+          "severity": "warn",
+          "given": [
+            "$.paths[*].parameters[?(@.required)]",
+            "$.paths.*[get,put,post,patch,delete,options,head].parameters[?(@.required)]"
+          ],
+          "then": {
+            "field": "default",
+            "function": "[function:falsy]"
+          }
+        },
+        "ParameterNamesConvention": {
+          "description": "Parameter names should conform to Azure naming conventions.",
+          "message": "{{error}}",
+          "severity": "warn",
+          "given": [
+            "$.paths[*].parameters.*",
+            "$.paths.*[get,put,post,patch,delete,options,head].parameters.*"
+          ],
+          "then": {
+            "function": "[function:paramNames]"
+          }
+        },
+        "ParameterNamesUnique": {
+          "description": "All parameter names for an operation should be case-insensitive unique.",
+          "message": "{{error}}",
+          "severity": "warn",
+          "formats": ["[function:oas2]", "[function:isOas3]"],
+          "given": "$.paths[*]",
+          "then": {
+            "function": "[function:paramNamesUnique]"
+          }
+        },
+        "ParameterOrder": {
+          "description": "Path parameters must be in the same order as in the path.",
+          "message": "{{error}}",
+          "severity": "warn",
+          "formats": ["[function:oas2]", "[function:isOas3]"],
+          "given": "$.paths",
+          "then": {
+            "function": "[function:paramOrder]"
+          }
+        },
+        "PathParameterNames": {
+          "description": "Path parameter names should be consistent across all paths.",
+          "message": "{{error}}",
+          "severity": "warn",
+          "formats": ["[function:oas2]", "[function:isOas3]"],
+          "given": "$.paths",
+          "resolved": false,
+          "then": {
+            "function": "[function:pathParamNames]"
+          }
+        },
+        "PatchContentType": {
+          "description": "The request body content type for patch operations should be JSON merge patch.",
+          "message": "{{error}}",
+          "severity": "warn",
+          "formats": ["[function:oas2]"],
+          "given": "$",
+          "then": {
+            "function": "[function:patchContentYype]"
+          }
+        },
+        "PathCharacters": {
+          "description": "Path should contain only recommended characters.",
+          "message": "Path contains non-recommended characters.",
+          "severity": "warn",
+          "formats": ["[function:oas2]", "[function:isOas3]"],
+          "given": "$.paths.*~",
+          "then": {
+            "function": "[function:pattern]",
+            "functionOptions": {
+              "match": "^(/([0-9A-Za-z._~-]+|{[^}]+}))*(/([0-9A-Za-z._~:-]+|{[^}]*}(:[0-9A-Za-z._~-]+)?))$"
+            }
+          }
+        },
+        "PathParameterSchema": {
+          "description": "Path parameter should be type: string and specify maxLength and pattern.",
+          "message": "{{error}}",
+          "severity": "warn",
+          "formats": ["[function:oas2]", "[function:isOas3]"],
+          "given": [
+            "$.paths[*].parameters[?(@.in == 'path')]",
+            "$.paths.*[get,put,post,patch,delete,options,head].parameters[?(@.in == 'path')]"
+          ],
+          "then": {
+            "function": "[function:pathParamSchema]"
+          }
+        },
+        "Post201Response": {
+          "description": "Using post for a create operation is discouraged.",
+          "message": "Using post for a create operation is discouraged.",
+          "severity": "warn",
+          "formats": ["[function:oas2]"],
+          "given": "$.paths[*].post.responses",
+          "then": {
+            "field": "201",
+            "function": "[function:falsy]"
+          }
+        },
+        "PropertyDescription": {
+          "description": "All schema properties should have a description.",
+          "message": "Property should have a description.",
+          "severity": "warn",
+          "disableForTypeSpecDataPlane": true,
+          "disableForTypeSpecDataPlaneReason": "Covered by TSP's '@azure-tools/typespec-azure-core/documentation-required' rule.",
+          "resolved": false,
+          "given": "$..properties[?(@object() && @.$ref == undefined)]",
+          "then": {
+            "field": "description",
+            "function": "[function:truthy]"
+          }
+        },
+        "PropertyType": {
+          "description": "All schema properties should have a defined type.",
+          "message": "Property should have a defined type.",
+          "severity": "warn",
+          "resolved": false,
+          "given": "$..properties[?(@object() && @.$ref == undefined)]",
+          "then": {
+            "field": "type",
+            "function": "[function:truthy]"
+          }
+        },
+        "PutPath": {
+          "description": "The path for a put should have a final path parameter.",
+          "message": "The path for a put should have a final path parameter.",
+          "severity": "warn",
+          "formats": ["[function:oas2]", "[function:isOas3]"],
+          "given": "$.paths[*].put^~",
+          "then": {
+            "function": "[function:pattern]",
+            "functionOptions": {
+              "match": "/\\}$/"
+            }
+          }
+        },
+        "RequestBodyNotAllowed": {
+          "description": "A get or delete operation must not accept a body parameter.",
+          "severity": "warn",
+          "formats": ["[function:oas2]"],
+          "given": ["$.paths[*][get,delete].parameters[*]"],
+          "then": {
+            "field": "in",
+            "function": "[function:pattern]",
+            "functionOptions": {
+              "notMatch": "/^body$/"
+            }
+          }
+        },
+        "RequestBodyOptional": {
+          "description": "Flag optional request body -- common oversight.",
+          "message": "The body parameter is not marked as required.",
+          "severity": "warn",
+          "formats": ["[function:oas2]"],
+          "given": ["$.paths[*][put,post,patch].parameters[?(@.in == 'body')]"],
+          "then": {
+            "field": "required",
+            "function": "[function:truthy]"
+          }
+        },
+        "SchemaNamesConvention": {
+          "description": "Schema names should be Pascal case.",
+          "message": "Schema name should be Pascal case.",
+          "severity": "warn",
+          "disableForTypeSpecDataPlane": true,
+          "disableForTypeSpecDataPlaneReason": "Covered by TSP's '@azure-tools/typespec-azure-core/casing-style' rule.",
+          "formats": ["[function:oas2]"],
+          "given": "$.definitions.*~",
+          "then": {
+            "function": "[function:casing]",
+            "functionOptions": {
+              "type": "pascal"
+            }
+          }
+        },
+        "SchemaTypeAndFormat": {
+          "description": "Schema should use well-defined type and format.",
+          "message": "{{error}}",
+          "severity": "warn",
+          "formats": ["[function:oas2]"],
+          "given": [
+            "$.paths[*][put,post,patch].parameters[?(@.in == 'body')].schema",
+            "$.paths[*][get,put,post,patch,delete].responses[*].schema"
+          ],
+          "then": {
+            "function": "[function:checkSchemaTypeAndFormat]"
+          }
+        },
+        "SecurityDefinitionDescription": {
+          "description": "A security definition should have a description.",
+          "message": "Security definition should have a description.",
+          "severity": "warn",
+          "formats": ["[function:oas2]", "[function:isOas3]"],
+          "given": [
+            "$.securityDefinitions[*]",
+            "$.components.securitySchemes[*]"
+          ],
+          "then": {
+            "field": "description",
+            "function": "[function:truthy]"
+          }
+        },
+        "SuccessResponseBody": {
+          "description": "All success responses except 202 & 204 should define a response body.",
+          "severity": "warn",
+          "formats": ["[function:oas2]"],
+          "given": "$.paths[*][*].responses[?(@property >= 200 && @property < 300 && @property != '202' && @property != '204')]",
+          "then": {
+            "field": "schema",
+            "function": "[function:truthy]"
+          }
+        },
+        "VersionConvention": {
+          "description": "API version should be a date in YYYY-MM-DD format, optionally suffixed with '-preview'.",
+          "severity": "warn",
+          "formats": ["[function:oas2]", "[function:isOas3]"],
+          "given": "$.info.version",
+          "then": {
+            "function": "[function:pattern]",
+            "functionOptions": {
+              "match": "^\\d\\d\\d\\d-\\d\\d-\\d\\d(-preview)?$"
+            }
+          }
+        },
+        "VersionPolicy": {
+          "description": "Specify API version using `api-version` query parameter, not in path.",
+          "message": "{{error}}",
+          "severity": "warn",
+          "formats": ["[function:oas2]"],
+          "given": "$",
+          "then": {
+            "function": "[function:versionPolicy]"
+          }
+        },
+        "HostParametersValidation": {
+          "description": "Validate the parameters in x-ms-parameterized-host.",
+          "message": "{{error}}",
+          "severity": "error",
+          "resolved": true,
+          "formats": ["[function:oas2]"],
+          "given": ["$.x-ms-parameterized-host"],
+          "then": {
+            "function": "[function:hostParameters]"
+          }
+        },
+        "LongRunningResponseStatusCodeDataPlane": {
+          "description": "A LRO Post operation with return schema must have \"x-ms-long-running-operation-options\" extension enabled.",
+          "message": "{{error}}",
+          "severity": "error",
+          "resolved": true,
+          "formats": ["[function:oas2]"],
+          "given": [
+            "$[paths,'x-ms-paths'].*.*[?(@property === 'x-ms-long-running-operation' && @ === true)]^^"
+          ],
+          "then": {
+            "function": "[function:longRunningResponseStatusCodeDataPlane]"
+          }
+        },
+        "PutRequestResponseScheme": {
+          "description": "The request & response('200') schema of the PUT operation must be same.",
+          "message": "{{error}}",
+          "severity": "warn",
+          "resolved": true,
+          "formats": ["[function:oas2]"],
+          "given": [
+            "$[paths,'x-ms-paths'].*[put][responses][?(@property === '200' || @property === '201')]^^"
+          ],
+          "then": {
+            "function": "[function:putRequestResponseScheme]"
+          }
+        }
+      }
+    }
+  },
+  "nativeRulesets": {
+    "azCommon": {
+      "documentationUrl": "https://github.com/Azure/azure-openapi-validator/blob/develop/docs/rules.md",
+      "rules": {
+        "PageableOperation": {
+          "id": "R2029",
+          "name": "PageableOperation",
+          "severity": "warning",
+          "category": "SDKViolation",
+          "mergeState": 0,
+          "openapiType": 6,
+          "appliesTo_JsonQuery": "$.paths.*[?(@property==='get')]^",
+          "run": "[function:run]",
+          "given": "$.paths.*[?(@property==='get')]^",
+          "then": {
+            "execute": "[function:run]",
+            "options": {}
+          }
+        },
+        "DescriptionMustNotBeNodeName": {
+          "id": "R3011",
+          "name": "DescriptionMustNotBeNodeName",
+          "severity": "error",
+          "category": "ARMViolation",
+          "mergeState": 0,
+          "openapiType": 2,
+          "appliesTo_JsonQuery": "$..*[?(@property === 'description')]^",
+          "run": "[function:run]",
+          "given": "$..*[?(@property === 'description')]^",
+          "then": {
+            "execute": "[function:run]",
+            "options": {}
+          }
+        },
+        "ControlCharactersAreNotAllowed": {
+          "id": "R2006",
+          "name": "ControlCharactersAreNotAllowed",
+          "severity": "error",
+          "category": "SDKViolation",
+          "mergeState": 0,
+          "openapiType": 2,
+          "appliesTo_JsonQuery": "$..*",
+          "run": "[function:run]",
+          "given": "$..*",
+          "then": {
+            "execute": "[function:run]",
+            "options": {}
+          }
+        },
+        "ArraySchemaMustHaveItems": {
+          "id": "R2009",
+          "name": "ArraySchemaMustHaveItems",
+          "severity": "error",
+          "category": "SDKViolation",
+          "mergeState": 0,
+          "openapiType": 1,
+          "appliesTo_JsonQuery": "$.definitions.*.properties[?(@.type === 'array')]^",
+          "run": "[function:run]",
+          "given": "$.definitions.*.properties[?(@.type === 'array')]^",
+          "then": {
+            "execute": "[function:run]",
+            "options": {}
+          }
+        },
+        "PostOperationIdContainsUrlVerb": {
+          "id": "R2066",
+          "name": "PostOperationIdContainsUrlVerb",
+          "severity": "warning",
+          "category": "SDKViolation",
+          "mergeState": 0,
+          "openapiType": 2,
+          "appliesTo_JsonQuery": "$.paths.*[?(@property==='post')]^",
+          "run": "[function:run]",
+          "given": "$.paths.*[?(@property==='post')]^",
+          "then": {
+            "execute": "[function:run]",
+            "options": {}
+          }
+        },
+        "LicenseHeaderMustNotBeSpecified": {
+          "id": "R2065",
+          "name": "LicenseHeaderMustNotBeSpecified",
+          "severity": "warning",
+          "category": "SDKViolation",
+          "mergeState": 0,
+          "openapiType": 6,
+          "appliesTo_JsonQuery": "$..info['x-ms-code-generation-settings']",
+          "run": "[function:run]",
+          "given": "$..info['x-ms-code-generation-settings']",
+          "then": {
+            "execute": "[function:run]",
+            "options": {}
+          }
+        },
+        "PathResourceProviderNamePascalCase": {
+          "id": "R3020",
+          "name": "PathResourceProviderNamePascalCase",
+          "severity": "error",
+          "category": "ARMViolation",
+          "mergeState": 0,
+          "openapiType": 2,
+          "run": "[function:run]",
+          "then": {
+            "execute": "[function:run]",
+            "options": {}
+          }
+        },
+        "PathResourceTypeNameCamelCase": {
+          "id": "R3021",
+          "name": "PathResourceTypeNameCamelCase",
+          "severity": "error",
+          "category": "ARMViolation",
+          "mergeState": 0,
+          "openapiType": 2,
+          "run": "[function:run]",
+          "then": {
+            "execute": "[function:run]",
+            "options": {}
+          }
+        },
+        "OperationIdRequired": {
+          "id": "R4004",
+          "name": "OperationIdRequired",
+          "severity": "error",
+          "category": "ARMViolation",
+          "mergeState": 0,
+          "openapiType": 2,
+          "appliesTo_JsonQuery": "$.paths",
+          "run": "[function:run]",
+          "given": "$.paths",
+          "then": {
+            "execute": "[function:run]",
+            "options": {}
+          }
+        },
+        "EnumMustRespectType": {
+          "id": "R4040",
+          "name": "EnumMustRespectType",
+          "severity": "error",
+          "category": "SDKViolation",
+          "mergeState": 0,
+          "openapiType": 6,
+          "appliesTo_JsonQuery": [
+            "$.parameters..[?(@property === \"enum\")]^",
+            "$.definitions..[?(@property === \"enum\")]^"
+          ],
+          "run": "[function:run]",
+          "given": [
+            "$.parameters..[?(@property === \"enum\")]^",
+            "$.definitions..[?(@property === \"enum\")]^"
+          ],
+          "then": {
+            "execute": "[function:run]",
+            "options": {}
+          }
+        },
+        "EnumMustHaveType": {
+          "id": "R3015",
+          "name": "EnumMustHaveType",
+          "severity": "error",
+          "category": "SDKViolation",
+          "mergeState": 0,
+          "openapiType": 6,
+          "appliesTo_JsonQuery": "$..*[?(@property==='enum')]^",
+          "run": "[function:run]",
+          "given": "$..*[?(@property==='enum')]^",
+          "then": {
+            "execute": "[function:run]",
+            "options": {}
+          }
+        },
+        "EnumUniqueValue": {
+          "id": "R3024",
+          "name": "EnumUniqueValue",
+          "severity": "error",
+          "category": "SDKViolation",
+          "mergeState": 0,
+          "openapiType": 6,
+          "appliesTo_JsonQuery": "$..*[?(@property === 'enum')]^",
+          "run": "[function:run]",
+          "given": "$..*[?(@property === 'enum')]^",
+          "then": {
+            "execute": "[function:run]",
+            "options": {}
+          }
+        },
+        "EnumMustNotHaveEmptyValue": {
+          "id": "R3029",
+          "name": "EnumMustNotHaveEmptyValue",
+          "severity": "error",
+          "category": "SDKViolation",
+          "mergeState": 0,
+          "openapiType": 6,
+          "appliesTo_JsonQuery": "$..*[?(@property === 'enum')]^",
+          "run": "[function:run]",
+          "given": "$..*[?(@property === 'enum')]^",
+          "then": {
+            "execute": "[function:run]",
+            "options": {}
+          }
+        },
+        "IntegerTypeMustHaveFormat": {
+          "id": "R4013",
+          "name": "IntegerTypeMustHaveFormat",
+          "severity": "error",
+          "category": "ARMViolation",
+          "mergeState": 0,
+          "openapiType": 6,
+          "appliesTo_JsonQuery": "$..*[?(@property === 'type' && @ === 'integer')]^",
+          "run": "[function:run]",
+          "given": "$..*[?(@property === 'type' && @ === 'integer')]^",
+          "then": {
+            "execute": "[function:run]",
+            "options": {}
+          }
+        },
+        "UniqueXmsEnumName": {
+          "id": "R4005",
+          "name": "UniqueXmsEnumName",
+          "severity": "error",
+          "category": "SDKViolation",
+          "mergeState": 1,
+          "openapiType": 6,
+          "appliesTo_JsonQuery": "$.definitions",
+          "run": "[function:run]",
+          "given": "$.definitions",
+          "then": {
+            "execute": "[function:run]",
+            "options": {}
+          }
+        },
+        "DeprecatedXmsCodeGenerationSetting": {
+          "id": "R4006",
+          "name": "DeprecatedXmsCodeGenerationSetting",
+          "severity": "warning",
+          "category": "ARMViolation",
+          "mergeState": 0,
+          "openapiType": 6,
+          "appliesTo_JsonQuery": "$.info[\"x-ms-code-generation-settings\"]",
+          "run": "[function:run]",
+          "given": "$.info[\"x-ms-code-generation-settings\"]",
+          "then": {
+            "execute": "[function:run]",
+            "options": {}
+          }
+        },
+        "AvoidEmptyResponseSchema": {
+          "id": "R4008",
+          "name": "AvoidEmptyResponseSchema",
+          "severity": "error",
+          "category": "SDKViolation",
+          "mergeState": 0,
+          "openapiType": 2,
+          "appliesTo_JsonQuery": "$.paths.*.*.responses.*.schema",
+          "run": "[function:run]",
+          "given": "$.paths.*.*.responses.*.schema",
+          "then": {
+            "execute": "[function:run]",
+            "options": {}
+          }
+        },
+        "DefaultErrorResponseSchema": {
+          "id": "R4007",
+          "name": "DefaultErrorResponseSchema",
+          "severity": "error",
+          "category": "ARMViolation",
+          "mergeState": 0,
+          "openapiType": 2,
+          "appliesTo_JsonQuery": "$.paths.*.*.responses",
+          "run": "[function:run]",
+          "given": "$.paths.*.*.responses",
+          "then": {
+            "execute": "[function:run]",
+            "options": {}
+          }
+        },
+        "DeleteOperationResponses": {
+          "id": "R4011",
+          "name": "DeleteOperationResponses",
+          "severity": "error",
+          "category": "ARMViolation",
+          "mergeState": 0,
+          "openapiType": 2,
+          "appliesTo_JsonQuery": "$.paths.*.delete.responses",
+          "run": "[function:run]",
+          "given": "$.paths.*.delete.responses",
+          "then": {
+            "execute": "[function:run]",
+            "options": {}
+          }
+        },
+        "XmsPageableMustHaveCorrespondingResponse": {
+          "id": "R4012",
+          "name": "XmsPageableMustHaveCorrespondingResponse",
+          "severity": "error",
+          "category": "SDKViolation",
+          "mergeState": 0,
+          "openapiType": 2,
+          "appliesTo_JsonQuery": "$.paths..[?(@property==='x-ms-pageable')]^",
+          "run": "[function:run]",
+          "given": "$.paths..[?(@property==='x-ms-pageable')]^",
+          "then": {
+            "execute": "[function:run]",
+            "options": {}
+          }
+        },
+        "RequiredReadOnlySystemData": {
+          "id": "R4009",
+          "name": "RequiredReadOnlySystemData",
+          "severity": "warning",
+          "category": "ARMViolation",
+          "mergeState": 0,
+          "openapiType": 2,
+          "run": "[function:run]",
+          "then": {
+            "execute": "[function:run]",
+            "options": {}
+          }
+        },
+        "RequiredDefaultResponse": {
+          "id": "R4010",
+          "name": "RequiredDefaultResponse",
+          "severity": "error",
+          "category": "ARMViolation",
+          "mergeState": 0,
+          "openapiType": 2,
+          "appliesTo_JsonQuery": "$.paths.*.*.responses",
+          "run": "[function:run]",
+          "given": "$.paths.*.*.responses",
+          "then": {
+            "execute": "[function:run]",
+            "options": {}
+          }
+        },
+        "GetCollectionResponseSchema": {
+          "id": "R4019",
+          "name": "GetCollectionResponseSchema",
+          "severity": "error",
+          "category": "ARMViolation",
+          "mergeState": 1,
+          "openapiType": 2,
+          "appliesTo_JsonQuery": "$",
+          "run": "[function:run]",
+          "given": "$",
+          "then": {
+            "execute": "[function:run]",
+            "options": {}
+          }
+        },
+        "AllResourcesMustHaveGetOperation": {
+          "id": "R4014",
+          "name": "AllResourcesMustHaveGetOperation",
+          "severity": "warning",
+          "category": "ARMViolation",
+          "mergeState": 1,
+          "openapiType": 2,
+          "appliesTo_JsonQuery": "$",
+          "run": "[function:run]",
+          "given": "$",
+          "then": {
+            "execute": "[function:run]",
+            "options": {}
+          }
+        },
+        "NestedResourcesMustHaveListOperation": {
+          "id": "R4015",
+          "name": "NestedResourcesMustHaveListOperation",
+          "severity": "error",
+          "category": "ARMViolation",
+          "mergeState": 1,
+          "openapiType": 2,
+          "run": "[function:run]",
+          "then": {
+            "execute": "[function:run]",
+            "options": {}
+          }
+        },
+        "TopLevelResourcesListByResourceGroup": {
+          "id": "R4016",
+          "name": "TopLevelResourcesListByResourceGroup",
+          "severity": "error",
+          "category": "ARMViolation",
+          "mergeState": 1,
+          "openapiType": 2,
+          "appliesTo_JsonQuery": "$",
+          "run": "[function:run]",
+          "given": "$",
+          "then": {
+            "execute": "[function:run]",
+            "options": {}
+          }
+        },
+        "TopLevelResourcesListBySubscription": {
+          "id": "R4017",
+          "name": "TopLevelResourcesListBySubscription",
+          "severity": "error",
+          "category": "ARMViolation",
+          "mergeState": 1,
+          "openapiType": 2,
+          "appliesTo_JsonQuery": "$",
+          "run": "[function:run]",
+          "given": "$",
+          "then": {
+            "execute": "[function:run]",
+            "options": {}
+          }
+        },
+        "Rpaas_ResourceProvisioningState": {
+          "id": "R4031",
+          "name": "Rpaas_ResourceProvisioningState",
+          "severity": "error",
+          "category": "RPaaSViolation",
+          "mergeState": 0,
+          "openapiType": 8,
+          "appliesTo_JsonQuery": "$",
+          "run": "[function:run]",
+          "given": "$",
+          "then": {
+            "execute": "[function:run]",
+            "options": {}
+          }
+        },
+        "PreviewVersionOverOneYear": {
+          "id": "R4024",
+          "name": "PreviewVersionOverOneYear",
+          "severity": "warning",
+          "category": "SDKViolation",
+          "mergeState": 0,
+          "openapiType": 2,
+          "appliesTo_JsonQuery": "$.info",
+          "run": "[function:run]",
+          "given": "$.info",
+          "then": {
+            "execute": "[function:run]",
+            "options": {}
+          }
+        },
+        "UniqueXmsExample": {
+          "id": "R4030",
+          "name": "UniqueXmsExample",
+          "severity": "warning",
+          "category": "SDKViolation",
+          "mergeState": 1,
+          "openapiType": 2,
+          "appliesTo_JsonQuery": "$",
+          "run": "[function:run]",
+          "given": "$",
+          "then": {
+            "execute": "[function:run]",
+            "options": {}
+          }
+        },
+        "UniqueClientParameterName": {
+          "id": "R4029",
+          "name": "UniqueClientParameterName",
+          "severity": "error",
+          "category": "SDKViolation",
+          "mergeState": 1,
+          "openapiType": 6,
+          "appliesTo_JsonQuery": "$",
+          "run": "[function:run]",
+          "given": "$",
+          "then": {
+            "execute": "[function:run]",
+            "options": {}
+          }
+        },
+        "ValidResponseCodeRequired": {
+          "id": "R4028",
+          "name": "ValidResponseCodeRequired",
+          "severity": "error",
+          "category": "SDKViolation",
+          "mergeState": 0,
+          "openapiType": 6,
+          "appliesTo_JsonQuery": "$.paths.*.*.responses",
+          "run": "[function:run]",
+          "given": "$.paths.*.*.responses",
+          "then": {
+            "execute": "[function:run]",
+            "options": {}
+          }
+        },
+        "AzureResourceTagsSchema": {
+          "id": "R4034",
+          "name": "AzureResourceTagsSchema",
+          "severity": "error",
+          "category": "SDKViolation",
+          "mergeState": 0,
+          "openapiType": 2,
+          "appliesTo_JsonQuery": "$",
+          "run": "[function:run]",
+          "given": "$",
+          "then": {
+            "execute": "[function:run]",
+            "options": {}
+          }
+        },
+        "UniqueModelName": {
+          "id": "R4033",
+          "name": "UniqueModelName",
+          "severity": "error",
+          "category": "SDKViolation",
+          "mergeState": 1,
+          "openapiType": 2,
+          "appliesTo_JsonQuery": "$.definitions",
+          "run": "[function:run]",
+          "given": "$.definitions",
+          "then": {
+            "execute": "[function:run]",
+            "options": {}
+          }
+        },
+        "MissingXmsErrorResponse": {
+          "id": "R4032",
+          "name": "MissingXmsErrorResponse",
+          "severity": "error",
+          "category": "SDKViolation",
+          "mergeState": 0,
+          "openapiType": 2,
+          "appliesTo_JsonQuery": "$.paths.*.*.responses.*",
+          "run": "[function:run]",
+          "given": "$.paths.*.*.responses.*",
+          "then": {
+            "execute": "[function:run]",
+            "options": {}
+          }
+        },
+        "MissingTypeObject": {
+          "id": "R4037",
+          "name": "MissingTypeObject",
+          "severity": "error",
+          "category": "SDKViolation",
+          "mergeState": 0,
+          "openapiType": 6,
+          "appliesTo_JsonQuery": "$.definitions.*",
+          "run": "[function:run]",
+          "given": "$.definitions.*",
+          "then": {
+            "execute": "[function:run]",
+            "options": {}
+          }
+        },
+        "PrivateEndpointResourceSchemaValidation": {
+          "id": "R4035",
+          "name": "PrivateEndpointResourceSchemaValidation",
+          "severity": "error",
+          "category": "SDKViolation",
+          "mergeState": 1,
+          "openapiType": 2,
+          "appliesTo_JsonQuery": "$.paths.*",
+          "run": "[function:run]",
+          "given": "$.paths.*",
+          "then": {
+            "execute": "[function:run]",
+            "options": {}
+          }
+        },
+        "ParametersOrder": {
+          "id": "R4039",
+          "name": "ParametersOrder",
+          "severity": "error",
+          "category": "SDKViolation",
+          "mergeState": 0,
+          "openapiType": 2,
+          "appliesTo_JsonQuery": "$.paths",
+          "run": "[function:run]",
+          "given": "$.paths",
+          "then": {
+            "execute": "[function:run]",
+            "options": {}
+          }
+        },
+        "ExtensionResourcePathPattern": {
+          "id": "R4038",
+          "name": "ExtensionResourcePathPattern",
+          "severity": "error",
+          "category": "RPaaSViolation",
+          "mergeState": 0,
+          "openapiType": 8,
+          "appliesTo_JsonQuery": "$.paths",
+          "run": "[function:run]",
+          "given": "$.paths",
+          "then": {
+            "execute": "[function:run]",
+            "options": {}
+          }
+        },
+        "XmsEnumValidation": {
+          "id": "R2018",
+          "name": "XmsEnumValidation",
+          "severity": "error",
+          "category": "SDKViolation",
+          "mergeState": 0,
+          "openapiType": 6,
+          "appliesTo_JsonQuery": [
+            "$.definitions..[?(@property==='enum')]^",
+            "$..parameters..[?(@property==='enum')]^",
+            "$..responses..[?(@property==='enum')]^"
+          ],
+          "run": "[function:run]",
+          "given": [
+            "$.definitions..[?(@property==='enum')]^",
+            "$..parameters..[?(@property==='enum')]^",
+            "$..responses..[?(@property==='enum')]^"
+          ],
+          "then": {
+            "execute": "[function:run]",
+            "options": {}
+          }
+        },
+        "XmsIdentifierValidation": {
+          "id": "R4041",
+          "name": "XmsIdentifierValidation",
+          "severity": "warning",
+          "category": "SDKViolation",
+          "mergeState": 0,
+          "openapiType": 2,
+          "appliesTo_JsonQuery": [
+            "$.definitions..[?(@property === 'items')]^",
+            "$.parameters..[?(@property === 'items')]^"
+          ],
+          "run": "[function:run]",
+          "given": [
+            "$.definitions..[?(@property === 'items')]^",
+            "$.parameters..[?(@property === 'items')]^"
+          ],
+          "then": {
+            "execute": "[function:run]",
+            "options": {}
+          }
+        }
+      }
+    },
+    "azArm": {
+      "documentationUrl": "https://github.com/Azure/azure-openapi-validator/blob/develop/docs/rules.md",
+      "rules": {
+        "AllTrackedResourcesMustHaveDelete": {
+          "category": "ARMViolation",
+          "openapiType": 2,
+          "severity": "error",
+          "given": "$",
+          "then": {
+            "execute": "[function:allResourcesHaveDelete]",
+            "options": {
+              "isTrackedResource": true
+            }
+          }
+        },
+        "AllProxyResourcesShouldHaveDelete": {
+          "category": "ARMViolation",
+          "openapiType": 2,
+          "severity": "warning",
+          "given": "$",
+          "then": {
+            "execute": "[function:allResourcesHaveDelete]",
+            "options": {
+              "isTrackedResource": false
+            }
+          }
+        },
+        "RequiredPropertiesMissingInResourceModel": {
+          "description": "Per [ARM guidelines](https://github.com/Azure/azure-resource-manager-rpc/blob/master/v1.0/resource-api-reference.md), a 'Resource' model must have the 'name', 'id' and 'type' properties defined as 'readOnly' in its hierarchy.",
+          "category": "ARMViolation",
+          "openapiType": 2,
+          "severity": "error",
+          "given": "$",
+          "then": {
+            "execute": "[function:resourcesHaveRequiredProperties]"
+          }
+        },
+        "ArmResourcePropertiesBag": {
+          "description": "Per [ARM guidelines](https://github.com/Azure/azure-resource-manager-rpc/blob/master/v1.0/resource-api-reference.md), top level properties should not be repeated inside the properties bag for ARM resources.",
+          "category": "ARMViolation",
+          "openapiType": 2,
+          "severity": "error",
+          "given": "$",
+          "then": {
+            "execute": "[function:armResourcePropertiesBag]"
+          }
+        },
+        "TrackedResourcePatchOperation": {
+          "category": "ARMViolation",
+          "openapiType": 2,
+          "severity": "error",
+          "given": "$",
+          "then": {
+            "execute": "[function:trackedResourcesHavePatch]"
+          }
+        },
+        "BodyTopLevelProperties": {
+          "description": "Per [ARM guidelines](https://github.com/Azure/azure-resource-manager-rpc/blob/master/v1.0/resource-api-reference.md), top level properties of a resource should be only ones from the allowed set.",
+          "category": "ARMViolation",
+          "openapiType": 2,
+          "severity": "error",
+          "given": "$",
+          "then": {
+            "execute": "[function:bodyTopLevelProperties]"
+          }
+        },
+        "TrackedResourceBeyondsThirdLevel": {
+          "category": "ARMViolation",
+          "openapiType": 2,
+          "severity": "error",
+          "given": "$",
+          "then": {
+            "execute": "[function:trackedResourceBeyondsThirdLevel]"
+          }
+        },
+        "TrackedResourcesMustHavePut": {
+          "category": "ARMViolation",
+          "openapiType": 2,
+          "severity": "error",
+          "given": "$",
+          "then": {
+            "execute": "[function:trackedResourcesMustHavePut]"
+          }
+        },
+        "PathResourceProviderMatchNamespace": {
+          "description": "Verifies whether the last resource provider matches namespace or not. E.g the path /providers/Microsoft.Compute/virtualMachines/{vmName}/providers/Microsoft.Insights/extResource/{extType}' is allowed only if Microsoft.Insights matches the namespace (Microsoft.Insights).",
+          "severity": "error",
+          "category": "ARMViolation",
+          "openapiType": 2,
+          "given": ["$[paths,'x-ms-paths'].*~"],
+          "then": {
+            "execute": "[function:providerNamespace]"
+          }
+        },
+        "OperationsAPIImplementation": {
+          "description": "Per [ARM guidelines](https://github.com/Azure/azure-resource-manager-rpc/blob/master/v1.0/resource-api-reference.md), each RP must expose an operations API that returns information about all the operations available with the service.",
+          "category": "ARMViolation",
+          "openapiType": 2,
+          "scope": "Global",
+          "severity": "error",
+          "given": "$",
+          "then": {
+            "execute": "[function:operationsAPIImplementation]"
+          }
+        },
+        "XmsPageableListByRGAndSubscriptions": {
+          "description": "When a tracked resource has list by resource group and subscription operations, the x-ms-pageable extension values must be same for both operations. A tracked resource is a resource with a 'location' property as required. If this rule flags a resource which does not have a 'location' property, then it might be a false positive.",
+          "severity": "warning",
+          "category": "ARMViolation",
+          "openapiType": 2,
+          "then": {
+            "execute": "[function:xmsPageableListByRGAndSubscriptions]"
+          }
+        },
+        "ImplementPrivateEndpointAPIs": {
+          "description": "This rule is to check if all the APIs for private endpoint are implemented.",
+          "severity": "warning",
+          "category": "SDKViolation",
+          "scope": "Global",
+          "given": "$.paths",
+          "openapiType": 2,
+          "then": {
+            "execute": "[function:implementPrivateEndpointApis]"
+          }
+        }
+      }
+    }
+  }
+}
