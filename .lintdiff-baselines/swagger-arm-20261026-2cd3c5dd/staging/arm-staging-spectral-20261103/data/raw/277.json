@@ -1,0 +1,93 @@
+[
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "tags property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Devices/IotHubs/{resourceName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/iothub/resource-manager/Microsoft.Devices/IoTHub/swagger/preview/2026-10-01-preview/iothub.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PropertiesTypeObjectNoDefinition",
+    "severity": 0,
+    "message": "Properties with type:object that don't reference a model definition are not allowed. ARM doesn't allow generic type definitions as this leads to bad customer experience.",
+    "path": [
+      "definitions",
+      "EventHubConsumerGroupInfo",
+      "properties",
+      "properties"
+    ],
+    "source": "projects/specification/iothub/resource-manager/Microsoft.Devices/IoTHub/swagger/preview/2026-10-01-preview/iothub.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PropertiesTypeObjectNoDefinition",
+    "severity": 0,
+    "message": "Properties with type:object that don't reference a model definition are not allowed. ARM doesn't allow generic type definitions as this leads to bad customer experience.",
+    "path": [
+      "definitions",
+      "RoutingTwin",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/iothub/resource-manager/Microsoft.Devices/IoTHub/swagger/preview/2026-10-01-preview/iothub.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PropertiesTypeObjectNoDefinition",
+    "severity": 0,
+    "message": "Properties with type:object that don't reference a model definition are not allowed. ARM doesn't allow generic type definitions as this leads to bad customer experience.",
+    "path": [
+      "definitions",
+      "RoutingTwinProperties",
+      "properties",
+      "desired"
+    ],
+    "source": "projects/specification/iothub/resource-manager/Microsoft.Devices/IoTHub/swagger/preview/2026-10-01-preview/iothub.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PropertiesTypeObjectNoDefinition",
+    "severity": 0,
+    "message": "Properties with type:object that don't reference a model definition are not allowed. ARM doesn't allow generic type definitions as this leads to bad customer experience.",
+    "path": [
+      "definitions",
+      "RoutingTwinProperties",
+      "properties",
+      "reported"
+    ],
+    "source": "projects/specification/iothub/resource-manager/Microsoft.Devices/IoTHub/swagger/preview/2026-10-01-preview/iothub.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "RoutingTwin",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/iothub/resource-manager/Microsoft.Devices/IoTHub/swagger/preview/2026-10-01-preview/iothub.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "TagsResource",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/iothub/resource-manager/Microsoft.Devices/IoTHub/swagger/preview/2026-10-01-preview/iothub.json",
+    "sourceAttribution": "reported"
+  }
+]

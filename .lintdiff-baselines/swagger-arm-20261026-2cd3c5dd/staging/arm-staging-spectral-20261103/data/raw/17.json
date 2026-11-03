@@ -1,0 +1,28 @@
+[
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter start should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Insights/components/{resourceName}/Annotations",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/applicationinsights/resource-manager/Microsoft.Insights/ApplicationInsights/ComponentAPIs/swagger/stable/2015-05-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter end should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Insights/components/{resourceName}/Annotations",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/applicationinsights/resource-manager/Microsoft.Insights/ApplicationInsights/ComponentAPIs/swagger/stable/2015-05-01/openapi.json",
+    "sourceAttribution": "reported"
+  }
+]

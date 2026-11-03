@@ -1,0 +1,80 @@
+[
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "cspm property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Datadog/monitors/{monitorName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/datadog/resource-manager/Microsoft.Datadog/Datadog/swagger/preview/2025-12-26-preview/datadog.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "resourceCollection property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Datadog/monitors/{monitorName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/datadog/resource-manager/Microsoft.Datadog/Datadog/swagger/preview/2025-12-26-preview/datadog.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "tags property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Datadog/monitors/{monitorName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/datadog/resource-manager/Microsoft.Datadog/Datadog/swagger/preview/2025-12-26-preview/datadog.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter datadogOrganizationId should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/providers/Microsoft.Datadog/subscriptionStatuses",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/datadog/resource-manager/Microsoft.Datadog/Datadog/swagger/preview/2025-12-26-preview/datadog.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "DatadogMonitorResourceUpdateParameters",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/datadog/resource-manager/Microsoft.Datadog/Datadog/swagger/preview/2025-12-26-preview/datadog.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "ValidQueryParametersForPointOperations",
+    "severity": 0,
+    "message": "Query parameter datadogOrganizationId should be removed. Point operation 'get' MUST not have query parameters other than api-version.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/providers/Microsoft.Datadog/subscriptionStatuses/default",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/datadog/resource-manager/Microsoft.Datadog/Datadog/swagger/preview/2025-12-26-preview/datadog.json",
+    "sourceAttribution": "reported"
+  }
+]

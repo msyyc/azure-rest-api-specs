@@ -1,0 +1,15 @@
+[
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "TagsObject",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/networkfunction/resource-manager/Microsoft.NetworkFunction/TrafficCollector/swagger/stable/2022-11-01/AzureTrafficCollector.json",
+    "sourceAttribution": "reported"
+  }
+]

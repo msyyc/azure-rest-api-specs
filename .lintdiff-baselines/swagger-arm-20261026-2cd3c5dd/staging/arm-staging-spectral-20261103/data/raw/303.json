@@ -1,0 +1,41 @@
+[
+  {
+    "code": "RequestBodyMustExistForPutPatch",
+    "severity": 0,
+    "message": "The put or patch operation does not have a request body defined. This is not allowed. Please specify a request body for this operation.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourcegroups/{resourceGroupName}/providers/{providerName}/{resourceParentType}/{resourceParentName}/{resourceType}/{resourceName}/providers/Microsoft.Maintenance/applyUpdates/default",
+      "put",
+      "parameters"
+    ],
+    "source": "projects/specification/maintenance/resource-manager/Microsoft.Maintenance/Maintenance/swagger/preview/2025-10-01-preview/Maintenance.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "RequestBodyMustExistForPutPatch",
+    "severity": 0,
+    "message": "The put or patch operation does not have a request body defined. This is not allowed. Please specify a request body for this operation.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourcegroups/{resourceGroupName}/providers/{providerName}/{resourceType}/{resourceName}/providers/Microsoft.Maintenance/applyUpdates/default",
+      "put",
+      "parameters"
+    ],
+    "source": "projects/specification/maintenance/resource-manager/Microsoft.Maintenance/Maintenance/swagger/preview/2025-10-01-preview/Maintenance.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "TagSettingsProperties",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/maintenance/resource-manager/Microsoft.Maintenance/Maintenance/swagger/preview/2025-10-01-preview/Maintenance.json",
+    "sourceAttribution": "reported"
+  }
+]

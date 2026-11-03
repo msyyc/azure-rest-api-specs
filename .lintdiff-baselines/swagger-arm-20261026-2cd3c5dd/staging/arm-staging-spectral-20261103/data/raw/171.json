@@ -1,0 +1,145 @@
+[
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "id property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.CertificateRegistration/certificateOrders/{certificateOrderName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/certificateregistration/resource-manager/Microsoft.CertificateRegistration/CertificateRegistration/swagger/stable/2024-11-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "name property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.CertificateRegistration/certificateOrders/{certificateOrderName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/certificateregistration/resource-manager/Microsoft.CertificateRegistration/CertificateRegistration/swagger/stable/2024-11-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "kind property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.CertificateRegistration/certificateOrders/{certificateOrderName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/certificateregistration/resource-manager/Microsoft.CertificateRegistration/CertificateRegistration/swagger/stable/2024-11-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "type property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.CertificateRegistration/certificateOrders/{certificateOrderName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/certificateregistration/resource-manager/Microsoft.CertificateRegistration/CertificateRegistration/swagger/stable/2024-11-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "id property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.CertificateRegistration/certificateOrders/{certificateOrderName}/certificates/{name}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/certificateregistration/resource-manager/Microsoft.CertificateRegistration/CertificateRegistration/swagger/stable/2024-11-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "name property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.CertificateRegistration/certificateOrders/{certificateOrderName}/certificates/{name}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/certificateregistration/resource-manager/Microsoft.CertificateRegistration/CertificateRegistration/swagger/stable/2024-11-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "kind property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.CertificateRegistration/certificateOrders/{certificateOrderName}/certificates/{name}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/certificateregistration/resource-manager/Microsoft.CertificateRegistration/CertificateRegistration/swagger/stable/2024-11-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "type property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.CertificateRegistration/certificateOrders/{certificateOrderName}/certificates/{name}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/certificateregistration/resource-manager/Microsoft.CertificateRegistration/CertificateRegistration/swagger/stable/2024-11-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "ValidQueryParametersForPointOperations",
+    "severity": 0,
+    "message": "Query parameter startTime should be removed. Point operation 'get' MUST not have query parameters other than api-version.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.CertificateRegistration/certificateOrders/{certificateOrderName}/detectors/{detectorName}",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/certificateregistration/resource-manager/Microsoft.CertificateRegistration/CertificateRegistration/swagger/stable/2024-11-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "ValidQueryParametersForPointOperations",
+    "severity": 0,
+    "message": "Query parameter endTime should be removed. Point operation 'get' MUST not have query parameters other than api-version.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.CertificateRegistration/certificateOrders/{certificateOrderName}/detectors/{detectorName}",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/certificateregistration/resource-manager/Microsoft.CertificateRegistration/CertificateRegistration/swagger/stable/2024-11-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "ValidQueryParametersForPointOperations",
+    "severity": 0,
+    "message": "Query parameter timeGrain should be removed. Point operation 'get' MUST not have query parameters other than api-version.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.CertificateRegistration/certificateOrders/{certificateOrderName}/detectors/{detectorName}",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/certificateregistration/resource-manager/Microsoft.CertificateRegistration/CertificateRegistration/swagger/stable/2024-11-01/openapi.json",
+    "sourceAttribution": "reported"
+  }
+]

@@ -1,0 +1,502 @@
+[
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "tags property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.AzureArcData/dataControllers/{dataControllerName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/azurearcdata/resource-manager/Microsoft.AzureArcData/AzureArcData/swagger/preview/2026-03-01-preview/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "tags property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.AzureArcData/postgresInstances/{postgresInstanceName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/azurearcdata/resource-manager/Microsoft.AzureArcData/AzureArcData/swagger/preview/2026-03-01-preview/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "tags property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.AzureArcData/sqlManagedInstances/{sqlManagedInstanceName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/azurearcdata/resource-manager/Microsoft.AzureArcData/AzureArcData/swagger/preview/2026-03-01-preview/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "tags property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.AzureArcData/sqlServerEsuLicenses/{sqlServerEsuLicenseName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/azurearcdata/resource-manager/Microsoft.AzureArcData/AzureArcData/swagger/preview/2026-03-01-preview/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "tags property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.AzureArcData/sqlServerInstances/{sqlServerInstanceName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/azurearcdata/resource-manager/Microsoft.AzureArcData/AzureArcData/swagger/preview/2026-03-01-preview/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "isMicrosoftPkiCertTrustConfigured property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.AzureArcData/sqlServerInstances/{sqlServerInstanceName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/azurearcdata/resource-manager/Microsoft.AzureArcData/AzureArcData/swagger/preview/2026-03-01-preview/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "isDigiCertPkiCertTrustConfigured property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.AzureArcData/sqlServerInstances/{sqlServerInstanceName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/azurearcdata/resource-manager/Microsoft.AzureArcData/AzureArcData/swagger/preview/2026-03-01-preview/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "maxServerMemoryMB property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.AzureArcData/sqlServerInstances/{sqlServerInstanceName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/azurearcdata/resource-manager/Microsoft.AzureArcData/AzureArcData/swagger/preview/2026-03-01-preview/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "tags property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.AzureArcData/sqlServerInstances/{sqlServerInstanceName}/availabilityGroups/{availabilityGroupName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/azurearcdata/resource-manager/Microsoft.AzureArcData/AzureArcData/swagger/preview/2026-03-01-preview/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "tags property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.AzureArcData/sqlServerInstances/{sqlServerInstanceName}/databases/{databaseName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/azurearcdata/resource-manager/Microsoft.AzureArcData/AzureArcData/swagger/preview/2026-03-01-preview/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "tags property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.AzureArcData/sqlServerLicenses/{sqlServerLicenseName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/azurearcdata/resource-manager/Microsoft.AzureArcData/AzureArcData/swagger/preview/2026-03-01-preview/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PropertiesTypeObjectNoDefinition",
+    "severity": 0,
+    "message": "Properties with type:object that don't reference a model definition are not allowed. ARM doesn't allow generic type definitions as this leads to bad customer experience.",
+    "path": [
+      "definitions",
+      "ActiveDirectoryConnectorProperties",
+      "properties",
+      "status"
+    ],
+    "source": "projects/specification/azurearcdata/resource-manager/Microsoft.AzureArcData/AzureArcData/swagger/preview/2026-03-01-preview/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PropertiesTypeObjectNoDefinition",
+    "severity": 0,
+    "message": "Properties with type:object that don't reference a model definition are not allowed. ARM doesn't allow generic type definitions as this leads to bad customer experience.",
+    "path": [
+      "definitions",
+      "ActiveDirectoryConnectorStatus"
+    ],
+    "source": "projects/specification/azurearcdata/resource-manager/Microsoft.AzureArcData/AzureArcData/swagger/preview/2026-03-01-preview/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PropertiesTypeObjectNoDefinition",
+    "severity": 0,
+    "message": "Properties with type:object that don't reference a model definition are not allowed. ARM doesn't allow generic type definitions as this leads to bad customer experience.",
+    "path": [
+      "definitions",
+      "FailoverGroupProperties"
+    ],
+    "source": "projects/specification/azurearcdata/resource-manager/Microsoft.AzureArcData/AzureArcData/swagger/preview/2026-03-01-preview/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PropertiesTypeObjectNoDefinition",
+    "severity": 0,
+    "message": "Properties with type:object that don't reference a model definition are not allowed. ARM doesn't allow generic type definitions as this leads to bad customer experience.",
+    "path": [
+      "definitions",
+      "FailoverGroupProperties",
+      "properties",
+      "spec"
+    ],
+    "source": "projects/specification/azurearcdata/resource-manager/Microsoft.AzureArcData/AzureArcData/swagger/preview/2026-03-01-preview/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PropertiesTypeObjectNoDefinition",
+    "severity": 0,
+    "message": "Properties with type:object that don't reference a model definition are not allowed. ARM doesn't allow generic type definitions as this leads to bad customer experience.",
+    "path": [
+      "definitions",
+      "FailoverGroupResource",
+      "properties",
+      "properties"
+    ],
+    "source": "projects/specification/azurearcdata/resource-manager/Microsoft.AzureArcData/AzureArcData/swagger/preview/2026-03-01-preview/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PropertiesTypeObjectNoDefinition",
+    "severity": 0,
+    "message": "Properties with type:object that don't reference a model definition are not allowed. ARM doesn't allow generic type definitions as this leads to bad customer experience.",
+    "path": [
+      "definitions",
+      "FailoverGroupSpec"
+    ],
+    "source": "projects/specification/azurearcdata/resource-manager/Microsoft.AzureArcData/AzureArcData/swagger/preview/2026-03-01-preview/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PropertiesTypeObjectNoDefinition",
+    "severity": 0,
+    "message": "Properties with type:object that don't reference a model definition are not allowed. ARM doesn't allow generic type definitions as this leads to bad customer experience.",
+    "path": [
+      "definitions",
+      "K8sResourceRequirements"
+    ],
+    "source": "projects/specification/azurearcdata/resource-manager/Microsoft.AzureArcData/AzureArcData/swagger/preview/2026-03-01-preview/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PropertiesTypeObjectNoDefinition",
+    "severity": 0,
+    "message": "Properties with type:object that don't reference a model definition are not allowed. ARM doesn't allow generic type definitions as this leads to bad customer experience.",
+    "path": [
+      "definitions",
+      "K8sScheduling"
+    ],
+    "source": "projects/specification/azurearcdata/resource-manager/Microsoft.AzureArcData/AzureArcData/swagger/preview/2026-03-01-preview/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PropertiesTypeObjectNoDefinition",
+    "severity": 0,
+    "message": "Properties with type:object that don't reference a model definition are not allowed. ARM doesn't allow generic type definitions as this leads to bad customer experience.",
+    "path": [
+      "definitions",
+      "K8sScheduling",
+      "properties",
+      "default"
+    ],
+    "source": "projects/specification/azurearcdata/resource-manager/Microsoft.AzureArcData/AzureArcData/swagger/preview/2026-03-01-preview/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PropertiesTypeObjectNoDefinition",
+    "severity": 0,
+    "message": "Properties with type:object that don't reference a model definition are not allowed. ARM doesn't allow generic type definitions as this leads to bad customer experience.",
+    "path": [
+      "definitions",
+      "K8sSchedulingOptions"
+    ],
+    "source": "projects/specification/azurearcdata/resource-manager/Microsoft.AzureArcData/AzureArcData/swagger/preview/2026-03-01-preview/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PropertiesTypeObjectNoDefinition",
+    "severity": 0,
+    "message": "Properties with type:object that don't reference a model definition are not allowed. ARM doesn't allow generic type definitions as this leads to bad customer experience.",
+    "path": [
+      "definitions",
+      "K8sSchedulingOptions",
+      "properties",
+      "resources"
+    ],
+    "source": "projects/specification/azurearcdata/resource-manager/Microsoft.AzureArcData/AzureArcData/swagger/preview/2026-03-01-preview/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PropertiesTypeObjectNoDefinition",
+    "severity": 0,
+    "message": "Properties with type:object that don't reference a model definition are not allowed. ARM doesn't allow generic type definitions as this leads to bad customer experience.",
+    "path": [
+      "definitions",
+      "K8sSecurity"
+    ],
+    "source": "projects/specification/azurearcdata/resource-manager/Microsoft.AzureArcData/AzureArcData/swagger/preview/2026-03-01-preview/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PropertiesTypeObjectNoDefinition",
+    "severity": 0,
+    "message": "Properties with type:object that don't reference a model definition are not allowed. ARM doesn't allow generic type definitions as this leads to bad customer experience.",
+    "path": [
+      "definitions",
+      "K8sSettings"
+    ],
+    "source": "projects/specification/azurearcdata/resource-manager/Microsoft.AzureArcData/AzureArcData/swagger/preview/2026-03-01-preview/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PropertiesTypeObjectNoDefinition",
+    "severity": 0,
+    "message": "Properties with type:object that don't reference a model definition are not allowed. ARM doesn't allow generic type definitions as this leads to bad customer experience.",
+    "path": [
+      "definitions",
+      "Operation",
+      "properties",
+      "properties"
+    ],
+    "source": "projects/specification/azurearcdata/resource-manager/Microsoft.AzureArcData/AzureArcData/swagger/preview/2026-03-01-preview/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PropertiesTypeObjectNoDefinition",
+    "severity": 0,
+    "message": "Properties with type:object that don't reference a model definition are not allowed. ARM doesn't allow generic type definitions as this leads to bad customer experience.",
+    "path": [
+      "definitions",
+      "SqlManagedInstanceK8sRaw"
+    ],
+    "source": "projects/specification/azurearcdata/resource-manager/Microsoft.AzureArcData/AzureArcData/swagger/preview/2026-03-01-preview/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PropertiesTypeObjectNoDefinition",
+    "severity": 0,
+    "message": "Properties with type:object that don't reference a model definition are not allowed. ARM doesn't allow generic type definitions as this leads to bad customer experience.",
+    "path": [
+      "definitions",
+      "SqlManagedInstanceK8sRaw",
+      "properties",
+      "spec"
+    ],
+    "source": "projects/specification/azurearcdata/resource-manager/Microsoft.AzureArcData/AzureArcData/swagger/preview/2026-03-01-preview/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PropertiesTypeObjectNoDefinition",
+    "severity": 0,
+    "message": "Properties with type:object that don't reference a model definition are not allowed. ARM doesn't allow generic type definitions as this leads to bad customer experience.",
+    "path": [
+      "definitions",
+      "SqlManagedInstanceK8sSpec"
+    ],
+    "source": "projects/specification/azurearcdata/resource-manager/Microsoft.AzureArcData/AzureArcData/swagger/preview/2026-03-01-preview/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PropertiesTypeObjectNoDefinition",
+    "severity": 0,
+    "message": "Properties with type:object that don't reference a model definition are not allowed. ARM doesn't allow generic type definitions as this leads to bad customer experience.",
+    "path": [
+      "definitions",
+      "SqlManagedInstanceK8sSpec",
+      "properties",
+      "scheduling"
+    ],
+    "source": "projects/specification/azurearcdata/resource-manager/Microsoft.AzureArcData/AzureArcData/swagger/preview/2026-03-01-preview/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PropertiesTypeObjectNoDefinition",
+    "severity": 0,
+    "message": "Properties with type:object that don't reference a model definition are not allowed. ARM doesn't allow generic type definitions as this leads to bad customer experience.",
+    "path": [
+      "definitions",
+      "SqlManagedInstanceK8sSpec",
+      "properties",
+      "security"
+    ],
+    "source": "projects/specification/azurearcdata/resource-manager/Microsoft.AzureArcData/AzureArcData/swagger/preview/2026-03-01-preview/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PropertiesTypeObjectNoDefinition",
+    "severity": 0,
+    "message": "Properties with type:object that don't reference a model definition are not allowed. ARM doesn't allow generic type definitions as this leads to bad customer experience.",
+    "path": [
+      "definitions",
+      "SqlManagedInstanceK8sSpec",
+      "properties",
+      "settings"
+    ],
+    "source": "projects/specification/azurearcdata/resource-manager/Microsoft.AzureArcData/AzureArcData/swagger/preview/2026-03-01-preview/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PropertiesTypeObjectNoDefinition",
+    "severity": 0,
+    "message": "Properties with type:object that don't reference a model definition are not allowed. ARM doesn't allow generic type definitions as this leads to bad customer experience.",
+    "path": [
+      "definitions",
+      "SqlManagedInstanceProperties",
+      "properties",
+      "k8sRaw"
+    ],
+    "source": "projects/specification/azurearcdata/resource-manager/Microsoft.AzureArcData/AzureArcData/swagger/preview/2026-03-01-preview/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "DataControllerUpdate",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/azurearcdata/resource-manager/Microsoft.AzureArcData/AzureArcData/swagger/preview/2026-03-01-preview/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "PostgresInstanceUpdate",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/azurearcdata/resource-manager/Microsoft.AzureArcData/AzureArcData/swagger/preview/2026-03-01-preview/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "SqlManagedInstanceUpdate",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/azurearcdata/resource-manager/Microsoft.AzureArcData/AzureArcData/swagger/preview/2026-03-01-preview/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "SqlServerAvailabilityGroupUpdate",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/azurearcdata/resource-manager/Microsoft.AzureArcData/AzureArcData/swagger/preview/2026-03-01-preview/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "SqlServerDatabaseUpdate",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/azurearcdata/resource-manager/Microsoft.AzureArcData/AzureArcData/swagger/preview/2026-03-01-preview/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "SqlServerEsuLicenseUpdate",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/azurearcdata/resource-manager/Microsoft.AzureArcData/AzureArcData/swagger/preview/2026-03-01-preview/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "SqlServerInstanceUpdate",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/azurearcdata/resource-manager/Microsoft.AzureArcData/AzureArcData/swagger/preview/2026-03-01-preview/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "SqlServerLicenseUpdate",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/azurearcdata/resource-manager/Microsoft.AzureArcData/AzureArcData/swagger/preview/2026-03-01-preview/openapi.json",
+    "sourceAttribution": "reported"
+  }
+]

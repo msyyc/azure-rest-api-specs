@@ -1,0 +1,28 @@
+[
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "location property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Search/searchServices/{searchServiceName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/search/resource-manager/Microsoft.Search/Search/swagger/preview/2026-09-01-preview/search.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "tags property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Search/searchServices/{searchServiceName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/search/resource-manager/Microsoft.Search/Search/swagger/preview/2026-09-01-preview/search.json",
+    "sourceAttribution": "reported"
+  }
+]

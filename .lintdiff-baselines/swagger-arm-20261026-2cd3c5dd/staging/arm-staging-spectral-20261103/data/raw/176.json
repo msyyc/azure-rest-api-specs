@@ -1,0 +1,67 @@
+[
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter reportedStartTime should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/providers/Microsoft.Commerce/usageAggregates",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/commerce/resource-manager/Microsoft.Commerce/Commerce/swagger/preview/2015-06-01-preview/commerce.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter reportedEndTime should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/providers/Microsoft.Commerce/usageAggregates",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/commerce/resource-manager/Microsoft.Commerce/Commerce/swagger/preview/2015-06-01-preview/commerce.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter showDetails should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/providers/Microsoft.Commerce/usageAggregates",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/commerce/resource-manager/Microsoft.Commerce/Commerce/swagger/preview/2015-06-01-preview/commerce.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter aggregationGranularity should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/providers/Microsoft.Commerce/usageAggregates",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/commerce/resource-manager/Microsoft.Commerce/Commerce/swagger/preview/2015-06-01-preview/commerce.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter continuationToken should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/providers/Microsoft.Commerce/usageAggregates",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/commerce/resource-manager/Microsoft.Commerce/Commerce/swagger/preview/2015-06-01-preview/commerce.json",
+    "sourceAttribution": "reported"
+  }
+]

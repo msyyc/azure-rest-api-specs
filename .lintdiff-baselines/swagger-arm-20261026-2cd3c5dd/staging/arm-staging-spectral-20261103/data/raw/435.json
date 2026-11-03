@@ -1,0 +1,42 @@
+[
+  {
+    "code": "PropertiesTypeObjectNoDefinition",
+    "severity": 0,
+    "message": "Properties with type:object that don't reference a model definition are not allowed. ARM doesn't allow generic type definitions as this leads to bad customer experience.",
+    "path": [
+      "definitions",
+      "ErrorAdditionalInfo",
+      "properties",
+      "info"
+    ],
+    "source": "common-types/resource-management/v5/types.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PropertiesTypeObjectNoDefinition",
+    "severity": 0,
+    "message": "Properties with type:object that don't reference a model definition are not allowed. ARM doesn't allow generic type definitions as this leads to bad customer experience.",
+    "path": [
+      "definitions",
+      "ErrorDetail",
+      "properties",
+      "details",
+      "items"
+    ],
+    "source": "common-types/resource-management/v5/types.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "Subscription",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/resources/resource-manager/Microsoft.Resources/subscriptions/swagger/stable/2022-12-01/subscriptions.json",
+    "sourceAttribution": "reported"
+  }
+]

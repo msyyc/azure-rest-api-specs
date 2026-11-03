@@ -1,0 +1,106 @@
+[
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $top should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/{resourceUri}/providers/Microsoft.EdgeMarketplace/offers",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/edgemarketplace/resource-manager/Microsoft.EdgeMarketplace/EdgeMarketplace/swagger/preview/2025-10-01-preview/edgemarketplace.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter skip should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/{resourceUri}/providers/Microsoft.EdgeMarketplace/offers",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/edgemarketplace/resource-manager/Microsoft.EdgeMarketplace/EdgeMarketplace/swagger/preview/2025-10-01-preview/edgemarketplace.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter maxpagesize should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/{resourceUri}/providers/Microsoft.EdgeMarketplace/offers",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/edgemarketplace/resource-manager/Microsoft.EdgeMarketplace/EdgeMarketplace/swagger/preview/2025-10-01-preview/edgemarketplace.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $skipToken should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/{resourceUri}/providers/Microsoft.EdgeMarketplace/offers",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/edgemarketplace/resource-manager/Microsoft.EdgeMarketplace/EdgeMarketplace/swagger/preview/2025-10-01-preview/edgemarketplace.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $top should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/{resourceUri}/providers/Microsoft.EdgeMarketplace/publishers",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/edgemarketplace/resource-manager/Microsoft.EdgeMarketplace/EdgeMarketplace/swagger/preview/2025-10-01-preview/edgemarketplace.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter skip should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/{resourceUri}/providers/Microsoft.EdgeMarketplace/publishers",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/edgemarketplace/resource-manager/Microsoft.EdgeMarketplace/EdgeMarketplace/swagger/preview/2025-10-01-preview/edgemarketplace.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter maxpagesize should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/{resourceUri}/providers/Microsoft.EdgeMarketplace/publishers",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/edgemarketplace/resource-manager/Microsoft.EdgeMarketplace/EdgeMarketplace/swagger/preview/2025-10-01-preview/edgemarketplace.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $skipToken should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/{resourceUri}/providers/Microsoft.EdgeMarketplace/publishers",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/edgemarketplace/resource-manager/Microsoft.EdgeMarketplace/EdgeMarketplace/swagger/preview/2025-10-01-preview/edgemarketplace.json",
+    "sourceAttribution": "reported"
+  }
+]

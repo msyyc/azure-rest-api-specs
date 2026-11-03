@@ -1,0 +1,106 @@
+[
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "tags property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ComputeSchedule/scheduledActions/{scheduledActionName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/computeschedule/resource-manager/Microsoft.ComputeSchedule/ComputeSchedule/swagger/preview/2026-04-15-preview/computeschedule.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PropertiesTypeObjectNoDefinition",
+    "severity": 0,
+    "message": "Properties with type:object that don't reference a model definition are not allowed. ARM doesn't allow generic type definitions as this leads to bad customer experience.",
+    "path": [
+      "definitions",
+      "BulkActionVmExtensionProperties",
+      "properties",
+      "protectedSettings"
+    ],
+    "source": "projects/specification/computeschedule/resource-manager/Microsoft.ComputeSchedule/ComputeSchedule/swagger/preview/2026-04-15-preview/computeschedule.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PropertiesTypeObjectNoDefinition",
+    "severity": 0,
+    "message": "Properties with type:object that don't reference a model definition are not allowed. ARM doesn't allow generic type definitions as this leads to bad customer experience.",
+    "path": [
+      "definitions",
+      "BulkActionVmExtensionProperties",
+      "properties",
+      "settings"
+    ],
+    "source": "projects/specification/computeschedule/resource-manager/Microsoft.ComputeSchedule/ComputeSchedule/swagger/preview/2026-04-15-preview/computeschedule.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "BulkVMConfiguration",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/computeschedule/resource-manager/Microsoft.ComputeSchedule/ComputeSchedule/swagger/preview/2026-04-15-preview/computeschedule.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "ScheduledActionUpdate",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/computeschedule/resource-manager/Microsoft.ComputeSchedule/ComputeSchedule/swagger/preview/2026-04-15-preview/computeschedule.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "VirtualMachineNetworkInterfaceConfiguration",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/computeschedule/resource-manager/Microsoft.ComputeSchedule/ComputeSchedule/swagger/preview/2026-04-15-preview/computeschedule.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "VirtualMachinePublicIPAddressConfiguration",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/computeschedule/resource-manager/Microsoft.ComputeSchedule/ComputeSchedule/swagger/preview/2026-04-15-preview/computeschedule.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "VMGalleryApplication",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/computeschedule/resource-manager/Microsoft.ComputeSchedule/ComputeSchedule/swagger/preview/2026-04-15-preview/computeschedule.json",
+    "sourceAttribution": "reported"
+  }
+]

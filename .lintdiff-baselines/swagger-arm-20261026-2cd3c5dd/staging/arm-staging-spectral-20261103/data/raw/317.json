@@ -1,0 +1,158 @@
+[
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter pageSize should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Migrate/assessmentProjects/{projectName}/businessCases/{businessCaseName}/evaluatedAvsMachines",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/migrate/resource-manager/Microsoft.Migrate/BusinessCases/swagger/preview/2024-03-03-preview/businessCases.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter continuationToken should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Migrate/assessmentProjects/{projectName}/businessCases/{businessCaseName}/evaluatedAvsMachines",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/migrate/resource-manager/Microsoft.Migrate/BusinessCases/swagger/preview/2024-03-03-preview/businessCases.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter totalRecordCount should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Migrate/assessmentProjects/{projectName}/businessCases/{businessCaseName}/evaluatedAvsMachines",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/migrate/resource-manager/Microsoft.Migrate/BusinessCases/swagger/preview/2024-03-03-preview/businessCases.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter pageSize should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Migrate/assessmentProjects/{projectName}/businessCases/{businessCaseName}/evaluatedMachines",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/migrate/resource-manager/Microsoft.Migrate/BusinessCases/swagger/preview/2024-03-03-preview/businessCases.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter continuationToken should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Migrate/assessmentProjects/{projectName}/businessCases/{businessCaseName}/evaluatedMachines",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/migrate/resource-manager/Microsoft.Migrate/BusinessCases/swagger/preview/2024-03-03-preview/businessCases.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter totalRecordCount should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Migrate/assessmentProjects/{projectName}/businessCases/{businessCaseName}/evaluatedMachines",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/migrate/resource-manager/Microsoft.Migrate/BusinessCases/swagger/preview/2024-03-03-preview/businessCases.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter pageSize should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Migrate/assessmentProjects/{projectName}/businessCases/{businessCaseName}/evaluatedSqlEntities",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/migrate/resource-manager/Microsoft.Migrate/BusinessCases/swagger/preview/2024-03-03-preview/businessCases.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter continuationToken should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Migrate/assessmentProjects/{projectName}/businessCases/{businessCaseName}/evaluatedSqlEntities",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/migrate/resource-manager/Microsoft.Migrate/BusinessCases/swagger/preview/2024-03-03-preview/businessCases.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter totalRecordCount should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Migrate/assessmentProjects/{projectName}/businessCases/{businessCaseName}/evaluatedSqlEntities",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/migrate/resource-manager/Microsoft.Migrate/BusinessCases/swagger/preview/2024-03-03-preview/businessCases.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter pageSize should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Migrate/assessmentProjects/{projectName}/businessCases/{businessCaseName}/evaluatedWebApps",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/migrate/resource-manager/Microsoft.Migrate/BusinessCases/swagger/preview/2024-03-03-preview/businessCases.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter continuationToken should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Migrate/assessmentProjects/{projectName}/businessCases/{businessCaseName}/evaluatedWebApps",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/migrate/resource-manager/Microsoft.Migrate/BusinessCases/swagger/preview/2024-03-03-preview/businessCases.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter totalRecordCount should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Migrate/assessmentProjects/{projectName}/businessCases/{businessCaseName}/evaluatedWebApps",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/migrate/resource-manager/Microsoft.Migrate/BusinessCases/swagger/preview/2024-03-03-preview/businessCases.json",
+    "sourceAttribution": "reported"
+  }
+]

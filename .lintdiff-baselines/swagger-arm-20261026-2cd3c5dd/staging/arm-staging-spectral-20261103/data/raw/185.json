@@ -1,0 +1,106 @@
+[
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "tags property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/workloadSpaces/{spaceName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/compute/resource-manager/Microsoft.Compute/WorkloadManager/swagger/preview/2026-11-01-preview/WorkloadManager.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "tags property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/workloadSpaces/{spaceName}/capabilities/{capabilityName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/compute/resource-manager/Microsoft.Compute/WorkloadManager/swagger/preview/2026-11-01-preview/WorkloadManager.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "tags property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/workloadSpaces/{spaceName}/runtimeBindings/{bindingName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/compute/resource-manager/Microsoft.Compute/WorkloadManager/swagger/preview/2026-11-01-preview/WorkloadManager.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "tags property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/workloadSpaces/{spaceName}/runtimeLinks/{linkName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/compute/resource-manager/Microsoft.Compute/WorkloadManager/swagger/preview/2026-11-01-preview/WorkloadManager.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "CapabilityUpdate",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/compute/resource-manager/Microsoft.Compute/WorkloadManager/swagger/preview/2026-11-01-preview/WorkloadManager.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "RuntimeBindingUpdate",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/compute/resource-manager/Microsoft.Compute/WorkloadManager/swagger/preview/2026-11-01-preview/WorkloadManager.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "RuntimeLinkUpdate",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/compute/resource-manager/Microsoft.Compute/WorkloadManager/swagger/preview/2026-11-01-preview/WorkloadManager.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "WorkloadSpaceUpdate",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/compute/resource-manager/Microsoft.Compute/WorkloadManager/swagger/preview/2026-11-01-preview/WorkloadManager.json",
+    "sourceAttribution": "reported"
+  }
+]

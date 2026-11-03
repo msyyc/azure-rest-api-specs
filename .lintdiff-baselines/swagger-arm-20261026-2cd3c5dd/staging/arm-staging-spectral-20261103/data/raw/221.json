@@ -1,0 +1,587 @@
+[
+  {
+    "code": "PropertiesTypeObjectNoDefinition",
+    "severity": 0,
+    "message": "Properties with type:object that don't reference a model definition are not allowed. ARM doesn't allow generic type definitions as this leads to bad customer experience.",
+    "path": [
+      "definitions",
+      "ErrorAdditionalInfo",
+      "properties",
+      "info"
+    ],
+    "source": "common-types/resource-management/v5/types.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "tags property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DeviceRegistry/assetEndpointProfiles/{assetEndpointProfileName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/deviceregistry/resource-manager/Microsoft.DeviceRegistry/DeviceRegistry/swagger/preview/2026-11-02-preview/deviceregistry.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "tags property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DeviceRegistry/assets/{assetName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/deviceregistry/resource-manager/Microsoft.DeviceRegistry/DeviceRegistry/swagger/preview/2026-11-02-preview/deviceregistry.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "tags property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DeviceRegistry/namespaces/{namespaceName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/deviceregistry/resource-manager/Microsoft.DeviceRegistry/DeviceRegistry/swagger/preview/2026-11-02-preview/deviceregistry.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "tags property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DeviceRegistry/namespaces/{namespaceName}/assets/{assetName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/deviceregistry/resource-manager/Microsoft.DeviceRegistry/DeviceRegistry/swagger/preview/2026-11-02-preview/deviceregistry.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "tags property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DeviceRegistry/namespaces/{namespaceName}/certificateAuthorities/{certificateAuthorityName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/deviceregistry/resource-manager/Microsoft.DeviceRegistry/DeviceRegistry/swagger/preview/2026-11-02-preview/deviceregistry.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "tags property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DeviceRegistry/namespaces/{namespaceName}/devices/{deviceName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/deviceregistry/resource-manager/Microsoft.DeviceRegistry/DeviceRegistry/swagger/preview/2026-11-02-preview/deviceregistry.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "inbound property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DeviceRegistry/namespaces/{namespaceName}/devices/{deviceName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/deviceregistry/resource-manager/Microsoft.DeviceRegistry/DeviceRegistry/swagger/preview/2026-11-02-preview/deviceregistry.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "assigned property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DeviceRegistry/namespaces/{namespaceName}/devices/{deviceName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/deviceregistry/resource-manager/Microsoft.DeviceRegistry/DeviceRegistry/swagger/preview/2026-11-02-preview/deviceregistry.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "unassigned property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DeviceRegistry/namespaces/{namespaceName}/devices/{deviceName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/deviceregistry/resource-manager/Microsoft.DeviceRegistry/DeviceRegistry/swagger/preview/2026-11-02-preview/deviceregistry.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "enabled property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DeviceRegistry/namespaces/{namespaceName}/devices/{deviceName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/deviceregistry/resource-manager/Microsoft.DeviceRegistry/DeviceRegistry/swagger/preview/2026-11-02-preview/deviceregistry.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "tags property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DeviceRegistry/namespaces/{namespaceName}/discoveredAssets/{discoveredAssetName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/deviceregistry/resource-manager/Microsoft.DeviceRegistry/DeviceRegistry/swagger/preview/2026-11-02-preview/deviceregistry.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "tags property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DeviceRegistry/namespaces/{namespaceName}/discoveredDevices/{discoveredDeviceName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/deviceregistry/resource-manager/Microsoft.DeviceRegistry/DeviceRegistry/swagger/preview/2026-11-02-preview/deviceregistry.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "inbound property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DeviceRegistry/namespaces/{namespaceName}/discoveredDevices/{discoveredDeviceName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/deviceregistry/resource-manager/Microsoft.DeviceRegistry/DeviceRegistry/swagger/preview/2026-11-02-preview/deviceregistry.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "assigned property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DeviceRegistry/namespaces/{namespaceName}/discoveredDevices/{discoveredDeviceName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/deviceregistry/resource-manager/Microsoft.DeviceRegistry/DeviceRegistry/swagger/preview/2026-11-02-preview/deviceregistry.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "tags property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DeviceRegistry/namespaces/{namespaceName}/groups/{groupName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/deviceregistry/resource-manager/Microsoft.DeviceRegistry/DeviceRegistry/swagger/preview/2026-11-02-preview/deviceregistry.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "tags property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DeviceRegistry/namespaces/{namespaceName}/jobs/{jobName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/deviceregistry/resource-manager/Microsoft.DeviceRegistry/DeviceRegistry/swagger/preview/2026-11-02-preview/deviceregistry.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "tags property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DeviceRegistry/namespaces/{namespaceName}/registryDevices/{registryDeviceName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/deviceregistry/resource-manager/Microsoft.DeviceRegistry/DeviceRegistry/swagger/preview/2026-11-02-preview/deviceregistry.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "tags property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DeviceRegistry/schemaRegistries/{schemaRegistryName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/deviceregistry/resource-manager/Microsoft.DeviceRegistry/DeviceRegistry/swagger/preview/2026-11-02-preview/deviceregistry.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PropertiesTypeObjectNoDefinition",
+    "severity": 0,
+    "message": "Properties with type:object that don't reference a model definition are not allowed. ARM doesn't allow generic type definitions as this leads to bad customer experience.",
+    "path": [
+      "definitions",
+      "AssetProperties",
+      "properties",
+      "attributes"
+    ],
+    "source": "projects/specification/deviceregistry/resource-manager/Microsoft.DeviceRegistry/DeviceRegistry/swagger/preview/2026-11-02-preview/deviceregistry.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PropertiesTypeObjectNoDefinition",
+    "severity": 0,
+    "message": "Properties with type:object that don't reference a model definition are not allowed. ARM doesn't allow generic type definitions as this leads to bad customer experience.",
+    "path": [
+      "definitions",
+      "AssetUpdateProperties",
+      "properties",
+      "attributes"
+    ],
+    "source": "projects/specification/deviceregistry/resource-manager/Microsoft.DeviceRegistry/DeviceRegistry/swagger/preview/2026-11-02-preview/deviceregistry.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PropertiesTypeObjectNoDefinition",
+    "severity": 0,
+    "message": "Properties with type:object that don't reference a model definition are not allowed. ARM doesn't allow generic type definitions as this leads to bad customer experience.",
+    "path": [
+      "definitions",
+      "NamespaceAssetExecuteActionRequest",
+      "properties",
+      "payload"
+    ],
+    "source": "projects/specification/deviceregistry/resource-manager/Microsoft.DeviceRegistry/DeviceRegistry/swagger/preview/2026-11-02-preview/deviceregistry.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PropertiesTypeObjectNoDefinition",
+    "severity": 0,
+    "message": "Properties with type:object that don't reference a model definition are not allowed. ARM doesn't allow generic type definitions as this leads to bad customer experience.",
+    "path": [
+      "definitions",
+      "NamespaceAssetProperties",
+      "properties",
+      "attributes"
+    ],
+    "source": "projects/specification/deviceregistry/resource-manager/Microsoft.DeviceRegistry/DeviceRegistry/swagger/preview/2026-11-02-preview/deviceregistry.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PropertiesTypeObjectNoDefinition",
+    "severity": 0,
+    "message": "Properties with type:object that don't reference a model definition are not allowed. ARM doesn't allow generic type definitions as this leads to bad customer experience.",
+    "path": [
+      "definitions",
+      "NamespaceAssetUpdateProperties",
+      "properties",
+      "attributes"
+    ],
+    "source": "projects/specification/deviceregistry/resource-manager/Microsoft.DeviceRegistry/DeviceRegistry/swagger/preview/2026-11-02-preview/deviceregistry.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PropertiesTypeObjectNoDefinition",
+    "severity": 0,
+    "message": "Properties with type:object that don't reference a model definition are not allowed. ARM doesn't allow generic type definitions as this leads to bad customer experience.",
+    "path": [
+      "definitions",
+      "NamespaceDeviceProperties",
+      "properties",
+      "attributes"
+    ],
+    "source": "projects/specification/deviceregistry/resource-manager/Microsoft.DeviceRegistry/DeviceRegistry/swagger/preview/2026-11-02-preview/deviceregistry.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PropertiesTypeObjectNoDefinition",
+    "severity": 0,
+    "message": "Properties with type:object that don't reference a model definition are not allowed. ARM doesn't allow generic type definitions as this leads to bad customer experience.",
+    "path": [
+      "definitions",
+      "NamespaceDeviceUpdateProperties",
+      "properties",
+      "attributes"
+    ],
+    "source": "projects/specification/deviceregistry/resource-manager/Microsoft.DeviceRegistry/DeviceRegistry/swagger/preview/2026-11-02-preview/deviceregistry.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PropertiesTypeObjectNoDefinition",
+    "severity": 0,
+    "message": "Properties with type:object that don't reference a model definition are not allowed. ARM doesn't allow generic type definitions as this leads to bad customer experience.",
+    "path": [
+      "definitions",
+      "NamespaceDiscoveredAssetProperties",
+      "properties",
+      "attributes"
+    ],
+    "source": "projects/specification/deviceregistry/resource-manager/Microsoft.DeviceRegistry/DeviceRegistry/swagger/preview/2026-11-02-preview/deviceregistry.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PropertiesTypeObjectNoDefinition",
+    "severity": 0,
+    "message": "Properties with type:object that don't reference a model definition are not allowed. ARM doesn't allow generic type definitions as this leads to bad customer experience.",
+    "path": [
+      "definitions",
+      "NamespaceDiscoveredAssetUpdateProperties",
+      "properties",
+      "attributes"
+    ],
+    "source": "projects/specification/deviceregistry/resource-manager/Microsoft.DeviceRegistry/DeviceRegistry/swagger/preview/2026-11-02-preview/deviceregistry.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PropertiesTypeObjectNoDefinition",
+    "severity": 0,
+    "message": "Properties with type:object that don't reference a model definition are not allowed. ARM doesn't allow generic type definitions as this leads to bad customer experience.",
+    "path": [
+      "definitions",
+      "NamespaceDiscoveredDeviceProperties",
+      "properties",
+      "attributes"
+    ],
+    "source": "projects/specification/deviceregistry/resource-manager/Microsoft.DeviceRegistry/DeviceRegistry/swagger/preview/2026-11-02-preview/deviceregistry.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PropertiesTypeObjectNoDefinition",
+    "severity": 0,
+    "message": "Properties with type:object that don't reference a model definition are not allowed. ARM doesn't allow generic type definitions as this leads to bad customer experience.",
+    "path": [
+      "definitions",
+      "NamespaceDiscoveredDeviceUpdateProperties",
+      "properties",
+      "attributes"
+    ],
+    "source": "projects/specification/deviceregistry/resource-manager/Microsoft.DeviceRegistry/DeviceRegistry/swagger/preview/2026-11-02-preview/deviceregistry.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $orderBy should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DeviceRegistry/namespaces/{namespaceName}/jobRuns",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/deviceregistry/resource-manager/Microsoft.DeviceRegistry/DeviceRegistry/swagger/preview/2026-11-02-preview/deviceregistry.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $orderBy should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DeviceRegistry/namespaces/{namespaceName}/jobs/{jobName}/runs",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/deviceregistry/resource-manager/Microsoft.DeviceRegistry/DeviceRegistry/swagger/preview/2026-11-02-preview/deviceregistry.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "AssetEndpointProfileUpdate",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/deviceregistry/resource-manager/Microsoft.DeviceRegistry/DeviceRegistry/swagger/preview/2026-11-02-preview/deviceregistry.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "AssetUpdate",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/deviceregistry/resource-manager/Microsoft.DeviceRegistry/DeviceRegistry/swagger/preview/2026-11-02-preview/deviceregistry.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "CertificateAuthorityUpdate",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/deviceregistry/resource-manager/Microsoft.DeviceRegistry/DeviceRegistry/swagger/preview/2026-11-02-preview/deviceregistry.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "GroupUpdate",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/deviceregistry/resource-manager/Microsoft.DeviceRegistry/DeviceRegistry/swagger/preview/2026-11-02-preview/deviceregistry.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "JobTagsUpdate",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/deviceregistry/resource-manager/Microsoft.DeviceRegistry/DeviceRegistry/swagger/preview/2026-11-02-preview/deviceregistry.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "NamespaceAssetUpdate",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/deviceregistry/resource-manager/Microsoft.DeviceRegistry/DeviceRegistry/swagger/preview/2026-11-02-preview/deviceregistry.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "NamespaceDeviceUpdate",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/deviceregistry/resource-manager/Microsoft.DeviceRegistry/DeviceRegistry/swagger/preview/2026-11-02-preview/deviceregistry.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "NamespaceDiscoveredAssetUpdate",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/deviceregistry/resource-manager/Microsoft.DeviceRegistry/DeviceRegistry/swagger/preview/2026-11-02-preview/deviceregistry.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "NamespaceDiscoveredDeviceUpdate",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/deviceregistry/resource-manager/Microsoft.DeviceRegistry/DeviceRegistry/swagger/preview/2026-11-02-preview/deviceregistry.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "NamespaceUpdate",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/deviceregistry/resource-manager/Microsoft.DeviceRegistry/DeviceRegistry/swagger/preview/2026-11-02-preview/deviceregistry.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "RegistryDeviceUpdate",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/deviceregistry/resource-manager/Microsoft.DeviceRegistry/DeviceRegistry/swagger/preview/2026-11-02-preview/deviceregistry.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "SchemaProperties",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/deviceregistry/resource-manager/Microsoft.DeviceRegistry/DeviceRegistry/swagger/preview/2026-11-02-preview/deviceregistry.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "SchemaRegistryUpdate",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/deviceregistry/resource-manager/Microsoft.DeviceRegistry/DeviceRegistry/swagger/preview/2026-11-02-preview/deviceregistry.json",
+    "sourceAttribution": "reported"
+  }
+]

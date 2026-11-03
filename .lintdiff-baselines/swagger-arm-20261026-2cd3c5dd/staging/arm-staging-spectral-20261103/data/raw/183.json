@@ -1,0 +1,15 @@
+[
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter includeExtendedLocations should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/providers/Microsoft.Compute/skus",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/compute/resource-manager/Microsoft.Compute/Compute/ComputeSku/swagger/stable/2021-07-01/skus.json",
+    "sourceAttribution": "reported"
+  }
+]

@@ -1,0 +1,15 @@
+[
+  {
+    "code": "RequestBodyMustExistForPutPatch",
+    "severity": 0,
+    "message": "The put or patch operation does not have a request body defined. This is not allowed. Please specify a request body for this operation.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/servers/{serverName}/outboundFirewallRules/{outboundRuleFqdn}",
+      "put",
+      "parameters"
+    ],
+    "source": "projects/specification/sql/resource-manager/Microsoft.Sql/SQL/swagger/preview/2026-08-01-preview/outboundFirewallRules.json",
+    "sourceAttribution": "reported"
+  }
+]

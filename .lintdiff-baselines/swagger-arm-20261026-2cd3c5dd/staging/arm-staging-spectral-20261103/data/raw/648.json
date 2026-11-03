@@ -1,0 +1,106 @@
+[
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "tags property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Workloads/sapVirtualInstances/{sapVirtualInstanceName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/workloads/resource-manager/Microsoft.Workloads/SAPVirtualInstance/swagger/stable/2024-09-01/SAPVirtualInstance.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "tags property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Workloads/sapVirtualInstances/{sapVirtualInstanceName}/applicationInstances/{applicationInstanceName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/workloads/resource-manager/Microsoft.Workloads/SAPVirtualInstance/swagger/stable/2024-09-01/SAPVirtualInstance.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "tags property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Workloads/sapVirtualInstances/{sapVirtualInstanceName}/centralInstances/{centralInstanceName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/workloads/resource-manager/Microsoft.Workloads/SAPVirtualInstance/swagger/stable/2024-09-01/SAPVirtualInstance.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "tags property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Workloads/sapVirtualInstances/{sapVirtualInstanceName}/databaseInstances/{databaseInstanceName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/workloads/resource-manager/Microsoft.Workloads/SAPVirtualInstance/swagger/stable/2024-09-01/SAPVirtualInstance.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "UpdateSAPApplicationInstanceRequest",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/workloads/resource-manager/Microsoft.Workloads/SAPVirtualInstance/swagger/stable/2024-09-01/SAPVirtualInstance.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "UpdateSAPCentralInstanceRequest",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/workloads/resource-manager/Microsoft.Workloads/SAPVirtualInstance/swagger/stable/2024-09-01/SAPVirtualInstance.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "UpdateSAPDatabaseInstanceRequest",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/workloads/resource-manager/Microsoft.Workloads/SAPVirtualInstance/swagger/stable/2024-09-01/SAPVirtualInstance.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "UpdateSAPVirtualInstanceRequest",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/workloads/resource-manager/Microsoft.Workloads/SAPVirtualInstance/swagger/stable/2024-09-01/SAPVirtualInstance.json",
+    "sourceAttribution": "reported"
+  }
+]

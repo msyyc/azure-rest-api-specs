@@ -1,0 +1,28 @@
+[
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $select should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/providers/Microsoft.Insights/eventtypes/management/values",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/monitor/resource-manager/Microsoft.Insights/Insights/ActivityLogsApi/swagger/stable/2015-04-01/activityLogs.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $select should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/providers/Microsoft.Insights/eventtypes/management/values",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/monitor/resource-manager/Microsoft.Insights/Insights/ActivityLogsApi/swagger/stable/2015-04-01/activityLogs.json",
+    "sourceAttribution": "reported"
+  }
+]

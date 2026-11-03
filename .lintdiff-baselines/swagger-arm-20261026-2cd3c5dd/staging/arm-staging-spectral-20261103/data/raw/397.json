@@ -1,0 +1,28 @@
+[
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "tags property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.PowerPlatform/accounts/{accountName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/powerplatform/resource-manager/Microsoft.PowerPlatform/PowerPlatform/swagger/preview/2020-10-30-preview/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "tags property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.PowerPlatform/enterprisePolicies/{enterprisePolicyName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/powerplatform/resource-manager/Microsoft.PowerPlatform/PowerPlatform/swagger/preview/2020-10-30-preview/openapi.json",
+    "sourceAttribution": "reported"
+  }
+]

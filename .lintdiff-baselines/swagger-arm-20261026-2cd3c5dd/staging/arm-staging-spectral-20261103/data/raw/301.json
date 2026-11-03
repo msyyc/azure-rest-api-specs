@@ -1,0 +1,28 @@
+[
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "tags property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Logic/automationProjects/{automationProjectName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/logic/resource-manager/Microsoft.Logic/Logic/swagger/preview/2026-04-01-preview/automationproject.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "AutomationProjectUpdate",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/logic/resource-manager/Microsoft.Logic/Logic/swagger/preview/2026-04-01-preview/automationproject.json",
+    "sourceAttribution": "reported"
+  }
+]

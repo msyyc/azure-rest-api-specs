@@ -1,0 +1,15 @@
+[
+  {
+    "code": "ValidQueryParametersForPointOperations",
+    "severity": 0,
+    "message": "Query parameter $expand should be removed. Point operation 'get' MUST not have query parameters other than api-version.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/providers/Microsoft.Network/azureWebCategories/{name}",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/network/resource-manager/Microsoft.Network/Network/Network/swagger/stable/2026-03-01/azureWebCategory.json",
+    "sourceAttribution": "reported"
+  }
+]

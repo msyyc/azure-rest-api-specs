@@ -1,0 +1,65 @@
+[
+  {
+    "code": "ConsistentResponseSchemaForPut",
+    "severity": 0,
+    "message": "200 response schema does not match 201 response schema. A PUT API must always return the same response schema for both the 200 and 201 status codes.",
+    "path": [
+      "definitions",
+      "PrivateEndpointConnection"
+    ],
+    "source": "common-types/resource-management/v6/privatelinks.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "tags property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Maps/accounts/{accountName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/maps/resource-manager/Microsoft.Maps/Maps/swagger/preview/2025-10-01-preview/maps-management.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "tags property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Maps/accounts/{accountName}/creators/{creatorName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/maps/resource-manager/Microsoft.Maps/Maps/swagger/preview/2025-10-01-preview/maps-management.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "CreatorUpdateParameters",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/maps/resource-manager/Microsoft.Maps/Maps/swagger/preview/2025-10-01-preview/maps-management.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "MapsAccountUpdateParameters",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/maps/resource-manager/Microsoft.Maps/Maps/swagger/preview/2025-10-01-preview/maps-management.json",
+    "sourceAttribution": "reported"
+  }
+]

@@ -1,0 +1,28 @@
+[
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $expand should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/providers/Microsoft.Authorization/providerOperations",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/authorization/resource-manager/Microsoft.Authorization/Authorization/ProviderOperations/swagger/stable/2022-04-01/authorization-ProviderOperationsCalls.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "ValidQueryParametersForPointOperations",
+    "severity": 0,
+    "message": "Query parameter $expand should be removed. Point operation 'get' MUST not have query parameters other than api-version.",
+    "path": [
+      "paths",
+      "/providers/Microsoft.Authorization/providerOperations/{resourceProviderNamespace}",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/authorization/resource-manager/Microsoft.Authorization/Authorization/ProviderOperations/swagger/stable/2022-04-01/authorization-ProviderOperationsCalls.json",
+    "sourceAttribution": "reported"
+  }
+]

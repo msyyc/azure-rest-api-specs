@@ -1,0 +1,93 @@
+[
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "tags property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Insights/autoscalesettings/{autoscaleSettingName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/monitor/resource-manager/Microsoft.Insights/Insights/AutoScaleApi/swagger/stable/2022-10-01/autoScale.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter timespan should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Insights/autoscalesettings/{autoscaleSettingName}/predictiveMetrics",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/monitor/resource-manager/Microsoft.Insights/Insights/AutoScaleApi/swagger/stable/2022-10-01/autoScale.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter interval should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Insights/autoscalesettings/{autoscaleSettingName}/predictiveMetrics",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/monitor/resource-manager/Microsoft.Insights/Insights/AutoScaleApi/swagger/stable/2022-10-01/autoScale.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter metricNamespace should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Insights/autoscalesettings/{autoscaleSettingName}/predictiveMetrics",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/monitor/resource-manager/Microsoft.Insights/Insights/AutoScaleApi/swagger/stable/2022-10-01/autoScale.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter metricName should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Insights/autoscalesettings/{autoscaleSettingName}/predictiveMetrics",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/monitor/resource-manager/Microsoft.Insights/Insights/AutoScaleApi/swagger/stable/2022-10-01/autoScale.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter aggregation should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Insights/autoscalesettings/{autoscaleSettingName}/predictiveMetrics",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/monitor/resource-manager/Microsoft.Insights/Insights/AutoScaleApi/swagger/stable/2022-10-01/autoScale.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "AutoscaleSettingResourcePatch",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/monitor/resource-manager/Microsoft.Insights/Insights/AutoScaleApi/swagger/stable/2022-10-01/autoScale.json",
+    "sourceAttribution": "reported"
+  }
+]

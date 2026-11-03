@@ -1,0 +1,106 @@
+[
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "tags property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/diskAccesses/{diskAccessName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/compute/resource-manager/Microsoft.Compute/Compute/ComputeDisk/swagger/stable/2026-03-02/DiskRP.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "tags property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/diskEncryptionSets/{diskEncryptionSetName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/compute/resource-manager/Microsoft.Compute/Compute/ComputeDisk/swagger/stable/2026-03-02/DiskRP.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "tags property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/disks/{diskName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/compute/resource-manager/Microsoft.Compute/Compute/ComputeDisk/swagger/stable/2026-03-02/DiskRP.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "tags property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/snapshots/{snapshotName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/compute/resource-manager/Microsoft.Compute/Compute/ComputeDisk/swagger/stable/2026-03-02/DiskRP.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "DiskAccessUpdate",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/compute/resource-manager/Microsoft.Compute/Compute/ComputeDisk/swagger/stable/2026-03-02/DiskRP.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "DiskEncryptionSetUpdate",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/compute/resource-manager/Microsoft.Compute/Compute/ComputeDisk/swagger/stable/2026-03-02/DiskRP.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "DiskUpdate",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/compute/resource-manager/Microsoft.Compute/Compute/ComputeDisk/swagger/stable/2026-03-02/DiskRP.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "SnapshotUpdate",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/compute/resource-manager/Microsoft.Compute/Compute/ComputeDisk/swagger/stable/2026-03-02/DiskRP.json",
+    "sourceAttribution": "reported"
+  }
+]

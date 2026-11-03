@@ -1,0 +1,80 @@
+[
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "tags property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.AzureLargeInstance/azureLargeInstances/{azureLargeInstanceName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/azurelargeinstance/resource-manager/Microsoft.AzureLargeInstance/AzureLargeInstance/swagger/preview/2024-08-01-preview/azurelargeinstance.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "tags property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.AzureLargeInstance/azureLargeStorageInstances/{azureLargeStorageInstanceName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/azurelargeinstance/resource-manager/Microsoft.AzureLargeInstance/AzureLargeInstance/swagger/preview/2024-08-01-preview/azurelargeinstance.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "userAssignedIdentities property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.AzureLargeInstance/azureLargeStorageInstances/{azureLargeStorageInstanceName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/azurelargeinstance/resource-manager/Microsoft.AzureLargeInstance/AzureLargeInstance/swagger/preview/2024-08-01-preview/azurelargeinstance.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "AzureLargeInstanceTagsUpdate",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/azurelargeinstance/resource-manager/Microsoft.AzureLargeInstance/AzureLargeInstance/swagger/preview/2024-08-01-preview/azurelargeinstance.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "AzureLargeStorageInstanceTagsUpdate",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/azurelargeinstance/resource-manager/Microsoft.AzureLargeInstance/AzureLargeInstance/swagger/preview/2024-08-01-preview/azurelargeinstance.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "Tags",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/azurelargeinstance/resource-manager/Microsoft.AzureLargeInstance/AzureLargeInstance/swagger/preview/2024-08-01-preview/azurelargeinstance.json",
+    "sourceAttribution": "reported"
+  }
+]

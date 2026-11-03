@@ -1,0 +1,80 @@
+[
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "tags property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.AzurePlaywrightService/accounts/{accountName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/playwrighttesting/PlaywrightTesting.Management/swagger/resource-manager/Microsoft.AzurePlaywrightService/stable/2024-12-01/playwrighttesting.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "regionalAffinity property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.AzurePlaywrightService/accounts/{accountName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/playwrighttesting/PlaywrightTesting.Management/swagger/resource-manager/Microsoft.AzurePlaywrightService/stable/2024-12-01/playwrighttesting.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "scalableExecution property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.AzurePlaywrightService/accounts/{accountName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/playwrighttesting/PlaywrightTesting.Management/swagger/resource-manager/Microsoft.AzurePlaywrightService/stable/2024-12-01/playwrighttesting.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "reporting property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.AzurePlaywrightService/accounts/{accountName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/playwrighttesting/PlaywrightTesting.Management/swagger/resource-manager/Microsoft.AzurePlaywrightService/stable/2024-12-01/playwrighttesting.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "localAuth property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.AzurePlaywrightService/accounts/{accountName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/playwrighttesting/PlaywrightTesting.Management/swagger/resource-manager/Microsoft.AzurePlaywrightService/stable/2024-12-01/playwrighttesting.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "AccountUpdate",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/playwrighttesting/PlaywrightTesting.Management/swagger/resource-manager/Microsoft.AzurePlaywrightService/stable/2024-12-01/playwrighttesting.json",
+    "sourceAttribution": "reported"
+  }
+]

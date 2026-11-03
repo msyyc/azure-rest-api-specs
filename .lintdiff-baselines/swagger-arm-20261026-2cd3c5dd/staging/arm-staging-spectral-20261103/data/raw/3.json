@@ -1,0 +1,15 @@
+[
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter targetType should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/providers/Microsoft.AlertsManagement/alertRuleRecommendations",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/alertsmanagement/resource-manager/Microsoft.AlertsManagement/AlertRuleRecommendations/swagger/preview/2023-08-01-preview/AlertRuleRecommendations.json",
+    "sourceAttribution": "reported"
+  }
+]

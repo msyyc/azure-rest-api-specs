@@ -1,0 +1,146 @@
+[
+  {
+    "code": "PropertiesTypeObjectNoDefinition",
+    "severity": 0,
+    "message": "Properties with type:object that don't reference a model definition are not allowed. ARM doesn't allow generic type definitions as this leads to bad customer experience.",
+    "path": [
+      "definitions",
+      "ResourceProvisionPayload",
+      "properties",
+      "baseProfile"
+    ],
+    "source": "projects/specification/computebulkactions/ComputeBulkActions.Management/swagger/resource-manager/Microsoft.ComputeBulkActions/preview/2026-02-01-preview/computebulkactions.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PropertiesTypeObjectNoDefinition",
+    "severity": 0,
+    "message": "Properties with type:object that don't reference a model definition are not allowed. ARM doesn't allow generic type definitions as this leads to bad customer experience.",
+    "path": [
+      "definitions",
+      "ResourceProvisionPayload",
+      "properties",
+      "resourceOverrides",
+      "items"
+    ],
+    "source": "projects/specification/computebulkactions/ComputeBulkActions.Management/swagger/resource-manager/Microsoft.ComputeBulkActions/preview/2026-02-01-preview/computebulkactions.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PropertiesTypeObjectNoDefinition",
+    "severity": 0,
+    "message": "Properties with type:object that don't reference a model definition are not allowed. ARM doesn't allow generic type definitions as this leads to bad customer experience.",
+    "path": [
+      "definitions",
+      "VirtualMachineExtensionProperties",
+      "properties",
+      "protectedSettings"
+    ],
+    "source": "projects/specification/computebulkactions/ComputeBulkActions.Management/swagger/resource-manager/Microsoft.ComputeBulkActions/preview/2026-02-01-preview/computebulkactions.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PropertiesTypeObjectNoDefinition",
+    "severity": 0,
+    "message": "Properties with type:object that don't reference a model definition are not allowed. ARM doesn't allow generic type definitions as this leads to bad customer experience.",
+    "path": [
+      "definitions",
+      "VirtualMachineExtensionProperties",
+      "properties",
+      "settings"
+    ],
+    "source": "projects/specification/computebulkactions/ComputeBulkActions.Management/swagger/resource-manager/Microsoft.ComputeBulkActions/preview/2026-02-01-preview/computebulkactions.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $skiptoken should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ComputeBulkActions/locations/{location}/launchBulkInstancesOperations/{name}/virtualMachines",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/computebulkactions/ComputeBulkActions.Management/swagger/resource-manager/Microsoft.ComputeBulkActions/preview/2026-02-01-preview/computebulkactions.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "LaunchBulkInstancesOperation",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/computebulkactions/ComputeBulkActions.Management/swagger/resource-manager/Microsoft.ComputeBulkActions/preview/2026-02-01-preview/computebulkactions.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "LocationBasedLaunchBulkInstancesOperation",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/computebulkactions/ComputeBulkActions.Management/swagger/resource-manager/Microsoft.ComputeBulkActions/preview/2026-02-01-preview/computebulkactions.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "VirtualMachineNetworkInterfaceConfiguration",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/computebulkactions/ComputeBulkActions.Management/swagger/resource-manager/Microsoft.ComputeBulkActions/preview/2026-02-01-preview/computebulkactions.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "VirtualMachinePublicIPAddressConfiguration",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/computebulkactions/ComputeBulkActions.Management/swagger/resource-manager/Microsoft.ComputeBulkActions/preview/2026-02-01-preview/computebulkactions.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "VMGalleryApplication",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/computebulkactions/ComputeBulkActions.Management/swagger/resource-manager/Microsoft.ComputeBulkActions/preview/2026-02-01-preview/computebulkactions.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "ValidQueryParametersForPointOperations",
+    "severity": 0,
+    "message": "Query parameter deleteInstances should be removed. Point operation 'delete' MUST not have query parameters other than api-version.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ComputeBulkActions/locations/{location}/launchBulkInstancesOperations/{name}",
+      "delete",
+      "parameters"
+    ],
+    "source": "projects/specification/computebulkactions/ComputeBulkActions.Management/swagger/resource-manager/Microsoft.ComputeBulkActions/preview/2026-02-01-preview/computebulkactions.json",
+    "sourceAttribution": "reported"
+  }
+]

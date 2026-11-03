@@ -1,0 +1,26 @@
+[
+  {
+    "code": "ConsistentResponseSchemaForPut",
+    "severity": 0,
+    "message": "200 response schema does not match 201 response schema. A PUT API must always return the same response schema for both the 200 and 201 status codes.",
+    "path": [
+      "definitions",
+      "Dashboard"
+    ],
+    "source": "projects/specification/portal/resource-manager/Microsoft.Portal/Portal/swagger/stable/2026-04-01/common.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "tags property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Portal/dashboards/{dashboardName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/portal/resource-manager/Microsoft.Portal/Portal/swagger/stable/2026-04-01/portal.json",
+    "sourceAttribution": "reported"
+  }
+]

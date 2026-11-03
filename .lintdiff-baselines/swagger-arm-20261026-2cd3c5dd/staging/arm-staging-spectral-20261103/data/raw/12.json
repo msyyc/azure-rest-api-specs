@@ -1,0 +1,210 @@
+[
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "tags property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.App/connectedEnvironments/{connectedEnvironmentName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/app/resource-manager/Microsoft.App/ContainerApps/swagger/stable/2026-07-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "tags property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.App/connectedEnvironments/{connectedEnvironmentName}/certificates/{certificateName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/app/resource-manager/Microsoft.App/ContainerApps/swagger/stable/2026-07-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "tags property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.App/jobs/{jobName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/app/resource-manager/Microsoft.App/ContainerApps/swagger/stable/2026-07-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "environmentId property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.App/jobs/{jobName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/app/resource-manager/Microsoft.App/ContainerApps/swagger/stable/2026-07-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "outboundIpAddresses property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.App/jobs/{jobName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/app/resource-manager/Microsoft.App/ContainerApps/swagger/stable/2026-07-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "eventStreamEndpoint property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.App/jobs/{jobName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/app/resource-manager/Microsoft.App/ContainerApps/swagger/stable/2026-07-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "tags property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.App/managedEnvironments/{environmentName}/certificates/{certificateName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/app/resource-manager/Microsoft.App/ContainerApps/swagger/stable/2026-07-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "tags property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.App/managedEnvironments/{environmentName}/managedCertificates/{managedCertificateName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/app/resource-manager/Microsoft.App/ContainerApps/swagger/stable/2026-07-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "tags property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.App/sandboxGroups/{sandboxGroupName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/app/resource-manager/Microsoft.App/ContainerApps/swagger/stable/2026-07-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "tags property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.App/sessionPools/{sessionPoolName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/app/resource-manager/Microsoft.App/ContainerApps/swagger/stable/2026-07-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "CertificatePatch",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/app/resource-manager/Microsoft.App/ContainerApps/swagger/stable/2026-07-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "JobPatchProperties",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/app/resource-manager/Microsoft.App/ContainerApps/swagger/stable/2026-07-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "ManagedCertificatePatch",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/app/resource-manager/Microsoft.App/ContainerApps/swagger/stable/2026-07-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "ResourceTags",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/app/resource-manager/Microsoft.App/ContainerApps/swagger/stable/2026-07-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "SandboxGroupPatch",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/app/resource-manager/Microsoft.App/ContainerApps/swagger/stable/2026-07-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "SessionPoolUpdatableProperties",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/app/resource-manager/Microsoft.App/ContainerApps/swagger/stable/2026-07-01/openapi.json",
+    "sourceAttribution": "reported"
+  }
+]

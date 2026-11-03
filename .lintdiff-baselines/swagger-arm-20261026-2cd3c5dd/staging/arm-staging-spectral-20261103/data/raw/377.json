@@ -1,0 +1,15 @@
+[
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "tags property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Nginx.NginxPlus/nginxDeployments/{deploymentName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/nginx/resource-manager/Nginx.NginxPlus/NginxPlus/swagger/stable/2025-11-01/swagger.json",
+    "sourceAttribution": "reported"
+  }
+]

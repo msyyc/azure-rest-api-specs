@@ -1,0 +1,496 @@
+[
+  {
+    "code": "PropertiesTypeObjectNoDefinition",
+    "severity": 0,
+    "message": "Properties with type:object that don't reference a model definition are not allowed. ARM doesn't allow generic type definitions as this leads to bad customer experience.",
+    "path": [
+      "definitions",
+      "ErrorAdditionalInfo",
+      "properties",
+      "info"
+    ],
+    "source": "common-types/resource-management/v5/types.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "vmSize property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/{resourceUri}/providers/Microsoft.AzureStackHCI/virtualMachineInstances/default",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/azurestackhci/resource-manager/Microsoft.AzureStackHCI/StackHCIVM/swagger/preview/2026-04-01-preview/stackhcivm.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "virtualMachineGPUs property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/{resourceUri}/providers/Microsoft.AzureStackHCI/virtualMachineInstances/default",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/azurestackhci/resource-manager/Microsoft.AzureStackHCI/StackHCIVM/swagger/preview/2026-04-01-preview/stackhcivm.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "dataDisks property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/{resourceUri}/providers/Microsoft.AzureStackHCI/virtualMachineInstances/default",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/azurestackhci/resource-manager/Microsoft.AzureStackHCI/StackHCIVM/swagger/preview/2026-04-01-preview/stackhcivm.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "computerName property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/{resourceUri}/providers/Microsoft.AzureStackHCI/virtualMachineInstances/default",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/azurestackhci/resource-manager/Microsoft.AzureStackHCI/StackHCIVM/swagger/preview/2026-04-01-preview/stackhcivm.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "provisionVMAgent property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/{resourceUri}/providers/Microsoft.AzureStackHCI/virtualMachineInstances/default",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/azurestackhci/resource-manager/Microsoft.AzureStackHCI/StackHCIVM/swagger/preview/2026-04-01-preview/stackhcivm.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "provisionVMConfigAgent property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/{resourceUri}/providers/Microsoft.AzureStackHCI/virtualMachineInstances/default",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/azurestackhci/resource-manager/Microsoft.AzureStackHCI/StackHCIVM/swagger/preview/2026-04-01-preview/stackhcivm.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "principalId property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/{resourceUri}/providers/Microsoft.AzureStackHCI/virtualMachineInstances/default",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/azurestackhci/resource-manager/Microsoft.AzureStackHCI/StackHCIVM/swagger/preview/2026-04-01-preview/stackhcivm.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "tenantId property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/{resourceUri}/providers/Microsoft.AzureStackHCI/virtualMachineInstances/default",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/azurestackhci/resource-manager/Microsoft.AzureStackHCI/StackHCIVM/swagger/preview/2026-04-01-preview/stackhcivm.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "type property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/{resourceUri}/providers/Microsoft.AzureStackHCI/virtualMachineInstances/default",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/azurestackhci/resource-manager/Microsoft.AzureStackHCI/StackHCIVM/swagger/preview/2026-04-01-preview/stackhcivm.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "tags property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.AzureStackHCI/galleryImages/{galleryImageName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/azurestackhci/resource-manager/Microsoft.AzureStackHCI/StackHCIVM/swagger/preview/2026-04-01-preview/stackhcivm.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "tags property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.AzureStackHCI/loadBalancers/{loadBalancerName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/azurestackhci/resource-manager/Microsoft.AzureStackHCI/StackHCIVM/swagger/preview/2026-04-01-preview/stackhcivm.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "tags property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.AzureStackHCI/logicalNetworks/{logicalNetworkName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/azurestackhci/resource-manager/Microsoft.AzureStackHCI/StackHCIVM/swagger/preview/2026-04-01-preview/stackhcivm.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "tags property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.AzureStackHCI/marketplaceGalleryImages/{marketplaceGalleryImageName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/azurestackhci/resource-manager/Microsoft.AzureStackHCI/StackHCIVM/swagger/preview/2026-04-01-preview/stackhcivm.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "tags property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.AzureStackHCI/natGateways/{natGatewayName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/azurestackhci/resource-manager/Microsoft.AzureStackHCI/StackHCIVM/swagger/preview/2026-04-01-preview/stackhcivm.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "tags property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.AzureStackHCI/networkInterfaces/{networkInterfaceName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/azurestackhci/resource-manager/Microsoft.AzureStackHCI/StackHCIVM/swagger/preview/2026-04-01-preview/stackhcivm.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "tags property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.AzureStackHCI/networkSecurityGroups/{networkSecurityGroupName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/azurestackhci/resource-manager/Microsoft.AzureStackHCI/StackHCIVM/swagger/preview/2026-04-01-preview/stackhcivm.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "tags property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.AzureStackHCI/publicIPAddresses/{publicIPAddressName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/azurestackhci/resource-manager/Microsoft.AzureStackHCI/StackHCIVM/swagger/preview/2026-04-01-preview/stackhcivm.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "tags property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.AzureStackHCI/snapshots/{snapshotName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/azurestackhci/resource-manager/Microsoft.AzureStackHCI/StackHCIVM/swagger/preview/2026-04-01-preview/stackhcivm.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "tags property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.AzureStackHCI/storageContainers/{storageContainerName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/azurestackhci/resource-manager/Microsoft.AzureStackHCI/StackHCIVM/swagger/preview/2026-04-01-preview/stackhcivm.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "tags property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.AzureStackHCI/virtualHardDisks/{virtualHardDiskName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/azurestackhci/resource-manager/Microsoft.AzureStackHCI/StackHCIVM/swagger/preview/2026-04-01-preview/stackhcivm.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "tags property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.AzureStackHCI/virtualNetworks/{virtualNetworkName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/azurestackhci/resource-manager/Microsoft.AzureStackHCI/StackHCIVM/swagger/preview/2026-04-01-preview/stackhcivm.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "GalleryImagesUpdateRequest",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/azurestackhci/resource-manager/Microsoft.AzureStackHCI/StackHCIVM/swagger/preview/2026-04-01-preview/stackhcivm.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "GalleryImageTagsUpdate",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/azurestackhci/resource-manager/Microsoft.AzureStackHCI/StackHCIVM/swagger/preview/2026-04-01-preview/stackhcivm.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "LoadBalancerTagsUpdate",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/azurestackhci/resource-manager/Microsoft.AzureStackHCI/StackHCIVM/swagger/preview/2026-04-01-preview/stackhcivm.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "LogicalNetworksUpdateRequest",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/azurestackhci/resource-manager/Microsoft.AzureStackHCI/StackHCIVM/swagger/preview/2026-04-01-preview/stackhcivm.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "MarketplaceGalleryImagesUpdateRequest",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/azurestackhci/resource-manager/Microsoft.AzureStackHCI/StackHCIVM/swagger/preview/2026-04-01-preview/stackhcivm.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "MarketplaceGalleryImageTagsUpdate",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/azurestackhci/resource-manager/Microsoft.AzureStackHCI/StackHCIVM/swagger/preview/2026-04-01-preview/stackhcivm.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "NatGatewayTagsUpdate",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/azurestackhci/resource-manager/Microsoft.AzureStackHCI/StackHCIVM/swagger/preview/2026-04-01-preview/stackhcivm.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "NetworkInterfacesUpdateRequest",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/azurestackhci/resource-manager/Microsoft.AzureStackHCI/StackHCIVM/swagger/preview/2026-04-01-preview/stackhcivm.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "NetworkSecurityGroupTagsUpdate",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/azurestackhci/resource-manager/Microsoft.AzureStackHCI/StackHCIVM/swagger/preview/2026-04-01-preview/stackhcivm.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "PublicIPAddressTagsUpdate",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/azurestackhci/resource-manager/Microsoft.AzureStackHCI/StackHCIVM/swagger/preview/2026-04-01-preview/stackhcivm.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "SnapshotTagsUpdate",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/azurestackhci/resource-manager/Microsoft.AzureStackHCI/StackHCIVM/swagger/preview/2026-04-01-preview/stackhcivm.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "StorageContainersUpdateRequest",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/azurestackhci/resource-manager/Microsoft.AzureStackHCI/StackHCIVM/swagger/preview/2026-04-01-preview/stackhcivm.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "StorageContainerTagsUpdate",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/azurestackhci/resource-manager/Microsoft.AzureStackHCI/StackHCIVM/swagger/preview/2026-04-01-preview/stackhcivm.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "TagsObject",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/azurestackhci/resource-manager/Microsoft.AzureStackHCI/StackHCIVM/swagger/preview/2026-04-01-preview/stackhcivm.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "VirtualHardDisksUpdateRequest",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/azurestackhci/resource-manager/Microsoft.AzureStackHCI/StackHCIVM/swagger/preview/2026-04-01-preview/stackhcivm.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "VirtualNetworkTagsUpdate",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/azurestackhci/resource-manager/Microsoft.AzureStackHCI/StackHCIVM/swagger/preview/2026-04-01-preview/stackhcivm.json",
+    "sourceAttribution": "reported"
+  }
+]

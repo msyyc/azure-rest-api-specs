@@ -1,0 +1,301 @@
+[
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "tags property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Chaos/experiments/{experimentName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/chaos/resource-manager/Microsoft.Chaos/Chaos/swagger/preview/2026-08-01-preview/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "tags property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Chaos/privateAccesses/{privateAccessName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/chaos/resource-manager/Microsoft.Chaos/Chaos/swagger/preview/2026-08-01-preview/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "tags property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Chaos/workspaces/{workspaceName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/chaos/resource-manager/Microsoft.Chaos/Chaos/swagger/preview/2026-08-01-preview/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PropertiesTypeObjectNoDefinition",
+    "severity": 0,
+    "message": "Properties with type:object that don't reference a model definition are not allowed. ARM doesn't allow generic type definitions as this leads to bad customer experience.",
+    "path": [
+      "definitions",
+      "ActionProperties",
+      "properties",
+      "parametersSchema"
+    ],
+    "source": "projects/specification/chaos/resource-manager/Microsoft.Chaos/Chaos/swagger/preview/2026-08-01-preview/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PropertiesTypeObjectNoDefinition",
+    "severity": 0,
+    "message": "Properties with type:object that don't reference a model definition are not allowed. ARM doesn't allow generic type definitions as this leads to bad customer experience.",
+    "path": [
+      "definitions",
+      "Target",
+      "properties",
+      "properties"
+    ],
+    "source": "projects/specification/chaos/resource-manager/Microsoft.Chaos/Chaos/swagger/preview/2026-08-01-preview/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter running should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/providers/Microsoft.Chaos/experiments",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/chaos/resource-manager/Microsoft.Chaos/Chaos/swagger/preview/2026-08-01-preview/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter continuationToken should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/providers/Microsoft.Chaos/experiments",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/chaos/resource-manager/Microsoft.Chaos/Chaos/swagger/preview/2026-08-01-preview/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter continuationToken should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/providers/Microsoft.Chaos/locations/{location}/actions",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/chaos/resource-manager/Microsoft.Chaos/Chaos/swagger/preview/2026-08-01-preview/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter continuationToken should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/providers/Microsoft.Chaos/locations/{location}/actions/{actionName}/versions",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/chaos/resource-manager/Microsoft.Chaos/Chaos/swagger/preview/2026-08-01-preview/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter continuationToken should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/providers/Microsoft.Chaos/locations/{location}/targetTypes",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/chaos/resource-manager/Microsoft.Chaos/Chaos/swagger/preview/2026-08-01-preview/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter continuationToken should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/providers/Microsoft.Chaos/locations/{location}/targetTypes/{targetTypeName}/capabilityTypes",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/chaos/resource-manager/Microsoft.Chaos/Chaos/swagger/preview/2026-08-01-preview/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter continuationToken should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/providers/Microsoft.Chaos/privateAccesses",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/chaos/resource-manager/Microsoft.Chaos/Chaos/swagger/preview/2026-08-01-preview/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter continuationToken should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/providers/Microsoft.Chaos/workspaces",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/chaos/resource-manager/Microsoft.Chaos/Chaos/swagger/preview/2026-08-01-preview/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter continuationToken should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{parentProviderNamespace}/{parentResourceType}/{parentResourceName}/providers/Microsoft.Chaos/targets",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/chaos/resource-manager/Microsoft.Chaos/Chaos/swagger/preview/2026-08-01-preview/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter continuationToken should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{parentProviderNamespace}/{parentResourceType}/{parentResourceName}/providers/Microsoft.Chaos/targets/{targetName}/capabilities",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/chaos/resource-manager/Microsoft.Chaos/Chaos/swagger/preview/2026-08-01-preview/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter running should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Chaos/experiments",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/chaos/resource-manager/Microsoft.Chaos/Chaos/swagger/preview/2026-08-01-preview/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter continuationToken should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Chaos/experiments",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/chaos/resource-manager/Microsoft.Chaos/Chaos/swagger/preview/2026-08-01-preview/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter continuationToken should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Chaos/privateAccesses",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/chaos/resource-manager/Microsoft.Chaos/Chaos/swagger/preview/2026-08-01-preview/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter continuationToken should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Chaos/workspaces",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/chaos/resource-manager/Microsoft.Chaos/Chaos/swagger/preview/2026-08-01-preview/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "ExperimentUpdate",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/chaos/resource-manager/Microsoft.Chaos/Chaos/swagger/preview/2026-08-01-preview/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "PrivateAccessPatch",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/chaos/resource-manager/Microsoft.Chaos/Chaos/swagger/preview/2026-08-01-preview/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "ResourceTargetingCriteria",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/chaos/resource-manager/Microsoft.Chaos/Chaos/swagger/preview/2026-08-01-preview/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "WorkspaceUpdate",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/chaos/resource-manager/Microsoft.Chaos/Chaos/swagger/preview/2026-08-01-preview/openapi.json",
+    "sourceAttribution": "reported"
+  }
+]

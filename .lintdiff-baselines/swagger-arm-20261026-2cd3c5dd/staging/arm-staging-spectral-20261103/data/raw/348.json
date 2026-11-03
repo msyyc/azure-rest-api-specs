@@ -1,0 +1,40 @@
+[
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "tags property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Monitor/pipelineGroups/{pipelineGroupName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/monitoringservice/resource-manager/Microsoft.Monitor/PipelineGroups/swagger/stable/2026-04-01/pipelineGroups.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "Azure.ResourceManager.CommonTypes.TrackedResourceUpdate",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/monitoringservice/resource-manager/Microsoft.Monitor/PipelineGroups/swagger/stable/2026-04-01/pipelineGroups.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "PipelineGroupUpdate",
+      "properties"
+    ],
+    "source": "projects/specification/monitoringservice/resource-manager/Microsoft.Monitor/PipelineGroups/swagger/stable/2026-04-01/pipelineGroups.json",
+    "sourceAttribution": "reported"
+  }
+]

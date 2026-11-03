@@ -1,0 +1,80 @@
+[
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "tags property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.AppLink/appLinks/{appLinkName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/applink/AppLink.Management/swagger/resource-manager/Microsoft.AppLink/preview/2026-08-01-preview/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "userAssignedIdentities property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.AppLink/appLinks/{appLinkName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/applink/AppLink.Management/swagger/resource-manager/Microsoft.AppLink/preview/2026-08-01-preview/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "tags property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.AppLink/appLinks/{appLinkName}/appLinkMembers/{appLinkMemberName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/applink/AppLink.Management/swagger/resource-manager/Microsoft.AppLink/preview/2026-08-01-preview/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter kubernetesVersion should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/providers/Microsoft.AppLink/locations/{location}/availableVersions",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/applink/AppLink.Management/swagger/resource-manager/Microsoft.AppLink/preview/2026-08-01-preview/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "AppLinkMemberUpdate",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/applink/AppLink.Management/swagger/resource-manager/Microsoft.AppLink/preview/2026-08-01-preview/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "AppLinkUpdate",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/applink/AppLink.Management/swagger/resource-manager/Microsoft.AppLink/preview/2026-08-01-preview/openapi.json",
+    "sourceAttribution": "reported"
+  }
+]

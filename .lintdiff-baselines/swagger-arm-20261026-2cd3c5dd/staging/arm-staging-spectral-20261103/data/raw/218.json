@@ -1,0 +1,690 @@
+[
+  {
+    "code": "PropertiesTypeObjectNoDefinition",
+    "severity": 0,
+    "message": "Properties with type:object that don't reference a model definition are not allowed. ARM doesn't allow generic type definitions as this leads to bad customer experience.",
+    "path": [
+      "definitions",
+      "ErrorAdditionalInfo",
+      "properties",
+      "info"
+    ],
+    "source": "common-types/resource-management/v5/types.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "tags property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DevCenter/devcenters/{devCenterName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/devcenter/resource-manager/Microsoft.DevCenter/DevCenter/swagger/preview/2026-01-01-preview/DevCenterRP.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "location property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DevCenter/devcenters/{devCenterName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/devcenter/resource-manager/Microsoft.DevCenter/DevCenter/swagger/preview/2026-01-01-preview/DevCenterRP.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "tags property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DevCenter/devcenters/{devCenterName}/devboxdefinitions/{devBoxDefinitionName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/devcenter/resource-manager/Microsoft.DevCenter/DevCenter/swagger/preview/2026-01-01-preview/DevCenterRP.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "location property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DevCenter/devcenters/{devCenterName}/devboxdefinitions/{devBoxDefinitionName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/devcenter/resource-manager/Microsoft.DevCenter/DevCenter/swagger/preview/2026-01-01-preview/DevCenterRP.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "tags property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DevCenter/devcenters/{devCenterName}/encryptionSets/{encryptionSetName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/devcenter/resource-manager/Microsoft.DevCenter/DevCenter/swagger/preview/2026-01-01-preview/DevCenterRP.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "location property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DevCenter/devcenters/{devCenterName}/encryptionSets/{encryptionSetName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/devcenter/resource-manager/Microsoft.DevCenter/DevCenter/swagger/preview/2026-01-01-preview/DevCenterRP.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "tags property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DevCenter/networkConnections/{networkConnectionName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/devcenter/resource-manager/Microsoft.DevCenter/DevCenter/swagger/preview/2026-01-01-preview/DevCenterRP.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "location property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DevCenter/networkConnections/{networkConnectionName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/devcenter/resource-manager/Microsoft.DevCenter/DevCenter/swagger/preview/2026-01-01-preview/DevCenterRP.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "tags property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DevCenter/projects/{projectName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/devcenter/resource-manager/Microsoft.DevCenter/DevCenter/swagger/preview/2026-01-01-preview/DevCenterRP.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "location property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DevCenter/projects/{projectName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/devcenter/resource-manager/Microsoft.DevCenter/DevCenter/swagger/preview/2026-01-01-preview/DevCenterRP.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "tags property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DevCenter/projects/{projectName}/environmentTypes/{environmentTypeName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/devcenter/resource-manager/Microsoft.DevCenter/DevCenter/swagger/preview/2026-01-01-preview/DevCenterRP.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "tags property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DevCenter/projects/{projectName}/pools/{poolName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/devcenter/resource-manager/Microsoft.DevCenter/DevCenter/swagger/preview/2026-01-01-preview/DevCenterRP.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "location property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DevCenter/projects/{projectName}/pools/{poolName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/devcenter/resource-manager/Microsoft.DevCenter/DevCenter/swagger/preview/2026-01-01-preview/DevCenterRP.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PropertiesTypeObjectNoDefinition",
+    "severity": 0,
+    "message": "Properties with type:object that don't reference a model definition are not allowed. ARM doesn't allow generic type definitions as this leads to bad customer experience.",
+    "path": [
+      "definitions",
+      "OperationStatus",
+      "properties",
+      "properties"
+    ],
+    "source": "projects/specification/devcenter/resource-manager/Microsoft.DevCenter/DevCenter/swagger/preview/2026-01-01-preview/DevCenterRP.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $top should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/providers/Microsoft.DevCenter/devcenters",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/devcenter/resource-manager/Microsoft.DevCenter/DevCenter/swagger/preview/2026-01-01-preview/DevCenterRP.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $top should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/providers/Microsoft.DevCenter/networkConnections",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/devcenter/resource-manager/Microsoft.DevCenter/DevCenter/swagger/preview/2026-01-01-preview/DevCenterRP.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $top should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/providers/Microsoft.DevCenter/projects",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/devcenter/resource-manager/Microsoft.DevCenter/DevCenter/swagger/preview/2026-01-01-preview/DevCenterRP.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $top should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/providers/Microsoft.DevCenter/skus",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/devcenter/resource-manager/Microsoft.DevCenter/DevCenter/swagger/preview/2026-01-01-preview/DevCenterRP.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $top should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DevCenter/devcenters",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/devcenter/resource-manager/Microsoft.DevCenter/DevCenter/swagger/preview/2026-01-01-preview/DevCenterRP.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $top should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DevCenter/devcenters/{devCenterName}/attachednetworks",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/devcenter/resource-manager/Microsoft.DevCenter/DevCenter/swagger/preview/2026-01-01-preview/DevCenterRP.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $top should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DevCenter/devcenters/{devCenterName}/catalogs",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/devcenter/resource-manager/Microsoft.DevCenter/DevCenter/swagger/preview/2026-01-01-preview/DevCenterRP.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $top should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DevCenter/devcenters/{devCenterName}/catalogs/{catalogName}/environmentDefinitions",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/devcenter/resource-manager/Microsoft.DevCenter/DevCenter/swagger/preview/2026-01-01-preview/DevCenterRP.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $top should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DevCenter/devcenters/{devCenterName}/catalogs/{catalogName}/imageDefinitions",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/devcenter/resource-manager/Microsoft.DevCenter/DevCenter/swagger/preview/2026-01-01-preview/DevCenterRP.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $top should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DevCenter/devcenters/{devCenterName}/catalogs/{catalogName}/tasks",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/devcenter/resource-manager/Microsoft.DevCenter/DevCenter/swagger/preview/2026-01-01-preview/DevCenterRP.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $top should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DevCenter/devcenters/{devCenterName}/devboxdefinitions",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/devcenter/resource-manager/Microsoft.DevCenter/DevCenter/swagger/preview/2026-01-01-preview/DevCenterRP.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $top should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DevCenter/devcenters/{devCenterName}/encryptionSets",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/devcenter/resource-manager/Microsoft.DevCenter/DevCenter/swagger/preview/2026-01-01-preview/DevCenterRP.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $top should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DevCenter/devcenters/{devCenterName}/environmentTypes",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/devcenter/resource-manager/Microsoft.DevCenter/DevCenter/swagger/preview/2026-01-01-preview/DevCenterRP.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $top should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DevCenter/devcenters/{devCenterName}/galleries",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/devcenter/resource-manager/Microsoft.DevCenter/DevCenter/swagger/preview/2026-01-01-preview/DevCenterRP.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $top should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DevCenter/devcenters/{devCenterName}/galleries/{galleryName}/images",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/devcenter/resource-manager/Microsoft.DevCenter/DevCenter/swagger/preview/2026-01-01-preview/DevCenterRP.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $top should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DevCenter/devcenters/{devCenterName}/images",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/devcenter/resource-manager/Microsoft.DevCenter/DevCenter/swagger/preview/2026-01-01-preview/DevCenterRP.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $top should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DevCenter/devcenters/{devCenterName}/projectPolicies",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/devcenter/resource-manager/Microsoft.DevCenter/DevCenter/swagger/preview/2026-01-01-preview/DevCenterRP.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $top should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DevCenter/networkConnections",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/devcenter/resource-manager/Microsoft.DevCenter/DevCenter/swagger/preview/2026-01-01-preview/DevCenterRP.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $top should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DevCenter/networkConnections/{networkConnectionName}/healthChecks",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/devcenter/resource-manager/Microsoft.DevCenter/DevCenter/swagger/preview/2026-01-01-preview/DevCenterRP.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $top should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DevCenter/networkConnections/{networkConnectionName}/outboundNetworkDependenciesEndpoints",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/devcenter/resource-manager/Microsoft.DevCenter/DevCenter/swagger/preview/2026-01-01-preview/DevCenterRP.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $top should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DevCenter/projects",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/devcenter/resource-manager/Microsoft.DevCenter/DevCenter/swagger/preview/2026-01-01-preview/DevCenterRP.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $top should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DevCenter/projects/{projectName}/allowedEnvironmentTypes",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/devcenter/resource-manager/Microsoft.DevCenter/DevCenter/swagger/preview/2026-01-01-preview/DevCenterRP.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $top should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DevCenter/projects/{projectName}/attachednetworks",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/devcenter/resource-manager/Microsoft.DevCenter/DevCenter/swagger/preview/2026-01-01-preview/DevCenterRP.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $top should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DevCenter/projects/{projectName}/catalogs",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/devcenter/resource-manager/Microsoft.DevCenter/DevCenter/swagger/preview/2026-01-01-preview/DevCenterRP.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $top should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DevCenter/projects/{projectName}/catalogs/{catalogName}/imageDefinitions",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/devcenter/resource-manager/Microsoft.DevCenter/DevCenter/swagger/preview/2026-01-01-preview/DevCenterRP.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $top should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DevCenter/projects/{projectName}/devboxdefinitions",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/devcenter/resource-manager/Microsoft.DevCenter/DevCenter/swagger/preview/2026-01-01-preview/DevCenterRP.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $top should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DevCenter/projects/{projectName}/environmentTypes",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/devcenter/resource-manager/Microsoft.DevCenter/DevCenter/swagger/preview/2026-01-01-preview/DevCenterRP.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $top should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DevCenter/projects/{projectName}/pools",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/devcenter/resource-manager/Microsoft.DevCenter/DevCenter/swagger/preview/2026-01-01-preview/DevCenterRP.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $top should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DevCenter/projects/{projectName}/pools/{poolName}/schedules",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/devcenter/resource-manager/Microsoft.DevCenter/DevCenter/swagger/preview/2026-01-01-preview/DevCenterRP.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "CatalogProperties",
+      "properties"
+    ],
+    "source": "projects/specification/devcenter/resource-manager/Microsoft.DevCenter/DevCenter/swagger/preview/2026-01-01-preview/DevCenterRP.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "CatalogUpdateProperties",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/devcenter/resource-manager/Microsoft.DevCenter/DevCenter/swagger/preview/2026-01-01-preview/DevCenterRP.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "EnvironmentType",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/devcenter/resource-manager/Microsoft.DevCenter/DevCenter/swagger/preview/2026-01-01-preview/DevCenterRP.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "EnvironmentTypeUpdate",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/devcenter/resource-manager/Microsoft.DevCenter/DevCenter/swagger/preview/2026-01-01-preview/DevCenterRP.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "ProjectEnvironmentTypeUpdate",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/devcenter/resource-manager/Microsoft.DevCenter/DevCenter/swagger/preview/2026-01-01-preview/DevCenterRP.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "ValidQueryParametersForPointOperations",
+    "severity": 0,
+    "message": "Query parameter $top should be removed. Point operation 'delete' MUST not have query parameters other than api-version.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DevCenter/projects/{projectName}/pools/{poolName}/schedules/{scheduleName}",
+      "delete",
+      "parameters"
+    ],
+    "source": "projects/specification/devcenter/resource-manager/Microsoft.DevCenter/DevCenter/swagger/preview/2026-01-01-preview/DevCenterRP.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "ValidQueryParametersForPointOperations",
+    "severity": 0,
+    "message": "Query parameter $top should be removed. Point operation 'get' MUST not have query parameters other than api-version.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DevCenter/projects/{projectName}/pools/{poolName}/schedules/{scheduleName}",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/devcenter/resource-manager/Microsoft.DevCenter/DevCenter/swagger/preview/2026-01-01-preview/DevCenterRP.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "ValidQueryParametersForPointOperations",
+    "severity": 0,
+    "message": "Query parameter $top should be removed. Point operation 'patch' MUST not have query parameters other than api-version.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DevCenter/projects/{projectName}/pools/{poolName}/schedules/{scheduleName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/devcenter/resource-manager/Microsoft.DevCenter/DevCenter/swagger/preview/2026-01-01-preview/DevCenterRP.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "ValidQueryParametersForPointOperations",
+    "severity": 0,
+    "message": "Query parameter $top should be removed. Point operation 'put' MUST not have query parameters other than api-version.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DevCenter/projects/{projectName}/pools/{poolName}/schedules/{scheduleName}",
+      "put",
+      "parameters"
+    ],
+    "source": "projects/specification/devcenter/resource-manager/Microsoft.DevCenter/DevCenter/swagger/preview/2026-01-01-preview/DevCenterRP.json",
+    "sourceAttribution": "reported"
+  }
+]

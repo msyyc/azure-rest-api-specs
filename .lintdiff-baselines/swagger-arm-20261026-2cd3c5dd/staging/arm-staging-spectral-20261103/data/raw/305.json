@@ -1,0 +1,28 @@
+[
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "defenderForServers property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/providers/Microsoft.ManagedOps/managedOps/{managedOpsName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/managedoperations/ManagedOps.Management/swagger/resource-manager/Microsoft.ManagedOps/preview/2026-01-06-preview/managedops.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "defenderCspm property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/providers/Microsoft.ManagedOps/managedOps/{managedOpsName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/managedoperations/ManagedOps.Management/swagger/resource-manager/Microsoft.ManagedOps/preview/2026-01-06-preview/managedops.json",
+    "sourceAttribution": "reported"
+  }
+]

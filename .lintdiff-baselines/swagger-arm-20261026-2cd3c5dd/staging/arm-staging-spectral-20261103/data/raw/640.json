@@ -1,0 +1,41 @@
+[
+  {
+    "code": "RequestBodyMustExistForPutPatch",
+    "severity": 0,
+    "message": "The put or patch operation does not have a request body defined. This is not allowed. Please specify a request body for this operation.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/providers/Microsoft.Network/trafficManagerUserMetricsKeys/default",
+      "put",
+      "parameters"
+    ],
+    "source": "projects/specification/trafficmanager/resource-manager/Microsoft.Network/TrafficManager/swagger/stable/2026-09-01/trafficmanager.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "ValidQueryParametersForPointOperations",
+    "severity": 0,
+    "message": "Query parameter topLeft should be removed. Point operation 'get' MUST not have query parameters other than api-version.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/trafficmanagerprofiles/{profileName}/heatMaps/{heatMapType}",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/trafficmanager/resource-manager/Microsoft.Network/TrafficManager/swagger/stable/2026-09-01/trafficmanager.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "ValidQueryParametersForPointOperations",
+    "severity": 0,
+    "message": "Query parameter botRight should be removed. Point operation 'get' MUST not have query parameters other than api-version.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/trafficmanagerprofiles/{profileName}/heatMaps/{heatMapType}",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/trafficmanager/resource-manager/Microsoft.Network/TrafficManager/swagger/stable/2026-09-01/trafficmanager.json",
+    "sourceAttribution": "reported"
+  }
+]

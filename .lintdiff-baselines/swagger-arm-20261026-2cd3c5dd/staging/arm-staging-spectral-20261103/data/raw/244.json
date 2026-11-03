@@ -1,0 +1,132 @@
+[
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "baseSizeTiB property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ElasticSan/elasticSans/{elasticSanName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/elasticsan/resource-manager/Microsoft.ElasticSan/ElasticSan/swagger/preview/2026-05-01-preview/elasticsan.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "extendedCapacitySizeTiB property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ElasticSan/elasticSans/{elasticSanName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/elasticsan/resource-manager/Microsoft.ElasticSan/ElasticSan/swagger/preview/2026-05-01-preview/elasticsan.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "totalIops property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ElasticSan/elasticSans/{elasticSanName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/elasticsan/resource-manager/Microsoft.ElasticSan/ElasticSan/swagger/preview/2026-05-01-preview/elasticsan.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "totalMBps property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ElasticSan/elasticSans/{elasticSanName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/elasticsan/resource-manager/Microsoft.ElasticSan/ElasticSan/swagger/preview/2026-05-01-preview/elasticsan.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "totalSizeTiB property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ElasticSan/elasticSans/{elasticSanName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/elasticsan/resource-manager/Microsoft.ElasticSan/ElasticSan/swagger/preview/2026-05-01-preview/elasticsan.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "tags property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ElasticSan/elasticSans/{elasticSanName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/elasticsan/resource-manager/Microsoft.ElasticSan/ElasticSan/swagger/preview/2026-05-01-preview/elasticsan.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "reservedIops property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ElasticSan/elasticSans/{elasticSanName}/volumegroups/{volumeGroupName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/elasticsan/resource-manager/Microsoft.ElasticSan/ElasticSan/swagger/preview/2026-05-01-preview/elasticsan.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "reservedMBps property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ElasticSan/elasticSans/{elasticSanName}/volumegroups/{volumeGroupName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/elasticsan/resource-manager/Microsoft.ElasticSan/ElasticSan/swagger/preview/2026-05-01-preview/elasticsan.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "ElasticSanUpdate",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/elasticsan/resource-manager/Microsoft.ElasticSan/ElasticSan/swagger/preview/2026-05-01-preview/elasticsan.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "ValidQueryParametersForPointOperations",
+    "severity": 0,
+    "message": "Query parameter deleteType should be removed. Point operation 'delete' MUST not have query parameters other than api-version.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ElasticSan/elasticSans/{elasticSanName}/volumegroups/{volumeGroupName}/volumes/{volumeName}",
+      "delete",
+      "parameters"
+    ],
+    "source": "projects/specification/elasticsan/resource-manager/Microsoft.ElasticSan/ElasticSan/swagger/preview/2026-05-01-preview/elasticsan.json",
+    "sourceAttribution": "reported"
+  }
+]

@@ -1,0 +1,15 @@
+[
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "AwsEksClusterProperties",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/awsconnector/EksCluster.Management/swagger/resource-manager/Microsoft.AwsConnector/stable/2024-12-01/eksCluster.json",
+    "sourceAttribution": "reported"
+  }
+]

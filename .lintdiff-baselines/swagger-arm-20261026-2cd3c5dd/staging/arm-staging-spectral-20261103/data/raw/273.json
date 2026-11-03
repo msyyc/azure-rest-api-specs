@@ -1,0 +1,67 @@
+[
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "tags property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Kubernetes/connectedClusters/{clusterName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/hybridkubernetes/resource-manager/Microsoft.Kubernetes/HybridKubernetes/swagger/stable/2026-05-01/connectedClusters.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "distribution property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Kubernetes/connectedClusters/{clusterName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/hybridkubernetes/resource-manager/Microsoft.Kubernetes/HybridKubernetes/swagger/stable/2026-05-01/connectedClusters.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "distributionVersion property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Kubernetes/connectedClusters/{clusterName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/hybridkubernetes/resource-manager/Microsoft.Kubernetes/HybridKubernetes/swagger/stable/2026-05-01/connectedClusters.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "azureHybridBenefit property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Kubernetes/connectedClusters/{clusterName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/hybridkubernetes/resource-manager/Microsoft.Kubernetes/HybridKubernetes/swagger/stable/2026-05-01/connectedClusters.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "ConnectedClusterPatch",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/hybridkubernetes/resource-manager/Microsoft.Kubernetes/HybridKubernetes/swagger/stable/2026-05-01/connectedClusters.json",
+    "sourceAttribution": "reported"
+  }
+]

@@ -1,0 +1,54 @@
+[
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "tags property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.AwsConnector/apiGatewayRestApis/{name}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/awsconnector/ApiGatewayRestApi.Management/swagger/resource-manager/Microsoft.AwsConnector/stable/2024-12-01/apiGatewayRestApi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PropertiesTypeObjectNoDefinition",
+    "severity": 0,
+    "message": "Properties with type:object that don't reference a model definition are not allowed. ARM doesn't allow generic type definitions as this leads to bad customer experience.",
+    "path": [
+      "definitions",
+      "AwsApiGatewayRestApiProperties",
+      "properties",
+      "body"
+    ],
+    "source": "projects/specification/awsconnector/ApiGatewayRestApi.Management/swagger/resource-manager/Microsoft.AwsConnector/stable/2024-12-01/apiGatewayRestApi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "ApiGatewayRestApiTagsUpdate",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/awsconnector/ApiGatewayRestApi.Management/swagger/resource-manager/Microsoft.AwsConnector/stable/2024-12-01/apiGatewayRestApi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "AwsApiGatewayRestApiProperties",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/awsconnector/ApiGatewayRestApi.Management/swagger/resource-manager/Microsoft.AwsConnector/stable/2024-12-01/apiGatewayRestApi.json",
+    "sourceAttribution": "reported"
+  }
+]

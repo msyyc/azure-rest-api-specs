@@ -1,0 +1,158 @@
+[
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "status property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/providers/Microsoft.Support/supportTickets/{supportTicketName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/support/resource-manager/Microsoft.Support/Support/swagger/preview/2025-06-01-preview/support.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "additionalEmailAddresses property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/providers/Microsoft.Support/supportTickets/{supportTicketName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/support/resource-manager/Microsoft.Support/Support/swagger/preview/2025-06-01-preview/support.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "preferredSupportLanguage property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/providers/Microsoft.Support/supportTickets/{supportTicketName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/support/resource-manager/Microsoft.Support/Support/swagger/preview/2025-06-01-preview/support.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "status property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/providers/Microsoft.Support/supportTickets/{supportTicketName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/support/resource-manager/Microsoft.Support/Support/swagger/preview/2025-06-01-preview/support.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "additionalEmailAddresses property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/providers/Microsoft.Support/supportTickets/{supportTicketName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/support/resource-manager/Microsoft.Support/Support/swagger/preview/2025-06-01-preview/support.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "preferredSupportLanguage property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/providers/Microsoft.Support/supportTickets/{supportTicketName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/support/resource-manager/Microsoft.Support/Support/swagger/preview/2025-06-01-preview/support.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $top should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/providers/Microsoft.Support/supportTickets",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/support/resource-manager/Microsoft.Support/Support/swagger/preview/2025-06-01-preview/support.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $top should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/providers/Microsoft.Support/supportTickets/{supportTicketName}/communications",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/support/resource-manager/Microsoft.Support/Support/swagger/preview/2025-06-01-preview/support.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $top should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/providers/Microsoft.Support/supportTickets",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/support/resource-manager/Microsoft.Support/Support/swagger/preview/2025-06-01-preview/support.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $top should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/providers/Microsoft.Support/supportTickets/{supportTicketName}/communications",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/support/resource-manager/Microsoft.Support/Support/swagger/preview/2025-06-01-preview/support.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "RequestBodyMustExistForPutPatch",
+    "severity": 0,
+    "message": "The put or patch operation does not have a request body defined. This is not allowed. Please specify a request body for this operation.",
+    "path": [
+      "paths",
+      "/providers/Microsoft.Support/fileWorkspaces/{fileWorkspaceName}",
+      "put",
+      "parameters"
+    ],
+    "source": "projects/specification/support/resource-manager/Microsoft.Support/Support/swagger/preview/2025-06-01-preview/support.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "RequestBodyMustExistForPutPatch",
+    "severity": 0,
+    "message": "The put or patch operation does not have a request body defined. This is not allowed. Please specify a request body for this operation.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/providers/Microsoft.Support/fileWorkspaces/{fileWorkspaceName}",
+      "put",
+      "parameters"
+    ],
+    "source": "projects/specification/support/resource-manager/Microsoft.Support/Support/swagger/preview/2025-06-01-preview/support.json",
+    "sourceAttribution": "reported"
+  }
+]

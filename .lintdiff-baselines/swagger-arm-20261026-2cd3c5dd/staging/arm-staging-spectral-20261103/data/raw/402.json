@@ -1,0 +1,41 @@
+[
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "Patch operations body cannot be empty.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ProviderHub/providerMonitorSettings/{providerMonitorSettingName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/providerhub/resource-manager/Microsoft.ProviderHub/ProviderHub/swagger/preview/2026-02-01-preview/providerhub.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PropertiesTypeObjectNoDefinition",
+    "severity": 0,
+    "message": "Properties with type:object that don't reference a model definition are not allowed. ARM doesn't allow generic type definitions as this leads to bad customer experience.",
+    "path": [
+      "definitions",
+      "ResourceTypeRegistrationProperties",
+      "properties",
+      "metadata"
+    ],
+    "source": "projects/specification/providerhub/resource-manager/Microsoft.ProviderHub/ProviderHub/swagger/preview/2026-02-01-preview/providerhub.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "RequestBodyMustExistForPutPatch",
+    "severity": 0,
+    "message": "The put or patch operation does not have a request body defined. This is not allowed. Please specify a request body for this operation.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ProviderHub/providerMonitorSettings/{providerMonitorSettingName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/providerhub/resource-manager/Microsoft.ProviderHub/ProviderHub/swagger/preview/2026-02-01-preview/providerhub.json",
+    "sourceAttribution": "reported"
+  }
+]

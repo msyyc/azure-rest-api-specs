@@ -1,0 +1,249 @@
+[
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "tags property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Peering/peerings/{peeringName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/peering/resource-manager/Microsoft.Peering/Peering/swagger/stable/2025-05-01/peering.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "tags property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Peering/peeringServices/{peeringServiceName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/peering/resource-manager/Microsoft.Peering/Peering/swagger/stable/2025-05-01/peering.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter peeringLocation should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/providers/Microsoft.Peering/cdnPeeringPrefixes",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/peering/resource-manager/Microsoft.Peering/Peering/swagger/stable/2025-05-01/peering.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter peeringLocation should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/providers/Microsoft.Peering/legacyPeerings",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/peering/resource-manager/Microsoft.Peering/Peering/swagger/stable/2025-05-01/peering.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter kind should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/providers/Microsoft.Peering/legacyPeerings",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/peering/resource-manager/Microsoft.Peering/Peering/swagger/stable/2025-05-01/peering.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter asn should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/providers/Microsoft.Peering/legacyPeerings",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/peering/resource-manager/Microsoft.Peering/Peering/swagger/stable/2025-05-01/peering.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter directPeeringType should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/providers/Microsoft.Peering/legacyPeerings",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/peering/resource-manager/Microsoft.Peering/Peering/swagger/stable/2025-05-01/peering.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter kind should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/providers/Microsoft.Peering/peeringLocations",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/peering/resource-manager/Microsoft.Peering/Peering/swagger/stable/2025-05-01/peering.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter directPeeringType should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/providers/Microsoft.Peering/peeringLocations",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/peering/resource-manager/Microsoft.Peering/Peering/swagger/stable/2025-05-01/peering.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter country should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/providers/Microsoft.Peering/peeringServiceLocations",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/peering/resource-manager/Microsoft.Peering/Peering/swagger/stable/2025-05-01/peering.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter prefix should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Peering/peerings/{peeringName}/receivedRoutes",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/peering/resource-manager/Microsoft.Peering/Peering/swagger/stable/2025-05-01/peering.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter asPath should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Peering/peerings/{peeringName}/receivedRoutes",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/peering/resource-manager/Microsoft.Peering/Peering/swagger/stable/2025-05-01/peering.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter originAsValidationState should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Peering/peerings/{peeringName}/receivedRoutes",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/peering/resource-manager/Microsoft.Peering/Peering/swagger/stable/2025-05-01/peering.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter rpkiValidationState should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Peering/peerings/{peeringName}/receivedRoutes",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/peering/resource-manager/Microsoft.Peering/Peering/swagger/stable/2025-05-01/peering.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $skipToken should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Peering/peerings/{peeringName}/receivedRoutes",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/peering/resource-manager/Microsoft.Peering/Peering/swagger/stable/2025-05-01/peering.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter consolidate should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Peering/peerings/{peeringName}/rpUnbilledPrefixes",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/peering/resource-manager/Microsoft.Peering/Peering/swagger/stable/2025-05-01/peering.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $expand should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Peering/peeringServices/{peeringServiceName}/prefixes",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/peering/resource-manager/Microsoft.Peering/Peering/swagger/stable/2025-05-01/peering.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "ResourceTags",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/peering/resource-manager/Microsoft.Peering/Peering/swagger/stable/2025-05-01/peering.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "ValidQueryParametersForPointOperations",
+    "severity": 0,
+    "message": "Query parameter $expand should be removed. Point operation 'get' MUST not have query parameters other than api-version.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Peering/peeringServices/{peeringServiceName}/prefixes/{prefixName}",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/peering/resource-manager/Microsoft.Peering/Peering/swagger/stable/2025-05-01/peering.json",
+    "sourceAttribution": "reported"
+  }
+]

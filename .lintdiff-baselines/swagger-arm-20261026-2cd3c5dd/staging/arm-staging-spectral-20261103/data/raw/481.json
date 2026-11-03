@@ -1,0 +1,106 @@
+[
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "tags property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ServiceNetworking/trafficControllers/{trafficControllerName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/servicenetworking/resource-manager/Microsoft.ServiceNetworking/ServiceNetworking/swagger/stable/2026-03-01/TrafficController.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "tags property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ServiceNetworking/trafficControllers/{trafficControllerName}/associations/{associationName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/servicenetworking/resource-manager/Microsoft.ServiceNetworking/ServiceNetworking/swagger/stable/2026-03-01/TrafficController.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "tags property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ServiceNetworking/trafficControllers/{trafficControllerName}/frontends/{frontendName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/servicenetworking/resource-manager/Microsoft.ServiceNetworking/ServiceNetworking/swagger/stable/2026-03-01/TrafficController.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "tags property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ServiceNetworking/trafficControllers/{trafficControllerName}/securityPolicies/{securityPolicyName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/servicenetworking/resource-manager/Microsoft.ServiceNetworking/ServiceNetworking/swagger/stable/2026-03-01/TrafficController.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "AssociationUpdate",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/servicenetworking/resource-manager/Microsoft.ServiceNetworking/ServiceNetworking/swagger/stable/2026-03-01/TrafficController.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "FrontendUpdate",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/servicenetworking/resource-manager/Microsoft.ServiceNetworking/ServiceNetworking/swagger/stable/2026-03-01/TrafficController.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "SecurityPolicyUpdate",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/servicenetworking/resource-manager/Microsoft.ServiceNetworking/ServiceNetworking/swagger/stable/2026-03-01/TrafficController.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "TrafficControllerUpdate",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/servicenetworking/resource-manager/Microsoft.ServiceNetworking/ServiceNetworking/swagger/stable/2026-03-01/TrafficController.json",
+    "sourceAttribution": "reported"
+  }
+]

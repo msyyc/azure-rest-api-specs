@@ -1,0 +1,15 @@
+[
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $skipToken should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/providers/Microsoft.ServiceLinker/configurationNames",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/servicelinker/resource-manager/Microsoft.ServiceLinker/ServiceLinker/swagger/preview/2024-07-01-preview/servicelinker.json",
+    "sourceAttribution": "reported"
+  }
+]

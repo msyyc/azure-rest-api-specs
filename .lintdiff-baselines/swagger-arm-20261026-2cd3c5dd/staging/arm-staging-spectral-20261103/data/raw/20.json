@@ -1,0 +1,41 @@
+[
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter category should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/providers/Microsoft.Insights/deletedWorkbooks",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/applicationinsights/resource-manager/Microsoft.Insights/ApplicationInsights/DeletedWorkbookApi/swagger/preview/2024-02-01-preview/deletedWorkbooks_API.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter tags should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/providers/Microsoft.Insights/deletedWorkbooks",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/applicationinsights/resource-manager/Microsoft.Insights/ApplicationInsights/DeletedWorkbookApi/swagger/preview/2024-02-01-preview/deletedWorkbooks_API.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "DeletedWorkbookProperties",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/applicationinsights/resource-manager/Microsoft.Insights/ApplicationInsights/DeletedWorkbookApi/swagger/preview/2024-02-01-preview/deletedWorkbooks_API.json",
+    "sourceAttribution": "reported"
+  }
+]

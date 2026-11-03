@@ -1,0 +1,207 @@
+[
+  {
+    "code": "PropertiesTypeObjectNoDefinition",
+    "severity": 0,
+    "message": "Properties with type:object that don't reference a model definition are not allowed. ARM doesn't allow generic type definitions as this leads to bad customer experience.",
+    "path": [
+      "definitions",
+      "ErrorAdditionalInfo",
+      "properties",
+      "info"
+    ],
+    "source": "common-types/resource-management/v6/types.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "tags property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ContainerService/maintenanceWindows/{maintenanceWindowName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/containerservice/resource-manager/Microsoft.ContainerService/aks/swagger/preview/2026-07-02-preview/managedClusters.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "tags property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ContainerService/managedClusters/{resourceName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/containerservice/resource-manager/Microsoft.ContainerService/aks/swagger/preview/2026-07-02-preview/managedClusters.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "count property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ContainerService/managedClusters/{resourceName}/agentPools/{agentPoolName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/containerservice/resource-manager/Microsoft.ContainerService/aks/swagger/preview/2026-07-02-preview/managedClusters.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "tags property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ContainerService/managedClusters/{resourceName}/managedNamespaces/{managedNamespaceName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/containerservice/resource-manager/Microsoft.ContainerService/aks/swagger/preview/2026-07-02-preview/managedClusters.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "tags property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ContainerService/managedclustersnapshots/{resourceName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/containerservice/resource-manager/Microsoft.ContainerService/aks/swagger/preview/2026-07-02-preview/managedClusters.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "tags property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ContainerService/snapshots/{resourceName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/containerservice/resource-manager/Microsoft.ContainerService/aks/swagger/preview/2026-07-02-preview/managedClusters.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PropertiesTypeObjectNoDefinition",
+    "severity": 0,
+    "message": "Properties with type:object that don't reference a model definition are not allowed. ARM doesn't allow generic type definitions as this leads to bad customer experience.",
+    "path": [
+      "definitions",
+      "ListBootstrapDataRequest"
+    ],
+    "source": "projects/specification/containerservice/resource-manager/Microsoft.ContainerService/aks/swagger/preview/2026-07-02-preview/managedClusters.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter includeExtendedLocations should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/providers/Microsoft.ContainerService/locations/{location}/vmSkus",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/containerservice/resource-manager/Microsoft.ContainerService/aks/swagger/preview/2026-07-02-preview/managedClusters.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter activeOnly should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ContainerService/managedClusters/{resourceName}/agentPools/{agentPoolName}/operations",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/containerservice/resource-manager/Microsoft.ContainerService/aks/swagger/preview/2026-07-02-preview/managedClusters.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "MachineProperties",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/containerservice/resource-manager/Microsoft.ContainerService/aks/swagger/preview/2026-07-02-preview/managedClusters.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "ManagedClusterAgentPoolProfile",
+      "properties"
+    ],
+    "source": "projects/specification/containerservice/resource-manager/Microsoft.ContainerService/aks/swagger/preview/2026-07-02-preview/managedClusters.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "ManagedClusterAgentPoolProfileProperties",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/containerservice/resource-manager/Microsoft.ContainerService/aks/swagger/preview/2026-07-02-preview/managedClusters.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "TagsObject",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/containerservice/resource-manager/Microsoft.ContainerService/aks/swagger/preview/2026-07-02-preview/managedClusters.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "ValidQueryParametersForPointOperations",
+    "severity": 0,
+    "message": "Query parameter ignore-pod-disruption-budget should be removed. Point operation 'delete' MUST not have query parameters other than api-version.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ContainerService/managedClusters/{resourceName}",
+      "delete",
+      "parameters"
+    ],
+    "source": "projects/specification/containerservice/resource-manager/Microsoft.ContainerService/aks/swagger/preview/2026-07-02-preview/managedClusters.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "ValidQueryParametersForPointOperations",
+    "severity": 0,
+    "message": "Query parameter ignore-pod-disruption-budget should be removed. Point operation 'delete' MUST not have query parameters other than api-version.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ContainerService/managedClusters/{resourceName}/agentPools/{agentPoolName}",
+      "delete",
+      "parameters"
+    ],
+    "source": "projects/specification/containerservice/resource-manager/Microsoft.ContainerService/aks/swagger/preview/2026-07-02-preview/managedClusters.json",
+    "sourceAttribution": "reported"
+  }
+]

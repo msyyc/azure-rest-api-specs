@@ -1,0 +1,613 @@
+[
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter targetResource should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/{scope}/providers/Microsoft.AlertsManagement/alerts",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/alertsmanagement/resource-manager/Microsoft.AlertsManagement/AlertsManagement/swagger/preview/2025-05-25-preview/AlertsManagement.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter targetResourceType should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/{scope}/providers/Microsoft.AlertsManagement/alerts",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/alertsmanagement/resource-manager/Microsoft.AlertsManagement/AlertsManagement/swagger/preview/2025-05-25-preview/AlertsManagement.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter targetResourceGroup should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/{scope}/providers/Microsoft.AlertsManagement/alerts",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/alertsmanagement/resource-manager/Microsoft.AlertsManagement/AlertsManagement/swagger/preview/2025-05-25-preview/AlertsManagement.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter monitorService should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/{scope}/providers/Microsoft.AlertsManagement/alerts",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/alertsmanagement/resource-manager/Microsoft.AlertsManagement/AlertsManagement/swagger/preview/2025-05-25-preview/AlertsManagement.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter monitorCondition should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/{scope}/providers/Microsoft.AlertsManagement/alerts",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/alertsmanagement/resource-manager/Microsoft.AlertsManagement/AlertsManagement/swagger/preview/2025-05-25-preview/AlertsManagement.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter severity should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/{scope}/providers/Microsoft.AlertsManagement/alerts",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/alertsmanagement/resource-manager/Microsoft.AlertsManagement/AlertsManagement/swagger/preview/2025-05-25-preview/AlertsManagement.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter alertState should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/{scope}/providers/Microsoft.AlertsManagement/alerts",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/alertsmanagement/resource-manager/Microsoft.AlertsManagement/AlertsManagement/swagger/preview/2025-05-25-preview/AlertsManagement.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter alertRule should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/{scope}/providers/Microsoft.AlertsManagement/alerts",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/alertsmanagement/resource-manager/Microsoft.AlertsManagement/AlertsManagement/swagger/preview/2025-05-25-preview/AlertsManagement.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter smartGroupId should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/{scope}/providers/Microsoft.AlertsManagement/alerts",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/alertsmanagement/resource-manager/Microsoft.AlertsManagement/AlertsManagement/swagger/preview/2025-05-25-preview/AlertsManagement.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter includeContext should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/{scope}/providers/Microsoft.AlertsManagement/alerts",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/alertsmanagement/resource-manager/Microsoft.AlertsManagement/AlertsManagement/swagger/preview/2025-05-25-preview/AlertsManagement.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter includeEgressConfig should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/{scope}/providers/Microsoft.AlertsManagement/alerts",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/alertsmanagement/resource-manager/Microsoft.AlertsManagement/AlertsManagement/swagger/preview/2025-05-25-preview/AlertsManagement.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter pageCount should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/{scope}/providers/Microsoft.AlertsManagement/alerts",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/alertsmanagement/resource-manager/Microsoft.AlertsManagement/AlertsManagement/swagger/preview/2025-05-25-preview/AlertsManagement.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter sortBy should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/{scope}/providers/Microsoft.AlertsManagement/alerts",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/alertsmanagement/resource-manager/Microsoft.AlertsManagement/AlertsManagement/swagger/preview/2025-05-25-preview/AlertsManagement.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter sortOrder should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/{scope}/providers/Microsoft.AlertsManagement/alerts",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/alertsmanagement/resource-manager/Microsoft.AlertsManagement/AlertsManagement/swagger/preview/2025-05-25-preview/AlertsManagement.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter select should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/{scope}/providers/Microsoft.AlertsManagement/alerts",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/alertsmanagement/resource-manager/Microsoft.AlertsManagement/AlertsManagement/swagger/preview/2025-05-25-preview/AlertsManagement.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter timeRange should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/{scope}/providers/Microsoft.AlertsManagement/alerts",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/alertsmanagement/resource-manager/Microsoft.AlertsManagement/AlertsManagement/swagger/preview/2025-05-25-preview/AlertsManagement.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter customTimeRange should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/{scope}/providers/Microsoft.AlertsManagement/alerts",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/alertsmanagement/resource-manager/Microsoft.AlertsManagement/AlertsManagement/swagger/preview/2025-05-25-preview/AlertsManagement.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter groupby should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/{scope}/providers/Microsoft.AlertsManagement/alertsSummary",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/alertsmanagement/resource-manager/Microsoft.AlertsManagement/AlertsManagement/swagger/preview/2025-05-25-preview/AlertsManagement.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter includeSmartGroupsCount should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/{scope}/providers/Microsoft.AlertsManagement/alertsSummary",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/alertsmanagement/resource-manager/Microsoft.AlertsManagement/AlertsManagement/swagger/preview/2025-05-25-preview/AlertsManagement.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter targetResource should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/{scope}/providers/Microsoft.AlertsManagement/alertsSummary",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/alertsmanagement/resource-manager/Microsoft.AlertsManagement/AlertsManagement/swagger/preview/2025-05-25-preview/AlertsManagement.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter targetResourceType should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/{scope}/providers/Microsoft.AlertsManagement/alertsSummary",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/alertsmanagement/resource-manager/Microsoft.AlertsManagement/AlertsManagement/swagger/preview/2025-05-25-preview/AlertsManagement.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter targetResourceGroup should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/{scope}/providers/Microsoft.AlertsManagement/alertsSummary",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/alertsmanagement/resource-manager/Microsoft.AlertsManagement/AlertsManagement/swagger/preview/2025-05-25-preview/AlertsManagement.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter monitorService should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/{scope}/providers/Microsoft.AlertsManagement/alertsSummary",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/alertsmanagement/resource-manager/Microsoft.AlertsManagement/AlertsManagement/swagger/preview/2025-05-25-preview/AlertsManagement.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter monitorCondition should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/{scope}/providers/Microsoft.AlertsManagement/alertsSummary",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/alertsmanagement/resource-manager/Microsoft.AlertsManagement/AlertsManagement/swagger/preview/2025-05-25-preview/AlertsManagement.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter severity should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/{scope}/providers/Microsoft.AlertsManagement/alertsSummary",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/alertsmanagement/resource-manager/Microsoft.AlertsManagement/AlertsManagement/swagger/preview/2025-05-25-preview/AlertsManagement.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter alertState should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/{scope}/providers/Microsoft.AlertsManagement/alertsSummary",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/alertsmanagement/resource-manager/Microsoft.AlertsManagement/AlertsManagement/swagger/preview/2025-05-25-preview/AlertsManagement.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter alertRule should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/{scope}/providers/Microsoft.AlertsManagement/alertsSummary",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/alertsmanagement/resource-manager/Microsoft.AlertsManagement/AlertsManagement/swagger/preview/2025-05-25-preview/AlertsManagement.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter timeRange should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/{scope}/providers/Microsoft.AlertsManagement/alertsSummary",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/alertsmanagement/resource-manager/Microsoft.AlertsManagement/AlertsManagement/swagger/preview/2025-05-25-preview/AlertsManagement.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter customTimeRange should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/{scope}/providers/Microsoft.AlertsManagement/alertsSummary",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/alertsmanagement/resource-manager/Microsoft.AlertsManagement/AlertsManagement/swagger/preview/2025-05-25-preview/AlertsManagement.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter targetResource should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/providers/Microsoft.AlertsManagement/alerts",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/alertsmanagement/resource-manager/Microsoft.AlertsManagement/AlertsManagement/swagger/preview/2025-05-25-preview/AlertsManagement.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter targetResourceType should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/providers/Microsoft.AlertsManagement/alerts",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/alertsmanagement/resource-manager/Microsoft.AlertsManagement/AlertsManagement/swagger/preview/2025-05-25-preview/AlertsManagement.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter targetResourceGroup should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/providers/Microsoft.AlertsManagement/alerts",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/alertsmanagement/resource-manager/Microsoft.AlertsManagement/AlertsManagement/swagger/preview/2025-05-25-preview/AlertsManagement.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter monitorService should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/providers/Microsoft.AlertsManagement/alerts",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/alertsmanagement/resource-manager/Microsoft.AlertsManagement/AlertsManagement/swagger/preview/2025-05-25-preview/AlertsManagement.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter monitorCondition should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/providers/Microsoft.AlertsManagement/alerts",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/alertsmanagement/resource-manager/Microsoft.AlertsManagement/AlertsManagement/swagger/preview/2025-05-25-preview/AlertsManagement.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter severity should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/providers/Microsoft.AlertsManagement/alerts",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/alertsmanagement/resource-manager/Microsoft.AlertsManagement/AlertsManagement/swagger/preview/2025-05-25-preview/AlertsManagement.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter alertState should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/providers/Microsoft.AlertsManagement/alerts",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/alertsmanagement/resource-manager/Microsoft.AlertsManagement/AlertsManagement/swagger/preview/2025-05-25-preview/AlertsManagement.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter alertRule should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/providers/Microsoft.AlertsManagement/alerts",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/alertsmanagement/resource-manager/Microsoft.AlertsManagement/AlertsManagement/swagger/preview/2025-05-25-preview/AlertsManagement.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter smartGroupId should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/providers/Microsoft.AlertsManagement/alerts",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/alertsmanagement/resource-manager/Microsoft.AlertsManagement/AlertsManagement/swagger/preview/2025-05-25-preview/AlertsManagement.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter includeContext should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/providers/Microsoft.AlertsManagement/alerts",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/alertsmanagement/resource-manager/Microsoft.AlertsManagement/AlertsManagement/swagger/preview/2025-05-25-preview/AlertsManagement.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter includeEgressConfig should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/providers/Microsoft.AlertsManagement/alerts",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/alertsmanagement/resource-manager/Microsoft.AlertsManagement/AlertsManagement/swagger/preview/2025-05-25-preview/AlertsManagement.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter pageCount should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/providers/Microsoft.AlertsManagement/alerts",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/alertsmanagement/resource-manager/Microsoft.AlertsManagement/AlertsManagement/swagger/preview/2025-05-25-preview/AlertsManagement.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter sortBy should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/providers/Microsoft.AlertsManagement/alerts",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/alertsmanagement/resource-manager/Microsoft.AlertsManagement/AlertsManagement/swagger/preview/2025-05-25-preview/AlertsManagement.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter sortOrder should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/providers/Microsoft.AlertsManagement/alerts",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/alertsmanagement/resource-manager/Microsoft.AlertsManagement/AlertsManagement/swagger/preview/2025-05-25-preview/AlertsManagement.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter select should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/providers/Microsoft.AlertsManagement/alerts",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/alertsmanagement/resource-manager/Microsoft.AlertsManagement/AlertsManagement/swagger/preview/2025-05-25-preview/AlertsManagement.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter timeRange should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/providers/Microsoft.AlertsManagement/alerts",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/alertsmanagement/resource-manager/Microsoft.AlertsManagement/AlertsManagement/swagger/preview/2025-05-25-preview/AlertsManagement.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter customTimeRange should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/providers/Microsoft.AlertsManagement/alerts",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/alertsmanagement/resource-manager/Microsoft.AlertsManagement/AlertsManagement/swagger/preview/2025-05-25-preview/AlertsManagement.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter identifier should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/providers/Microsoft.AlertsManagement/alertsMetaData",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/alertsmanagement/resource-manager/Microsoft.AlertsManagement/AlertsManagement/swagger/preview/2025-05-25-preview/AlertsManagement.json",
+    "sourceAttribution": "reported"
+  }
+]

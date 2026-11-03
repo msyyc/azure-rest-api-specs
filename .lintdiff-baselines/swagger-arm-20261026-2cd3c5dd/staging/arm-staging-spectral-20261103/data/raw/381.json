@@ -1,0 +1,585 @@
+[
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "tags property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Oracle.Database/autonomousDatabases/{autonomousdatabasename}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/oracle/resource-manager/Oracle.Database/OracleDatabase/swagger/stable/2026-06-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "scheduledOperationsList property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Oracle.Database/autonomousDatabases/{autonomousdatabasename}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/oracle/resource-manager/Oracle.Database/OracleDatabase/swagger/stable/2026-06-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "tags property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Oracle.Database/cloudExadataInfrastructures/{cloudexadatainfrastructurename}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/oracle/resource-manager/Oracle.Database/OracleDatabase/swagger/stable/2026-06-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "tags property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Oracle.Database/cloudVmClusters/{cloudvmclustername}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/oracle/resource-manager/Oracle.Database/OracleDatabase/swagger/stable/2026-06-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "tags property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Oracle.Database/dbSystems/{dbSystemName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/oracle/resource-manager/Oracle.Database/OracleDatabase/swagger/stable/2026-06-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "source property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Oracle.Database/dbSystems/{dbSystemName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/oracle/resource-manager/Oracle.Database/OracleDatabase/swagger/stable/2026-06-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "tags property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Oracle.Database/exadbVmClusters/{exadbVmClusterName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/oracle/resource-manager/Oracle.Database/OracleDatabase/swagger/stable/2026-06-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "tags property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Oracle.Database/exascaleDbStorageVaults/{exascaleDbStorageVaultName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/oracle/resource-manager/Oracle.Database/OracleDatabase/swagger/stable/2026-06-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "tags property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Oracle.Database/goldenGateConnections/{goldenGateConnectionName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/oracle/resource-manager/Oracle.Database/OracleDatabase/swagger/stable/2026-06-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "tags property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Oracle.Database/goldenGateDeployments/{goldenGateDeploymentName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/oracle/resource-manager/Oracle.Database/OracleDatabase/swagger/stable/2026-06-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "tags property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Oracle.Database/networkAnchors/{networkAnchorName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/oracle/resource-manager/Oracle.Database/OracleDatabase/swagger/stable/2026-06-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "tags property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Oracle.Database/resourceAnchors/{resourceAnchorName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/oracle/resource-manager/Oracle.Database/OracleDatabase/swagger/stable/2026-06-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PropertiesTypeObjectNoDefinition",
+    "severity": 0,
+    "message": "Properties with type:object that don't reference a model definition are not allowed. ARM doesn't allow generic type definitions as this leads to bad customer experience.",
+    "path": [
+      "definitions",
+      "MsRpaasNewResourceHeader"
+    ],
+    "source": "projects/specification/oracle/resource-manager/Oracle.Database/OracleDatabase/swagger/stable/2026-06-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter shapeAttribute should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/providers/Oracle.Database/locations/{location}/databaseSystemShapes",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/oracle/resource-manager/Oracle.Database/OracleDatabase/swagger/stable/2026-06-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter zone should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/providers/Oracle.Database/locations/{location}/databaseSystemShapes",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/oracle/resource-manager/Oracle.Database/OracleDatabase/swagger/stable/2026-06-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter availabilityDomain should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/providers/Oracle.Database/locations/{location}/databaseSystemShapes",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/oracle/resource-manager/Oracle.Database/OracleDatabase/swagger/stable/2026-06-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter databaseShapeFamily should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/providers/Oracle.Database/locations/{location}/databaseSystemShapes",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/oracle/resource-manager/Oracle.Database/OracleDatabase/swagger/stable/2026-06-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter databaseEdition should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/providers/Oracle.Database/locations/{location}/databaseSystemShapes",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/oracle/resource-manager/Oracle.Database/OracleDatabase/swagger/stable/2026-06-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter dbSystemShape should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/providers/Oracle.Database/locations/{location}/dbSystemDbVersions",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/oracle/resource-manager/Oracle.Database/OracleDatabase/swagger/stable/2026-06-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter dbSystemId should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/providers/Oracle.Database/locations/{location}/dbSystemDbVersions",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/oracle/resource-manager/Oracle.Database/OracleDatabase/swagger/stable/2026-06-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter storageManagement should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/providers/Oracle.Database/locations/{location}/dbSystemDbVersions",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/oracle/resource-manager/Oracle.Database/OracleDatabase/swagger/stable/2026-06-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter isUpgradeSupported should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/providers/Oracle.Database/locations/{location}/dbSystemDbVersions",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/oracle/resource-manager/Oracle.Database/OracleDatabase/swagger/stable/2026-06-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter isDatabaseSoftwareImageSupported should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/providers/Oracle.Database/locations/{location}/dbSystemDbVersions",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/oracle/resource-manager/Oracle.Database/OracleDatabase/swagger/stable/2026-06-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter shapeFamily should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/providers/Oracle.Database/locations/{location}/dbSystemDbVersions",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/oracle/resource-manager/Oracle.Database/OracleDatabase/swagger/stable/2026-06-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter zone should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/providers/Oracle.Database/locations/{location}/dbSystemShapes",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/oracle/resource-manager/Oracle.Database/OracleDatabase/swagger/stable/2026-06-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter shapeAttribute should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/providers/Oracle.Database/locations/{location}/dbSystemShapes",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/oracle/resource-manager/Oracle.Database/OracleDatabase/swagger/stable/2026-06-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter shape should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/providers/Oracle.Database/locations/{location}/flexComponents",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/oracle/resource-manager/Oracle.Database/OracleDatabase/swagger/stable/2026-06-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter shape should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/providers/Oracle.Database/locations/{location}/giVersions",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/oracle/resource-manager/Oracle.Database/OracleDatabase/swagger/stable/2026-06-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter zone should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/providers/Oracle.Database/locations/{location}/giVersions",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/oracle/resource-manager/Oracle.Database/OracleDatabase/swagger/stable/2026-06-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter shapeAttribute should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/providers/Oracle.Database/locations/{location}/giVersions",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/oracle/resource-manager/Oracle.Database/OracleDatabase/swagger/stable/2026-06-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter shapeFamily should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/providers/Oracle.Database/locations/{location}/giVersions/{giversionname}/giMinorVersions",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/oracle/resource-manager/Oracle.Database/OracleDatabase/swagger/stable/2026-06-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter zone should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/providers/Oracle.Database/locations/{location}/giVersions/{giversionname}/giMinorVersions",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/oracle/resource-manager/Oracle.Database/OracleDatabase/swagger/stable/2026-06-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter shape should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/providers/Oracle.Database/locations/{location}/giVersions/{giversionname}/giMinorVersions",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/oracle/resource-manager/Oracle.Database/OracleDatabase/swagger/stable/2026-06-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter isGiVersionForProvisioning should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/providers/Oracle.Database/locations/{location}/giVersions/{giversionname}/giMinorVersions",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/oracle/resource-manager/Oracle.Database/OracleDatabase/swagger/stable/2026-06-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter sortOrder should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/providers/Oracle.Database/locations/{location}/giVersions/{giversionname}/giMinorVersions",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/oracle/resource-manager/Oracle.Database/OracleDatabase/swagger/stable/2026-06-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "AutonomousDatabaseUpdate",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/oracle/resource-manager/Oracle.Database/OracleDatabase/swagger/stable/2026-06-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "CloudExadataInfrastructureUpdate",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/oracle/resource-manager/Oracle.Database/OracleDatabase/swagger/stable/2026-06-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "CloudVmClusterUpdate",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/oracle/resource-manager/Oracle.Database/OracleDatabase/swagger/stable/2026-06-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "DbSystemUpdate",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/oracle/resource-manager/Oracle.Database/OracleDatabase/swagger/stable/2026-06-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "ExadbVmClusterUpdate",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/oracle/resource-manager/Oracle.Database/OracleDatabase/swagger/stable/2026-06-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "ExascaleDbStorageVaultTagsUpdate",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/oracle/resource-manager/Oracle.Database/OracleDatabase/swagger/stable/2026-06-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "GoldenGateConnectionUpdate",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/oracle/resource-manager/Oracle.Database/OracleDatabase/swagger/stable/2026-06-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "GoldenGateDeploymentUpdate",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/oracle/resource-manager/Oracle.Database/OracleDatabase/swagger/stable/2026-06-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "NetworkAnchorUpdate",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/oracle/resource-manager/Oracle.Database/OracleDatabase/swagger/stable/2026-06-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "ResourceAnchorUpdate",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/oracle/resource-manager/Oracle.Database/OracleDatabase/swagger/stable/2026-06-01/openapi.json",
+    "sourceAttribution": "reported"
+  }
+]

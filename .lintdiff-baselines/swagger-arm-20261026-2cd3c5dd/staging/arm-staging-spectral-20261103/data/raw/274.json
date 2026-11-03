@@ -1,0 +1,28 @@
+[
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "tags property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.VirtualMachineImages/imageTemplates/{imageTemplateName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/imagebuilder/resource-manager/Microsoft.VirtualMachineImages/ImageBuilder/swagger/stable/2025-10-01/imagebuilder.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "ImageTemplateUpdateParameters",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/imagebuilder/resource-manager/Microsoft.VirtualMachineImages/ImageBuilder/swagger/stable/2025-10-01/imagebuilder.json",
+    "sourceAttribution": "reported"
+  }
+]

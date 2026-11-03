@@ -1,0 +1,119 @@
+[
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter pageSize should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Migrate/assessmentProjects/{projectName}/sqlAssessments/{assessmentName}/assessedSqlDatabases",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/migrate/resource-manager/Microsoft.Migrate/SqlAssessments/swagger/preview/2024-03-03-preview/sqlAssessments.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter continuationToken should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Migrate/assessmentProjects/{projectName}/sqlAssessments/{assessmentName}/assessedSqlDatabases",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/migrate/resource-manager/Microsoft.Migrate/SqlAssessments/swagger/preview/2024-03-03-preview/sqlAssessments.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter totalRecordCount should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Migrate/assessmentProjects/{projectName}/sqlAssessments/{assessmentName}/assessedSqlDatabases",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/migrate/resource-manager/Microsoft.Migrate/SqlAssessments/swagger/preview/2024-03-03-preview/sqlAssessments.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter pageSize should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Migrate/assessmentProjects/{projectName}/sqlAssessments/{assessmentName}/assessedSqlInstances",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/migrate/resource-manager/Microsoft.Migrate/SqlAssessments/swagger/preview/2024-03-03-preview/sqlAssessments.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter continuationToken should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Migrate/assessmentProjects/{projectName}/sqlAssessments/{assessmentName}/assessedSqlInstances",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/migrate/resource-manager/Microsoft.Migrate/SqlAssessments/swagger/preview/2024-03-03-preview/sqlAssessments.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter totalRecordCount should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Migrate/assessmentProjects/{projectName}/sqlAssessments/{assessmentName}/assessedSqlInstances",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/migrate/resource-manager/Microsoft.Migrate/SqlAssessments/swagger/preview/2024-03-03-preview/sqlAssessments.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter pageSize should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Migrate/assessmentProjects/{projectName}/sqlAssessments/{assessmentName}/assessedSqlMachines",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/migrate/resource-manager/Microsoft.Migrate/SqlAssessments/swagger/preview/2024-03-03-preview/sqlAssessments.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter continuationToken should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Migrate/assessmentProjects/{projectName}/sqlAssessments/{assessmentName}/assessedSqlMachines",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/migrate/resource-manager/Microsoft.Migrate/SqlAssessments/swagger/preview/2024-03-03-preview/sqlAssessments.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter totalRecordCount should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Migrate/assessmentProjects/{projectName}/sqlAssessments/{assessmentName}/assessedSqlMachines",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/migrate/resource-manager/Microsoft.Migrate/SqlAssessments/swagger/preview/2024-03-03-preview/sqlAssessments.json",
+    "sourceAttribution": "reported"
+  }
+]

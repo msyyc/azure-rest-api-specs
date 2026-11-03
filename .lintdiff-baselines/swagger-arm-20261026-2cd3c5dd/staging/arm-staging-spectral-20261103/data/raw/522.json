@@ -1,0 +1,15 @@
+[
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "FailoverGroupUpdate",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/sql/resource-manager/Microsoft.Sql/SQL/swagger/preview/2026-08-01-preview/failoverGroups.json",
+    "sourceAttribution": "reported"
+  }
+]

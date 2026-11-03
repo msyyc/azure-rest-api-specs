@@ -1,0 +1,41 @@
+[
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "tags property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ContainerService/aiManagers/{aiManagerName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/containerservice/resource-manager/Microsoft.ContainerService/aimanager/swagger/preview/2026-09-02-preview/aimanagers.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PropertiesTypeObjectNoDefinition",
+    "severity": 0,
+    "message": "Properties with type:object that don't reference a model definition are not allowed. ARM doesn't allow generic type definitions as this leads to bad customer experience.",
+    "path": [
+      "definitions",
+      "BaseModelReference",
+      "properties",
+      "config"
+    ],
+    "source": "projects/specification/containerservice/resource-manager/Microsoft.ContainerService/aimanager/swagger/preview/2026-09-02-preview/aimanagers.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "AIManagerPatch",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/containerservice/resource-manager/Microsoft.ContainerService/aimanager/swagger/preview/2026-09-02-preview/aimanagers.json",
+    "sourceAttribution": "reported"
+  }
+]

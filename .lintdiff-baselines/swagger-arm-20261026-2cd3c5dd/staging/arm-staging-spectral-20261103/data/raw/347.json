@@ -1,0 +1,54 @@
+[
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "tags property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Monitor/observabilityAgents/{observabilityAgentName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/monitoringservice/resource-manager/Microsoft.Monitor/Agents/swagger/preview/2026-05-01-preview/agents.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "monitoringAccountId property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Monitor/observabilityAgents/{observabilityAgentName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/monitoringservice/resource-manager/Microsoft.Monitor/Agents/swagger/preview/2026-05-01-preview/agents.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "enabled property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Monitor/observabilityAgents/{observabilityAgentName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/monitoringservice/resource-manager/Microsoft.Monitor/Agents/swagger/preview/2026-05-01-preview/agents.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "ObservabilityAgentPatch",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/monitoringservice/resource-manager/Microsoft.Monitor/Agents/swagger/preview/2026-05-01-preview/agents.json",
+    "sourceAttribution": "reported"
+  }
+]

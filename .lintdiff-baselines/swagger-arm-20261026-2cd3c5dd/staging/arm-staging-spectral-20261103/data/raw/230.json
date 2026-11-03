@@ -1,0 +1,39 @@
+[
+  {
+    "code": "ConsistentResponseSchemaForPut",
+    "severity": 0,
+    "message": "200 response schema does not match 201 response schema. A PUT API must always return the same response schema for both the 200 and 201 status codes.",
+    "path": [
+      "definitions",
+      "PrivateEndpointConnection"
+    ],
+    "source": "common-types/resource-management/v6/privatelinks.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "tags property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DurableTask/schedulers/{schedulerName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/durabletask/resource-manager/Microsoft.DurableTask/DurableTask/swagger/preview/2026-05-01-preview/durabletask.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "SchedulerUpdate",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/durabletask/resource-manager/Microsoft.DurableTask/DurableTask/swagger/preview/2026-05-01-preview/durabletask.json",
+    "sourceAttribution": "reported"
+  }
+]

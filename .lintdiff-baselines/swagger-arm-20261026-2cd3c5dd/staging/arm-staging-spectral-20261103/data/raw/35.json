@@ -1,0 +1,67 @@
+[
+  {
+    "code": "PropertiesTypeObjectNoDefinition",
+    "severity": 0,
+    "message": "Properties with type:object that don't reference a model definition are not allowed. ARM doesn't allow generic type definitions as this leads to bad customer experience.",
+    "path": [
+      "definitions",
+      "ParentResource",
+      "properties",
+      "properties"
+    ],
+    "source": "projects/specification/authorization/resource-manager/Microsoft.Authorization/Authorization/PrivilegedAccess/swagger/preview/2026-06-01-preview/authorization-PrivilegedAccess.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter accessScope should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/providers/Microsoft.Authorization/privilegedResources",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/authorization/resource-manager/Microsoft.Authorization/Authorization/PrivilegedAccess/swagger/preview/2026-06-01-preview/authorization-PrivilegedAccess.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter maxpagesize should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/providers/Microsoft.Authorization/privilegedResources",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/authorization/resource-manager/Microsoft.Authorization/Authorization/PrivilegedAccess/swagger/preview/2026-06-01-preview/authorization-PrivilegedAccess.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $orderby should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/providers/Microsoft.Authorization/privilegedResources",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/authorization/resource-manager/Microsoft.Authorization/Authorization/PrivilegedAccess/swagger/preview/2026-06-01-preview/authorization-PrivilegedAccess.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $count should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/providers/Microsoft.Authorization/privilegedResources",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/authorization/resource-manager/Microsoft.Authorization/Authorization/PrivilegedAccess/swagger/preview/2026-06-01-preview/authorization-PrivilegedAccess.json",
+    "sourceAttribution": "reported"
+  }
+]

@@ -1,0 +1,249 @@
+[
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "networkInterfaces property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/{resourceUri}/providers/Microsoft.ScVmm/virtualMachineInstances/default",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/scvmm/resource-manager/Microsoft.ScVmm/ScVmm/swagger/stable/2025-03-13/scvmm.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "disks property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/{resourceUri}/providers/Microsoft.ScVmm/virtualMachineInstances/default",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/scvmm/resource-manager/Microsoft.ScVmm/ScVmm/swagger/stable/2025-03-13/scvmm.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "tags property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ScVmm/availabilitySets/{availabilitySetResourceName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/scvmm/resource-manager/Microsoft.ScVmm/ScVmm/swagger/stable/2025-03-13/scvmm.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "tags property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ScVmm/clouds/{cloudResourceName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/scvmm/resource-manager/Microsoft.ScVmm/ScVmm/swagger/stable/2025-03-13/scvmm.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "tags property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ScVmm/virtualMachineTemplates/{virtualMachineTemplateName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/scvmm/resource-manager/Microsoft.ScVmm/ScVmm/swagger/stable/2025-03-13/scvmm.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "tags property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ScVmm/virtualNetworks/{virtualNetworkName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/scvmm/resource-manager/Microsoft.ScVmm/ScVmm/swagger/stable/2025-03-13/scvmm.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "tags property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ScVmm/vmmServers/{vmmServerName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/scvmm/resource-manager/Microsoft.ScVmm/ScVmm/swagger/stable/2025-03-13/scvmm.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "AvailabilitySetTagsUpdate",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/scvmm/resource-manager/Microsoft.ScVmm/ScVmm/swagger/stable/2025-03-13/scvmm.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "CloudTagsUpdate",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/scvmm/resource-manager/Microsoft.ScVmm/ScVmm/swagger/stable/2025-03-13/scvmm.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "VirtualMachineTemplateTagsUpdate",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/scvmm/resource-manager/Microsoft.ScVmm/ScVmm/swagger/stable/2025-03-13/scvmm.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "VirtualNetworkTagsUpdate",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/scvmm/resource-manager/Microsoft.ScVmm/ScVmm/swagger/stable/2025-03-13/scvmm.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "VmmServerTagsUpdate",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/scvmm/resource-manager/Microsoft.ScVmm/ScVmm/swagger/stable/2025-03-13/scvmm.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "ValidQueryParametersForPointOperations",
+    "severity": 0,
+    "message": "Query parameter force should be removed. Point operation 'delete' MUST not have query parameters other than api-version.",
+    "path": [
+      "paths",
+      "/{resourceUri}/providers/Microsoft.ScVmm/virtualMachineInstances/default",
+      "delete",
+      "parameters"
+    ],
+    "source": "projects/specification/scvmm/resource-manager/Microsoft.ScVmm/ScVmm/swagger/stable/2025-03-13/scvmm.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "ValidQueryParametersForPointOperations",
+    "severity": 0,
+    "message": "Query parameter deleteFromHost should be removed. Point operation 'delete' MUST not have query parameters other than api-version.",
+    "path": [
+      "paths",
+      "/{resourceUri}/providers/Microsoft.ScVmm/virtualMachineInstances/default",
+      "delete",
+      "parameters"
+    ],
+    "source": "projects/specification/scvmm/resource-manager/Microsoft.ScVmm/ScVmm/swagger/stable/2025-03-13/scvmm.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "ValidQueryParametersForPointOperations",
+    "severity": 0,
+    "message": "Query parameter force should be removed. Point operation 'delete' MUST not have query parameters other than api-version.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ScVmm/availabilitySets/{availabilitySetResourceName}",
+      "delete",
+      "parameters"
+    ],
+    "source": "projects/specification/scvmm/resource-manager/Microsoft.ScVmm/ScVmm/swagger/stable/2025-03-13/scvmm.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "ValidQueryParametersForPointOperations",
+    "severity": 0,
+    "message": "Query parameter force should be removed. Point operation 'delete' MUST not have query parameters other than api-version.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ScVmm/clouds/{cloudResourceName}",
+      "delete",
+      "parameters"
+    ],
+    "source": "projects/specification/scvmm/resource-manager/Microsoft.ScVmm/ScVmm/swagger/stable/2025-03-13/scvmm.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "ValidQueryParametersForPointOperations",
+    "severity": 0,
+    "message": "Query parameter force should be removed. Point operation 'delete' MUST not have query parameters other than api-version.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ScVmm/virtualMachineTemplates/{virtualMachineTemplateName}",
+      "delete",
+      "parameters"
+    ],
+    "source": "projects/specification/scvmm/resource-manager/Microsoft.ScVmm/ScVmm/swagger/stable/2025-03-13/scvmm.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "ValidQueryParametersForPointOperations",
+    "severity": 0,
+    "message": "Query parameter force should be removed. Point operation 'delete' MUST not have query parameters other than api-version.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ScVmm/virtualNetworks/{virtualNetworkName}",
+      "delete",
+      "parameters"
+    ],
+    "source": "projects/specification/scvmm/resource-manager/Microsoft.ScVmm/ScVmm/swagger/stable/2025-03-13/scvmm.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "ValidQueryParametersForPointOperations",
+    "severity": 0,
+    "message": "Query parameter force should be removed. Point operation 'delete' MUST not have query parameters other than api-version.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ScVmm/vmmServers/{vmmServerName}",
+      "delete",
+      "parameters"
+    ],
+    "source": "projects/specification/scvmm/resource-manager/Microsoft.ScVmm/ScVmm/swagger/stable/2025-03-13/scvmm.json",
+    "sourceAttribution": "reported"
+  }
+]

@@ -1,0 +1,119 @@
+[
+  {
+    "code": "PropertiesTypeObjectNoDefinition",
+    "severity": 0,
+    "message": "Properties with type:object that don't reference a model definition are not allowed. ARM doesn't allow generic type definitions as this leads to bad customer experience.",
+    "path": [
+      "definitions",
+      "Microsoft.Common.ErrorDetailAdditionalInfoItem",
+      "properties",
+      "info"
+    ],
+    "source": "projects/specification/monitor/resource-manager/Microsoft.Insights/Insights/MetricBaselinesApi/swagger/stable/2019-03-01/metricBaselines.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PropertiesTypeObjectNoDefinition",
+    "severity": 0,
+    "message": "Properties with type:object that don't reference a model definition are not allowed. ARM doesn't allow generic type definitions as this leads to bad customer experience.",
+    "path": [
+      "definitions",
+      "Microsoft.Common.ErrorResponseErrorAdditionalInfoItem",
+      "properties",
+      "info"
+    ],
+    "source": "projects/specification/monitor/resource-manager/Microsoft.Insights/Insights/MetricBaselinesApi/swagger/stable/2019-03-01/metricBaselines.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter metricnames should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/{resourceUri}/providers/Microsoft.Insights/metricBaselines",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/monitor/resource-manager/Microsoft.Insights/Insights/MetricBaselinesApi/swagger/stable/2019-03-01/metricBaselines.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter metricnamespace should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/{resourceUri}/providers/Microsoft.Insights/metricBaselines",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/monitor/resource-manager/Microsoft.Insights/Insights/MetricBaselinesApi/swagger/stable/2019-03-01/metricBaselines.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter timespan should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/{resourceUri}/providers/Microsoft.Insights/metricBaselines",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/monitor/resource-manager/Microsoft.Insights/Insights/MetricBaselinesApi/swagger/stable/2019-03-01/metricBaselines.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter interval should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/{resourceUri}/providers/Microsoft.Insights/metricBaselines",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/monitor/resource-manager/Microsoft.Insights/Insights/MetricBaselinesApi/swagger/stable/2019-03-01/metricBaselines.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter aggregation should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/{resourceUri}/providers/Microsoft.Insights/metricBaselines",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/monitor/resource-manager/Microsoft.Insights/Insights/MetricBaselinesApi/swagger/stable/2019-03-01/metricBaselines.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter sensitivities should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/{resourceUri}/providers/Microsoft.Insights/metricBaselines",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/monitor/resource-manager/Microsoft.Insights/Insights/MetricBaselinesApi/swagger/stable/2019-03-01/metricBaselines.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter resultType should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/{resourceUri}/providers/Microsoft.Insights/metricBaselines",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/monitor/resource-manager/Microsoft.Insights/Insights/MetricBaselinesApi/swagger/stable/2019-03-01/metricBaselines.json",
+    "sourceAttribution": "reported"
+  }
+]

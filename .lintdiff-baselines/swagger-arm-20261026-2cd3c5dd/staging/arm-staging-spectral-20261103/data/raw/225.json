@@ -1,0 +1,316 @@
+[
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "tags property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Discovery/bookshelves/{bookshelfName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/discovery/Discovery.Management/swagger/resource-manager/Microsoft.Discovery/stable/2026-06-01/discovery.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "tags property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Discovery/storageContainers/{storageContainerName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/discovery/Discovery.Management/swagger/resource-manager/Microsoft.Discovery/stable/2026-06-01/discovery.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "properties property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Discovery/storageContainers/{storageContainerName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/discovery/Discovery.Management/swagger/resource-manager/Microsoft.Discovery/stable/2026-06-01/discovery.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "tags property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Discovery/storageContainers/{storageContainerName}/storageAssets/{storageAssetName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/discovery/Discovery.Management/swagger/resource-manager/Microsoft.Discovery/stable/2026-06-01/discovery.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "tags property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Discovery/supercomputers/{supercomputerName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/discovery/Discovery.Management/swagger/resource-manager/Microsoft.Discovery/stable/2026-06-01/discovery.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "tags property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Discovery/supercomputers/{supercomputerName}/nodePools/{nodePoolName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/discovery/Discovery.Management/swagger/resource-manager/Microsoft.Discovery/stable/2026-06-01/discovery.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "tags property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Discovery/tools/{toolName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/discovery/Discovery.Management/swagger/resource-manager/Microsoft.Discovery/stable/2026-06-01/discovery.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "tags property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Discovery/workspaces/{workspaceName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/discovery/Discovery.Management/swagger/resource-manager/Microsoft.Discovery/stable/2026-06-01/discovery.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "tags property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Discovery/workspaces/{workspaceName}/chatModelDeployments/{chatModelDeploymentName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/discovery/Discovery.Management/swagger/resource-manager/Microsoft.Discovery/stable/2026-06-01/discovery.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "tags property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Discovery/workspaces/{workspaceName}/projects/{projectName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/discovery/Discovery.Management/swagger/resource-manager/Microsoft.Discovery/stable/2026-06-01/discovery.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PropertiesTypeObjectNoDefinition",
+    "severity": 0,
+    "message": "Properties with type:object that don't reference a model definition are not allowed. ARM doesn't allow generic type definitions as this leads to bad customer experience.",
+    "path": [
+      "definitions",
+      "StorageContainerPropertiesUpdate"
+    ],
+    "source": "projects/specification/discovery/Discovery.Management/swagger/resource-manager/Microsoft.Discovery/stable/2026-06-01/discovery.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PropertiesTypeObjectNoDefinition",
+    "severity": 0,
+    "message": "Properties with type:object that don't reference a model definition are not allowed. ARM doesn't allow generic type definitions as this leads to bad customer experience.",
+    "path": [
+      "definitions",
+      "StorageContainerUpdate",
+      "properties",
+      "properties"
+    ],
+    "source": "projects/specification/discovery/Discovery.Management/swagger/resource-manager/Microsoft.Discovery/stable/2026-06-01/discovery.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PropertiesTypeObjectNoDefinition",
+    "severity": 0,
+    "message": "Properties with type:object that don't reference a model definition are not allowed. ARM doesn't allow generic type definitions as this leads to bad customer experience.",
+    "path": [
+      "definitions",
+      "ToolProperties",
+      "properties",
+      "definitionContent"
+    ],
+    "source": "projects/specification/discovery/Discovery.Management/swagger/resource-manager/Microsoft.Discovery/stable/2026-06-01/discovery.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PropertiesTypeObjectNoDefinition",
+    "severity": 0,
+    "message": "Properties with type:object that don't reference a model definition are not allowed. ARM doesn't allow generic type definitions as this leads to bad customer experience.",
+    "path": [
+      "definitions",
+      "ToolPropertiesUpdate",
+      "properties",
+      "definitionContent"
+    ],
+    "source": "projects/specification/discovery/Discovery.Management/swagger/resource-manager/Microsoft.Discovery/stable/2026-06-01/discovery.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PropertiesTypeObjectNoDefinition",
+    "severity": 0,
+    "message": "Properties with type:object that don't reference a model definition are not allowed. ARM doesn't allow generic type definitions as this leads to bad customer experience.",
+    "path": [
+      "definitions",
+      "WithDefinitionContent",
+      "properties",
+      "definitionContent"
+    ],
+    "source": "projects/specification/discovery/Discovery.Management/swagger/resource-manager/Microsoft.Discovery/stable/2026-06-01/discovery.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "Azure.ResourceManager.CommonTypes.TrackedResourceUpdate",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/discovery/Discovery.Management/swagger/resource-manager/Microsoft.Discovery/stable/2026-06-01/discovery.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "BookshelfUpdate",
+      "properties"
+    ],
+    "source": "projects/specification/discovery/Discovery.Management/swagger/resource-manager/Microsoft.Discovery/stable/2026-06-01/discovery.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "ChatModelDeploymentUpdate",
+      "properties"
+    ],
+    "source": "projects/specification/discovery/Discovery.Management/swagger/resource-manager/Microsoft.Discovery/stable/2026-06-01/discovery.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "NodePoolUpdate",
+      "properties"
+    ],
+    "source": "projects/specification/discovery/Discovery.Management/swagger/resource-manager/Microsoft.Discovery/stable/2026-06-01/discovery.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "ProjectUpdate",
+      "properties"
+    ],
+    "source": "projects/specification/discovery/Discovery.Management/swagger/resource-manager/Microsoft.Discovery/stable/2026-06-01/discovery.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "StorageAssetUpdate",
+      "properties"
+    ],
+    "source": "projects/specification/discovery/Discovery.Management/swagger/resource-manager/Microsoft.Discovery/stable/2026-06-01/discovery.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "StorageContainerUpdate",
+      "properties"
+    ],
+    "source": "projects/specification/discovery/Discovery.Management/swagger/resource-manager/Microsoft.Discovery/stable/2026-06-01/discovery.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "SupercomputerUpdate",
+      "properties"
+    ],
+    "source": "projects/specification/discovery/Discovery.Management/swagger/resource-manager/Microsoft.Discovery/stable/2026-06-01/discovery.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "ToolUpdate",
+      "properties"
+    ],
+    "source": "projects/specification/discovery/Discovery.Management/swagger/resource-manager/Microsoft.Discovery/stable/2026-06-01/discovery.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "WorkspaceUpdate",
+      "properties"
+    ],
+    "source": "projects/specification/discovery/Discovery.Management/swagger/resource-manager/Microsoft.Discovery/stable/2026-06-01/discovery.json",
+    "sourceAttribution": "reported"
+  }
+]

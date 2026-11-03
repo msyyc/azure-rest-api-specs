@@ -1,0 +1,155 @@
+[
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "tags property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.CloudHealth/healthmodels/{healthModelName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/cloudhealth/resource-manager/Microsoft.CloudHealth/CloudHealth/swagger/stable/2026-11-01/cloudhealth.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter timestamp should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.CloudHealth/healthmodels/{healthModelName}/discoveryrules",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/cloudhealth/resource-manager/Microsoft.CloudHealth/CloudHealth/swagger/stable/2026-11-01/cloudhealth.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter timestamp should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.CloudHealth/healthmodels/{healthModelName}/entities",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/cloudhealth/resource-manager/Microsoft.CloudHealth/CloudHealth/swagger/stable/2026-11-01/cloudhealth.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter timestamp should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.CloudHealth/healthmodels/{healthModelName}/relationships",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/cloudhealth/resource-manager/Microsoft.CloudHealth/CloudHealth/swagger/stable/2026-11-01/cloudhealth.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter timestamp should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.CloudHealth/healthmodels/{healthModelName}/signaldefinitions",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/cloudhealth/resource-manager/Microsoft.CloudHealth/CloudHealth/swagger/stable/2026-11-01/cloudhealth.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "EntityProperties",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/cloudhealth/resource-manager/Microsoft.CloudHealth/CloudHealth/swagger/stable/2026-11-01/cloudhealth.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "HealthModelUpdate",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/cloudhealth/resource-manager/Microsoft.CloudHealth/CloudHealth/swagger/stable/2026-11-01/cloudhealth.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "LogAnalyticsQuerySignalDefinitionProperties",
+      "properties"
+    ],
+    "source": "projects/specification/cloudhealth/resource-manager/Microsoft.CloudHealth/CloudHealth/swagger/stable/2026-11-01/cloudhealth.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "PrometheusMetricsSignalDefinitionProperties",
+      "properties"
+    ],
+    "source": "projects/specification/cloudhealth/resource-manager/Microsoft.CloudHealth/CloudHealth/swagger/stable/2026-11-01/cloudhealth.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "RelationshipProperties",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/cloudhealth/resource-manager/Microsoft.CloudHealth/CloudHealth/swagger/stable/2026-11-01/cloudhealth.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "ResourceMetricSignalDefinitionProperties",
+      "properties"
+    ],
+    "source": "projects/specification/cloudhealth/resource-manager/Microsoft.CloudHealth/CloudHealth/swagger/stable/2026-11-01/cloudhealth.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "SignalDefinitionProperties",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/cloudhealth/resource-manager/Microsoft.CloudHealth/CloudHealth/swagger/stable/2026-11-01/cloudhealth.json",
+    "sourceAttribution": "reported"
+  }
+]

@@ -1,0 +1,67 @@
+[
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "userAssignedIdentities property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.AgriculturePlatform/agriServices/{agriServiceResourceName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/agricultureplatform/AgriculturePlatform.Management/swagger/resource-manager/Microsoft.AgriculturePlatform/preview/2024-06-01-preview/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "name property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.AgriculturePlatform/agriServices/{agriServiceResourceName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/agricultureplatform/AgriculturePlatform.Management/swagger/resource-manager/Microsoft.AgriculturePlatform/preview/2024-06-01-preview/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "size property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.AgriculturePlatform/agriServices/{agriServiceResourceName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/agricultureplatform/AgriculturePlatform.Management/swagger/resource-manager/Microsoft.AgriculturePlatform/preview/2024-06-01-preview/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "tags property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.AgriculturePlatform/agriServices/{agriServiceResourceName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/agricultureplatform/AgriculturePlatform.Management/swagger/resource-manager/Microsoft.AgriculturePlatform/preview/2024-06-01-preview/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "AgriServiceResourceUpdate",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/agricultureplatform/AgriculturePlatform.Management/swagger/resource-manager/Microsoft.AgriculturePlatform/preview/2024-06-01-preview/openapi.json",
+    "sourceAttribution": "reported"
+  }
+]

@@ -1,0 +1,15 @@
+[
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "AttestationServicePatchParams",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/attestation/resource-manager/Microsoft.Attestation/Attestation/swagger/stable/2021-06-01/attestation.json",
+    "sourceAttribution": "reported"
+  }
+]

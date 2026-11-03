@@ -1,0 +1,54 @@
+[
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "tags property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/privateTrafficManagerProfiles/{privateTrafficManagerProfileName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/privatetrafficmanager/resource-manager/Microsoft.Network/PrivateTrafficManager/swagger/preview/2026-10-01-preview/privateTrafficManager.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "tags property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/topologyMaps/{topologyMapName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/privatetrafficmanager/resource-manager/Microsoft.Network/PrivateTrafficManager/swagger/preview/2026-10-01-preview/privateTrafficManager.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "PrivateTrafficManagerProfileUpdate",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/privatetrafficmanager/resource-manager/Microsoft.Network/PrivateTrafficManager/swagger/preview/2026-10-01-preview/privateTrafficManager.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "TopologyMapPatch",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/privatetrafficmanager/resource-manager/Microsoft.Network/PrivateTrafficManager/swagger/preview/2026-10-01-preview/privateTrafficManager.json",
+    "sourceAttribution": "reported"
+  }
+]

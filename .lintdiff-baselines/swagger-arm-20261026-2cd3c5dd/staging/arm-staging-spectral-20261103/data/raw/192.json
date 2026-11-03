@@ -1,0 +1,675 @@
+[
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter startDate should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/{resourceScope}/providers/Microsoft.Consumption/reservationDetails",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/consumption/resource-manager/Microsoft.Consumption/Consumption/swagger/stable/2026-06-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter endDate should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/{resourceScope}/providers/Microsoft.Consumption/reservationDetails",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/consumption/resource-manager/Microsoft.Consumption/Consumption/swagger/stable/2026-06-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter reservationId should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/{resourceScope}/providers/Microsoft.Consumption/reservationDetails",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/consumption/resource-manager/Microsoft.Consumption/Consumption/swagger/stable/2026-06-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter reservationOrderId should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/{resourceScope}/providers/Microsoft.Consumption/reservationDetails",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/consumption/resource-manager/Microsoft.Consumption/Consumption/swagger/stable/2026-06-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter scope should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/{resourceScope}/providers/Microsoft.Consumption/reservationRecommendationDetails",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/consumption/resource-manager/Microsoft.Consumption/Consumption/swagger/stable/2026-06-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter region should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/{resourceScope}/providers/Microsoft.Consumption/reservationRecommendationDetails",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/consumption/resource-manager/Microsoft.Consumption/Consumption/swagger/stable/2026-06-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter term should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/{resourceScope}/providers/Microsoft.Consumption/reservationRecommendationDetails",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/consumption/resource-manager/Microsoft.Consumption/Consumption/swagger/stable/2026-06-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter lookBackPeriod should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/{resourceScope}/providers/Microsoft.Consumption/reservationRecommendationDetails",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/consumption/resource-manager/Microsoft.Consumption/Consumption/swagger/stable/2026-06-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter product should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/{resourceScope}/providers/Microsoft.Consumption/reservationRecommendationDetails",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/consumption/resource-manager/Microsoft.Consumption/Consumption/swagger/stable/2026-06-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter managementGroupId should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/{resourceScope}/providers/Microsoft.Consumption/reservationRecommendationDetails",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/consumption/resource-manager/Microsoft.Consumption/Consumption/swagger/stable/2026-06-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter grain should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/{resourceScope}/providers/Microsoft.Consumption/reservationSummaries",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/consumption/resource-manager/Microsoft.Consumption/Consumption/swagger/stable/2026-06-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter startDate should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/{resourceScope}/providers/Microsoft.Consumption/reservationSummaries",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/consumption/resource-manager/Microsoft.Consumption/Consumption/swagger/stable/2026-06-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter endDate should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/{resourceScope}/providers/Microsoft.Consumption/reservationSummaries",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/consumption/resource-manager/Microsoft.Consumption/Consumption/swagger/stable/2026-06-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter reservationId should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/{resourceScope}/providers/Microsoft.Consumption/reservationSummaries",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/consumption/resource-manager/Microsoft.Consumption/Consumption/swagger/stable/2026-06-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter reservationOrderId should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/{resourceScope}/providers/Microsoft.Consumption/reservationSummaries",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/consumption/resource-manager/Microsoft.Consumption/Consumption/swagger/stable/2026-06-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter startDate should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/{scope}/providers/Microsoft.Consumption/charges",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/consumption/resource-manager/Microsoft.Consumption/Consumption/swagger/stable/2026-06-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter endDate should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/{scope}/providers/Microsoft.Consumption/charges",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/consumption/resource-manager/Microsoft.Consumption/Consumption/swagger/stable/2026-06-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $apply should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/{scope}/providers/Microsoft.Consumption/charges",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/consumption/resource-manager/Microsoft.Consumption/Consumption/swagger/stable/2026-06-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $top should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/{scope}/providers/Microsoft.Consumption/marketplaces",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/consumption/resource-manager/Microsoft.Consumption/Consumption/swagger/stable/2026-06-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $skiptoken should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/{scope}/providers/Microsoft.Consumption/marketplaces",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/consumption/resource-manager/Microsoft.Consumption/Consumption/swagger/stable/2026-06-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $expand should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/{scope}/providers/Microsoft.Consumption/usageDetails",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/consumption/resource-manager/Microsoft.Consumption/Consumption/swagger/stable/2026-06-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $skiptoken should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/{scope}/providers/Microsoft.Consumption/usageDetails",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/consumption/resource-manager/Microsoft.Consumption/Consumption/swagger/stable/2026-06-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $top should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/{scope}/providers/Microsoft.Consumption/usageDetails",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/consumption/resource-manager/Microsoft.Consumption/Consumption/swagger/stable/2026-06-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter metric should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/{scope}/providers/Microsoft.Consumption/usageDetails",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/consumption/resource-manager/Microsoft.Consumption/Consumption/swagger/stable/2026-06-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter startDate should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/providers/Microsoft.Billing/billingAccounts/{billingAccountId}/billingProfiles/{billingProfileId}/providers/Microsoft.Consumption/events",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/consumption/resource-manager/Microsoft.Consumption/Consumption/swagger/stable/2026-06-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter endDate should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/providers/Microsoft.Billing/billingAccounts/{billingAccountId}/billingProfiles/{billingProfileId}/providers/Microsoft.Consumption/events",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/consumption/resource-manager/Microsoft.Consumption/Consumption/swagger/stable/2026-06-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter useMarkupIfPartner should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/providers/Microsoft.Billing/billingAccounts/{billingAccountId}/providers/Microsoft.Consumption/reservationTransactions",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/consumption/resource-manager/Microsoft.Consumption/Consumption/swagger/stable/2026-06-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter previewMarkupPercentage should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/providers/Microsoft.Billing/billingAccounts/{billingAccountId}/providers/Microsoft.Consumption/reservationTransactions",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/consumption/resource-manager/Microsoft.Consumption/Consumption/swagger/stable/2026-06-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter grain should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/providers/Microsoft.Capacity/reservationorders/{reservationOrderId}/providers/Microsoft.Consumption/reservationSummaries",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/consumption/resource-manager/Microsoft.Consumption/Consumption/swagger/stable/2026-06-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter grain should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/providers/Microsoft.Capacity/reservationorders/{reservationOrderId}/reservations/{reservationId}/providers/Microsoft.Consumption/reservationSummaries",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/consumption/resource-manager/Microsoft.Consumption/Consumption/swagger/stable/2026-06-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "Balance",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/consumption/resource-manager/Microsoft.Consumption/Consumption/swagger/stable/2026-06-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "BudgetFilter",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/consumption/resource-manager/Microsoft.Consumption/Consumption/swagger/stable/2026-06-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "BudgetFilterProperties",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/consumption/resource-manager/Microsoft.Consumption/Consumption/swagger/stable/2026-06-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "CreditSummary",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/consumption/resource-manager/Microsoft.Consumption/Consumption/swagger/stable/2026-06-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "LegacyReservationTransaction",
+      "properties"
+    ],
+    "source": "projects/specification/consumption/resource-manager/Microsoft.Consumption/Consumption/swagger/stable/2026-06-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "LegacyUsageDetail",
+      "properties"
+    ],
+    "source": "projects/specification/consumption/resource-manager/Microsoft.Consumption/Consumption/swagger/stable/2026-06-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "ManagementGroupAggregatedCostResult",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/consumption/resource-manager/Microsoft.Consumption/Consumption/swagger/stable/2026-06-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "Marketplace",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/consumption/resource-manager/Microsoft.Consumption/Consumption/swagger/stable/2026-06-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "ModernReservationTransaction",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/consumption/resource-manager/Microsoft.Consumption/Consumption/swagger/stable/2026-06-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "ModernUsageDetail",
+      "properties"
+    ],
+    "source": "projects/specification/consumption/resource-manager/Microsoft.Consumption/Consumption/swagger/stable/2026-06-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "PriceSheetResult",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/consumption/resource-manager/Microsoft.Consumption/Consumption/swagger/stable/2026-06-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "ReservationDetail",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/consumption/resource-manager/Microsoft.Consumption/Consumption/swagger/stable/2026-06-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "ReservationSummary",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/consumption/resource-manager/Microsoft.Consumption/Consumption/swagger/stable/2026-06-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "ReservationTransaction",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/consumption/resource-manager/Microsoft.Consumption/Consumption/swagger/stable/2026-06-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "TagProperties",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/consumption/resource-manager/Microsoft.Consumption/Consumption/swagger/stable/2026-06-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "UsageDetail",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/consumption/resource-manager/Microsoft.Consumption/Consumption/swagger/stable/2026-06-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "ValidQueryParametersForPointOperations",
+    "severity": 0,
+    "message": "Query parameter $expand should be removed. Point operation 'get' MUST not have query parameters other than api-version.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/providers/Microsoft.Billing/billingPeriods/{billingPeriodName}/providers/Microsoft.Consumption/pricesheets/default",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/consumption/resource-manager/Microsoft.Consumption/Consumption/swagger/stable/2026-06-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "ValidQueryParametersForPointOperations",
+    "severity": 0,
+    "message": "Query parameter $skiptoken should be removed. Point operation 'get' MUST not have query parameters other than api-version.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/providers/Microsoft.Billing/billingPeriods/{billingPeriodName}/providers/Microsoft.Consumption/pricesheets/default",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/consumption/resource-manager/Microsoft.Consumption/Consumption/swagger/stable/2026-06-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "ValidQueryParametersForPointOperations",
+    "severity": 0,
+    "message": "Query parameter $top should be removed. Point operation 'get' MUST not have query parameters other than api-version.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/providers/Microsoft.Billing/billingPeriods/{billingPeriodName}/providers/Microsoft.Consumption/pricesheets/default",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/consumption/resource-manager/Microsoft.Consumption/Consumption/swagger/stable/2026-06-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "ValidQueryParametersForPointOperations",
+    "severity": 0,
+    "message": "Query parameter $expand should be removed. Point operation 'get' MUST not have query parameters other than api-version.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/providers/Microsoft.Consumption/pricesheets/default",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/consumption/resource-manager/Microsoft.Consumption/Consumption/swagger/stable/2026-06-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "ValidQueryParametersForPointOperations",
+    "severity": 0,
+    "message": "Query parameter $skiptoken should be removed. Point operation 'get' MUST not have query parameters other than api-version.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/providers/Microsoft.Consumption/pricesheets/default",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/consumption/resource-manager/Microsoft.Consumption/Consumption/swagger/stable/2026-06-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "ValidQueryParametersForPointOperations",
+    "severity": 0,
+    "message": "Query parameter $top should be removed. Point operation 'get' MUST not have query parameters other than api-version.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/providers/Microsoft.Consumption/pricesheets/default",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/consumption/resource-manager/Microsoft.Consumption/Consumption/swagger/stable/2026-06-01/openapi.json",
+    "sourceAttribution": "reported"
+  }
+]

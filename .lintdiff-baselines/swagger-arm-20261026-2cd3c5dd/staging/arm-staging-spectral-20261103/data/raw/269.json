@@ -1,0 +1,156 @@
+[
+  {
+    "code": "ConsistentResponseSchemaForPut",
+    "severity": 0,
+    "message": "200 response schema does not match 201 response schema. A PUT API must always return the same response schema for both the 200 and 201 status codes.",
+    "path": [
+      "definitions",
+      "PrivateEndpointConnection"
+    ],
+    "source": "common-types/resource-management/v6/privatelinks.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "tags property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.HorizonDb/clusters/{clusterName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/horizondb/resource-manager/Microsoft.HorizonDb/HorizonDb/swagger/preview/2026-05-01-preview/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "administratorLoginPassword property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.HorizonDb/clusters/{clusterName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/horizondb/resource-manager/Microsoft.HorizonDb/HorizonDb/swagger/preview/2026-05-01-preview/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "vCores property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.HorizonDb/clusters/{clusterName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/horizondb/resource-manager/Microsoft.HorizonDb/HorizonDb/swagger/preview/2026-05-01-preview/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "tags property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.HorizonDb/parameterGroups/{parameterGroupName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/horizondb/resource-manager/Microsoft.HorizonDb/HorizonDb/swagger/preview/2026-05-01-preview/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "parameters property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.HorizonDb/parameterGroups/{parameterGroupName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/horizondb/resource-manager/Microsoft.HorizonDb/HorizonDb/swagger/preview/2026-05-01-preview/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "description property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.HorizonDb/parameterGroups/{parameterGroupName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/horizondb/resource-manager/Microsoft.HorizonDb/HorizonDb/swagger/preview/2026-05-01-preview/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "applyImmediately property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.HorizonDb/parameterGroups/{parameterGroupName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/horizondb/resource-manager/Microsoft.HorizonDb/HorizonDb/swagger/preview/2026-05-01-preview/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter version should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.HorizonDb/parameterGroups/{parameterGroupName}/versions",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/horizondb/resource-manager/Microsoft.HorizonDb/HorizonDb/swagger/preview/2026-05-01-preview/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "HorizonDbClusterForPatchUpdate",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/horizondb/resource-manager/Microsoft.HorizonDb/HorizonDb/swagger/preview/2026-05-01-preview/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "HorizonDbParameterGroupForPatchUpdate",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/horizondb/resource-manager/Microsoft.HorizonDb/HorizonDb/swagger/preview/2026-05-01-preview/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "HorizonDbPool",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/horizondb/resource-manager/Microsoft.HorizonDb/HorizonDb/swagger/preview/2026-05-01-preview/openapi.json",
+    "sourceAttribution": "reported"
+  }
+]

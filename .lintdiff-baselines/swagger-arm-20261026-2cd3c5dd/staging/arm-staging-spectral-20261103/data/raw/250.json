@@ -1,0 +1,80 @@
+[
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "tags property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.FileShares/fileShares/{resourceName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/fileshares/resource-manager/Microsoft.FileShares/FileShares/swagger/stable/2026-06-01/fileshares.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "provisionedStorageGiB property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.FileShares/fileShares/{resourceName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/fileshares/resource-manager/Microsoft.FileShares/FileShares/swagger/stable/2026-06-01/fileshares.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "provisionedIOPerSec property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.FileShares/fileShares/{resourceName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/fileshares/resource-manager/Microsoft.FileShares/FileShares/swagger/stable/2026-06-01/fileshares.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "provisionedThroughputMiBPerSec property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.FileShares/fileShares/{resourceName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/fileshares/resource-manager/Microsoft.FileShares/FileShares/swagger/stable/2026-06-01/fileshares.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "metadata property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.FileShares/fileShares/{resourceName}/fileShareSnapshots/{name}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/fileshares/resource-manager/Microsoft.FileShares/FileShares/swagger/stable/2026-06-01/fileshares.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "FileShareUpdate",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/fileshares/resource-manager/Microsoft.FileShares/FileShares/swagger/stable/2026-06-01/fileshares.json",
+    "sourceAttribution": "reported"
+  }
+]

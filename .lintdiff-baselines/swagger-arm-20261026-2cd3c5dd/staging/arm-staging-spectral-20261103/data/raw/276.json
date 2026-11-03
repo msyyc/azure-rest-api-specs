@@ -1,0 +1,80 @@
+[
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "userAssignedIdentities property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Informatica.DataManagement/organizations/{organizationName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/informatica/resource-manager/Informatica.DataManagement/Informatica/swagger/stable/2025-11-27/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "tags property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Informatica.DataManagement/organizations/{organizationName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/informatica/resource-manager/Informatica.DataManagement/Informatica/swagger/stable/2025-11-27/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "properties property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Informatica.DataManagement/organizations/{organizationName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/informatica/resource-manager/Informatica.DataManagement/Informatica/swagger/stable/2025-11-27/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "userAssignedIdentities property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Informatica.DataManagement/organizations/{organizationName}/serverlessRuntimes/{serverlessRuntimeName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/informatica/resource-manager/Informatica.DataManagement/Informatica/swagger/stable/2025-11-27/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "InfaServerlessFetchConfigProperties",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/informatica/resource-manager/Informatica.DataManagement/Informatica/swagger/stable/2025-11-27/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "InformaticaOrganizationResourceUpdate",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/informatica/resource-manager/Informatica.DataManagement/Informatica/swagger/stable/2025-11-27/openapi.json",
+    "sourceAttribution": "reported"
+  }
+]

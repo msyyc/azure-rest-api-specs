@@ -1,0 +1,1601 @@
+[
+  {
+    "code": "PropertiesTypeObjectNoDefinition",
+    "severity": 0,
+    "message": "Properties with type:object that don't reference a model definition are not allowed. ARM doesn't allow generic type definitions as this leads to bad customer experience.",
+    "path": [
+      "definitions",
+      "ErrorAdditionalInfo",
+      "properties",
+      "info"
+    ],
+    "source": "common-types/resource-management/v6/types.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "tags property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.NetworkCloud/accessBridges/{accessBridgeName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/networkcloud/resource-manager/Microsoft.NetworkCloud/NetworkCloud/swagger/preview/2026-08-01-preview/networkcloud.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "machineDetails property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.NetworkCloud/bareMetalMachines/{bareMetalMachineName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/networkcloud/resource-manager/Microsoft.NetworkCloud/NetworkCloud/swagger/preview/2026-08-01-preview/networkcloud.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "tags property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.NetworkCloud/bareMetalMachines/{bareMetalMachineName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/networkcloud/resource-manager/Microsoft.NetworkCloud/NetworkCloud/swagger/preview/2026-08-01-preview/networkcloud.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "enableDefaultEgressEndpoints property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.NetworkCloud/cloudServicesNetworks/{cloudServicesNetworkName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/networkcloud/resource-manager/Microsoft.NetworkCloud/NetworkCloud/swagger/preview/2026-08-01-preview/networkcloud.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "tags property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.NetworkCloud/cloudServicesNetworks/{cloudServicesNetworkName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/networkcloud/resource-manager/Microsoft.NetworkCloud/NetworkCloud/swagger/preview/2026-08-01-preview/networkcloud.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "tags property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.NetworkCloud/clusterManagers/{clusterManagerName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/networkcloud/resource-manager/Microsoft.NetworkCloud/NetworkCloud/swagger/preview/2026-08-01-preview/networkcloud.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "bareMetalMachineConfigurationData property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.NetworkCloud/clusters/{clusterName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/networkcloud/resource-manager/Microsoft.NetworkCloud/NetworkCloud/swagger/preview/2026-08-01-preview/networkcloud.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "storageApplianceConfigurationData property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.NetworkCloud/clusters/{clusterName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/networkcloud/resource-manager/Microsoft.NetworkCloud/NetworkCloud/swagger/preview/2026-08-01-preview/networkcloud.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "clusterLocation property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.NetworkCloud/clusters/{clusterName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/networkcloud/resource-manager/Microsoft.NetworkCloud/NetworkCloud/swagger/preview/2026-08-01-preview/networkcloud.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "computeRackDefinitions property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.NetworkCloud/clusters/{clusterName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/networkcloud/resource-manager/Microsoft.NetworkCloud/NetworkCloud/swagger/preview/2026-08-01-preview/networkcloud.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "definitionUpdateMode property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.NetworkCloud/clusters/{clusterName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/networkcloud/resource-manager/Microsoft.NetworkCloud/NetworkCloud/swagger/preview/2026-08-01-preview/networkcloud.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "enforcementLevel property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.NetworkCloud/clusters/{clusterName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/networkcloud/resource-manager/Microsoft.NetworkCloud/NetworkCloud/swagger/preview/2026-08-01-preview/networkcloud.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "useKeyVault property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.NetworkCloud/clusters/{clusterName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/networkcloud/resource-manager/Microsoft.NetworkCloud/NetworkCloud/swagger/preview/2026-08-01-preview/networkcloud.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "waitTimeMinutes property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.NetworkCloud/clusters/{clusterName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/networkcloud/resource-manager/Microsoft.NetworkCloud/NetworkCloud/swagger/preview/2026-08-01-preview/networkcloud.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "containerScan property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.NetworkCloud/clusters/{clusterName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/networkcloud/resource-manager/Microsoft.NetworkCloud/NetworkCloud/swagger/preview/2026-08-01-preview/networkcloud.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "tags property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.NetworkCloud/clusters/{clusterName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/networkcloud/resource-manager/Microsoft.NetworkCloud/NetworkCloud/swagger/preview/2026-08-01-preview/networkcloud.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "tags property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.NetworkCloud/clusters/{clusterName}/bareMetalMachineKeySets/{bareMetalMachineKeySetName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/networkcloud/resource-manager/Microsoft.NetworkCloud/NetworkCloud/swagger/preview/2026-08-01-preview/networkcloud.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "tags property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.NetworkCloud/clusters/{clusterName}/bmcKeySets/{bmcKeySetName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/networkcloud/resource-manager/Microsoft.NetworkCloud/NetworkCloud/swagger/preview/2026-08-01-preview/networkcloud.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "tags property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.NetworkCloud/clusters/{clusterName}/metricsConfigurations/{metricsConfigurationName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/networkcloud/resource-manager/Microsoft.NetworkCloud/NetworkCloud/swagger/preview/2026-08-01-preview/networkcloud.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "sshPublicKeys property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.NetworkCloud/kubernetesClusters/{kubernetesClusterName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/networkcloud/resource-manager/Microsoft.NetworkCloud/NetworkCloud/swagger/preview/2026-08-01-preview/networkcloud.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "tags property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.NetworkCloud/kubernetesClusters/{kubernetesClusterName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/networkcloud/resource-manager/Microsoft.NetworkCloud/NetworkCloud/swagger/preview/2026-08-01-preview/networkcloud.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "sshPublicKeys property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.NetworkCloud/kubernetesClusters/{kubernetesClusterName}/agentPools/{agentPoolName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/networkcloud/resource-manager/Microsoft.NetworkCloud/NetworkCloud/swagger/preview/2026-08-01-preview/networkcloud.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "tags property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.NetworkCloud/kubernetesClusters/{kubernetesClusterName}/agentPools/{agentPoolName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/networkcloud/resource-manager/Microsoft.NetworkCloud/NetworkCloud/swagger/preview/2026-08-01-preview/networkcloud.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "tags property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.NetworkCloud/kubernetesClusters/{kubernetesClusterName}/features/{featureName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/networkcloud/resource-manager/Microsoft.NetworkCloud/NetworkCloud/swagger/preview/2026-08-01-preview/networkcloud.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "tags property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.NetworkCloud/kubernetesVersions/{kubernetesVersionName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/networkcloud/resource-manager/Microsoft.NetworkCloud/NetworkCloud/swagger/preview/2026-08-01-preview/networkcloud.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "tags property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.NetworkCloud/l2Networks/{l2NetworkName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/networkcloud/resource-manager/Microsoft.NetworkCloud/NetworkCloud/swagger/preview/2026-08-01-preview/networkcloud.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "tags property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.NetworkCloud/l3Networks/{l3NetworkName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/networkcloud/resource-manager/Microsoft.NetworkCloud/NetworkCloud/swagger/preview/2026-08-01-preview/networkcloud.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "rackSerialNumber property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.NetworkCloud/racks/{rackName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/networkcloud/resource-manager/Microsoft.NetworkCloud/NetworkCloud/swagger/preview/2026-08-01-preview/networkcloud.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "tags property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.NetworkCloud/racks/{rackName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/networkcloud/resource-manager/Microsoft.NetworkCloud/NetworkCloud/swagger/preview/2026-08-01-preview/networkcloud.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "tags property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.NetworkCloud/storageAppliances/{storageApplianceName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/networkcloud/resource-manager/Microsoft.NetworkCloud/NetworkCloud/swagger/preview/2026-08-01-preview/networkcloud.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "tags property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.NetworkCloud/trunkedNetworks/{trunkedNetworkName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/networkcloud/resource-manager/Microsoft.NetworkCloud/NetworkCloud/swagger/preview/2026-08-01-preview/networkcloud.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "tags property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.NetworkCloud/virtualMachines/{virtualMachineName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/networkcloud/resource-manager/Microsoft.NetworkCloud/NetworkCloud/swagger/preview/2026-08-01-preview/networkcloud.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "tags property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.NetworkCloud/virtualMachines/{virtualMachineName}/consoles/{consoleName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/networkcloud/resource-manager/Microsoft.NetworkCloud/NetworkCloud/swagger/preview/2026-08-01-preview/networkcloud.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "tags property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.NetworkCloud/volumes/{volumeName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/networkcloud/resource-manager/Microsoft.NetworkCloud/NetworkCloud/swagger/preview/2026-08-01-preview/networkcloud.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $top should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/providers/Microsoft.NetworkCloud/accessBridges",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/networkcloud/resource-manager/Microsoft.NetworkCloud/NetworkCloud/swagger/preview/2026-08-01-preview/networkcloud.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $skipToken should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/providers/Microsoft.NetworkCloud/accessBridges",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/networkcloud/resource-manager/Microsoft.NetworkCloud/NetworkCloud/swagger/preview/2026-08-01-preview/networkcloud.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $top should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/providers/Microsoft.NetworkCloud/bareMetalMachines",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/networkcloud/resource-manager/Microsoft.NetworkCloud/NetworkCloud/swagger/preview/2026-08-01-preview/networkcloud.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $skipToken should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/providers/Microsoft.NetworkCloud/bareMetalMachines",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/networkcloud/resource-manager/Microsoft.NetworkCloud/NetworkCloud/swagger/preview/2026-08-01-preview/networkcloud.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $top should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/providers/Microsoft.NetworkCloud/cloudServicesNetworks",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/networkcloud/resource-manager/Microsoft.NetworkCloud/NetworkCloud/swagger/preview/2026-08-01-preview/networkcloud.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $skipToken should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/providers/Microsoft.NetworkCloud/cloudServicesNetworks",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/networkcloud/resource-manager/Microsoft.NetworkCloud/NetworkCloud/swagger/preview/2026-08-01-preview/networkcloud.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $top should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/providers/Microsoft.NetworkCloud/clusterManagers",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/networkcloud/resource-manager/Microsoft.NetworkCloud/NetworkCloud/swagger/preview/2026-08-01-preview/networkcloud.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $skipToken should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/providers/Microsoft.NetworkCloud/clusterManagers",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/networkcloud/resource-manager/Microsoft.NetworkCloud/NetworkCloud/swagger/preview/2026-08-01-preview/networkcloud.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $top should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/providers/Microsoft.NetworkCloud/clusters",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/networkcloud/resource-manager/Microsoft.NetworkCloud/NetworkCloud/swagger/preview/2026-08-01-preview/networkcloud.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $skipToken should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/providers/Microsoft.NetworkCloud/clusters",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/networkcloud/resource-manager/Microsoft.NetworkCloud/NetworkCloud/swagger/preview/2026-08-01-preview/networkcloud.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $top should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/providers/Microsoft.NetworkCloud/kubernetesClusters",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/networkcloud/resource-manager/Microsoft.NetworkCloud/NetworkCloud/swagger/preview/2026-08-01-preview/networkcloud.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $skipToken should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/providers/Microsoft.NetworkCloud/kubernetesClusters",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/networkcloud/resource-manager/Microsoft.NetworkCloud/NetworkCloud/swagger/preview/2026-08-01-preview/networkcloud.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $top should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/providers/Microsoft.NetworkCloud/kubernetesVersions",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/networkcloud/resource-manager/Microsoft.NetworkCloud/NetworkCloud/swagger/preview/2026-08-01-preview/networkcloud.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $skipToken should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/providers/Microsoft.NetworkCloud/kubernetesVersions",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/networkcloud/resource-manager/Microsoft.NetworkCloud/NetworkCloud/swagger/preview/2026-08-01-preview/networkcloud.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $top should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/providers/Microsoft.NetworkCloud/l2Networks",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/networkcloud/resource-manager/Microsoft.NetworkCloud/NetworkCloud/swagger/preview/2026-08-01-preview/networkcloud.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $skipToken should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/providers/Microsoft.NetworkCloud/l2Networks",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/networkcloud/resource-manager/Microsoft.NetworkCloud/NetworkCloud/swagger/preview/2026-08-01-preview/networkcloud.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $top should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/providers/Microsoft.NetworkCloud/l3Networks",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/networkcloud/resource-manager/Microsoft.NetworkCloud/NetworkCloud/swagger/preview/2026-08-01-preview/networkcloud.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $skipToken should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/providers/Microsoft.NetworkCloud/l3Networks",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/networkcloud/resource-manager/Microsoft.NetworkCloud/NetworkCloud/swagger/preview/2026-08-01-preview/networkcloud.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $top should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/providers/Microsoft.NetworkCloud/racks",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/networkcloud/resource-manager/Microsoft.NetworkCloud/NetworkCloud/swagger/preview/2026-08-01-preview/networkcloud.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $skipToken should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/providers/Microsoft.NetworkCloud/racks",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/networkcloud/resource-manager/Microsoft.NetworkCloud/NetworkCloud/swagger/preview/2026-08-01-preview/networkcloud.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $top should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/providers/Microsoft.NetworkCloud/storageAppliances",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/networkcloud/resource-manager/Microsoft.NetworkCloud/NetworkCloud/swagger/preview/2026-08-01-preview/networkcloud.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $skipToken should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/providers/Microsoft.NetworkCloud/storageAppliances",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/networkcloud/resource-manager/Microsoft.NetworkCloud/NetworkCloud/swagger/preview/2026-08-01-preview/networkcloud.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $top should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/providers/Microsoft.NetworkCloud/trunkedNetworks",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/networkcloud/resource-manager/Microsoft.NetworkCloud/NetworkCloud/swagger/preview/2026-08-01-preview/networkcloud.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $skipToken should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/providers/Microsoft.NetworkCloud/trunkedNetworks",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/networkcloud/resource-manager/Microsoft.NetworkCloud/NetworkCloud/swagger/preview/2026-08-01-preview/networkcloud.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $top should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/providers/Microsoft.NetworkCloud/virtualMachines",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/networkcloud/resource-manager/Microsoft.NetworkCloud/NetworkCloud/swagger/preview/2026-08-01-preview/networkcloud.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $skipToken should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/providers/Microsoft.NetworkCloud/virtualMachines",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/networkcloud/resource-manager/Microsoft.NetworkCloud/NetworkCloud/swagger/preview/2026-08-01-preview/networkcloud.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $top should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/providers/Microsoft.NetworkCloud/volumes",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/networkcloud/resource-manager/Microsoft.NetworkCloud/NetworkCloud/swagger/preview/2026-08-01-preview/networkcloud.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $skipToken should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/providers/Microsoft.NetworkCloud/volumes",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/networkcloud/resource-manager/Microsoft.NetworkCloud/NetworkCloud/swagger/preview/2026-08-01-preview/networkcloud.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $top should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.NetworkCloud/accessBridges",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/networkcloud/resource-manager/Microsoft.NetworkCloud/NetworkCloud/swagger/preview/2026-08-01-preview/networkcloud.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $skipToken should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.NetworkCloud/accessBridges",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/networkcloud/resource-manager/Microsoft.NetworkCloud/NetworkCloud/swagger/preview/2026-08-01-preview/networkcloud.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $top should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.NetworkCloud/bareMetalMachines",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/networkcloud/resource-manager/Microsoft.NetworkCloud/NetworkCloud/swagger/preview/2026-08-01-preview/networkcloud.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $skipToken should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.NetworkCloud/bareMetalMachines",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/networkcloud/resource-manager/Microsoft.NetworkCloud/NetworkCloud/swagger/preview/2026-08-01-preview/networkcloud.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $top should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.NetworkCloud/cloudServicesNetworks",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/networkcloud/resource-manager/Microsoft.NetworkCloud/NetworkCloud/swagger/preview/2026-08-01-preview/networkcloud.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $skipToken should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.NetworkCloud/cloudServicesNetworks",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/networkcloud/resource-manager/Microsoft.NetworkCloud/NetworkCloud/swagger/preview/2026-08-01-preview/networkcloud.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $top should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.NetworkCloud/clusterManagers",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/networkcloud/resource-manager/Microsoft.NetworkCloud/NetworkCloud/swagger/preview/2026-08-01-preview/networkcloud.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $skipToken should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.NetworkCloud/clusterManagers",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/networkcloud/resource-manager/Microsoft.NetworkCloud/NetworkCloud/swagger/preview/2026-08-01-preview/networkcloud.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $top should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.NetworkCloud/clusters",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/networkcloud/resource-manager/Microsoft.NetworkCloud/NetworkCloud/swagger/preview/2026-08-01-preview/networkcloud.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $skipToken should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.NetworkCloud/clusters",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/networkcloud/resource-manager/Microsoft.NetworkCloud/NetworkCloud/swagger/preview/2026-08-01-preview/networkcloud.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $top should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.NetworkCloud/clusters/{clusterName}/bareMetalMachineKeySets",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/networkcloud/resource-manager/Microsoft.NetworkCloud/NetworkCloud/swagger/preview/2026-08-01-preview/networkcloud.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $skipToken should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.NetworkCloud/clusters/{clusterName}/bareMetalMachineKeySets",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/networkcloud/resource-manager/Microsoft.NetworkCloud/NetworkCloud/swagger/preview/2026-08-01-preview/networkcloud.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $top should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.NetworkCloud/clusters/{clusterName}/bmcKeySets",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/networkcloud/resource-manager/Microsoft.NetworkCloud/NetworkCloud/swagger/preview/2026-08-01-preview/networkcloud.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $skipToken should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.NetworkCloud/clusters/{clusterName}/bmcKeySets",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/networkcloud/resource-manager/Microsoft.NetworkCloud/NetworkCloud/swagger/preview/2026-08-01-preview/networkcloud.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $top should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.NetworkCloud/clusters/{clusterName}/metricsConfigurations",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/networkcloud/resource-manager/Microsoft.NetworkCloud/NetworkCloud/swagger/preview/2026-08-01-preview/networkcloud.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $skipToken should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.NetworkCloud/clusters/{clusterName}/metricsConfigurations",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/networkcloud/resource-manager/Microsoft.NetworkCloud/NetworkCloud/swagger/preview/2026-08-01-preview/networkcloud.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $top should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.NetworkCloud/kubernetesClusters",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/networkcloud/resource-manager/Microsoft.NetworkCloud/NetworkCloud/swagger/preview/2026-08-01-preview/networkcloud.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $skipToken should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.NetworkCloud/kubernetesClusters",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/networkcloud/resource-manager/Microsoft.NetworkCloud/NetworkCloud/swagger/preview/2026-08-01-preview/networkcloud.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $top should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.NetworkCloud/kubernetesClusters/{kubernetesClusterName}/agentPools",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/networkcloud/resource-manager/Microsoft.NetworkCloud/NetworkCloud/swagger/preview/2026-08-01-preview/networkcloud.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $skipToken should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.NetworkCloud/kubernetesClusters/{kubernetesClusterName}/agentPools",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/networkcloud/resource-manager/Microsoft.NetworkCloud/NetworkCloud/swagger/preview/2026-08-01-preview/networkcloud.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $top should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.NetworkCloud/kubernetesClusters/{kubernetesClusterName}/features",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/networkcloud/resource-manager/Microsoft.NetworkCloud/NetworkCloud/swagger/preview/2026-08-01-preview/networkcloud.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $skipToken should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.NetworkCloud/kubernetesClusters/{kubernetesClusterName}/features",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/networkcloud/resource-manager/Microsoft.NetworkCloud/NetworkCloud/swagger/preview/2026-08-01-preview/networkcloud.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $top should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.NetworkCloud/kubernetesVersions",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/networkcloud/resource-manager/Microsoft.NetworkCloud/NetworkCloud/swagger/preview/2026-08-01-preview/networkcloud.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $skipToken should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.NetworkCloud/kubernetesVersions",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/networkcloud/resource-manager/Microsoft.NetworkCloud/NetworkCloud/swagger/preview/2026-08-01-preview/networkcloud.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $top should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.NetworkCloud/l2Networks",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/networkcloud/resource-manager/Microsoft.NetworkCloud/NetworkCloud/swagger/preview/2026-08-01-preview/networkcloud.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $skipToken should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.NetworkCloud/l2Networks",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/networkcloud/resource-manager/Microsoft.NetworkCloud/NetworkCloud/swagger/preview/2026-08-01-preview/networkcloud.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $top should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.NetworkCloud/l3Networks",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/networkcloud/resource-manager/Microsoft.NetworkCloud/NetworkCloud/swagger/preview/2026-08-01-preview/networkcloud.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $skipToken should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.NetworkCloud/l3Networks",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/networkcloud/resource-manager/Microsoft.NetworkCloud/NetworkCloud/swagger/preview/2026-08-01-preview/networkcloud.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $top should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.NetworkCloud/racks",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/networkcloud/resource-manager/Microsoft.NetworkCloud/NetworkCloud/swagger/preview/2026-08-01-preview/networkcloud.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $skipToken should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.NetworkCloud/racks",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/networkcloud/resource-manager/Microsoft.NetworkCloud/NetworkCloud/swagger/preview/2026-08-01-preview/networkcloud.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $top should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.NetworkCloud/storageAppliances",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/networkcloud/resource-manager/Microsoft.NetworkCloud/NetworkCloud/swagger/preview/2026-08-01-preview/networkcloud.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $skipToken should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.NetworkCloud/storageAppliances",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/networkcloud/resource-manager/Microsoft.NetworkCloud/NetworkCloud/swagger/preview/2026-08-01-preview/networkcloud.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $top should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.NetworkCloud/trunkedNetworks",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/networkcloud/resource-manager/Microsoft.NetworkCloud/NetworkCloud/swagger/preview/2026-08-01-preview/networkcloud.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $skipToken should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.NetworkCloud/trunkedNetworks",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/networkcloud/resource-manager/Microsoft.NetworkCloud/NetworkCloud/swagger/preview/2026-08-01-preview/networkcloud.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $top should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.NetworkCloud/virtualMachines",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/networkcloud/resource-manager/Microsoft.NetworkCloud/NetworkCloud/swagger/preview/2026-08-01-preview/networkcloud.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $skipToken should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.NetworkCloud/virtualMachines",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/networkcloud/resource-manager/Microsoft.NetworkCloud/NetworkCloud/swagger/preview/2026-08-01-preview/networkcloud.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $top should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.NetworkCloud/virtualMachines/{virtualMachineName}/consoles",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/networkcloud/resource-manager/Microsoft.NetworkCloud/NetworkCloud/swagger/preview/2026-08-01-preview/networkcloud.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $skipToken should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.NetworkCloud/virtualMachines/{virtualMachineName}/consoles",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/networkcloud/resource-manager/Microsoft.NetworkCloud/NetworkCloud/swagger/preview/2026-08-01-preview/networkcloud.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $top should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.NetworkCloud/volumes",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/networkcloud/resource-manager/Microsoft.NetworkCloud/NetworkCloud/swagger/preview/2026-08-01-preview/networkcloud.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $skipToken should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.NetworkCloud/volumes",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/networkcloud/resource-manager/Microsoft.NetworkCloud/NetworkCloud/swagger/preview/2026-08-01-preview/networkcloud.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "AccessBridgePatchParameters",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/networkcloud/resource-manager/Microsoft.NetworkCloud/NetworkCloud/swagger/preview/2026-08-01-preview/networkcloud.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "AgentPoolPatchParameters",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/networkcloud/resource-manager/Microsoft.NetworkCloud/NetworkCloud/swagger/preview/2026-08-01-preview/networkcloud.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "BareMetalMachineKeySetPatchParameters",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/networkcloud/resource-manager/Microsoft.NetworkCloud/NetworkCloud/swagger/preview/2026-08-01-preview/networkcloud.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "BareMetalMachinePatchParameters",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/networkcloud/resource-manager/Microsoft.NetworkCloud/NetworkCloud/swagger/preview/2026-08-01-preview/networkcloud.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "BmcKeySetPatchParameters",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/networkcloud/resource-manager/Microsoft.NetworkCloud/NetworkCloud/swagger/preview/2026-08-01-preview/networkcloud.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "CloudServicesNetworkPatchParameters",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/networkcloud/resource-manager/Microsoft.NetworkCloud/NetworkCloud/swagger/preview/2026-08-01-preview/networkcloud.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "ClusterManagerPatchParameters",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/networkcloud/resource-manager/Microsoft.NetworkCloud/NetworkCloud/swagger/preview/2026-08-01-preview/networkcloud.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "ClusterMetricsConfigurationPatchParameters",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/networkcloud/resource-manager/Microsoft.NetworkCloud/NetworkCloud/swagger/preview/2026-08-01-preview/networkcloud.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "ClusterPatchParameters",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/networkcloud/resource-manager/Microsoft.NetworkCloud/NetworkCloud/swagger/preview/2026-08-01-preview/networkcloud.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "ConsolePatchParameters",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/networkcloud/resource-manager/Microsoft.NetworkCloud/NetworkCloud/swagger/preview/2026-08-01-preview/networkcloud.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "KubernetesClusterFeaturePatchParameters",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/networkcloud/resource-manager/Microsoft.NetworkCloud/NetworkCloud/swagger/preview/2026-08-01-preview/networkcloud.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "KubernetesClusterPatchParameters",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/networkcloud/resource-manager/Microsoft.NetworkCloud/NetworkCloud/swagger/preview/2026-08-01-preview/networkcloud.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "KubernetesVersionPatchParameters",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/networkcloud/resource-manager/Microsoft.NetworkCloud/NetworkCloud/swagger/preview/2026-08-01-preview/networkcloud.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "L2NetworkPatchParameters",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/networkcloud/resource-manager/Microsoft.NetworkCloud/NetworkCloud/swagger/preview/2026-08-01-preview/networkcloud.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "L3NetworkPatchParameters",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/networkcloud/resource-manager/Microsoft.NetworkCloud/NetworkCloud/swagger/preview/2026-08-01-preview/networkcloud.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "RackPatchParameters",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/networkcloud/resource-manager/Microsoft.NetworkCloud/NetworkCloud/swagger/preview/2026-08-01-preview/networkcloud.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "StorageAppliancePatchParameters",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/networkcloud/resource-manager/Microsoft.NetworkCloud/NetworkCloud/swagger/preview/2026-08-01-preview/networkcloud.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "TrunkedNetworkPatchParameters",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/networkcloud/resource-manager/Microsoft.NetworkCloud/NetworkCloud/swagger/preview/2026-08-01-preview/networkcloud.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "VirtualMachinePatchParameters",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/networkcloud/resource-manager/Microsoft.NetworkCloud/NetworkCloud/swagger/preview/2026-08-01-preview/networkcloud.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "VolumePatchParameters",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/networkcloud/resource-manager/Microsoft.NetworkCloud/NetworkCloud/swagger/preview/2026-08-01-preview/networkcloud.json",
+    "sourceAttribution": "reported"
+  }
+]

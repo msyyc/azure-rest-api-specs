@@ -1,0 +1,132 @@
+[
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "tags property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Dashboard/dashboards/{dashboardName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/dashboard/resource-manager/Microsoft.Dashboard/Dashboard/swagger/preview/2025-09-01-preview/grafana.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "tags property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Dashboard/grafana/{workspaceName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/dashboard/resource-manager/Microsoft.Dashboard/Dashboard/swagger/preview/2025-09-01-preview/grafana.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "grafanaPlugins property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Dashboard/grafana/{workspaceName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/dashboard/resource-manager/Microsoft.Dashboard/Dashboard/swagger/preview/2025-09-01-preview/grafana.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "tags property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Dashboard/grafana/{workspaceName}/integrationFabrics/{integrationFabricName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/dashboard/resource-manager/Microsoft.Dashboard/Dashboard/swagger/preview/2025-09-01-preview/grafana.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "scenarios property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Dashboard/grafana/{workspaceName}/integrationFabrics/{integrationFabricName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/dashboard/resource-manager/Microsoft.Dashboard/Dashboard/swagger/preview/2025-09-01-preview/grafana.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "tags property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Dashboard/grafana/{workspaceName}/managedPrivateEndpoints/{managedPrivateEndpointName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/dashboard/resource-manager/Microsoft.Dashboard/Dashboard/swagger/preview/2025-09-01-preview/grafana.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "IntegrationFabricUpdateParameters",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/dashboard/resource-manager/Microsoft.Dashboard/Dashboard/swagger/preview/2025-09-01-preview/grafana.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "ManagedDashboardUpdateParameters",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/dashboard/resource-manager/Microsoft.Dashboard/Dashboard/swagger/preview/2025-09-01-preview/grafana.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "ManagedGrafanaUpdateParameters",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/dashboard/resource-manager/Microsoft.Dashboard/Dashboard/swagger/preview/2025-09-01-preview/grafana.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "ManagedPrivateEndpointUpdateParameters",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/dashboard/resource-manager/Microsoft.Dashboard/Dashboard/swagger/preview/2025-09-01-preview/grafana.json",
+    "sourceAttribution": "reported"
+  }
+]

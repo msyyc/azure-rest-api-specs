@@ -1,0 +1,40 @@
+[
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "tags property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Contoso/employees/{employeeName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/contosowidgetmanager/Contoso.Management/swagger/resource-manager/Microsoft.Contoso/stable/2021-11-01/contoso.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "Azure.ResourceManager.CommonTypes.TrackedResourceUpdate",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/contosowidgetmanager/Contoso.Management/swagger/resource-manager/Microsoft.Contoso/stable/2021-11-01/contoso.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "EmployeeUpdate",
+      "properties"
+    ],
+    "source": "projects/specification/contosowidgetmanager/Contoso.Management/swagger/resource-manager/Microsoft.Contoso/stable/2021-11-01/contoso.json",
+    "sourceAttribution": "reported"
+  }
+]

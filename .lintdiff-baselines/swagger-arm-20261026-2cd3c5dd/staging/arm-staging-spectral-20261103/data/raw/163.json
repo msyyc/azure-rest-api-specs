@@ -1,0 +1,184 @@
+[
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter maxresults should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/providers/Microsoft.Batch/locations/{locationName}/virtualMachineSkus",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/batch/resource-manager/Microsoft.Batch/Batch/swagger/stable/2025-06-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter maxresults should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Batch/batchAccounts/{accountName}/applications",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/batch/resource-manager/Microsoft.Batch/Batch/swagger/stable/2025-06-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter maxresults should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Batch/batchAccounts/{accountName}/applications/{applicationName}/versions",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/batch/resource-manager/Microsoft.Batch/Batch/swagger/stable/2025-06-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter maxresults should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Batch/batchAccounts/{accountName}/pools",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/batch/resource-manager/Microsoft.Batch/Batch/swagger/stable/2025-06-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $select should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Batch/batchAccounts/{accountName}/pools",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/batch/resource-manager/Microsoft.Batch/Batch/swagger/stable/2025-06-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter maxresults should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Batch/batchAccounts/{accountName}/privateEndpointConnections",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/batch/resource-manager/Microsoft.Batch/Batch/swagger/stable/2025-06-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter maxresults should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Batch/batchAccounts/{accountName}/privateLinkResources",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/batch/resource-manager/Microsoft.Batch/Batch/swagger/stable/2025-06-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "Application",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/batch/resource-manager/Microsoft.Batch/Batch/swagger/stable/2025-06-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "ApplicationPackage",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/batch/resource-manager/Microsoft.Batch/Batch/swagger/stable/2025-06-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "BatchAccountUpdateParameters",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/batch/resource-manager/Microsoft.Batch/Batch/swagger/stable/2025-06-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "DetectorResponse",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/batch/resource-manager/Microsoft.Batch/Batch/swagger/stable/2025-06-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "Pool",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/batch/resource-manager/Microsoft.Batch/Batch/swagger/stable/2025-06-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "PrivateEndpointConnection",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/batch/resource-manager/Microsoft.Batch/Batch/swagger/stable/2025-06-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "PrivateLinkResource",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/batch/resource-manager/Microsoft.Batch/Batch/swagger/stable/2025-06-01/openapi.json",
+    "sourceAttribution": "reported"
+  }
+]

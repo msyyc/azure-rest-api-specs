@@ -1,0 +1,15 @@
+[
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "ApplicationInsightsCommonTypes.TagsResource",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/applicationinsights/resource-manager/Microsoft.Insights/ApplicationInsights/WebTestsApi/swagger/stable/2022-06-15/webTests_API.json",
+    "sourceAttribution": "reported"
+  }
+]

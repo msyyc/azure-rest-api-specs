@@ -1,0 +1,392 @@
+[
+  {
+    "code": "PropertiesTypeObjectNoDefinition",
+    "severity": 0,
+    "message": "Properties with type:object that don't reference a model definition are not allowed. ARM doesn't allow generic type definitions as this leads to bad customer experience.",
+    "path": [
+      "definitions",
+      "ErrorAdditionalInfo",
+      "properties",
+      "info"
+    ],
+    "source": "common-types/resource-management/v5/types.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "tags property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Edge/configTemplates/{configTemplateName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/edge/resource-manager/Microsoft.Edge/configurationmanager/swagger/stable/2026-06-01/configurationmanager.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "tags property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Edge/contexts/{contextName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/edge/resource-manager/Microsoft.Edge/configurationmanager/swagger/stable/2026-06-01/configurationmanager.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "tags property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Edge/diagnostics/{diagnosticName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/edge/resource-manager/Microsoft.Edge/configurationmanager/swagger/stable/2026-06-01/configurationmanager.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "tags property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Edge/schemas/{schemaName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/edge/resource-manager/Microsoft.Edge/configurationmanager/swagger/stable/2026-06-01/configurationmanager.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "tags property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Edge/solutionTemplates/{solutionTemplateName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/edge/resource-manager/Microsoft.Edge/configurationmanager/swagger/stable/2026-06-01/configurationmanager.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "tags property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Edge/targets/{targetName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/edge/resource-manager/Microsoft.Edge/configurationmanager/swagger/stable/2026-06-01/configurationmanager.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PropertiesTypeObjectNoDefinition",
+    "severity": 0,
+    "message": "Properties with type:object that don't reference a model definition are not allowed. ARM doesn't allow generic type definitions as this leads to bad customer experience.",
+    "path": [
+      "definitions",
+      "ExecutionProperties",
+      "properties",
+      "specification"
+    ],
+    "source": "projects/specification/edge/resource-manager/Microsoft.Edge/configurationmanager/swagger/stable/2026-06-01/configurationmanager.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PropertiesTypeObjectNoDefinition",
+    "severity": 0,
+    "message": "Properties with type:object that don't reference a model definition are not allowed. ARM doesn't allow generic type definitions as this leads to bad customer experience.",
+    "path": [
+      "definitions",
+      "ExecutionPropertiesUpdate",
+      "properties",
+      "specification"
+    ],
+    "source": "projects/specification/edge/resource-manager/Microsoft.Edge/configurationmanager/swagger/stable/2026-06-01/configurationmanager.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PropertiesTypeObjectNoDefinition",
+    "severity": 0,
+    "message": "Properties with type:object that don't reference a model definition are not allowed. ARM doesn't allow generic type definitions as this leads to bad customer experience.",
+    "path": [
+      "definitions",
+      "SolutionTemplateVersionProperties",
+      "properties",
+      "specification"
+    ],
+    "source": "projects/specification/edge/resource-manager/Microsoft.Edge/configurationmanager/swagger/stable/2026-06-01/configurationmanager.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PropertiesTypeObjectNoDefinition",
+    "severity": 0,
+    "message": "Properties with type:object that don't reference a model definition are not allowed. ARM doesn't allow generic type definitions as this leads to bad customer experience.",
+    "path": [
+      "definitions",
+      "SolutionTemplateVersionPropertiesUpdate",
+      "properties",
+      "specification"
+    ],
+    "source": "projects/specification/edge/resource-manager/Microsoft.Edge/configurationmanager/swagger/stable/2026-06-01/configurationmanager.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PropertiesTypeObjectNoDefinition",
+    "severity": 0,
+    "message": "Properties with type:object that don't reference a model definition are not allowed. ARM doesn't allow generic type definitions as this leads to bad customer experience.",
+    "path": [
+      "definitions",
+      "SolutionVersionProperties",
+      "properties",
+      "specification"
+    ],
+    "source": "projects/specification/edge/resource-manager/Microsoft.Edge/configurationmanager/swagger/stable/2026-06-01/configurationmanager.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PropertiesTypeObjectNoDefinition",
+    "severity": 0,
+    "message": "Properties with type:object that don't reference a model definition are not allowed. ARM doesn't allow generic type definitions as this leads to bad customer experience.",
+    "path": [
+      "definitions",
+      "SolutionVersionPropertiesUpdate",
+      "properties",
+      "specification"
+    ],
+    "source": "projects/specification/edge/resource-manager/Microsoft.Edge/configurationmanager/swagger/stable/2026-06-01/configurationmanager.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PropertiesTypeObjectNoDefinition",
+    "severity": 0,
+    "message": "Properties with type:object that don't reference a model definition are not allowed. ARM doesn't allow generic type definitions as this leads to bad customer experience.",
+    "path": [
+      "definitions",
+      "SolutionVersionSnapshot",
+      "properties",
+      "specification"
+    ],
+    "source": "projects/specification/edge/resource-manager/Microsoft.Edge/configurationmanager/swagger/stable/2026-06-01/configurationmanager.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PropertiesTypeObjectNoDefinition",
+    "severity": 0,
+    "message": "Properties with type:object that don't reference a model definition are not allowed. ARM doesn't allow generic type definitions as this leads to bad customer experience.",
+    "path": [
+      "definitions",
+      "StageSpec",
+      "properties",
+      "specification"
+    ],
+    "source": "projects/specification/edge/resource-manager/Microsoft.Edge/configurationmanager/swagger/stable/2026-06-01/configurationmanager.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PropertiesTypeObjectNoDefinition",
+    "severity": 0,
+    "message": "Properties with type:object that don't reference a model definition are not allowed. ARM doesn't allow generic type definitions as this leads to bad customer experience.",
+    "path": [
+      "definitions",
+      "StageStatus",
+      "properties",
+      "inputs"
+    ],
+    "source": "projects/specification/edge/resource-manager/Microsoft.Edge/configurationmanager/swagger/stable/2026-06-01/configurationmanager.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PropertiesTypeObjectNoDefinition",
+    "severity": 0,
+    "message": "Properties with type:object that don't reference a model definition are not allowed. ARM doesn't allow generic type definitions as this leads to bad customer experience.",
+    "path": [
+      "definitions",
+      "StageStatus",
+      "properties",
+      "outputs"
+    ],
+    "source": "projects/specification/edge/resource-manager/Microsoft.Edge/configurationmanager/swagger/stable/2026-06-01/configurationmanager.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PropertiesTypeObjectNoDefinition",
+    "severity": 0,
+    "message": "Properties with type:object that don't reference a model definition are not allowed. ARM doesn't allow generic type definitions as this leads to bad customer experience.",
+    "path": [
+      "definitions",
+      "TargetProperties",
+      "properties",
+      "targetSpecification"
+    ],
+    "source": "projects/specification/edge/resource-manager/Microsoft.Edge/configurationmanager/swagger/stable/2026-06-01/configurationmanager.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PropertiesTypeObjectNoDefinition",
+    "severity": 0,
+    "message": "Properties with type:object that don't reference a model definition are not allowed. ARM doesn't allow generic type definitions as this leads to bad customer experience.",
+    "path": [
+      "definitions",
+      "TargetSnapshot",
+      "properties",
+      "targetSpecification"
+    ],
+    "source": "projects/specification/edge/resource-manager/Microsoft.Edge/configurationmanager/swagger/stable/2026-06-01/configurationmanager.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PropertiesTypeObjectNoDefinition",
+    "severity": 0,
+    "message": "Properties with type:object that don't reference a model definition are not allowed. ARM doesn't allow generic type definitions as this leads to bad customer experience.",
+    "path": [
+      "definitions",
+      "TargetUpdateProperties",
+      "properties",
+      "targetSpecification"
+    ],
+    "source": "projects/specification/edge/resource-manager/Microsoft.Edge/configurationmanager/swagger/stable/2026-06-01/configurationmanager.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PropertiesTypeObjectNoDefinition",
+    "severity": 0,
+    "message": "Properties with type:object that don't reference a model definition are not allowed. ARM doesn't allow generic type definitions as this leads to bad customer experience.",
+    "path": [
+      "definitions",
+      "TaskSpec",
+      "properties",
+      "specification"
+    ],
+    "source": "projects/specification/edge/resource-manager/Microsoft.Edge/configurationmanager/swagger/stable/2026-06-01/configurationmanager.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PropertiesTypeObjectNoDefinition",
+    "severity": 0,
+    "message": "Properties with type:object that don't reference a model definition are not allowed. ARM doesn't allow generic type definitions as this leads to bad customer experience.",
+    "path": [
+      "definitions",
+      "WorkflowVersionProperties",
+      "properties",
+      "specification"
+    ],
+    "source": "projects/specification/edge/resource-manager/Microsoft.Edge/configurationmanager/swagger/stable/2026-06-01/configurationmanager.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PropertiesTypeObjectNoDefinition",
+    "severity": 0,
+    "message": "Properties with type:object that don't reference a model definition are not allowed. ARM doesn't allow generic type definitions as this leads to bad customer experience.",
+    "path": [
+      "definitions",
+      "WorkflowVersionPropertiesUpdate",
+      "properties",
+      "specification"
+    ],
+    "source": "projects/specification/edge/resource-manager/Microsoft.Edge/configurationmanager/swagger/stable/2026-06-01/configurationmanager.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "ConfigTemplateUpdate",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/edge/resource-manager/Microsoft.Edge/configurationmanager/swagger/stable/2026-06-01/configurationmanager.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "ContextUpdate",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/edge/resource-manager/Microsoft.Edge/configurationmanager/swagger/stable/2026-06-01/configurationmanager.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "DiagnosticUpdate",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/edge/resource-manager/Microsoft.Edge/configurationmanager/swagger/stable/2026-06-01/configurationmanager.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "SchemaUpdate",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/edge/resource-manager/Microsoft.Edge/configurationmanager/swagger/stable/2026-06-01/configurationmanager.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "SolutionTemplateUpdate",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/edge/resource-manager/Microsoft.Edge/configurationmanager/swagger/stable/2026-06-01/configurationmanager.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "TargetUpdate",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/edge/resource-manager/Microsoft.Edge/configurationmanager/swagger/stable/2026-06-01/configurationmanager.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "ValidQueryParametersForPointOperations",
+    "severity": 0,
+    "message": "Query parameter forceDelete should be removed. Point operation 'delete' MUST not have query parameters other than api-version.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Edge/targets/{targetName}",
+      "delete",
+      "parameters"
+    ],
+    "source": "projects/specification/edge/resource-manager/Microsoft.Edge/configurationmanager/swagger/stable/2026-06-01/configurationmanager.json",
+    "sourceAttribution": "reported"
+  }
+]

@@ -1,0 +1,158 @@
+[
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "backingStorageClassName property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/{resourceUri}/providers/Microsoft.KubernetesRuntime/storageClasses/{storageClassName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/kubernetesruntime/resource-manager/Microsoft.KubernetesRuntime/KubernetesRuntime/swagger/stable/2024-03-01/kubernetesruntime.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "azureStorageAccountName property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/{resourceUri}/providers/Microsoft.KubernetesRuntime/storageClasses/{storageClassName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/kubernetesruntime/resource-manager/Microsoft.KubernetesRuntime/KubernetesRuntime/swagger/stable/2024-03-01/kubernetesruntime.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "azureStorageAccountKey property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/{resourceUri}/providers/Microsoft.KubernetesRuntime/storageClasses/{storageClassName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/kubernetesruntime/resource-manager/Microsoft.KubernetesRuntime/KubernetesRuntime/swagger/stable/2024-03-01/kubernetesruntime.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "server property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/{resourceUri}/providers/Microsoft.KubernetesRuntime/storageClasses/{storageClassName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/kubernetesruntime/resource-manager/Microsoft.KubernetesRuntime/KubernetesRuntime/swagger/stable/2024-03-01/kubernetesruntime.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "share property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/{resourceUri}/providers/Microsoft.KubernetesRuntime/storageClasses/{storageClassName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/kubernetesruntime/resource-manager/Microsoft.KubernetesRuntime/KubernetesRuntime/swagger/stable/2024-03-01/kubernetesruntime.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "subDir property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/{resourceUri}/providers/Microsoft.KubernetesRuntime/storageClasses/{storageClassName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/kubernetesruntime/resource-manager/Microsoft.KubernetesRuntime/KubernetesRuntime/swagger/stable/2024-03-01/kubernetesruntime.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "mountPermissions property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/{resourceUri}/providers/Microsoft.KubernetesRuntime/storageClasses/{storageClassName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/kubernetesruntime/resource-manager/Microsoft.KubernetesRuntime/KubernetesRuntime/swagger/stable/2024-03-01/kubernetesruntime.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "onDelete property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/{resourceUri}/providers/Microsoft.KubernetesRuntime/storageClasses/{storageClassName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/kubernetesruntime/resource-manager/Microsoft.KubernetesRuntime/KubernetesRuntime/swagger/stable/2024-03-01/kubernetesruntime.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "source property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/{resourceUri}/providers/Microsoft.KubernetesRuntime/storageClasses/{storageClassName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/kubernetesruntime/resource-manager/Microsoft.KubernetesRuntime/KubernetesRuntime/swagger/stable/2024-03-01/kubernetesruntime.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "username property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/{resourceUri}/providers/Microsoft.KubernetesRuntime/storageClasses/{storageClassName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/kubernetesruntime/resource-manager/Microsoft.KubernetesRuntime/KubernetesRuntime/swagger/stable/2024-03-01/kubernetesruntime.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "password property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/{resourceUri}/providers/Microsoft.KubernetesRuntime/storageClasses/{storageClassName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/kubernetesruntime/resource-manager/Microsoft.KubernetesRuntime/KubernetesRuntime/swagger/stable/2024-03-01/kubernetesruntime.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "domain property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/{resourceUri}/providers/Microsoft.KubernetesRuntime/storageClasses/{storageClassName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/kubernetesruntime/resource-manager/Microsoft.KubernetesRuntime/KubernetesRuntime/swagger/stable/2024-03-01/kubernetesruntime.json",
+    "sourceAttribution": "reported"
+  }
+]

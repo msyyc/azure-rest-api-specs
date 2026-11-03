@@ -1,0 +1,13 @@
+[
+  {
+    "code": "PropertiesTypeObjectNoDefinition",
+    "severity": 0,
+    "message": "Properties with type:object that don't reference a model definition are not allowed. ARM doesn't allow generic type definitions as this leads to bad customer experience.",
+    "path": [
+      "definitions",
+      "ResourceValidationRequestResource"
+    ],
+    "source": "projects/specification/resources/resource-manager/Microsoft.Resources/resourceValidator/swagger/stable/2022-06-01/resourceValidator.json",
+    "sourceAttribution": "reported"
+  }
+]

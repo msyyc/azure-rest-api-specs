@@ -1,0 +1,41 @@
+[
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter pageSize should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Migrate/assessmentProjects/{projectName}/assessments/{assessmentName}/assessedMachines",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/migrate/resource-manager/Microsoft.Migrate/MachineAssessments/swagger/preview/2024-03-03-preview/machineAssessments.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter continuationToken should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Migrate/assessmentProjects/{projectName}/assessments/{assessmentName}/assessedMachines",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/migrate/resource-manager/Microsoft.Migrate/MachineAssessments/swagger/preview/2024-03-03-preview/machineAssessments.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter totalRecordCount should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Migrate/assessmentProjects/{projectName}/assessments/{assessmentName}/assessedMachines",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/migrate/resource-manager/Microsoft.Migrate/MachineAssessments/swagger/preview/2024-03-03-preview/machineAssessments.json",
+    "sourceAttribution": "reported"
+  }
+]

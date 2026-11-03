@@ -1,0 +1,67 @@
+[
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "tags property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.StorageDiscovery/storageDiscoveryWorkspaces/{storageDiscoveryWorkspaceName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/storagediscovery/resource-manager/Microsoft.StorageDiscovery/StorageDiscovery/swagger/preview/2026-10-01-preview/storageDiscoveryWorkspace.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "sku property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.StorageDiscovery/storageDiscoveryWorkspaces/{storageDiscoveryWorkspaceName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/storagediscovery/resource-manager/Microsoft.StorageDiscovery/StorageDiscovery/swagger/preview/2026-10-01-preview/storageDiscoveryWorkspace.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "prefixConfigurations property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.StorageDiscovery/storageDiscoveryWorkspaces/{storageDiscoveryWorkspaceName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/storagediscovery/resource-manager/Microsoft.StorageDiscovery/StorageDiscovery/swagger/preview/2026-10-01-preview/storageDiscoveryWorkspace.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "StorageDiscoveryScope",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/storagediscovery/resource-manager/Microsoft.StorageDiscovery/StorageDiscovery/swagger/preview/2026-10-01-preview/storageDiscoveryWorkspace.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "StorageDiscoveryWorkspaceUpdate",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/storagediscovery/resource-manager/Microsoft.StorageDiscovery/StorageDiscovery/swagger/preview/2026-10-01-preview/storageDiscoveryWorkspace.json",
+    "sourceAttribution": "reported"
+  }
+]

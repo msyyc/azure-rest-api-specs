@@ -1,0 +1,704 @@
+[
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter language should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/providers/Microsoft.Billing/billingAccounts/{billingAccountId}/billingProfiles/{billingProfileId}/providers/Microsoft.Marketplace/products",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/marketplacecatalog/resource-manager/Microsoft.Marketplace/Products/swagger/stable/2025-05-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter excludePublicOffersAndPublicPlans should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/providers/Microsoft.Billing/billingAccounts/{billingAccountId}/billingProfiles/{billingProfileId}/providers/Microsoft.Marketplace/products",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/marketplacecatalog/resource-manager/Microsoft.Marketplace/Products/swagger/stable/2025-05-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter locations should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/providers/Microsoft.Billing/billingAccounts/{billingAccountId}/billingProfiles/{billingProfileId}/providers/Microsoft.Marketplace/products",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/marketplacecatalog/resource-manager/Microsoft.Marketplace/Products/swagger/stable/2025-05-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $select should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/providers/Microsoft.Billing/billingAccounts/{billingAccountId}/billingProfiles/{billingProfileId}/providers/Microsoft.Marketplace/products",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/marketplacecatalog/resource-manager/Microsoft.Marketplace/Products/swagger/stable/2025-05-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $expand should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/providers/Microsoft.Billing/billingAccounts/{billingAccountId}/billingProfiles/{billingProfileId}/providers/Microsoft.Marketplace/products",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/marketplacecatalog/resource-manager/Microsoft.Marketplace/Products/swagger/stable/2025-05-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $orderBy should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/providers/Microsoft.Billing/billingAccounts/{billingAccountId}/billingProfiles/{billingProfileId}/providers/Microsoft.Marketplace/products",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/marketplacecatalog/resource-manager/Microsoft.Marketplace/Products/swagger/stable/2025-05-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $search should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/providers/Microsoft.Billing/billingAccounts/{billingAccountId}/billingProfiles/{billingProfileId}/providers/Microsoft.Marketplace/products",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/marketplacecatalog/resource-manager/Microsoft.Marketplace/Products/swagger/stable/2025-05-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter language should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/providers/Microsoft.Billing/billingAccounts/{billingAccountId}/providers/Microsoft.Marketplace/products",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/marketplacecatalog/resource-manager/Microsoft.Marketplace/Products/swagger/stable/2025-05-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter excludePublicOffersAndPublicPlans should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/providers/Microsoft.Billing/billingAccounts/{billingAccountId}/providers/Microsoft.Marketplace/products",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/marketplacecatalog/resource-manager/Microsoft.Marketplace/Products/swagger/stable/2025-05-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter locations should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/providers/Microsoft.Billing/billingAccounts/{billingAccountId}/providers/Microsoft.Marketplace/products",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/marketplacecatalog/resource-manager/Microsoft.Marketplace/Products/swagger/stable/2025-05-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $select should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/providers/Microsoft.Billing/billingAccounts/{billingAccountId}/providers/Microsoft.Marketplace/products",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/marketplacecatalog/resource-manager/Microsoft.Marketplace/Products/swagger/stable/2025-05-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $expand should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/providers/Microsoft.Billing/billingAccounts/{billingAccountId}/providers/Microsoft.Marketplace/products",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/marketplacecatalog/resource-manager/Microsoft.Marketplace/Products/swagger/stable/2025-05-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $orderBy should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/providers/Microsoft.Billing/billingAccounts/{billingAccountId}/providers/Microsoft.Marketplace/products",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/marketplacecatalog/resource-manager/Microsoft.Marketplace/Products/swagger/stable/2025-05-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $search should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/providers/Microsoft.Billing/billingAccounts/{billingAccountId}/providers/Microsoft.Marketplace/products",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/marketplacecatalog/resource-manager/Microsoft.Marketplace/Products/swagger/stable/2025-05-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter market should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/providers/Microsoft.Marketplace/products",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/marketplacecatalog/resource-manager/Microsoft.Marketplace/Products/swagger/stable/2025-05-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter language should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/providers/Microsoft.Marketplace/products",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/marketplacecatalog/resource-manager/Microsoft.Marketplace/Products/swagger/stable/2025-05-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter excludePublicOffersAndPublicPlans should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/providers/Microsoft.Marketplace/products",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/marketplacecatalog/resource-manager/Microsoft.Marketplace/Products/swagger/stable/2025-05-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $select should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/providers/Microsoft.Marketplace/products",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/marketplacecatalog/resource-manager/Microsoft.Marketplace/Products/swagger/stable/2025-05-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $expand should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/providers/Microsoft.Marketplace/products",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/marketplacecatalog/resource-manager/Microsoft.Marketplace/Products/swagger/stable/2025-05-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $orderBy should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/providers/Microsoft.Marketplace/products",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/marketplacecatalog/resource-manager/Microsoft.Marketplace/Products/swagger/stable/2025-05-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $search should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/providers/Microsoft.Marketplace/products",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/marketplacecatalog/resource-manager/Microsoft.Marketplace/Products/swagger/stable/2025-05-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter language should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/providers/Microsoft.Marketplace/products",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/marketplacecatalog/resource-manager/Microsoft.Marketplace/Products/swagger/stable/2025-05-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter excludePublicOffersAndPublicPlans should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/providers/Microsoft.Marketplace/products",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/marketplacecatalog/resource-manager/Microsoft.Marketplace/Products/swagger/stable/2025-05-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $select should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/providers/Microsoft.Marketplace/products",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/marketplacecatalog/resource-manager/Microsoft.Marketplace/Products/swagger/stable/2025-05-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $expand should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/providers/Microsoft.Marketplace/products",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/marketplacecatalog/resource-manager/Microsoft.Marketplace/Products/swagger/stable/2025-05-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $orderBy should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/providers/Microsoft.Marketplace/products",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/marketplacecatalog/resource-manager/Microsoft.Marketplace/Products/swagger/stable/2025-05-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $search should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/providers/Microsoft.Marketplace/products",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/marketplacecatalog/resource-manager/Microsoft.Marketplace/Products/swagger/stable/2025-05-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "ValidQueryParametersForPointOperations",
+    "severity": 0,
+    "message": "Query parameter includeStopSoldPlans should be removed. Point operation 'get' MUST not have query parameters other than api-version.",
+    "path": [
+      "paths",
+      "/providers/Microsoft.Billing/billingAccounts/{billingAccountId}/billingProfiles/{billingProfileId}/providers/Microsoft.Marketplace/products/{productId}",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/marketplacecatalog/resource-manager/Microsoft.Marketplace/Products/swagger/stable/2025-05-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "ValidQueryParametersForPointOperations",
+    "severity": 0,
+    "message": "Query parameter language should be removed. Point operation 'get' MUST not have query parameters other than api-version.",
+    "path": [
+      "paths",
+      "/providers/Microsoft.Billing/billingAccounts/{billingAccountId}/billingProfiles/{billingProfileId}/providers/Microsoft.Marketplace/products/{productId}",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/marketplacecatalog/resource-manager/Microsoft.Marketplace/Products/swagger/stable/2025-05-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "ValidQueryParametersForPointOperations",
+    "severity": 0,
+    "message": "Query parameter includeHiddenPlans should be removed. Point operation 'get' MUST not have query parameters other than api-version.",
+    "path": [
+      "paths",
+      "/providers/Microsoft.Billing/billingAccounts/{billingAccountId}/billingProfiles/{billingProfileId}/providers/Microsoft.Marketplace/products/{productId}",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/marketplacecatalog/resource-manager/Microsoft.Marketplace/Products/swagger/stable/2025-05-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "ValidQueryParametersForPointOperations",
+    "severity": 0,
+    "message": "Query parameter includeServiceInstructionTemplates should be removed. Point operation 'get' MUST not have query parameters other than api-version.",
+    "path": [
+      "paths",
+      "/providers/Microsoft.Billing/billingAccounts/{billingAccountId}/billingProfiles/{billingProfileId}/providers/Microsoft.Marketplace/products/{productId}",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/marketplacecatalog/resource-manager/Microsoft.Marketplace/Products/swagger/stable/2025-05-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "ValidQueryParametersForPointOperations",
+    "severity": 0,
+    "message": "Query parameter planId should be removed. Point operation 'get' MUST not have query parameters other than api-version.",
+    "path": [
+      "paths",
+      "/providers/Microsoft.Billing/billingAccounts/{billingAccountId}/billingProfiles/{billingProfileId}/providers/Microsoft.Marketplace/products/{productId}",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/marketplacecatalog/resource-manager/Microsoft.Marketplace/Products/swagger/stable/2025-05-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "ValidQueryParametersForPointOperations",
+    "severity": 0,
+    "message": "Query parameter skuId should be removed. Point operation 'get' MUST not have query parameters other than api-version.",
+    "path": [
+      "paths",
+      "/providers/Microsoft.Billing/billingAccounts/{billingAccountId}/billingProfiles/{billingProfileId}/providers/Microsoft.Marketplace/products/{productId}",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/marketplacecatalog/resource-manager/Microsoft.Marketplace/Products/swagger/stable/2025-05-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "ValidQueryParametersForPointOperations",
+    "severity": 0,
+    "message": "Query parameter includeStopSoldPlans should be removed. Point operation 'get' MUST not have query parameters other than api-version.",
+    "path": [
+      "paths",
+      "/providers/Microsoft.Billing/billingAccounts/{billingAccountId}/providers/Microsoft.Marketplace/products/{productId}",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/marketplacecatalog/resource-manager/Microsoft.Marketplace/Products/swagger/stable/2025-05-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "ValidQueryParametersForPointOperations",
+    "severity": 0,
+    "message": "Query parameter language should be removed. Point operation 'get' MUST not have query parameters other than api-version.",
+    "path": [
+      "paths",
+      "/providers/Microsoft.Billing/billingAccounts/{billingAccountId}/providers/Microsoft.Marketplace/products/{productId}",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/marketplacecatalog/resource-manager/Microsoft.Marketplace/Products/swagger/stable/2025-05-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "ValidQueryParametersForPointOperations",
+    "severity": 0,
+    "message": "Query parameter includeHiddenPlans should be removed. Point operation 'get' MUST not have query parameters other than api-version.",
+    "path": [
+      "paths",
+      "/providers/Microsoft.Billing/billingAccounts/{billingAccountId}/providers/Microsoft.Marketplace/products/{productId}",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/marketplacecatalog/resource-manager/Microsoft.Marketplace/Products/swagger/stable/2025-05-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "ValidQueryParametersForPointOperations",
+    "severity": 0,
+    "message": "Query parameter includeServiceInstructionTemplates should be removed. Point operation 'get' MUST not have query parameters other than api-version.",
+    "path": [
+      "paths",
+      "/providers/Microsoft.Billing/billingAccounts/{billingAccountId}/providers/Microsoft.Marketplace/products/{productId}",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/marketplacecatalog/resource-manager/Microsoft.Marketplace/Products/swagger/stable/2025-05-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "ValidQueryParametersForPointOperations",
+    "severity": 0,
+    "message": "Query parameter planId should be removed. Point operation 'get' MUST not have query parameters other than api-version.",
+    "path": [
+      "paths",
+      "/providers/Microsoft.Billing/billingAccounts/{billingAccountId}/providers/Microsoft.Marketplace/products/{productId}",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/marketplacecatalog/resource-manager/Microsoft.Marketplace/Products/swagger/stable/2025-05-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "ValidQueryParametersForPointOperations",
+    "severity": 0,
+    "message": "Query parameter skuId should be removed. Point operation 'get' MUST not have query parameters other than api-version.",
+    "path": [
+      "paths",
+      "/providers/Microsoft.Billing/billingAccounts/{billingAccountId}/providers/Microsoft.Marketplace/products/{productId}",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/marketplacecatalog/resource-manager/Microsoft.Marketplace/Products/swagger/stable/2025-05-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "ValidQueryParametersForPointOperations",
+    "severity": 0,
+    "message": "Query parameter market should be removed. Point operation 'get' MUST not have query parameters other than api-version.",
+    "path": [
+      "paths",
+      "/providers/Microsoft.Marketplace/products/{productId}",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/marketplacecatalog/resource-manager/Microsoft.Marketplace/Products/swagger/stable/2025-05-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "ValidQueryParametersForPointOperations",
+    "severity": 0,
+    "message": "Query parameter includeStopSoldPlans should be removed. Point operation 'get' MUST not have query parameters other than api-version.",
+    "path": [
+      "paths",
+      "/providers/Microsoft.Marketplace/products/{productId}",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/marketplacecatalog/resource-manager/Microsoft.Marketplace/Products/swagger/stable/2025-05-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "ValidQueryParametersForPointOperations",
+    "severity": 0,
+    "message": "Query parameter language should be removed. Point operation 'get' MUST not have query parameters other than api-version.",
+    "path": [
+      "paths",
+      "/providers/Microsoft.Marketplace/products/{productId}",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/marketplacecatalog/resource-manager/Microsoft.Marketplace/Products/swagger/stable/2025-05-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "ValidQueryParametersForPointOperations",
+    "severity": 0,
+    "message": "Query parameter pricingAudience should be removed. Point operation 'get' MUST not have query parameters other than api-version.",
+    "path": [
+      "paths",
+      "/providers/Microsoft.Marketplace/products/{productId}",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/marketplacecatalog/resource-manager/Microsoft.Marketplace/Products/swagger/stable/2025-05-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "ValidQueryParametersForPointOperations",
+    "severity": 0,
+    "message": "Query parameter includeHiddenPlans should be removed. Point operation 'get' MUST not have query parameters other than api-version.",
+    "path": [
+      "paths",
+      "/providers/Microsoft.Marketplace/products/{productId}",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/marketplacecatalog/resource-manager/Microsoft.Marketplace/Products/swagger/stable/2025-05-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "ValidQueryParametersForPointOperations",
+    "severity": 0,
+    "message": "Query parameter includeServiceInstructionTemplates should be removed. Point operation 'get' MUST not have query parameters other than api-version.",
+    "path": [
+      "paths",
+      "/providers/Microsoft.Marketplace/products/{productId}",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/marketplacecatalog/resource-manager/Microsoft.Marketplace/Products/swagger/stable/2025-05-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "ValidQueryParametersForPointOperations",
+    "severity": 0,
+    "message": "Query parameter planId should be removed. Point operation 'get' MUST not have query parameters other than api-version.",
+    "path": [
+      "paths",
+      "/providers/Microsoft.Marketplace/products/{productId}",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/marketplacecatalog/resource-manager/Microsoft.Marketplace/Products/swagger/stable/2025-05-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "ValidQueryParametersForPointOperations",
+    "severity": 0,
+    "message": "Query parameter skuId should be removed. Point operation 'get' MUST not have query parameters other than api-version.",
+    "path": [
+      "paths",
+      "/providers/Microsoft.Marketplace/products/{productId}",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/marketplacecatalog/resource-manager/Microsoft.Marketplace/Products/swagger/stable/2025-05-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "ValidQueryParametersForPointOperations",
+    "severity": 0,
+    "message": "Query parameter includeStopSoldPlans should be removed. Point operation 'get' MUST not have query parameters other than api-version.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/providers/Microsoft.Marketplace/products/{productId}",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/marketplacecatalog/resource-manager/Microsoft.Marketplace/Products/swagger/stable/2025-05-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "ValidQueryParametersForPointOperations",
+    "severity": 0,
+    "message": "Query parameter language should be removed. Point operation 'get' MUST not have query parameters other than api-version.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/providers/Microsoft.Marketplace/products/{productId}",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/marketplacecatalog/resource-manager/Microsoft.Marketplace/Products/swagger/stable/2025-05-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "ValidQueryParametersForPointOperations",
+    "severity": 0,
+    "message": "Query parameter includeHiddenPlans should be removed. Point operation 'get' MUST not have query parameters other than api-version.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/providers/Microsoft.Marketplace/products/{productId}",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/marketplacecatalog/resource-manager/Microsoft.Marketplace/Products/swagger/stable/2025-05-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "ValidQueryParametersForPointOperations",
+    "severity": 0,
+    "message": "Query parameter includeServiceInstructionTemplates should be removed. Point operation 'get' MUST not have query parameters other than api-version.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/providers/Microsoft.Marketplace/products/{productId}",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/marketplacecatalog/resource-manager/Microsoft.Marketplace/Products/swagger/stable/2025-05-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "ValidQueryParametersForPointOperations",
+    "severity": 0,
+    "message": "Query parameter planId should be removed. Point operation 'get' MUST not have query parameters other than api-version.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/providers/Microsoft.Marketplace/products/{productId}",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/marketplacecatalog/resource-manager/Microsoft.Marketplace/Products/swagger/stable/2025-05-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "ValidQueryParametersForPointOperations",
+    "severity": 0,
+    "message": "Query parameter skuId should be removed. Point operation 'get' MUST not have query parameters other than api-version.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/providers/Microsoft.Marketplace/products/{productId}",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/marketplacecatalog/resource-manager/Microsoft.Marketplace/Products/swagger/stable/2025-05-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "ValidQueryParametersForPointOperations",
+    "severity": 0,
+    "message": "Query parameter lookUpOfferInTenantLevel should be removed. Point operation 'get' MUST not have query parameters other than api-version.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/providers/Microsoft.Marketplace/products/{productId}",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/marketplacecatalog/resource-manager/Microsoft.Marketplace/Products/swagger/stable/2025-05-01/openapi.json",
+    "sourceAttribution": "reported"
+  }
+]

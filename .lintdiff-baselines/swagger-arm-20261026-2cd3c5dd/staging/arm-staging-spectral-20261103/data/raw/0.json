@@ -1,0 +1,250 @@
+[
+  {
+    "code": "PropertiesTypeObjectNoDefinition",
+    "severity": 0,
+    "message": "Properties with type:object that don't reference a model definition are not allowed. ARM doesn't allow generic type definitions as this leads to bad customer experience.",
+    "path": [
+      "definitions",
+      "RecommendationProperties",
+      "properties",
+      "actions",
+      "items"
+    ],
+    "source": "projects/specification/advisor/resource-manager/Microsoft.Advisor/Advisor/swagger/preview/2026-08-01-preview/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PropertiesTypeObjectNoDefinition",
+    "severity": 0,
+    "message": "Properties with type:object that don't reference a model definition are not allowed. ARM doesn't allow generic type definitions as this leads to bad customer experience.",
+    "path": [
+      "definitions",
+      "RecommendationProperties",
+      "properties",
+      "exposedMetadataProperties"
+    ],
+    "source": "projects/specification/advisor/resource-manager/Microsoft.Advisor/Advisor/swagger/preview/2026-08-01-preview/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PropertiesTypeObjectNoDefinition",
+    "severity": 0,
+    "message": "Properties with type:object that don't reference a model definition are not allowed. ARM doesn't allow generic type definitions as this leads to bad customer experience.",
+    "path": [
+      "definitions",
+      "RecommendationProperties",
+      "properties",
+      "metadata"
+    ],
+    "source": "projects/specification/advisor/resource-manager/Microsoft.Advisor/Advisor/swagger/preview/2026-08-01-preview/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PropertiesTypeObjectNoDefinition",
+    "severity": 0,
+    "message": "Properties with type:object that don't reference a model definition are not allowed. ARM doesn't allow generic type definitions as this leads to bad customer experience.",
+    "path": [
+      "definitions",
+      "RecommendationProperties",
+      "properties",
+      "remediation"
+    ],
+    "source": "projects/specification/advisor/resource-manager/Microsoft.Advisor/Advisor/swagger/preview/2026-08-01-preview/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PropertiesTypeObjectNoDefinition",
+    "severity": 0,
+    "message": "Properties with type:object that don't reference a model definition are not allowed. ARM doesn't allow generic type definitions as this leads to bad customer experience.",
+    "path": [
+      "definitions",
+      "ResourceMetadata",
+      "properties",
+      "action"
+    ],
+    "source": "projects/specification/advisor/resource-manager/Microsoft.Advisor/Advisor/swagger/preview/2026-08-01-preview/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $top should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/{resourceUri}/providers/Microsoft.Advisor/recommendations",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/advisor/resource-manager/Microsoft.Advisor/Advisor/swagger/preview/2026-08-01-preview/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $skipToken should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/{resourceUri}/providers/Microsoft.Advisor/recommendations",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/advisor/resource-manager/Microsoft.Advisor/Advisor/swagger/preview/2026-08-01-preview/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter mode should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/providers/Microsoft.Management/serviceGroups/{serviceGroupName}/providers/Microsoft.Advisor/recommendations",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/advisor/resource-manager/Microsoft.Advisor/Advisor/swagger/preview/2026-08-01-preview/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $top should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/providers/Microsoft.Management/serviceGroups/{serviceGroupName}/providers/Microsoft.Advisor/recommendations",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/advisor/resource-manager/Microsoft.Advisor/Advisor/swagger/preview/2026-08-01-preview/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $skipToken should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/providers/Microsoft.Management/serviceGroups/{serviceGroupName}/providers/Microsoft.Advisor/recommendations",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/advisor/resource-manager/Microsoft.Advisor/Advisor/swagger/preview/2026-08-01-preview/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $top should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/providers/Microsoft.Advisor/assessments",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/advisor/resource-manager/Microsoft.Advisor/Advisor/swagger/preview/2026-08-01-preview/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $skiptoken should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/providers/Microsoft.Advisor/assessments",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/advisor/resource-manager/Microsoft.Advisor/Advisor/swagger/preview/2026-08-01-preview/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter mode should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/providers/Microsoft.Advisor/recommendations",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/advisor/resource-manager/Microsoft.Advisor/Advisor/swagger/preview/2026-08-01-preview/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $top should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/providers/Microsoft.Advisor/recommendations",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/advisor/resource-manager/Microsoft.Advisor/Advisor/swagger/preview/2026-08-01-preview/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $skipToken should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/providers/Microsoft.Advisor/recommendations",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/advisor/resource-manager/Microsoft.Advisor/Advisor/swagger/preview/2026-08-01-preview/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $top should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/providers/Microsoft.Advisor/resiliencyReviews",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/advisor/resource-manager/Microsoft.Advisor/Advisor/swagger/preview/2026-08-01-preview/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $skip should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/providers/Microsoft.Advisor/resiliencyReviews",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/advisor/resource-manager/Microsoft.Advisor/Advisor/swagger/preview/2026-08-01-preview/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $top should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/providers/Microsoft.Advisor/suppressions",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/advisor/resource-manager/Microsoft.Advisor/Advisor/swagger/preview/2026-08-01-preview/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $skipToken should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/providers/Microsoft.Advisor/suppressions",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/advisor/resource-manager/Microsoft.Advisor/Advisor/swagger/preview/2026-08-01-preview/openapi.json",
+    "sourceAttribution": "reported"
+  }
+]

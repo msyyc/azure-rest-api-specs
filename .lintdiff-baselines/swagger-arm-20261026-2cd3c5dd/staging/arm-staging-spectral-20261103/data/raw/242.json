@@ -1,0 +1,119 @@
+[
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter includeBudget should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/providers/Microsoft.Billing/billingAccounts/{billingAccountName}/billingProfiles/{billingProfileName}/invoiceSections/{invoiceSectionName}/providers/Microsoft.Education/labs",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/education/resource-manager/Microsoft.Education/Education/swagger/preview/2021-12-01-preview/education.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter includeDenied should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/providers/Microsoft.Billing/billingAccounts/{billingAccountName}/billingProfiles/{billingProfileName}/invoiceSections/{invoiceSectionName}/providers/Microsoft.Education/labs/default/joinRequests",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/education/resource-manager/Microsoft.Education/Education/swagger/preview/2021-12-01-preview/education.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter includeDeleted should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/providers/Microsoft.Billing/billingAccounts/{billingAccountName}/billingProfiles/{billingProfileName}/invoiceSections/{invoiceSectionName}/providers/Microsoft.Education/labs/default/students",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/education/resource-manager/Microsoft.Education/Education/swagger/preview/2021-12-01-preview/education.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter includeAllocatedBudget should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/providers/Microsoft.Billing/billingAccounts/{billingAccountName}/billingProfiles/{billingProfileName}/providers/Microsoft.Education/grants",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/education/resource-manager/Microsoft.Education/Education/swagger/preview/2021-12-01-preview/education.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter includeBudget should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/providers/Microsoft.Billing/billingAccounts/{billingAccountName}/billingProfiles/{billingProfileName}/providers/Microsoft.Education/labs",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/education/resource-manager/Microsoft.Education/Education/swagger/preview/2021-12-01-preview/education.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter includeDeleted should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/providers/Microsoft.Billing/billingAccounts/{billingAccountName}/billingProfiles/{billingProfileName}/providers/Microsoft.Education/labs",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/education/resource-manager/Microsoft.Education/Education/swagger/preview/2021-12-01-preview/education.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter includeAllocatedBudget should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/providers/Microsoft.Education/grants",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/education/resource-manager/Microsoft.Education/Education/swagger/preview/2021-12-01-preview/education.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "ValidQueryParametersForPointOperations",
+    "severity": 0,
+    "message": "Query parameter includeBudget should be removed. Point operation 'get' MUST not have query parameters other than api-version.",
+    "path": [
+      "paths",
+      "/providers/Microsoft.Billing/billingAccounts/{billingAccountName}/billingProfiles/{billingProfileName}/invoiceSections/{invoiceSectionName}/providers/Microsoft.Education/labs/default",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/education/resource-manager/Microsoft.Education/Education/swagger/preview/2021-12-01-preview/education.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "ValidQueryParametersForPointOperations",
+    "severity": 0,
+    "message": "Query parameter includeAllocatedBudget should be removed. Point operation 'get' MUST not have query parameters other than api-version.",
+    "path": [
+      "paths",
+      "/providers/Microsoft.Billing/billingAccounts/{billingAccountName}/billingProfiles/{billingProfileName}/providers/Microsoft.Education/grants/default",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/education/resource-manager/Microsoft.Education/Education/swagger/preview/2021-12-01-preview/education.json",
+    "sourceAttribution": "reported"
+  }
+]

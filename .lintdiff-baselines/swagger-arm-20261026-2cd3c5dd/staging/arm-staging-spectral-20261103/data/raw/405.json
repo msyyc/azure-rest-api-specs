@@ -1,0 +1,15 @@
+[
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter skipToken should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/{scope}/providers/Microsoft.Purview/policies",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/purviewpolicy/resource-manager/Microsoft.Purview/PurviewPolicy/swagger/preview/2023-06-01-preview/policy.json",
+    "sourceAttribution": "reported"
+  }
+]

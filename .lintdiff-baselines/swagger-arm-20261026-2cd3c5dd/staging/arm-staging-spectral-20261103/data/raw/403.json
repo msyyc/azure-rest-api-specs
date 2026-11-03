@@ -1,0 +1,119 @@
+[
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "tags property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/PureStorage.Block/reservations/{reservationName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/purestorage/resource-manager/PureStorage.Block/PureStorageBlock/swagger/preview/2026-05-01-preview/purestorage.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "tags property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/PureStorage.Block/storagePools/{storagePoolName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/purestorage/resource-manager/PureStorage.Block/PureStorageBlock/swagger/preview/2026-05-01-preview/purestorage.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "tags property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/PureStorage.Block/storagePools/{storagePoolName}/volumeGroups/{volumeGroupName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/purestorage/resource-manager/PureStorage.Block/PureStorageBlock/swagger/preview/2026-05-01-preview/purestorage.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $orderby should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/PureStorage.Block/storagePools/{storagePoolName}/volumeGroups/{volumeGroupName}/snapshots",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/purestorage/resource-manager/PureStorage.Block/PureStorageBlock/swagger/preview/2026-05-01-preview/purestorage.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $top should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/PureStorage.Block/storagePools/{storagePoolName}/volumeGroups/{volumeGroupName}/snapshots",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/purestorage/resource-manager/PureStorage.Block/PureStorageBlock/swagger/preview/2026-05-01-preview/purestorage.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $skip should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/PureStorage.Block/storagePools/{storagePoolName}/volumeGroups/{volumeGroupName}/snapshots",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/purestorage/resource-manager/PureStorage.Block/PureStorageBlock/swagger/preview/2026-05-01-preview/purestorage.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "ReservationUpdate",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/purestorage/resource-manager/PureStorage.Block/PureStorageBlock/swagger/preview/2026-05-01-preview/purestorage.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "StoragePoolUpdate",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/purestorage/resource-manager/PureStorage.Block/PureStorageBlock/swagger/preview/2026-05-01-preview/purestorage.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "VolumeGroupUpdate",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/purestorage/resource-manager/PureStorage.Block/PureStorageBlock/swagger/preview/2026-05-01-preview/purestorage.json",
+    "sourceAttribution": "reported"
+  }
+]

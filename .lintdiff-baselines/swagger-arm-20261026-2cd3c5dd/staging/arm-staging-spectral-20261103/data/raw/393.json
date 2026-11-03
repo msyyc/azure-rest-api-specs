@@ -1,0 +1,52 @@
+[
+  {
+    "code": "PropertiesTypeObjectNoDefinition",
+    "severity": 0,
+    "message": "Properties with type:object that don't reference a model definition are not allowed. ARM doesn't allow generic type definitions as this leads to bad customer experience.",
+    "path": [
+      "definitions",
+      "PortalTenantCompileFileProperties",
+      "properties",
+      "contents"
+    ],
+    "source": "projects/specification/portalservices/resource-manager/Microsoft.PortalServices/extensions/swagger/stable/2025-11-01/extensions.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PropertiesTypeObjectNoDefinition",
+    "severity": 0,
+    "message": "Properties with type:object that don't reference a model definition are not allowed. ARM doesn't allow generic type definitions as this leads to bad customer experience.",
+    "path": [
+      "definitions",
+      "PortalTenantCompileFileProperties",
+      "properties",
+      "files"
+    ],
+    "source": "projects/specification/portalservices/resource-manager/Microsoft.PortalServices/extensions/swagger/stable/2025-11-01/extensions.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PropertiesTypeObjectNoDefinition",
+    "severity": 0,
+    "message": "Properties with type:object that don't reference a model definition are not allowed. ARM doesn't allow generic type definitions as this leads to bad customer experience.",
+    "path": [
+      "definitions",
+      "PortalTenantCompileFileProperties",
+      "properties",
+      "stringSource"
+    ],
+    "source": "projects/specification/portalservices/resource-manager/Microsoft.PortalServices/extensions/swagger/stable/2025-11-01/extensions.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PropertiesTypeObjectNoDefinition",
+    "severity": 0,
+    "message": "Properties with type:object that don't reference a model definition are not allowed. ARM doesn't allow generic type definitions as this leads to bad customer experience.",
+    "path": [
+      "definitions",
+      "PortalTenantCompileFileResult"
+    ],
+    "source": "projects/specification/portalservices/resource-manager/Microsoft.PortalServices/extensions/swagger/stable/2025-11-01/extensions.json",
+    "sourceAttribution": "reported"
+  }
+]

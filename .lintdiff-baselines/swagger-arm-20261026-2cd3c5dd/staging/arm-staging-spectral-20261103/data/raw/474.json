@@ -1,0 +1,39 @@
+[
+  {
+    "code": "PropertiesTypeObjectNoDefinition",
+    "severity": 0,
+    "message": "Properties with type:object that don't reference a model definition are not allowed. ARM doesn't allow generic type definitions as this leads to bad customer experience.",
+    "path": [
+      "definitions",
+      "ErrorAdditionalInfo",
+      "properties",
+      "info"
+    ],
+    "source": "common-types/resource-management/v5/types.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PropertiesTypeObjectNoDefinition",
+    "severity": 0,
+    "message": "Properties with type:object that don't reference a model definition are not allowed. ARM doesn't allow generic type definitions as this leads to bad customer experience.",
+    "path": [
+      "definitions",
+      "SecurityTaskParameters"
+    ],
+    "source": "projects/specification/security/resource-manager/Microsoft.Security/Security/TasksAPI/swagger/preview/2015-06-01-preview/tasks.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PropertiesTypeObjectNoDefinition",
+    "severity": 0,
+    "message": "Properties with type:object that don't reference a model definition are not allowed. ARM doesn't allow generic type definitions as this leads to bad customer experience.",
+    "path": [
+      "definitions",
+      "SecurityTaskProperties",
+      "properties",
+      "securityTaskParameters"
+    ],
+    "source": "projects/specification/security/resource-manager/Microsoft.Security/Security/TasksAPI/swagger/preview/2015-06-01-preview/tasks.json",
+    "sourceAttribution": "reported"
+  }
+]

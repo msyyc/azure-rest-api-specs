@@ -1,0 +1,3028 @@
+[
+  {
+    "code": "PropertiesTypeObjectNoDefinition",
+    "severity": 0,
+    "message": "Properties with type:object that don't reference a model definition are not allowed. ARM doesn't allow generic type definitions as this leads to bad customer experience.",
+    "path": [
+      "definitions",
+      "ErrorAdditionalInfo",
+      "properties",
+      "info"
+    ],
+    "source": "common-types/resource-management/v3/types.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PropertiesTypeObjectNoDefinition",
+    "severity": 0,
+    "message": "Properties with type:object that don't reference a model definition are not allowed. ARM doesn't allow generic type definitions as this leads to bad customer experience.",
+    "path": [
+      "definitions",
+      "ErrorDetail",
+      "properties",
+      "details",
+      "items"
+    ],
+    "source": "common-types/resource-management/v3/types.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "identity property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/registries/{registryName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "name property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/registries/{registryName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "size property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/registries/{registryName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "tags property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/registries/{registryName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "keyIdentifier property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/workspaces/{workspaceName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "tags property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/workspaces/{workspaceName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "tags property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/workspaces/{workspaceName}/batchEndpoints/{endpointName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "userAssignedIdentities property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/workspaces/{workspaceName}/batchEndpoints/{endpointName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "tags property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/workspaces/{workspaceName}/batchEndpoints/{endpointName}/deployments/{deploymentName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "maxNodeCount property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/workspaces/{workspaceName}/computes/{computeName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "minNodeCount property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/workspaces/{workspaceName}/computes/{computeName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "nodeIdleTimeBeforeScaleDown property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/workspaces/{workspaceName}/computes/{computeName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "tags property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/workspaces/{workspaceName}/onlineEndpoints/{endpointName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "userAssignedIdentities property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/workspaces/{workspaceName}/onlineEndpoints/{endpointName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "tags property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/workspaces/{workspaceName}/onlineEndpoints/{endpointName}/deployments/{deploymentName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "name property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/workspaces/{workspaceName}/onlineEndpoints/{endpointName}/deployments/{deploymentName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "size property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/workspaces/{workspaceName}/onlineEndpoints/{endpointName}/deployments/{deploymentName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "tags property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/workspaces/{workspaceName}/serverlessEndpoints/{name}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "userAssignedIdentities property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/workspaces/{workspaceName}/serverlessEndpoints/{name}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "name property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/workspaces/{workspaceName}/serverlessEndpoints/{name}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "size property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/workspaces/{workspaceName}/serverlessEndpoints/{name}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PropertiesTypeObjectNoDefinition",
+    "severity": 0,
+    "message": "Properties with type:object that don't reference a model definition are not allowed. ARM doesn't allow generic type definitions as this leads to bad customer experience.",
+    "path": [
+      "definitions",
+      "CustomService"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PropertiesTypeObjectNoDefinition",
+    "severity": 0,
+    "message": "Properties with type:object that don't reference a model definition are not allowed. ARM doesn't allow generic type definitions as this leads to bad customer experience.",
+    "path": [
+      "definitions",
+      "CustomService",
+      "properties",
+      "docker"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PropertiesTypeObjectNoDefinition",
+    "severity": 0,
+    "message": "Properties with type:object that don't reference a model definition are not allowed. ARM doesn't allow generic type definitions as this leads to bad customer experience.",
+    "path": [
+      "definitions",
+      "CustomService",
+      "properties",
+      "image"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PropertiesTypeObjectNoDefinition",
+    "severity": 0,
+    "message": "Properties with type:object that don't reference a model definition are not allowed. ARM doesn't allow generic type definitions as this leads to bad customer experience.",
+    "path": [
+      "definitions",
+      "DiagnoseRequestProperties",
+      "properties",
+      "applicationInsights"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PropertiesTypeObjectNoDefinition",
+    "severity": 0,
+    "message": "Properties with type:object that don't reference a model definition are not allowed. ARM doesn't allow generic type definitions as this leads to bad customer experience.",
+    "path": [
+      "definitions",
+      "DiagnoseRequestProperties",
+      "properties",
+      "containerRegistry"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PropertiesTypeObjectNoDefinition",
+    "severity": 0,
+    "message": "Properties with type:object that don't reference a model definition are not allowed. ARM doesn't allow generic type definitions as this leads to bad customer experience.",
+    "path": [
+      "definitions",
+      "DiagnoseRequestProperties",
+      "properties",
+      "dnsResolution"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PropertiesTypeObjectNoDefinition",
+    "severity": 0,
+    "message": "Properties with type:object that don't reference a model definition are not allowed. ARM doesn't allow generic type definitions as this leads to bad customer experience.",
+    "path": [
+      "definitions",
+      "DiagnoseRequestProperties",
+      "properties",
+      "keyVault"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PropertiesTypeObjectNoDefinition",
+    "severity": 0,
+    "message": "Properties with type:object that don't reference a model definition are not allowed. ARM doesn't allow generic type definitions as this leads to bad customer experience.",
+    "path": [
+      "definitions",
+      "DiagnoseRequestProperties",
+      "properties",
+      "nsg"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PropertiesTypeObjectNoDefinition",
+    "severity": 0,
+    "message": "Properties with type:object that don't reference a model definition are not allowed. ARM doesn't allow generic type definitions as this leads to bad customer experience.",
+    "path": [
+      "definitions",
+      "DiagnoseRequestProperties",
+      "properties",
+      "others"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PropertiesTypeObjectNoDefinition",
+    "severity": 0,
+    "message": "Properties with type:object that don't reference a model definition are not allowed. ARM doesn't allow generic type definitions as this leads to bad customer experience.",
+    "path": [
+      "definitions",
+      "DiagnoseRequestProperties",
+      "properties",
+      "requiredResourceProviders"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PropertiesTypeObjectNoDefinition",
+    "severity": 0,
+    "message": "Properties with type:object that don't reference a model definition are not allowed. ARM doesn't allow generic type definitions as this leads to bad customer experience.",
+    "path": [
+      "definitions",
+      "DiagnoseRequestProperties",
+      "properties",
+      "resourceLock"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PropertiesTypeObjectNoDefinition",
+    "severity": 0,
+    "message": "Properties with type:object that don't reference a model definition are not allowed. ARM doesn't allow generic type definitions as this leads to bad customer experience.",
+    "path": [
+      "definitions",
+      "DiagnoseRequestProperties",
+      "properties",
+      "storageAccount"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PropertiesTypeObjectNoDefinition",
+    "severity": 0,
+    "message": "Properties with type:object that don't reference a model definition are not allowed. ARM doesn't allow generic type definitions as this leads to bad customer experience.",
+    "path": [
+      "definitions",
+      "DiagnoseRequestProperties",
+      "properties",
+      "udr"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PropertiesTypeObjectNoDefinition",
+    "severity": 0,
+    "message": "Properties with type:object that don't reference a model definition are not allowed. ARM doesn't allow generic type definitions as this leads to bad customer experience.",
+    "path": [
+      "definitions",
+      "Docker"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PropertiesTypeObjectNoDefinition",
+    "severity": 0,
+    "message": "Properties with type:object that don't reference a model definition are not allowed. ARM doesn't allow generic type definitions as this leads to bad customer experience.",
+    "path": [
+      "definitions",
+      "EndpointScheduleAction",
+      "properties",
+      "endpointInvocationDefinition"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PropertiesTypeObjectNoDefinition",
+    "severity": 0,
+    "message": "Properties with type:object that don't reference a model definition are not allowed. ARM doesn't allow generic type definitions as this leads to bad customer experience.",
+    "path": [
+      "definitions",
+      "EnvironmentVariable"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PropertiesTypeObjectNoDefinition",
+    "severity": 0,
+    "message": "Properties with type:object that don't reference a model definition are not allowed. ARM doesn't allow generic type definitions as this leads to bad customer experience.",
+    "path": [
+      "definitions",
+      "Image"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PropertiesTypeObjectNoDefinition",
+    "severity": 0,
+    "message": "Properties with type:object that don't reference a model definition are not allowed. ARM doesn't allow generic type definitions as this leads to bad customer experience.",
+    "path": [
+      "definitions",
+      "PartialManagedServiceIdentity",
+      "properties",
+      "userAssignedIdentities"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter kind should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/providers/Microsoft.MachineLearningServices/workspaces",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $skip should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/providers/Microsoft.MachineLearningServices/workspaces",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter aiCapabilities should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/providers/Microsoft.MachineLearningServices/workspaces",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $skip should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/registries/{registryName}/codes",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $orderBy should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/registries/{registryName}/codes/{codeName}/versions",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $top should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/registries/{registryName}/codes/{codeName}/versions",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $skip should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/registries/{registryName}/codes/{codeName}/versions",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $skip should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/registries/{registryName}/components",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $orderBy should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/registries/{registryName}/components/{componentName}/versions",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $top should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/registries/{registryName}/components/{componentName}/versions",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $skip should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/registries/{registryName}/components/{componentName}/versions",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $skip should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/registries/{registryName}/data",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter listViewType should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/registries/{registryName}/data",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $orderBy should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/registries/{registryName}/data/{name}/versions",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $top should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/registries/{registryName}/data/{name}/versions",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $skip should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/registries/{registryName}/data/{name}/versions",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $tags should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/registries/{registryName}/data/{name}/versions",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter listViewType should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/registries/{registryName}/data/{name}/versions",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $skip should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/registries/{registryName}/environments",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter listViewType should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/registries/{registryName}/environments",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $orderBy should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/registries/{registryName}/environments/{environmentName}/versions",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $top should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/registries/{registryName}/environments/{environmentName}/versions",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $skip should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/registries/{registryName}/environments/{environmentName}/versions",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter listViewType should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/registries/{registryName}/environments/{environmentName}/versions",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $skip should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/registries/{registryName}/models",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter listViewType should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/registries/{registryName}/models",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $skip should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/registries/{registryName}/models/{modelName}/versions",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $orderBy should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/registries/{registryName}/models/{modelName}/versions",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $top should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/registries/{registryName}/models/{modelName}/versions",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter version should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/registries/{registryName}/models/{modelName}/versions",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter description should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/registries/{registryName}/models/{modelName}/versions",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter tags should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/registries/{registryName}/models/{modelName}/versions",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter properties should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/registries/{registryName}/models/{modelName}/versions",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter listViewType should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/registries/{registryName}/models/{modelName}/versions",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter kind should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/workspaces",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $skip should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/workspaces",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter aiCapabilities should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/workspaces",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter count should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/workspaces/{workspaceName}/batchEndpoints",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $skip should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/workspaces/{workspaceName}/batchEndpoints",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $orderBy should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/workspaces/{workspaceName}/batchEndpoints/{endpointName}/deployments",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $top should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/workspaces/{workspaceName}/batchEndpoints/{endpointName}/deployments",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $skip should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/workspaces/{workspaceName}/batchEndpoints/{endpointName}/deployments",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $skip should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/workspaces/{workspaceName}/codes",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $orderBy should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/workspaces/{workspaceName}/codes/{name}/versions",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $top should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/workspaces/{workspaceName}/codes/{name}/versions",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $skip should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/workspaces/{workspaceName}/codes/{name}/versions",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter hash should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/workspaces/{workspaceName}/codes/{name}/versions",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter hashVersion should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/workspaces/{workspaceName}/codes/{name}/versions",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $skip should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/workspaces/{workspaceName}/components",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter listViewType should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/workspaces/{workspaceName}/components",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $orderBy should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/workspaces/{workspaceName}/components/{name}/versions",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $top should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/workspaces/{workspaceName}/components/{name}/versions",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $skip should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/workspaces/{workspaceName}/components/{name}/versions",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter listViewType should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/workspaces/{workspaceName}/components/{name}/versions",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $skip should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/workspaces/{workspaceName}/computes",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter target should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/workspaces/{workspaceName}/connections",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter category should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/workspaces/{workspaceName}/connections",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter includeAll should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/workspaces/{workspaceName}/connections",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $skip should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/workspaces/{workspaceName}/data",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter listViewType should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/workspaces/{workspaceName}/data",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $orderBy should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/workspaces/{workspaceName}/data/{name}/versions",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $top should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/workspaces/{workspaceName}/data/{name}/versions",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $skip should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/workspaces/{workspaceName}/data/{name}/versions",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $tags should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/workspaces/{workspaceName}/data/{name}/versions",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter listViewType should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/workspaces/{workspaceName}/data/{name}/versions",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $skip should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/workspaces/{workspaceName}/datastores",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter count should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/workspaces/{workspaceName}/datastores",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter isDefault should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/workspaces/{workspaceName}/datastores",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter names should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/workspaces/{workspaceName}/datastores",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter searchText should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/workspaces/{workspaceName}/datastores",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter orderBy should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/workspaces/{workspaceName}/datastores",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter orderByAsc should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/workspaces/{workspaceName}/datastores",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $skip should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/workspaces/{workspaceName}/environments",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter listViewType should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/workspaces/{workspaceName}/environments",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $orderBy should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/workspaces/{workspaceName}/environments/{name}/versions",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $top should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/workspaces/{workspaceName}/environments/{name}/versions",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $skip should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/workspaces/{workspaceName}/environments/{name}/versions",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter listViewType should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/workspaces/{workspaceName}/environments/{name}/versions",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $skip should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/workspaces/{workspaceName}/featuresets",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter tags should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/workspaces/{workspaceName}/featuresets",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter listViewType should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/workspaces/{workspaceName}/featuresets",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter pageSize should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/workspaces/{workspaceName}/featuresets",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter name should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/workspaces/{workspaceName}/featuresets",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter description should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/workspaces/{workspaceName}/featuresets",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter createdBy should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/workspaces/{workspaceName}/featuresets",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $skip should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/workspaces/{workspaceName}/featuresets/{featuresetName}/versions/{featuresetVersion}/features",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter tags should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/workspaces/{workspaceName}/featuresets/{featuresetName}/versions/{featuresetVersion}/features",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter featureName should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/workspaces/{workspaceName}/featuresets/{featuresetName}/versions/{featuresetVersion}/features",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter description should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/workspaces/{workspaceName}/featuresets/{featuresetName}/versions/{featuresetVersion}/features",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter listViewType should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/workspaces/{workspaceName}/featuresets/{featuresetName}/versions/{featuresetVersion}/features",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter pageSize should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/workspaces/{workspaceName}/featuresets/{featuresetName}/versions/{featuresetVersion}/features",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $skip should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/workspaces/{workspaceName}/featuresets/{name}/versions",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter tags should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/workspaces/{workspaceName}/featuresets/{name}/versions",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter listViewType should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/workspaces/{workspaceName}/featuresets/{name}/versions",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter pageSize should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/workspaces/{workspaceName}/featuresets/{name}/versions",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter versionName should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/workspaces/{workspaceName}/featuresets/{name}/versions",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter version should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/workspaces/{workspaceName}/featuresets/{name}/versions",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter description should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/workspaces/{workspaceName}/featuresets/{name}/versions",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter createdBy should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/workspaces/{workspaceName}/featuresets/{name}/versions",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter stage should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/workspaces/{workspaceName}/featuresets/{name}/versions",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $skip should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/workspaces/{workspaceName}/featurestoreEntities",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter tags should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/workspaces/{workspaceName}/featurestoreEntities",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter listViewType should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/workspaces/{workspaceName}/featurestoreEntities",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter pageSize should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/workspaces/{workspaceName}/featurestoreEntities",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter name should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/workspaces/{workspaceName}/featurestoreEntities",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter description should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/workspaces/{workspaceName}/featurestoreEntities",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter createdBy should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/workspaces/{workspaceName}/featurestoreEntities",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $skip should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/workspaces/{workspaceName}/featurestoreEntities/{name}/versions",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter tags should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/workspaces/{workspaceName}/featurestoreEntities/{name}/versions",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter listViewType should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/workspaces/{workspaceName}/featurestoreEntities/{name}/versions",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter pageSize should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/workspaces/{workspaceName}/featurestoreEntities/{name}/versions",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter versionName should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/workspaces/{workspaceName}/featurestoreEntities/{name}/versions",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter version should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/workspaces/{workspaceName}/featurestoreEntities/{name}/versions",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter description should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/workspaces/{workspaceName}/featurestoreEntities/{name}/versions",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter createdBy should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/workspaces/{workspaceName}/featurestoreEntities/{name}/versions",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter stage should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/workspaces/{workspaceName}/featurestoreEntities/{name}/versions",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $skip should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/workspaces/{workspaceName}/jobs",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter jobType should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/workspaces/{workspaceName}/jobs",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter tag should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/workspaces/{workspaceName}/jobs",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter listViewType should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/workspaces/{workspaceName}/jobs",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter properties should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/workspaces/{workspaceName}/jobs",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $skip should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/workspaces/{workspaceName}/marketplaceSubscriptions",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $skip should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/workspaces/{workspaceName}/models",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter count should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/workspaces/{workspaceName}/models",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter listViewType should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/workspaces/{workspaceName}/models",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $skip should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/workspaces/{workspaceName}/models/{name}/versions",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $orderBy should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/workspaces/{workspaceName}/models/{name}/versions",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $top should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/workspaces/{workspaceName}/models/{name}/versions",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter version should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/workspaces/{workspaceName}/models/{name}/versions",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter description should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/workspaces/{workspaceName}/models/{name}/versions",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter offset should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/workspaces/{workspaceName}/models/{name}/versions",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter tags should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/workspaces/{workspaceName}/models/{name}/versions",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter properties should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/workspaces/{workspaceName}/models/{name}/versions",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter feed should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/workspaces/{workspaceName}/models/{name}/versions",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter listViewType should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/workspaces/{workspaceName}/models/{name}/versions",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter name should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/workspaces/{workspaceName}/onlineEndpoints",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter count should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/workspaces/{workspaceName}/onlineEndpoints",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter computeType should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/workspaces/{workspaceName}/onlineEndpoints",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $skip should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/workspaces/{workspaceName}/onlineEndpoints",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter tags should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/workspaces/{workspaceName}/onlineEndpoints",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter properties should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/workspaces/{workspaceName}/onlineEndpoints",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter orderBy should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/workspaces/{workspaceName}/onlineEndpoints",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $orderBy should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/workspaces/{workspaceName}/onlineEndpoints/{endpointName}/deployments",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $top should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/workspaces/{workspaceName}/onlineEndpoints/{endpointName}/deployments",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $skip should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/workspaces/{workspaceName}/onlineEndpoints/{endpointName}/deployments",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter count should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/workspaces/{workspaceName}/onlineEndpoints/{endpointName}/deployments/{deploymentName}/skus",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $skip should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/workspaces/{workspaceName}/onlineEndpoints/{endpointName}/deployments/{deploymentName}/skus",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $skip should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/workspaces/{workspaceName}/schedules",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter listViewType should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/workspaces/{workspaceName}/schedules",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $skip should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/workspaces/{workspaceName}/serverlessEndpoints",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "AssetBase",
+      "properties"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "AssetContainer",
+      "properties"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "AutoMLJob",
+      "properties"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "AzureBlobDatastore",
+      "properties"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "AzureDataLakeGen1Datastore",
+      "properties"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "AzureDataLakeGen2Datastore",
+      "properties"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "AzureFileDatastore",
+      "properties"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "BatchPipelineComponentDeploymentConfiguration",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "CapabilityHostProperties",
+      "properties"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "CodeContainerProperties",
+      "properties"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "CodeVersionProperties",
+      "properties"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "CommandJob",
+      "properties"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "ComponentContainerProperties",
+      "properties"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "ComponentVersionProperties",
+      "properties"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "DataContainerProperties",
+      "properties"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "DatastoreProperties",
+      "properties"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "DataVersionBaseProperties",
+      "properties"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "EnvironmentContainerProperties",
+      "properties"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "EnvironmentVersionProperties",
+      "properties"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "FeatureProperties",
+      "properties"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "FeaturesetContainerProperties",
+      "properties"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "FeaturesetVersionBackfillRequest",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "FeaturesetVersionProperties",
+      "properties"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "FeaturestoreEntityContainerProperties",
+      "properties"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "FeaturestoreEntityVersionProperties",
+      "properties"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "JobBaseProperties",
+      "properties"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "MLTableData",
+      "properties"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "ModelContainerProperties",
+      "properties"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "ModelVersionProperties",
+      "properties"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "OneLakeDatastore",
+      "properties"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "PartialBatchDeploymentPartialMinimalTrackedResourceWithProperties",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "PartialMinimalTrackedResource",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "PartialMinimalTrackedResourceWithIdentity",
+      "properties"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "PartialMinimalTrackedResourceWithSku",
+      "properties"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "PartialMinimalTrackedResourceWithSkuAndIdentity",
+      "properties"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "PartialRegistryPartialTrackedResource",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "PipelineJob",
+      "properties"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "ResourceBase",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "ScheduleProperties",
+      "properties"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "SparkJob",
+      "properties"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "SweepJob",
+      "properties"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "WorkspaceUpdateParameters",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "ValidQueryParametersForPointOperations",
+    "severity": 0,
+    "message": "Query parameter forceToPurge should be removed. Point operation 'delete' MUST not have query parameters other than api-version.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/workspaces/{workspaceName}",
+      "delete",
+      "parameters"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "ValidQueryParametersForPointOperations",
+    "severity": 0,
+    "message": "Query parameter underlyingResourceAction should be removed. Point operation 'delete' MUST not have query parameters other than api-version.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/workspaces/{workspaceName}/computes/{computeName}",
+      "delete",
+      "parameters"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "ValidQueryParametersForPointOperations",
+    "severity": 0,
+    "message": "Query parameter skipValidation should be removed. Point operation 'put' MUST not have query parameters other than api-version.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/workspaces/{workspaceName}/datastores/{name}",
+      "put",
+      "parameters"
+    ],
+    "source": "projects/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/MachineLearningServices/swagger/stable/2026-09-01/openapi.json",
+    "sourceAttribution": "reported"
+  }
+]

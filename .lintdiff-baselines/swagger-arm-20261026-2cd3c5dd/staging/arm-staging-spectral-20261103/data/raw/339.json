@@ -1,0 +1,366 @@
+[
+  {
+    "code": "PropertiesTypeObjectNoDefinition",
+    "severity": 0,
+    "message": "Properties with type:object that don't reference a model definition are not allowed. ARM doesn't allow generic type definitions as this leads to bad customer experience.",
+    "path": [
+      "definitions",
+      "ErrorAdditionalInfo",
+      "properties",
+      "info"
+    ],
+    "source": "common-types/resource-management/v5/types.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter metricnamespace should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/{resourceUri}/providers/Microsoft.Insights/metricDefinitions",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/monitor/resource-manager/Microsoft.Insights/Insights/MetricsApi/swagger/stable/2024-02-01/metrics.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter startTime should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/{resourceUri}/providers/microsoft.insights/metricNamespaces",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/monitor/resource-manager/Microsoft.Insights/Insights/MetricsApi/swagger/stable/2024-02-01/metrics.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter timespan should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/{resourceUri}/providers/Microsoft.Insights/metrics",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/monitor/resource-manager/Microsoft.Insights/Insights/MetricsApi/swagger/stable/2024-02-01/metrics.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter interval should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/{resourceUri}/providers/Microsoft.Insights/metrics",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/monitor/resource-manager/Microsoft.Insights/Insights/MetricsApi/swagger/stable/2024-02-01/metrics.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter metricnames should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/{resourceUri}/providers/Microsoft.Insights/metrics",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/monitor/resource-manager/Microsoft.Insights/Insights/MetricsApi/swagger/stable/2024-02-01/metrics.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter aggregation should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/{resourceUri}/providers/Microsoft.Insights/metrics",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/monitor/resource-manager/Microsoft.Insights/Insights/MetricsApi/swagger/stable/2024-02-01/metrics.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter top should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/{resourceUri}/providers/Microsoft.Insights/metrics",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/monitor/resource-manager/Microsoft.Insights/Insights/MetricsApi/swagger/stable/2024-02-01/metrics.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter orderby should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/{resourceUri}/providers/Microsoft.Insights/metrics",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/monitor/resource-manager/Microsoft.Insights/Insights/MetricsApi/swagger/stable/2024-02-01/metrics.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter resultType should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/{resourceUri}/providers/Microsoft.Insights/metrics",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/monitor/resource-manager/Microsoft.Insights/Insights/MetricsApi/swagger/stable/2024-02-01/metrics.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter metricnamespace should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/{resourceUri}/providers/Microsoft.Insights/metrics",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/monitor/resource-manager/Microsoft.Insights/Insights/MetricsApi/swagger/stable/2024-02-01/metrics.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter AutoAdjustTimegrain should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/{resourceUri}/providers/Microsoft.Insights/metrics",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/monitor/resource-manager/Microsoft.Insights/Insights/MetricsApi/swagger/stable/2024-02-01/metrics.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter ValidateDimensions should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/{resourceUri}/providers/Microsoft.Insights/metrics",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/monitor/resource-manager/Microsoft.Insights/Insights/MetricsApi/swagger/stable/2024-02-01/metrics.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter rollupby should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/{resourceUri}/providers/Microsoft.Insights/metrics",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/monitor/resource-manager/Microsoft.Insights/Insights/MetricsApi/swagger/stable/2024-02-01/metrics.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter region should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/providers/Microsoft.Insights/metricDefinitions",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/monitor/resource-manager/Microsoft.Insights/Insights/MetricsApi/swagger/stable/2024-02-01/metrics.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter metricnamespace should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/providers/Microsoft.Insights/metricDefinitions",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/monitor/resource-manager/Microsoft.Insights/Insights/MetricsApi/swagger/stable/2024-02-01/metrics.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter region should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/providers/Microsoft.Insights/metrics",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/monitor/resource-manager/Microsoft.Insights/Insights/MetricsApi/swagger/stable/2024-02-01/metrics.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter timespan should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/providers/Microsoft.Insights/metrics",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/monitor/resource-manager/Microsoft.Insights/Insights/MetricsApi/swagger/stable/2024-02-01/metrics.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter interval should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/providers/Microsoft.Insights/metrics",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/monitor/resource-manager/Microsoft.Insights/Insights/MetricsApi/swagger/stable/2024-02-01/metrics.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter metricnames should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/providers/Microsoft.Insights/metrics",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/monitor/resource-manager/Microsoft.Insights/Insights/MetricsApi/swagger/stable/2024-02-01/metrics.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter aggregation should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/providers/Microsoft.Insights/metrics",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/monitor/resource-manager/Microsoft.Insights/Insights/MetricsApi/swagger/stable/2024-02-01/metrics.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter top should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/providers/Microsoft.Insights/metrics",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/monitor/resource-manager/Microsoft.Insights/Insights/MetricsApi/swagger/stable/2024-02-01/metrics.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter orderby should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/providers/Microsoft.Insights/metrics",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/monitor/resource-manager/Microsoft.Insights/Insights/MetricsApi/swagger/stable/2024-02-01/metrics.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter resultType should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/providers/Microsoft.Insights/metrics",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/monitor/resource-manager/Microsoft.Insights/Insights/MetricsApi/swagger/stable/2024-02-01/metrics.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter metricnamespace should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/providers/Microsoft.Insights/metrics",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/monitor/resource-manager/Microsoft.Insights/Insights/MetricsApi/swagger/stable/2024-02-01/metrics.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter AutoAdjustTimegrain should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/providers/Microsoft.Insights/metrics",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/monitor/resource-manager/Microsoft.Insights/Insights/MetricsApi/swagger/stable/2024-02-01/metrics.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter ValidateDimensions should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/providers/Microsoft.Insights/metrics",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/monitor/resource-manager/Microsoft.Insights/Insights/MetricsApi/swagger/stable/2024-02-01/metrics.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter rollupby should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/providers/Microsoft.Insights/metrics",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/monitor/resource-manager/Microsoft.Insights/Insights/MetricsApi/swagger/stable/2024-02-01/metrics.json",
+    "sourceAttribution": "reported"
+  }
+]

@@ -1,0 +1,41 @@
+[
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "NetworkTags",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/gcpconnector/resource-manager/Microsoft.GcpConnector/ContainerClusters/swagger/stable/2027-01-01/containerClusters.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "NodeConfig",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/gcpconnector/resource-manager/Microsoft.GcpConnector/ContainerClusters/swagger/stable/2027-01-01/containerClusters.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "ResourceManagerTags",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/gcpconnector/resource-manager/Microsoft.GcpConnector/ContainerClusters/swagger/stable/2027-01-01/containerClusters.json",
+    "sourceAttribution": "reported"
+  }
+]

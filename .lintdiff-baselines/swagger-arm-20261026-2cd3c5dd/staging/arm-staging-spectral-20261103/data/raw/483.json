@@ -1,0 +1,54 @@
+[
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "tags property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Solutions/applicationDefinitions/{applicationDefinitionName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/solutions/resource-manager/Microsoft.Solutions/Solutions/swagger/preview/2023-12-01-preview/managedapplications.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "tags property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Solutions/jitRequests/{jitRequestName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/solutions/resource-manager/Microsoft.Solutions/Solutions/swagger/preview/2023-12-01-preview/managedapplications.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "ApplicationDefinitionPatchable",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/solutions/resource-manager/Microsoft.Solutions/Solutions/swagger/preview/2023-12-01-preview/managedapplications.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "JitRequestPatchable",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/solutions/resource-manager/Microsoft.Solutions/Solutions/swagger/preview/2023-12-01-preview/managedapplications.json",
+    "sourceAttribution": "reported"
+  }
+]

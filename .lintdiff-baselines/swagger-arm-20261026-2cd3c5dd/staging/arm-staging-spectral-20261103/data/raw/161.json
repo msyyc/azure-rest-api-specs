@@ -1,0 +1,223 @@
+[
+  {
+    "code": "PropertiesTypeObjectNoDefinition",
+    "severity": 0,
+    "message": "Properties with type:object that don't reference a model definition are not allowed. ARM doesn't allow generic type definitions as this leads to bad customer experience.",
+    "path": [
+      "definitions",
+      "ErrorAdditionalInfo",
+      "properties",
+      "info"
+    ],
+    "source": "common-types/resource-management/v6/types.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "tags property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.AzureStackHCI/clusters/{clusterName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/azurestackhci/resource-manager/Microsoft.AzureStackHCI/StackHCI/swagger/preview/2026-10-15-preview/hci.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "cloudManagementEndpoint property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.AzureStackHCI/clusters/{clusterName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/azurestackhci/resource-manager/Microsoft.AzureStackHCI/StackHCI/swagger/preview/2026-10-15-preview/hci.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "tags property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.AzureStackHCI/clusters/{clusterName}/arcSettings/{arcSettingName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/azurestackhci/resource-manager/Microsoft.AzureStackHCI/StackHCI/swagger/preview/2026-10-15-preview/hci.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "tags property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.AzureStackHCI/devicePools/{devicePoolName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/azurestackhci/resource-manager/Microsoft.AzureStackHCI/StackHCI/swagger/preview/2026-10-15-preview/hci.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "PatchPropertiesCorrespondToPutProperties",
+    "severity": 0,
+    "message": "tags property in patch body is not present in the corresponding put body. A patch request body must only contain properties present in the corresponding put request body, and must contain at least one of the properties.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.AzureStackHCI/edgeMachines/{edgeMachineName}",
+      "patch",
+      "parameters"
+    ],
+    "source": "projects/specification/azurestackhci/resource-manager/Microsoft.AzureStackHCI/StackHCI/swagger/preview/2026-10-15-preview/hci.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $expand should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.AzureStackHCI/clusters/{clusterName}/offers",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/azurestackhci/resource-manager/Microsoft.AzureStackHCI/StackHCI/swagger/preview/2026-10-15-preview/hci.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $expand should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.AzureStackHCI/clusters/{clusterName}/publishers/{publisherName}/offers",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/azurestackhci/resource-manager/Microsoft.AzureStackHCI/StackHCI/swagger/preview/2026-10-15-preview/hci.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "QueryParametersInCollectionGet",
+    "severity": 0,
+    "message": "Query parameter $expand should be removed. Collection Get's/List operation MUST not have query parameters other than api version & OData filter.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.AzureStackHCI/clusters/{clusterName}/publishers/{publisherName}/offers/{offerName}/skus",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/azurestackhci/resource-manager/Microsoft.AzureStackHCI/StackHCI/swagger/preview/2026-10-15-preview/hci.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "ArcSettingsPatch",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/azurestackhci/resource-manager/Microsoft.AzureStackHCI/StackHCI/swagger/preview/2026-10-15-preview/hci.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "ClusterPatch",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/azurestackhci/resource-manager/Microsoft.AzureStackHCI/StackHCI/swagger/preview/2026-10-15-preview/hci.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "DevicePoolPatch",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/azurestackhci/resource-manager/Microsoft.AzureStackHCI/StackHCI/swagger/preview/2026-10-15-preview/hci.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "EdgeMachinePatch",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/azurestackhci/resource-manager/Microsoft.AzureStackHCI/StackHCI/swagger/preview/2026-10-15-preview/hci.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "PrecheckResult",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/azurestackhci/resource-manager/Microsoft.AzureStackHCI/StackHCI/swagger/preview/2026-10-15-preview/hci.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "TagsAreNotAllowedForProxyResources",
+    "severity": 0,
+    "message": "Tags should not be specified in the properties bag for proxy resources. Consider using a Tracked resource instead.",
+    "path": [
+      "definitions",
+      "ValidatedSolutionRecipeComponent",
+      "properties",
+      "tags"
+    ],
+    "source": "projects/specification/azurestackhci/resource-manager/Microsoft.AzureStackHCI/StackHCI/swagger/preview/2026-10-15-preview/hci.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "ValidQueryParametersForPointOperations",
+    "severity": 0,
+    "message": "Query parameter $expand should be removed. Point operation 'get' MUST not have query parameters other than api-version.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.AzureStackHCI/clusters/{clusterName}/publishers/{publisherName}/offers/{offerName}",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/azurestackhci/resource-manager/Microsoft.AzureStackHCI/StackHCI/swagger/preview/2026-10-15-preview/hci.json",
+    "sourceAttribution": "reported"
+  },
+  {
+    "code": "ValidQueryParametersForPointOperations",
+    "severity": 0,
+    "message": "Query parameter $expand should be removed. Point operation 'get' MUST not have query parameters other than api-version.",
+    "path": [
+      "paths",
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.AzureStackHCI/clusters/{clusterName}/publishers/{publisherName}/offers/{offerName}/skus/{skuName}",
+      "get",
+      "parameters"
+    ],
+    "source": "projects/specification/azurestackhci/resource-manager/Microsoft.AzureStackHCI/StackHCI/swagger/preview/2026-10-15-preview/hci.json",
+    "sourceAttribution": "reported"
+  }
+]
