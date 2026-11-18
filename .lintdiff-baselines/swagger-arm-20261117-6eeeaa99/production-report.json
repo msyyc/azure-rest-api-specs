@@ -1,0 +1,130 @@
+{
+  "schemaVersion": 1,
+  "baselineId": "swagger-arm-20261117-6eeeaa99",
+  "source": {
+    "repository": "Azure/azure-rest-api-specs",
+    "commit": "6eeeaa99a3a7dea8eef4592a6a238fe2c6c129cc",
+    "preservationRepository": "msyyc/azure-rest-api-specs",
+    "preservationRef": "evidence/shared-swagger-baseline-20261117-source"
+  },
+  "producer": {
+    "candidateRepository": "Azure/typespec-azure",
+    "candidateCommit": "42a033215c7512522f4117a71b02dc60b8aff060",
+    "coreCommit": "683031f809a3394a374c21ed587979277f6dd5c7",
+    "toolingRepository": "Azure/typespec-azure",
+    "toolingCommit": "94c56c98244805405ea1b842943274ac37faee46",
+    "nodeVersion": "v26.5.0",
+    "scope": "source",
+    "selection": {
+      "serviceType": "resource-manager",
+      "filter": null,
+      "limit": null
+    },
+    "observedAt": "2026-11-18T04:31:51.949Z"
+  },
+  "dataset": {
+    "projects": 490,
+    "swaggerFiles": 652,
+    "compileFailures": 0,
+    "validationFailures": 0,
+    "observations": 223291,
+    "rulesWithFindings": 121
+  },
+  "baselineIdentity": "7eebd1aed4f40d8305c29be3ecbf6b4ee4585db2f4b3b1b4fe5c800fac7583d8",
+  "sourceBaselineIdentity": "91a57a53db71e5ce6c1dd4a9d528e78b6e5c87e6a3fcfdb601916fc25b15a476",
+  "scope": {
+    "population": "All 490 discovered production ARM TypeSpec projects at the frozen source commit",
+    "swagger": "Latest emitted API version per project; full retained reference closure",
+    "validation": "npm exec -- autorest --v3 --spectral --azure-validator --semantic-validator=false --model-validator=false --message-format=json --openapi-type=arm --openapi-subtype=arm --use=<openapi-validator> --input-file=<swagger>",
+    "readmeSuppressionsApplied": false,
+    "excludedClaims": [
+      "native execution",
+      "native/Swagger semantic equivalence",
+      "data-plane or RPaaS coverage",
+      "staging-only rule evaluation"
+    ]
+  },
+  "preparation": {
+    "candidateBuildTasks": 22,
+    "integrationBuildTasks": 2,
+    "pinnedArtifactCount": 15,
+    "specsPackageManager": "pnpm@12.6.0",
+    "sourceCompilerVersion": "1.18.0",
+    "injectedCompilerVersion": "1.18.0",
+    "validatorVersion": "2.2.4",
+    "rulesetsVersion": "2.2.6",
+    "autorestCliVersion": "3.8.0",
+    "autorestCore": {
+      "version": "3.10.9",
+      "packageSha256": "1a798c36b1af95c2ae3762079f32363bfca99e4a3c24b142616e26f724f16324",
+      "entrypointSha256": "1d58e4bd3cb094935e88f599331dc308e37a556a3c432cc5e3d0e319da7a5c08"
+    },
+    "observedRegistration": "Successful ARM logs load 53 native/legacy and 119 Spectral rules; registration is not proof every selector matched",
+    "registryRecovery": "Used the existing approved package mirror through process-scoped pnpm and AutoRest settings; no global configuration changes"
+  },
+  "validation": {
+    "specDatasetTests": {
+      "passed": 14,
+      "failed": 0
+    },
+    "baselineLoaderTests": {
+      "passed": 87,
+      "failed": 0
+    },
+    "sharedBaselineHelperTests": {
+      "passed": 16,
+      "failed": 0
+    },
+    "typeAwareLint": "passed",
+    "packageBuild": "passed",
+    "nativeBaselineLoader": "verifyBaselineRun passed",
+    "localAndPublishedArchiveVerification": "See archive-verification.json for the downloaded-asset receipt recorded before advancing discovery",
+    "sourceAndSwaggerFiles": "All publication bytes match the generated originals"
+  },
+  "retainedAttempts": [
+    {
+      "status": "failed; not published",
+      "summary": {
+        "discoveredProjects": 490,
+        "compiledProjects": 489,
+        "failedProjects": 1,
+        "emittedSwaggerFiles": 651,
+        "validatedProjects": 0,
+        "validationFailures": 489,
+        "violations": 0,
+        "distinctRules": 0
+      },
+      "cause": "AutoRest core resolution and one project-kind temporary-config incompatibility"
+    },
+    {
+      "status": "interrupted; not published",
+      "cause": "Coordinating Copilot process ran out of memory; incomplete generator output was retained and not reused"
+    },
+    {
+      "status": "completed",
+      "summary": {
+        "discoveredProjects": 490,
+        "compiledProjects": 490,
+        "failedProjects": 0,
+        "emittedSwaggerFiles": 652,
+        "validatedProjects": 490,
+        "validationFailures": 0,
+        "violations": 223291,
+        "distinctRules": 121
+      }
+    }
+  ],
+  "correction": {
+    "toolingCommit": "94c56c98244805405ea1b842943274ac37faee46",
+    "description": "Use a non-project temporary config; preserve original project settings and inherit entrypoint project features",
+    "control": "Previously failing AzureResilienceManagement project compiled and validated, reporting 22 Swagger findings",
+    "sourceNormalization": "Prettier-only line wrapping applied during execution; published tooling commit has identical generator semantics."
+  },
+  "publication": {
+    "supersedes": "swagger-arm-20261026-2cd3c5dd",
+    "oldVersions": "Retained unchanged",
+    "datasetFiles": 99960,
+    "sanitizedLogFiles": 652,
+    "sanitizationEvidence": "Sealed manifest retains source/published hashes for every sanitized log/message file"
+  }
+}

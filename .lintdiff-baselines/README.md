@@ -5,14 +5,17 @@ metadata commit, and read both descriptors at that commit. Keep the selected
 baseline immutable throughout a migration.
 
 The metadata commit is not the tested specs commit. The tested source is the
-descriptor's `source.commit`, retained separately at
-`evidence/long-running-operations-options-validator-20261022-source`.
+descriptor's `source.commit`, retained separately at that descriptor's
+`source.preservationRepository` and `source.preservationRef`.
 Prepare a separate writable specs runtime at that source commit for each
 parallel native candidate. Do not inject candidate packages into shared data.
 
-The initial baseline contains 487 successful ARM projects, 649 Swagger files,
-and 222905 observations. Its index lists 121 rules with findings, not every
-enabled rule. Check production registration, audience, and activation before
+The November baseline `swagger-arm-20261117-6eeeaa99` contains 490 successful
+ARM projects, 652 Swagger files, and 223291 observations, with zero compile or
+validation failures. Its index lists 121 rules with findings, not every
+enabled rule. The October baseline `swagger-arm-20261026-2cd3c5dd` remains
+unchanged: 487 projects, 649 Swagger files, and 222905 observations.
+Check production registration, audience, and activation before
 interpreting an absent shard as zero. Data-plane and RPaaS coverage are not
 established by this ARM run. `rule-registration.json` preserves the installed
 ruleset declarations; declarations alone do not prove selector activation.
@@ -36,7 +39,10 @@ analysis afresh. Keep compiler/emitter/library compatibility checks, semantic
 controls, gap investigation, and both review checkpoints. Incompatible or missing
 data must block; do not silently regenerate Swagger.
 
-A separately requested refresh resolves current source and toolchain refs,
+A separate monthly release producer resolves current source and toolchain refs,
 validates the complete population, and publishes a new immutable version and
 asset. Verify a downloaded copy before advancing `current.json`. Never replace
 an older version or refresh a selected baseline during a migration.
+Out-of-cycle production requires explicit authorization and material
+incompatibility or unresolved-validity evidence. Consumer workers do not
+refresh missing data automatically.

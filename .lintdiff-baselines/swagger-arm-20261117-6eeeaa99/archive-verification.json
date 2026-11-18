@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "status": "verified",
+  "verifiedAt": "2026-11-18T14:17:20.0366134+08:00",
+  "method": "shared_baseline.py fetch from uploaded GitHub release; no local --archive",
+  "baselineId": "swagger-arm-20261117-6eeeaa99",
+  "sourceCommit": "6eeeaa99a3a7dea8eef4592a6a238fe2c6c129cc",
+  "baselineIdentity": "7eebd1aed4f40d8305c29be3ecbf6b4ee4585db2f4b3b1b4fe5c800fac7583d8",
+  "descriptorSha256": "c156564b764eadfddc667a860f6d904dbd5da46843a2f803a0cbc578f4d94b30",
+  "archive": {
+    "repository": "msyyc/azure-rest-api-specs",
+    "release": "swagger-lint-baseline-20261117-6eeeaa99",
+    "name": "swagger-arm-20261117-6eeeaa99.tar.gz",
+    "sha256": "0331b41caeb28ef10ff3a2d023c96eed14561b357e4179b4fb537969469af20c",
+    "bytes": 53558923
+  },
+  "dataset": {
+    "projects": 490,
+    "swaggerFiles": 652,
+    "compileFailures": 0,
+    "validationFailures": 0,
+    "observations": 223291,
+    "rulesWithFindings": 121
+  },
+  "checks": [
+    "Downloaded archive byte count and SHA-256",
+    "Safe extraction: member names, containment, member types and collisions",
+    "Sealed Swagger-only schemas, baseline content identity and producer/source binding",
+    "Complete dataset inventory and every file SHA-256",
+    "Successful full project population and retained file references",
+    "Summary, validator index, every result shard and observation totals"
+  ],
+  "swaggerGeneration": "not-run",
+  "nativeAssessment": "not-run"
+}
